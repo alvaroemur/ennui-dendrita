@@ -1,0 +1,14 @@
+{
+  "_comment": "Este es un template de ejemplo de configuración de perfiles predeterminados por workspace. Copia este archivo como workspace-defaults.json y personaliza según tus necesidades.",
+  "workspace_profiles": {
+    "ennui": "workspace-ennui",
+    "inspiro": "profile-default",
+    "entre-rutas": "workspace-entre-rutas",
+    "horizontes": "workspace-horizontes",
+    "iami": "profile-default",
+    "otros": "profile-default"
+  },
+  "default_profile": "profile.json",
+  "_note": "Si un workspace no está listado aquí, se usa default_profile. Si un workspace está listado pero el perfil no existe, también se usa default_profile."
+}
+

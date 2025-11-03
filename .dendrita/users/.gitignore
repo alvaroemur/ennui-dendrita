@@ -1,0 +1,9 @@
+# Ignorar todos los perfiles de usuario por defecto (contienen información personal)
+*.json
+
+# Permitir templates de ejemplo
+!*.example.json
+
+# Permitir README
+!README.md
+

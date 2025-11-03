@@ -1,10 +1,40 @@
 # ennui-dendrita
 
-**dentrita**
+**dendrita**
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Latest Commit](https://img.shields.io/github/last-commit/ennui-dendrita/ennui-dendrita)](https://github.com/ennui-dendrita/ennui-dendrita)
+[![Platform](https://img.shields.io/badge/Platform-Google%20Apps%20Script%20%7C%20Cursor%20%7C%20ChatGPT-blue.svg)](https://github.com/ennui-dendrita/ennui-dendrita)
+[![Code of Conduct](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
 
 Project management and business operations system adapted from infrastructure best practices, designed specifically for managing multiple business operations projects.
 
 The coordinating center of the work ecosystem is a dendrite that integrates information into structured decisions and actions.
+
+---
+
+## 📌 Using as Template
+
+**ennui-dendrita** is designed to be used as a template for other projects and organizations. You can:
+
+1. **Use it directly:** Clone or fork this repository as a starting point for your own multi-project management system
+2. **Adapt it:** Modify the structure, methodologies, and workspaces to fit your company or context
+3. **Contribute back:** If you improve the methodology, consider contributing your enhancements via [Pull Request](CONTRIBUTING.md)
+
+### Quick Start for Template Users
+
+1. **Fork this repository** to your account
+2. **Update the LICENSE** with your organization's information
+3. **Create your company workspace:** `workspaces/[your-company]/`
+4. **Customize:**
+   - `README.md` - Update for your context
+   - `.dendrita/settings.json` - Add your project metadata
+   - `workspaces/[your-company]/config-estilo.json` - Define your style guidelines
+5. **Start creating projects** following the structure in `workspaces/template/`
+
+### Topics & Tags
+
+This project is tagged with: `template` `project-management` `impact` `melt` `sustainability` `workspaces` `docs-as-code` `cursor` `chatgpt`
 
 ---
 
@@ -57,16 +87,16 @@ When you first open this repository or when Cursor detects it's empty:
    - Update frequency preferences
 
 2. **A user profile will be created:**
-   - Saved in `.dentrita/users/[user-id]/`
+   - Saved in `.dendrita/users/[user-id]/`
    - Contains your preferences and work context
    - Allows Cursor to personalize its behavior
 
 3. **Workspace-specific profiles:**
    - You can create profiles for specific workspaces
    - Profiles activate automatically when working in that workspace
-   - See `.dentrita/users/README.md` for more information
+   - See `.dendrita/users/README.md` for more information
 
-**For more details:** See `.dentrita/hooks/repo-initialization.md` and `.dentrita/users/README.md`
+**For more details:** See `.dendrita/hooks/repo-initialization.md` and `.dendrita/users/README.md`
 
 ### For general business management
 
@@ -133,7 +163,7 @@ ennui-dendrita/
     ├── change-theory-template.md
     └── risk-matrix.md
 │
-└── .dentrita/                       # Reflexive metadata (ALWAYS review first)
+└── .dendrita/                       # Reflexive metadata (ALWAYS review first)
     ├── users/                       # User profiles and preferences
     │   ├── [user-id]/               # User folders (created during initialization)
     │   │   ├── profile.json         # Default user profile
@@ -354,8 +384,17 @@ If you have questions about:
 - **How to structure a new project:** Use any template as a base
 - **Multiple projects management:** Consult `workspaces/ennui/company-management/projects-dashboard.md`
 - **Reporting:** Use `workspaces/ennui/tools-templates/quarterly-report-template.md`
-- **User profiles and initialization:** See `.dentrita/users/README.md` and `.dentrita/hooks/repo-initialization.md`
-- **How .dentrita works:** See `.dentrita/INIT.md` and `.dentrita/hooks/README.md`
+- **User profiles and initialization:** See `.dendrita/users/README.md` and `.dendrita/hooks/repo-initialization.md`
+- **How .dendrita works:** See `.dendrita/INIT.md` and `.dendrita/hooks/README.md`
+
+### Contributing & Governance
+
+- **Want to contribute?** See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines
+- **Code of Conduct:** Review [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) for community standards
+- **Security Issues:** Report privately using [SECURITY.md](SECURITY.md) guidelines
+- **Ask a question?** Use [Issues - Questions](https://github.com/ennui-dendrita/ennui-dendrita/issues) or [Discussions](https://github.com/ennui-dendrita/ennui-dendrita/discussions)
+- **Found a bug?** Create an [Issue - Bug Report](https://github.com/ennui-dendrita/ennui-dendrita/issues/new?template=bug_report.md)
+- **Want a feature?** Create an [Issue - Feature Request](https://github.com/ennui-dendrita/ennui-dendrita/issues/new?template=feature_request.md)
 
 ---
 
