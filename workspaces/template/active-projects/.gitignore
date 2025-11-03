@@ -1,0 +1,17 @@
+# Gitignore for active-projects/ - Active projects work information
+# This folder contains sensitive active project information
+
+# Ignore all project files by default
+*
+
+# Allow this .gitignore file
+!.gitignore
+
+# Allow README files for project documentation (if needed)
+# Uncomment the next line if you want to track README files
+# !README.md
+
+# Note: All project files (master-plan.md, current-context.md, tasks.md)
+# are ignored by default to protect sensitive work information.
+# Remove this .gitignore or modify patterns if you want to track specific files.
+

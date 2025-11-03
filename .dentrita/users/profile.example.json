@@ -1,0 +1,21 @@
+{
+  "_comment": "Este es un template de ejemplo de perfil de usuario. Copia este archivo como profile.json y personaliza según tus necesidades.",
+  "user_id": "example-user",
+  "name": "Usuario Ejemplo",
+  "email": "usuario@ejemplo.com",
+  "primary_workspace": "ennui",
+  "preferences": {
+    "language": "es",
+    "communication_style": "balanced",
+    "update_frequency": "normal"
+  },
+  "work_context": {
+    "primary_roles": ["project-manager", "sustainability-strategist"],
+    "frequently_used_skills": ["gestion-proyectos", "diagnostico-sostenibilidad"]
+  },
+  "metadata": {
+    "created_at": "2024-01-01T00:00:00Z",
+    "last_updated": "2024-01-01T00:00:00Z"
+  }
+}
+

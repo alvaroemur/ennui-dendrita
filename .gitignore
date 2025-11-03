@@ -1,0 +1,68 @@
+# Root .gitignore for ennui-dendrita
+
+# System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# Cache and temporary files
+.cache/
+*.tmp
+*.temp
+*.log
+
+# Dentrita cache (if it contains session-specific data)
+.dentrita/cache/
+
+# Personal notes and drafts
+*-draft.md
+*-notas.md
+*-personal.md
+*-backup.md
+
+# Sensitive data patterns
+*secret*
+*confidential*
+*private*
+*.key
+*.pem
+*.p12
+credentials.json
+secrets.json
+
+# Large files that shouldn't be in repo
+*.pdf
+*.xlsx
+*.xls
+*.doc
+*.docx
+*.zip
+*.tar.gz
+*.rar
+
+# Ignore all workspace folders with actual company/work data
+# Only the template folder should be tracked to show structure
+workspaces/ennui/
+workspaces/inspiro/
+workspaces/entre-rutas/
+workspaces/horizontes/
+workspaces/iami/
+workspaces/otros/
+
+# But keep the template folder to show structure
+!workspaces/template/
+

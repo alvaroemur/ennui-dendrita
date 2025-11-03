@@ -1,0 +1,224 @@
+{
+    "version": "1.0",
+    "description": "Skill activation triggers for ennui-dendrita. Controls when skills automatically suggest or block actions.",
+    "skills": {
+        "gestion-proyectos": {
+            "type": "domain",
+            "enforcement": "suggest",
+            "priority": "high",
+            "description": "Project management patterns for ennui-dendrita",
+            "promptTriggers": {
+                "keywords": [
+                    "proyecto",
+                    "proyectos-activos",
+                    "proyectos-archivo",
+                    "plan-estrategico",
+                    "contexto-actual",
+                    "tareas-seguimiento",
+                    "nuevo proyecto",
+                    "gestión de proyectos",
+                    "dashboard",
+                    "seguimiento",
+                    "tareas",
+                    "entregables",
+                    "cronograma"
+                ],
+                "intentPatterns": [
+                    "(crear|crear nuevo|nuevo|iniciar).*?proyecto",
+                    "(actualizar|modificar|editar).*?(contexto-actual|tareas-seguimiento|plan-estrategico)",
+                    "(gestión|gestionar|gestionando).*?(proyectos|múltiples proyectos)",
+                    "(seguimiento|seguir|trackear).*?(tareas|entregables)"
+                ]
+            },
+            "fileTriggers": {
+                "pathPatterns": [
+                    "proyectos-activos/**/*.md",
+                    "proyectos-archivo/**/*.md",
+                    "gestion-empresa/**/*.md"
+                ],
+                "contentPatterns": [
+                    "plan-estrategico",
+                    "contexto-actual",
+                    "tareas-seguimiento"
+                ]
+            }
+        },
+        "diagnostico-sostenibilidad": {
+            "type": "domain",
+            "enforcement": "suggest",
+            "priority": "high",
+            "description": "Patterns for ESG and sustainability initiative diagnostics",
+            "promptTriggers": {
+                "keywords": [
+                    "diagnóstico",
+                    "diagnostico",
+                    "mapeo",
+                    "sostenibilidad",
+                    "sustentabilidad",
+                    "ESG",
+                    "iniciales ESG",
+                    "iniciativas",
+                    "brechas",
+                    "evidencia",
+                    "mapa de valor",
+                    "línea base",
+                    "IMPACTO"
+                ],
+                "intentPatterns": [
+                    "(hacer|realizar|crear|diseñar).*?diagnóstico",
+                    "(mapear|mapeo).*?(iniciales|aliados|stakeholders)",
+                    "(identificar|analizar).*?brechas.*?evidencia",
+                    "(crear|diseñar).*?mapa.*?valor"
+                ]
+            },
+            "fileTriggers": {
+                "pathPatterns": [
+                    "mejores-practicas/diagnostico-sostenibilidad/**/*.md",
+                    "proyectos-activos/**/plan-estrategico.md"
+                ],
+                "contentPatterns": [
+                    "diagnóstico",
+                    "mapeo de iniciales",
+                    "ESG"
+                ]
+            }
+        },
+        "sistema-mel": {
+            "type": "domain",
+            "enforcement": "suggest",
+            "priority": "high",
+            "description": "Patterns for MEL (Monitoring, Evaluation, and Learning) systems",
+            "promptTriggers": {
+                "keywords": [
+                    "MEL",
+                    "monitoreo",
+                    "evaluación",
+                    "aprendizaje",
+                    "métricas",
+                    "metricas",
+                    "indicadores",
+                    "impacto",
+                    "teoría de cambio",
+                    "teoria de cambio",
+                    "cuantitativo",
+                    "cualitativo",
+                    "tablero",
+                    "reporte",
+                    "trimestral",
+                    "auditoría",
+                    "auditoria"
+                ],
+                "intentPatterns": [
+                    "(diseñar|crear|implementar).*?sistema.*?MEL",
+                    "(analizar|analisis).*?(datos|métricas|impacto)",
+                    "(generar|crear).*?(reporte|informe).*?(trimestral|ejecutivo)",
+                    "(diseñar|crear).*?(teoría|teoria).*?cambio"
+                ]
+            },
+            "fileTriggers": {
+                "pathPatterns": [
+                    "mejores-practicas/sistema-mel/**/*.md",
+                    "herramientas-plantillas/template-reporte-trimestral.md",
+                    "proyectos-activos/**/contexto-actual.md"
+                ],
+                "contentPatterns": [
+                    "MEL",
+                    "monitoreo.*?evaluación",
+                    "indicadores.*?impacto"
+                ]
+            }
+        },
+        "pipeline-proyectos": {
+            "type": "domain",
+            "enforcement": "suggest",
+            "priority": "medium",
+            "description": "Patterns for project and alliance pipeline",
+            "promptTriggers": {
+                "keywords": [
+                    "pipeline",
+                    "propuesta",
+                    "postulación",
+                    "postulacion",
+                    "fondo",
+                    "fondos",
+                    "convocatoria",
+                    "oportunidad",
+                    "oportunidades",
+                    "aliado",
+                    "alianza"
+                ],
+                "intentPatterns": [
+                    "(diseñar|crear|estructurar).*?propuesta.*?(financiamiento|fondo)",
+                    "(postular|postulación|aplicar).*?(fondo|convocatoria)",
+                    "(mapear|mapeo).*?(oportunidades|convocatorias|fondos)",
+                    "(evaluar|evaluación).*?fit.*?estratégico"
+                ]
+            },
+            "fileTriggers": {
+                "pathPatterns": [
+                    "mejores-practicas/pipeline-proyectos/**/*.md",
+                    "proyectos-activos/**/plan-estrategico.md"
+                ],
+                "contentPatterns": [
+                    "propuesta.*?financiamiento",
+                    "pipeline.*?proyectos",
+                    "oportunidades"
+                ]
+            }
+        },
+        "bootcamp-fundraising": {
+            "type": "domain",
+            "enforcement": "suggest",
+            "priority": "medium",
+            "description": "Patterns for fundraising bootcamps and capacity building",
+            "promptTriggers": {
+                "keywords": [
+                    "bootcamp",
+                    "fundraising",
+                    "capacidades",
+                    "formación",
+                    "formacion",
+                    "fortalecimiento",
+                    "capacidad",
+                    "postulación",
+                    "postulacion"
+                ],
+                "intentPatterns": [
+                    "(diseñar|crear|estructurar).*?bootcamp",
+                    "(fortalecer|fortalecimiento).*?capacidades.*?fundraising",
+                    "(formar|formación|capacitación).*?(fundraising|postulación)",
+                    "(módulo|modulo).*?(bootcamp|fundraising)"
+                ]
+            },
+            "fileTriggers": {
+                "pathPatterns": [
+                    "mejores-practicas/bootcamp-fundraising/**/*.md",
+                    "proyectos-activos/**/plan-estrategico.md"
+                ],
+                "contentPatterns": [
+                    "bootcamp.*?fundraising",
+                    "módulo.*?fundraising"
+                ]
+            }
+        }
+    },
+    "notes": {
+        "enforcement_types": {
+            "suggest": "Skill suggestion appears but doesn't block execution",
+            "block": "Requires skill to be used before proceeding (guardrail)",
+            "warn": "Shows warning but allows proceeding"
+        },
+        "priority_levels": {
+            "critical": "Highest - Always trigger when matched",
+            "high": "Important - Trigger for most matches",
+            "medium": "Moderate - Trigger for clear matches",
+            "low": "Optional - Trigger only for explicit matches"
+        },
+        "customization": {
+            "pathPatterns": "These patterns match ennui-dendrita project structure",
+            "keywords": "Keywords include both Spanish and English terms relevant to ennui-dendrita",
+            "intentPatterns": "Use regex for flexible user intent matching in Spanish and English"
+        }
+    }
+}
+

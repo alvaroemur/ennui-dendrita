@@ -1,0 +1,167 @@
+# Cursor Configuration for dendrita by ennui
+
+## Priority: Review .dentrita first
+
+**IMPORTANT:** Before any action, ALWAYS review the `.dentrita/` folder to understand the system context and established work patterns.
+
+---
+
+## .dentrita Structure
+
+`.dentrita/` is a reflective base that contains:
+
+1. **`.dentrita/skills/`** - Contextual knowledge skills for different types of work
+   - `skill-rules.json` - Defines when to suggest each skill based on prompts and files
+   - Each skill has its documentation in `[skill-name]/SKILL.md`
+
+2. **`.dentrita/agents/`** - Specialized agents for complex tasks
+   - Documentation of agents that can be activated based on context
+
+3. **`.dentrita/hooks/`** - Behavior logic references
+   - **NOTE:** These files are references/documentation, NOT executable
+   - Document the expected behavior that Cursor must read and apply
+
+4. **`.dentrita/settings.json`** - Project metadata (not execution configuration)
+
+---
+
+## How to use .dentrita
+
+### 1. When receiving a user prompt:
+
+1. **Review `.dentrita/skills/skill-rules.json`** to identify relevant skills
+2. **Read the keywords and intentPatterns** from the prompt
+3. **If there are matches:**
+   - Read the corresponding `SKILL.md` file in `.dentrita/skills/[skill-name]/SKILL.md`
+   - Apply the contextual knowledge from that skill
+   - Suggest using the skill to the user if appropriate
+
+### 2. When editing files:
+
+1. **Identify the project context** based on the file path:
+   - `workspaces/[workspace]/active-projects/[proyecto]/` → Active project
+   - `workspaces/[workspace]/best-practices/[tipo-proyecto]/` → Template/best practices (workspace-specific, fallback to ennui if missing)
+   - `workspaces/[workspace]/work-modes/[modo].md` → Specialized work mode (workspace-specific, fallback to ennui if missing)
+   
+   **Note:** Each workspace has its own best-practices, work-modes, stakeholders, and tools-templates. If a workspace doesn't have specific content, fallback to `workspaces/ennui/` as the reference standard.
+
+2. **Check for style configuration files** in the identified context:
+   - If working with `workspaces/[empresa]/`, check for `workspaces/[empresa]/config-estilo.json`
+   - If working with a project, check for `workspaces/[empresa]/active-projects/[proyecto]/config-estilo.json` (project-level overrides)
+   - **Apply style rules** from these configuration files (project-level rules override company-level rules if both exist)
+
+3. **Apply the best practices** from the identified context
+
+4. **Maintain consistency** with the project's persistent documents:
+   - `master-plan.md`
+   - `current-context.md`
+   - `tasks.md`
+
+### 3. When working with projects:
+
+1. **Always read `current-context.md`** from the project before responding
+2. **Review `tasks.md`** to understand the task status
+3. **Consult `master-plan.md`** to understand the general strategy
+4. **Update `current-context.md`** after important decisions
+
+---
+
+## Available skills in .dentrita
+
+Review `.dentrita/skills/skill-rules.json` to see all available skills and when to activate them:
+
+- **gestion-proyectos**: ennui-dendrita project management
+- **diagnostico-sostenibilidad**: ESG and sustainability diagnostics
+- **sistema-mel**: Monitoring, Evaluation and Learning systems
+- **pipeline-proyectos**: Project and alliance pipeline
+- **bootcamp-fundraising**: Fundraising bootcamps and capacity building
+
+---
+
+## Hooks as references
+
+Files in `.dentrita/hooks/` are **behavior references**, NOT executable scripts.
+
+**Expected behavior based on hooks:**
+
+1. **skill-activation-prompt**: 
+   - Reads `.dentrita/skills/skill-rules.json`
+   - Identifies relevant skills based on user prompt
+   - Suggests activating corresponding skills
+
+2. **post-tool-use-tracker**:
+   - Maintains mental record of which files have been edited
+   - Identifies the context of edited files
+   - Considers this context for future actions
+
+**NOTE:** Do not attempt to execute these scripts. They are references to understand expected behavior.
+
+---
+
+## ennui-dendrita project structure
+
+```
+ennui-dendrita/
+├── workspaces/[workspace-name]/
+│   ├── active-projects/           ← Proyectos activos
+│   ├── archived-projects/         ← Proyectos archivados
+│   ├── company-management/        ← Gestión general (opcional)
+│   ├── best-practices/            ← Templates y metodologías (REQUIRED)
+│   ├── work-modes/                ← Modos de trabajo (REQUIRED)
+│   ├── stakeholders/              ← Gestión de aliados (REQUIRED)
+│   ├── tools-templates/           ← Herramientas reutilizables (REQUIRED)
+│   ├── config-estilo.json        ← Reglas de estilo (opcional)
+│   └── README.md                 ← Documentación del workspace
+│
+│   Cada proyecto en active-projects/ debe tener:
+│   ├── master-plan.md
+│   ├── current-context.md
+│   └── tasks.md
+│
+└── .dentrita/          ← ALWAYS review first
+    ├── skills/
+    ├── agents/
+    ├── hooks/          ← References, do not execute
+    ├── WORKSPACE-STRUCTURE.md  ← Estructura estándar de workspaces
+    └── settings.json   ← Metadata
+```
+
+**IMPORTANT:** Todos los workspaces deben seguir la misma estructura estándar. Ver `.dentrita/WORKSPACE-STRUCTURE.md` para detalles completos.
+
+---
+
+## Recommended workflow
+
+1. **User sends prompt** → Review `.dentrita/skills/skill-rules.json`
+2. **Identify relevant skills** → Read corresponding `SKILL.md`
+3. **Identify project** → Read `current-context.md` and `tasks.md`
+4. **Respond with context** → Apply knowledge from skills and project
+5. **Update documents** → Update `current-context.md` if needed
+
+---
+
+## Company and Project Style Configuration
+
+Each company can have a `config-estilo.json` file in `workspaces/[empresa]/` containing:
+- **Style rules**: Writing conventions, nomenclature, formatting guidelines
+- **Company-specific conventions**: Brand guidelines, naming standards
+- **Scope**: Applies to all files within that company's directory
+
+Projects can optionally override with their own `config-estilo.json` in `workspaces/[empresa]/active-projects/[proyecto]/`.
+
+**Example**: `workspaces/ennui/config-estilo.json` specifies that "ennui" must always be written in lowercase as a style decision.
+
+---
+
+## Important reminders
+
+- ✅ `.dentrita/` is reflective metadata, does NOT require installation
+- ✅ Hooks are behavior references, NOT executed
+- ✅ Always review `.dentrita/` before important actions
+- ✅ **Always check `config-estilo.json`** when working with company/project files
+- ✅ Maintain consistency with ennui-dendrita project structure
+- ✅ Update `current-context.md` after important decisions
+
+---
+
+**For more information about the project, review the README.md at the root.**

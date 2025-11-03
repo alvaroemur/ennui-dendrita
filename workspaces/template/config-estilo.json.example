@@ -1,0 +1,32 @@
+{
+  "_comment": "Configuración de estilo y reglas generales para la empresa. Este archivo es OPCIONAL. Renómbralo a config-estilo.json si quieres aplicarlo.",
+  "_purpose": "Mantener consistencia en estilo, nomenclatura y convenciones al trabajar con la empresa",
+  "empresa": "[NOMBRE_DE_LA_EMPRESA]",
+  "version": "1.0",
+  "reglas_estilo": {
+    "nomenclatura": {
+      "nombre_empresa": {
+        "valor": "[nombre_empresa]",
+        "formato": "[especificar formato: mayúscula/minúscula/capitalización]",
+        "descripcion": "[descripción de cómo escribir el nombre de la empresa]",
+        "ejemplos": [
+          "[ejemplo 1]",
+          "[ejemplo 2]"
+        ],
+        "excepciones": []
+      }
+    },
+    "convenciones": {
+      "aplicar_a": [
+        "Todos los archivos dentro de workspaces/[nombre_empresa]/",
+        "Documentación que mencione la empresa",
+        "Comentarios en código que refieran a la empresa"
+      ]
+    }
+  },
+  "notas": [
+    "Estas reglas deben aplicarse automáticamente cuando se trabaje con archivos de la empresa",
+    "Si hay conflicto con reglas generales del proyecto, las reglas de empresa tienen prioridad"
+  ]
+}
+
