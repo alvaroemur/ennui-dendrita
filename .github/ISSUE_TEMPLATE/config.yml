@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📚 Documentación
+    url: https://github.com/ennui-dendrita/ennui-dendrita/blob/main/README.md
+    about: Consulta la documentación principal del proyecto
+  - name: 💬 Discussions
+    url: https://github.com/ennui-dendrita/ennui-dendrita/discussions
+    about: Para preguntas generales y conversaciones
+  - name: 🔒 Reporte de Seguridad
+    url: https://github.com/ennui-dendrita/ennui-dendrita/blob/main/SECURITY.md
+    about: Reporta vulnerabilidades de forma responsable

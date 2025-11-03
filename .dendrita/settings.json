@@ -1,0 +1,45 @@
+{
+  "_comment": "This file contains metadata for the ennui-dendrita project. It is NOT hook execution configuration. Cursor should READ this file and the contents of .dendrita/ to apply reflective behavior. Hooks in .dendrita/hooks/ are behavior references, NOT executable.",
+  "_purpose": "Reflective metadata for Cursor - project knowledge base",
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [],
+  "permissions": {
+    "allow": [
+      "Edit:*",
+      "Write:*",
+      "MultiEdit:*",
+      "NotebookEdit:*",
+      "Bash:*"
+    ],
+    "defaultMode": "acceptEdits"
+  },
+  "_hooks_reference": {
+    "_note": "Hooks listed here are REFERENCES of expected behavior. NOT executable. Cursor should read these files and apply documented logic.",
+    "RepoInitialization": {
+      "reference": ".dendrita/hooks/repo-initialization.md",
+      "behavior": "When detecting empty repository or unconfigured users, start interactive initialization process asking for basic data and creating user structure",
+      "trigger": ".dendrita/users/ does not exist or is empty",
+      "documentation": ".dendrita/users/README.md"
+    },
+    "UserPromptSubmit": {
+      "reference": ".dendrita/hooks/skill-activation-prompt.ts",
+      "behavior": "When receiving user prompt, review .dendrita/skills/skill-rules.json and identify relevant skills based on keywords and intentPatterns. Consider active user profile.",
+      "documentation": ".dendrita/hooks/README.md"
+    },
+    "PostToolUse": {
+      "reference": ".dendrita/hooks/post-tool-use-tracker.sh",
+      "behavior": "After editing files, identify context (project, practice, mode) and maintain record of affected context",
+      "documentation": ".dendrita/hooks/README.md"
+    }
+  },
+  "_users_system": {
+    "_note": "User and profile system allows customizing Cursor behavior according to user and active workspace",
+    "users_directory": ".dendrita/users/",
+    "documentation": ".dendrita/users/README.md",
+    "profile_activation": {
+      "workspace_based": "Check workspace-defaults.json for workspace default profile",
+      "default_profile": "Use user profile.json if no workspace profile exists",
+      "manual_activation": "User can request activating specific profile"
+    }
+  }
+}

@@ -1,38 +1,38 @@
 # Cursor Configuration for dendrita by ennui
 
-## Priority: Review .dentrita first
+## Priority: Review .dendrita first
 
-**IMPORTANT:** Before any action, ALWAYS review the `.dentrita/` folder to understand the system context and established work patterns.
+**IMPORTANT:** Before any action, ALWAYS review the `.dendrita/` folder to understand the system context and established work patterns.
 
 ---
 
-## .dentrita Structure
+## .dendrita Structure
 
-`.dentrita/` is a reflective base that contains:
+`.dendrita/` is a reflective base that contains:
 
-1. **`.dentrita/skills/`** - Contextual knowledge skills for different types of work
+1. **`.dendrita/skills/`** - Contextual knowledge skills for different types of work
    - `skill-rules.json` - Defines when to suggest each skill based on prompts and files
    - Each skill has its documentation in `[skill-name]/SKILL.md`
 
-2. **`.dentrita/agents/`** - Specialized agents for complex tasks
+2. **`.dendrita/agents/`** - Specialized agents for complex tasks
    - Documentation of agents that can be activated based on context
 
-3. **`.dentrita/hooks/`** - Behavior logic references
+3. **`.dendrita/hooks/`** - Behavior logic references
    - **NOTE:** These files are references/documentation, NOT executable
    - Document the expected behavior that Cursor must read and apply
 
-4. **`.dentrita/settings.json`** - Project metadata (not execution configuration)
+4. **`.dendrita/settings.json`** - Project metadata (not execution configuration)
 
 ---
 
-## How to use .dentrita
+## How to use .dendrita
 
 ### 1. When receiving a user prompt:
 
-1. **Review `.dentrita/skills/skill-rules.json`** to identify relevant skills
+1. **Review `.dendrita/skills/skill-rules.json`** to identify relevant skills
 2. **Read the keywords and intentPatterns** from the prompt
 3. **If there are matches:**
-   - Read the corresponding `SKILL.md` file in `.dentrita/skills/[skill-name]/SKILL.md`
+   - Read the corresponding `SKILL.md` file in `.dendrita/skills/[skill-name]/SKILL.md`
    - Apply the contextual knowledge from that skill
    - Suggest using the skill to the user if appropriate
 
@@ -66,9 +66,9 @@
 
 ---
 
-## Available skills in .dentrita
+## Available skills in .dendrita
 
-Review `.dentrita/skills/skill-rules.json` to see all available skills and when to activate them:
+Review `.dendrita/skills/skill-rules.json` to see all available skills and when to activate them:
 
 - **gestion-proyectos**: ennui-dendrita project management
 - **diagnostico-sostenibilidad**: ESG and sustainability diagnostics
@@ -80,12 +80,12 @@ Review `.dentrita/skills/skill-rules.json` to see all available skills and when 
 
 ## Hooks as references
 
-Files in `.dentrita/hooks/` are **behavior references**, NOT executable scripts.
+Files in `.dendrita/hooks/` are **behavior references**, NOT executable scripts.
 
 **Expected behavior based on hooks:**
 
 1. **skill-activation-prompt**: 
-   - Reads `.dentrita/skills/skill-rules.json`
+   - Reads `.dendrita/skills/skill-rules.json`
    - Identifies relevant skills based on user prompt
    - Suggests activating corresponding skills
 
@@ -118,7 +118,7 @@ ennui-dendrita/
 │   ├── current-context.md
 │   └── tasks.md
 │
-└── .dentrita/          ← ALWAYS review first
+└── .dendrita/          ← ALWAYS review first
     ├── skills/
     ├── agents/
     ├── hooks/          ← References, do not execute
@@ -126,13 +126,13 @@ ennui-dendrita/
     └── settings.json   ← Metadata
 ```
 
-**IMPORTANT:** Todos los workspaces deben seguir la misma estructura estándar. Ver `.dentrita/WORKSPACE-STRUCTURE.md` para detalles completos.
+**IMPORTANT:** Todos los workspaces deben seguir la misma estructura estándar. Ver `.dendrita/WORKSPACE-STRUCTURE.md` para detalles completos.
 
 ---
 
 ## Recommended workflow
 
-1. **User sends prompt** → Review `.dentrita/skills/skill-rules.json`
+1. **User sends prompt** → Review `.dendrita/skills/skill-rules.json`
 2. **Identify relevant skills** → Read corresponding `SKILL.md`
 3. **Identify project** → Read `current-context.md` and `tasks.md`
 4. **Respond with context** → Apply knowledge from skills and project
@@ -155,9 +155,9 @@ Projects can optionally override with their own `config-estilo.json` in `workspa
 
 ## Important reminders
 
-- ✅ `.dentrita/` is reflective metadata, does NOT require installation
+- ✅ `.dendrita/` is reflective metadata, does NOT require installation
 - ✅ Hooks are behavior references, NOT executed
-- ✅ Always review `.dentrita/` before important actions
+- ✅ Always review `.dendrita/` before important actions
 - ✅ **Always check `config-estilo.json`** when working with company/project files
 - ✅ Maintain consistency with ennui-dendrita project structure
 - ✅ Update `current-context.md` after important decisions
