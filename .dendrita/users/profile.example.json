@@ -1,21 +1,35 @@
 {
-  "_comment": "Este es un template de ejemplo de perfil de usuario. Copia este archivo como profile.json y personaliza según tus necesidades.",
+  "_comment": "Ejemplo de perfil de usuario - ESTE ARCHIVO NO DEBE CONTENER DATOS REALES",
+  "_description": "Este es un ejemplo de estructura de perfil. Los archivos reales en .dendrita/users/ NO deben estar en git.",
   "user_id": "example-user",
   "name": "Usuario Ejemplo",
-  "email": "usuario@ejemplo.com",
-  "primary_workspace": "ennui",
+  "email": "example@example.com",
+  "primary_workspace": "example-workspace",
   "preferences": {
     "language": "es",
-    "communication_style": "balanced",
-    "update_frequency": "normal"
+    "communication_style": "direct",
+    "update_frequency": "frequent"
   },
   "work_context": {
-    "primary_roles": ["project-manager", "sustainability-strategist"],
-    "frequently_used_skills": ["gestion-proyectos", "diagnostico-sostenibilidad"]
+    "primary_roles": ["project-manager"],
+    "frequently_used_skills": ["gestion-proyectos"],
+    "preferred_agents": ["project-manager"]
   },
-  "metadata": {
-    "created_at": "2024-01-01T00:00:00Z",
-    "last_updated": "2024-01-01T00:00:00Z"
+  "dendrita_alias": "mi dendrita",
+  "dendrita_name": "Ejemplo",
+  "integrations": {
+    "calendar_scraping": {
+      "_comment": "Configuración de scraping de calendario - puede estar aquí o en archivo separado",
+      "default_settings": {
+        "time_min_offset_days": -30,
+        "time_max_offset_days": 90,
+        "max_results": 2500,
+        "single_events": true,
+        "sync_attendees": true,
+        "sync_metadata": true
+      },
+      "enabled_calendars": ["primary"],
+      "auto_enable_primary": false
+    }
   }
 }
-

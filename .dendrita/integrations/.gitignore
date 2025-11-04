@@ -1,0 +1,31 @@
+# Credenciales y archivos locales (CRÍTICO)
+.env
+.env.local
+.env.*.local
+config.local.json
+credentials.local.json
+
+# Cache de APIs
+.cache/
+
+# Logs
+logs/
+*.log
+
+# Token files
+*.token
+*.refresh_token
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Compilados
+*.js
+*.map
+dist/
+build/
+
+# Node.js dependencies
+# Note: package.json, package-lock.json, and tsconfig.json should be in git for replication
+node_modules/

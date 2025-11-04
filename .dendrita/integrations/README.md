@@ -1,202 +1,253 @@
-# Integrations System - API Connections
+# 🔐 Integrations Module
 
-## Overview
+Sistema seguro de integración con APIs externas sin exponer datos sensibles.
 
-This directory contains the configuration and logic for connecting dendrita with external APIs. The system is designed to:
+## Principios de Diseño
 
-- ✅ **Keep secrets secure** - All credentials stored in `.dendrita/settings.local.json` (gitignored)
-- ✅ **Never expose system information** - Account names, file paths, and work details remain private
-- ✅ **Centralize API logic** - All integrations managed in one place
-- ✅ **Be extensible** - Easy to add new providers
+✅ **Seguridad**: Credenciales nunca en repositorio
+✅ **Modularidad**: Cada servicio en su propio módulo
+✅ **Reutilizable**: Interfaces consistentes
+✅ **Documentado**: Claro cómo configurar
+✅ **Transparencia**: Lógica visible, credenciales ocultas
 
----
-
-## Architecture
-
-### File Structure
+## Estructura
 
 ```
 .dendrita/integrations/
-├── README.md                          ← You are here
-├── providers/                         ← Provider implementations
+├── README.md                    ← Tú estás aquí
+├── config.template.json         ← Plantilla de configuración
+├── .gitignore                   ← Evita exponer credenciales
+├── services/
 │   ├── google/
-│   │   ├── config.schema.json        ← Configuration schema
-│   │   ├── README.md                 ← Provider documentation
-│   │   └── connector.ts              ← Connection logic
+│   │   ├── auth.ts
+│   │   ├── gmail.ts
+│   │   ├── calendar.ts
+│   │   └── drive.ts
 │   ├── openai/
-│   │   ├── config.schema.json
-│   │   ├── README.md
-│   │   └── connector.ts
-│   └── [provider]/
-├── core/                              ← Shared integration logic
-│   ├── base-connector.ts             ← Abstract connector interface
-│   ├── auth-manager.ts               ← Authentication handling
-│   └── integration-registry.ts       ← Provider registry
-├── types.ts                           ← TypeScript type definitions
-├── integrations.local.schema.json    ← Local secrets schema (example)
-└── integrations.config.json          ← Public configuration
+│   │   ├── auth.ts
+│   │   └── chat.ts
+│   ├── supabase/
+│   │   ├── auth.ts
+│   │   └── client.ts
+│   └── base/
+│       └── service.interface.ts
+├── utils/
+│   ├── credentials.ts           ← Carga credenciales de forma segura
+│   ├── error-handler.ts
+│   ├── logger.ts                ← Logger seguro por servicio
+│   ├── usage-logger.ts          ← Sistema de logging interno
+│   ├── usage-stats.ts           ← Estadísticas de uso
+│   └── usage-tracker.ts         ← Helpers para tracking automático
+├── hooks/
+│   ├── google-auth-flow.md
+│   └── openai-key-management.md
+└── examples/
+    ├── google-workspace-query.ts
+    └── openai-completion.ts
 ```
 
----
+## Configuración (Paso a Paso)
 
-## How It Works
+### 1. Crear archivo de credenciales local
 
-### 1. Configuration Hierarchy
-
-**Public Configuration** (tracked in git):
-- `.dendrita/integrations/integrations.config.json` - Public settings, provider availability, scopes
-
-**Private Configuration** (NOT tracked, in `.gitignore`):
-- `.dendrita/settings.local.json` - Your credentials and secrets
-
-### 2. Secret Management
-
-All secrets are stored in **`.dendrita/settings.local.json`** with this structure:
-
-```json
-{
-  "integrations": {
-    "google": {
-      "credentials": {
-        "client_id": "your-client-id",
-        "client_secret": "your-client-secret",
-        "redirect_uri": "http://localhost:3000/auth/google/callback"
-      },
-      "tokens": {
-        "access_token": "cached-token",
-        "refresh_token": "refresh-token",
-        "expires_at": 1234567890
-      }
-    },
-    "openai": {
-      "api_key": "sk-your-key-here"
-    }
-  }
-}
+```bash
+# En la raíz del proyecto
+touch .env.local
+# O en .dendrita específicamente
+touch .dendrita/.env.local
 ```
 
-**⚠️ IMPORTANT:** This file is in `.gitignore` and should NEVER be committed.
+**Contenido de `.env.local` (NUNCA hacer commit):**
 
-### 3. Provider Registration
+```env
+# Google Workspace
+GOOGLE_WORKSPACE_CLIENT_ID=tu_client_id
+GOOGLE_WORKSPACE_CLIENT_SECRET=tu_client_secret
+GOOGLE_WORKSPACE_REFRESH_TOKEN=tu_refresh_token
 
-Providers are automatically discovered and registered in `.dendrita/integrations/integrations.config.json`:
+# OpenAI
+OPENAI_API_KEY=sk-...
 
-```json
-{
-  "providers": {
-    "google": {
-      "enabled": true,
-      "type": "oauth2",
-      "scopes": ["drive", "calendar", "gmail"]
-    },
-    "openai": {
-      "enabled": true,
-      "type": "api_key",
-      "model": "gpt-4"
-    }
-  }
-}
+# Supabase
+SUPABASE_URL=https://<your-project-ref>.supabase.co
+SUPABASE_ANON_KEY=your_anon_key
+# Solo servidor (opcional)
+SUPABASE_SERVICE_ROLE_KEY=your_service_role_key
+# Conexión Postgres (opcional)
+SUPABASE_DB_URL=postgresql://postgres:YOUR_PASSWORD@db.<your-project-ref>.supabase.co:5432/postgres
 ```
 
----
+### 2. Agregar a `.gitignore`
 
-## Available Providers
+Si no existe, agregar estas líneas:
 
-### Google Workspace
+```
+# Credenciales
+.env
+.env.local
+.env.*.local
+.dendrita/.env.local
+.dendrita/config.local.json
 
-**Status:** 🟢 Configured  
-**Type:** OAuth 2.0  
-**Services:**
-- Gmail
-- Calendar
-- Drive
+# Cache
+.dendrita/.cache/
+node_modules/
+```
 
-See: `.dendrita/integrations/providers/google/README.md`
-
-### OpenAI
-
-**Status:** 🟢 Configured  
-**Type:** API Key  
-**Features:**
-- Chat completions
-- Embeddings
-- Vision (if enabled)
-
-See: `.dendrita/integrations/providers/openai/README.md`
-
----
-
-## Usage Examples
-
-### In Cursor/Scripting Context
+### 3. Usar los servicios
 
 ```typescript
-// Import the integration manager
-import { IntegrationManager } from './.dendrita/integrations/core/integration-registry';
+// Ejemplo: Usar Gmail
+import { GmailService } from './.dendrita/integrations/services/google/gmail';
 
-// Initialize
-const manager = new IntegrationManager();
+const gmail = new GmailService();
+await gmail.authenticate();
+const emails = await gmail.searchEmails('from:cliente@example.com');
+```
 
-// Connect to Google
-const googleConnector = await manager.getConnector('google');
-const emails = await googleConnector.listEmails({ limit: 10 });
+## Servicios Disponibles
 
-// Connect to OpenAI
-const openaiConnector = await manager.getConnector('openai');
-const response = await openaiConnector.chat({
-  message: "What are my upcoming calendar events?"
+### Google Workspace (`services/google/`)
+
+- ✅ **Gmail**: Buscar, leer, enviar emails (implementado)
+- ✅ **Calendar**: Crear, listar, actualizar, eliminar eventos; listar calendarios (implementado)
+- ✅ **Drive**: Listar archivos, buscar, compartir, descargar, gestionar permisos (implementado)
+- ✅ **Drive Scraper**: Scraping idempotente de Drive configurable por workspace (implementado)
+
+### OpenAI (`services/openai/`)
+
+- ✅ **Chat Completions**: Generar respuestas con GPT
+- ✅ **Embeddings**: Crear vectores para búsqueda semántica
+
+### Supabase (`services/supabase/`)
+
+- ✅ **Database**: Consultas via supabase-js
+- ✅ **Auth/Storage**: Disponible vía SDK
+- ⚠️ **Service Role**: Solo lado servidor (no cliente)
+- ✅ **Sincronización Automática**: Workspaces, projects, documents, stakeholders
+
+### Reddit (`services/reddit/`)
+
+- ✅ **OAuth 2.0**: Autenticación con password grant o client credentials
+- ✅ **Create Posts**: Publicar posts de texto o links
+- ✅ **Comments**: Comentar en posts y comentarios
+- ✅ **Read Operations**: Obtener información de subreddits y posts
+- ✅ **User Info**: Información del usuario autenticado
+
+## Cómo Funciona
+
+### Flujo de Autenticación (Google)
+
+1. **Primera vez**: Ejecuta `GoogleAuth.getAuthorizationUrl()`
+2. **Usuario abre URL**: Autoriza acceso en Google
+3. **Recibe código**: Guárdalo en `.env.local`
+4. **Intercambia código**: Por refresh token
+5. **Usa refresh token**: Para obtener access tokens
+
+### Credenciales (OpenAI)
+
+1. **Obtén API key** desde https://platform.openai.com/api-keys
+2. **Guárdala** en `.env.local` como `OPENAI_API_KEY`
+3. **Usa directamente**: Los servicios la cargan automáticamente
+
+## 📊 Sistema de Logging Interno
+
+dendrita incluye un **sistema de logging interno** que registra automáticamente el uso de todas las integraciones sin exponer credenciales.
+
+### Características
+
+✅ **Seguro**: Nunca expone credenciales o información sensible  
+✅ **Automático**: Registra cada uso de integraciones  
+✅ **Estadísticas**: Permite consultar estadísticas de uso  
+✅ **Rotación**: Rota logs automáticamente cuando crecen demasiado  
+
+### Uso Básico
+
+```typescript
+import { logIntegrationUsage } from './utils/usage-logger';
+
+// Registrar uso exitoso
+logIntegrationUsage('OpenAI', 'chatCompletion', {
+  status: 'success',
+  duration: 150,
+  metadata: { model: 'gpt-4' },
 });
 ```
 
-### In Apps Script
+### Consultar Estadísticas
 
-Google Apps Script can also leverage these integrations through the Integrations API.
+```typescript
+import { usageStats, formatStatsReport } from './utils/usage-stats';
 
----
+// Reporte completo de los últimos 30 días
+const report = usageStats.getOverallReport(30);
+console.log(formatStatsReport(report));
 
-## Adding a New Provider
+// Estadísticas de un servicio específico
+const stats = usageStats.getServiceStats('OpenAI', 30);
+console.log(`Total de llamadas: ${stats.totalCalls}`);
+```
 
-To add a new provider (e.g., Slack, Notion, etc.):
-
-1. Create directory: `.dendrita/integrations/providers/[provider-name]/`
-2. Create required files:
-   - `README.md` - Provider documentation
-   - `config.schema.json` - Configuration schema
-   - `connector.ts` - Implementation
-3. Update `integrations.config.json` to register the provider
-4. Add credentials to `.dendrita/settings.local.json`
-
-See `.dendrita/integrations/providers/google/` for reference implementation.
+**Ver documentación completa:**
+- `.dendrita/integrations/utils/USAGE-LOGGING.md`
 
 ---
 
-## Security Checklist
+## Seguridad
 
-- ✅ Never commit `.dendrita/settings.local.json`
-- ✅ Never log or expose credentials
-- ✅ All tokens cached with expiration
-- ✅ Use environment-specific configuration
-- ✅ Validate all API responses
-- ✅ Implement proper error handling without exposing secrets
+### ❌ NUNCA hagas esto
+
+```javascript
+// ❌ MALO - Expone credenciales en código
+const client = new GoogleClient({ apiKey: 'sk-abc123...' });
+
+// ❌ MALO - Hardcodear en archivo de configuración
+{ "apiKey": "sk-abc123..." }
+```
+
+### ✅ SIEMPRE haz esto
+
+```javascript
+// ✅ BUENO - Carga desde variables de entorno
+const apiKey = process.env.OPENAI_API_KEY;
+
+// ✅ BUENO - Carga desde archivo gitignored
+import { loadCredentials } from './utils/credentials';
+const creds = loadCredentials();
+```
+
+## 🔄 Sincronización Automática con Supabase
+
+dendrita mantiene **sincronización automática** con Supabase:
+
+- ✅ **Workspaces**: Sincronizados desde `workspaces/`
+- ✅ **Projects**: Sincronizados desde `active-projects/` y `archived-projects/`
+- ✅ **Documents**: Todos los `.md` con contenido completo
+- ✅ **Stakeholders**: Desde `stakeholders/fichas-json/*.json`
+
+**Configurar auto-sync:**
+```bash
+# Ejecutar setup interactivo
+.dendrita/integrations/scripts/setup-auto-sync.sh
+
+# O sincronización manual
+python3 .dendrita/integrations/scripts/sync-all.py
+```
+
+**Ver documentación completa:**
+- `.dendrita/integrations/hooks/supabase-sync.md`
 
 ---
 
-## Troubleshooting
+## Próximas Integraciones
 
-### Provider Not Found
-Check that `.dendrita/integrations/integrations.config.json` has the provider enabled.
+- [ ] Slack API
+- [ ] Microsoft 365
+- [ ] Notion API
+- [ ] Airtable API
 
-### Authentication Failed
-Verify credentials in `.dendrita/settings.local.json` are correct and not expired.
+## Referencias
 
-### Missing Scopes
-Update the provider configuration and re-authenticate to get new token with expanded scopes.
-
----
-
-## Next Steps
-
-1. Configure your Google OAuth credentials
-2. Add your OpenAI API key
-3. Run initialization: `node .dendrita/integrations/setup.js`
-4. Test connections: `node .dendrita/integrations/test.js`
+- [Google Workspace Developer Setup](https://developers.google.com/workspace)
+- [OpenAI API Documentation](https://platform.openai.com/docs)
+- [OAuth 2.0 Security Best Practices](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-security-topics)

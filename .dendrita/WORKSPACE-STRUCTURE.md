@@ -1,10 +1,10 @@
 # Workspace Structure Standard
 
-This document defines the standard structure that **all workspaces** must follow in ennui-dendrita.
+This document defines the standard structure that **all workspaces** must follow in dendrita.
 
 ## Mandatory Structure
 
-Each workspace (ennui, inspiro, entre-rutas, horizontes, iami, otros) **must** have the following structure:
+Each workspace **must** have the following structure:
 
 ```
 workspaces/[workspace-name]/
@@ -13,7 +13,7 @@ workspaces/[workspace-name]/
 ├── company-management/        # General management (optional, can be empty)
 ├── best-practices/           # Templates and workspace methodologies
 │   └── README.md             # Documentation of purpose
-├── work-modes/               # Specialized work modes
+├── products/                 # Products portfolio
 │   └── README.md             # Documentation of purpose
 ├── stakeholders/             # Allies and stakeholder management
 │   └── README.md             # Documentation of purpose
@@ -26,12 +26,12 @@ workspaces/[workspace-name]/
 ## Naming Convention
 
 **IMPORTANT:** All folder and file names describing system logic must be in English:
-- Folders: `best-practices/`, `work-modes/`, `stakeholders/`, `tools-templates/`, `company-management/`, `active-projects/`, `archived-projects/`
+- Folders: `best-practices/`, `products/`, `stakeholders/`, `tools-templates/`, `company-management/`, `active-projects/`, `archived-projects/`
 - System files: `master-plan.md`, `current-context.md`, `tasks.md`, `allies-mapping.md`, `projects-governance.md`, `projects-dashboard.md`, etc.
 
 **Can be in any language:**
-- Workspace names: `ennui`, `inspiro`, `entre-rutas`, `horizontes`, `iami`, `otros`
-- Project names within `active-projects/`: `diagnostico-sostenibilidad`, `EJEMPLO-proyecto`, etc.
+- Workspace names: Any name you choose (e.g., `workspace-1`, `my-company`, `example-workspace`)
+- Project names within `active-projects/`: Any name you choose (e.g., `project-1`, `example-project`, etc.)
 
 ## Folder Explanation
 
@@ -51,13 +51,16 @@ workspaces/[workspace-name]/
 - **Content**: Folders by project type with README.md explaining the methodology
 - **Example**: `best-practices/sustainability-diagnostic/README.md`
 
-### `work-modes/`
+### `products/`
 - **Mandatory**: Yes (with README.md)
-- **Purpose**: Specialized work modes (agents) for workspace
-- **Content**: `.md` files that document work modes
-- **Example**: `work-modes/sustainability-strategist.md`
+- **Purpose**: Products portfolio and product documentation
+- **Content**: Product folders with README.md describing each product
+- **Example**: `products/bootcamp-fundraising/README.md`
+- **Note**: Products are reusable offerings (services, tools, content, etc.) that can be delivered across multiple projects
 
 **IMPORTANT:** All folder and file names describing system logic must be in English. Only workspace and project names can be in any language.
+
+**Note:** Work-modes are now user-specific and located in `.dendrita/users/[user-id]/work-modes/`. See `.dendrita/users/example-user/` for reference.
 
 ### `stakeholders/`
 - **Mandatory**: Yes (with README.md)
@@ -75,36 +78,43 @@ workspaces/[workspace-name]/
 - **Purpose**: Workspace-specific style rules
 - **Scope**: Applies to all files within workspace
 
-## Reference Workspace: ennui
+## Reference Workspace
 
-The `ennui` workspace serves as **standard reference** and contains:
+The workspace template in `.dendrita/templates/workspace-template/` serves as **standard reference** and contains:
 
 - Complete templates in `best-practices/`
-- Complete work modes in `work-modes/`
+- Product portfolio structure in `products/`
 - Tool examples in `tools-templates/`
 - Complete stakeholder structure in `stakeholders/`
 
-**Other workspaces can:**
-1. Copy and adapt content from `ennui` as starting point
+**New workspaces can:**
+1. Copy and adapt content from the template as starting point
 2. Develop specific content for their needs
 3. Maintain minimal structures if specific content not required
 
 ## How to Create a New Workspace
 
-1. Create basic folder structure:
+1. **Use the workspace template:**
    ```bash
-   mkdir -p workspaces/[new-workspace]/{active-projects,archived-projects,company-management,best-practices,work-modes,stakeholders,tools-templates}
+   cp -r .dendrita/templates/workspace-template workspaces/[new-workspace-name]
    ```
 
-2. Create README.md in each main folder:
+2. **Or create basic folder structure manually:**
+   ```bash
+   mkdir -p workspaces/[new-workspace]/{active-projects,archived-projects,company-management,best-practices,products,stakeholders,tools-templates}
+   ```
+
+3. Create README.md in each main folder:
    - `best-practices/README.md`
-   - `work-modes/README.md`
+   - `products/README.md`
    - `stakeholders/README.md`
    - `tools-templates/README.md`
 
-3. Create main `README.md` for workspace with description
+4. Create main `README.md` for workspace with description
 
-4. (Optional) Copy relevant content from `workspaces/ennui/` and adapt it
+5. (Optional) Copy relevant content from `.dendrita/templates/workspace-template/` and adapt it
+
+**Note:** Work-modes are now in `.dendrita/users/[user-id]/work-modes/`. See `.dendrita/users/example-user/` for reference.
 
 ## Validation
 
@@ -117,6 +127,6 @@ Cursor should verify that each workspace follows this structure when:
 
 - **Always** verify structure exists before referencing folders
 - **Suggest** creating missing structure if workspace doesn't have it
-- **Use** `workspaces/ennui/` as reference when workspace doesn't have specific content
+- **Use** `.dendrita/templates/workspace-template/` as reference when workspace doesn't have specific content
 - **Document** in README.md the purpose of each folder in workspace
 

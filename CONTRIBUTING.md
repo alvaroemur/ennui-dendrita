@@ -55,17 +55,17 @@ workspaces/[company]/
 ## Special Contributions
 
 ### Adding a New Workspace
-1. Create `workspaces/[company]/` following the template
+1. Create `workspaces/[company]/` following `.dendrita/templates/workspace-template/`
 2. Add README with context
 3. Document in main README.md
 
 ### Adding a Methodology
-1. Create `workspaces/ennui/best-practices/[name]/`
+1. Create `workspaces/[workspace-name]/best-practices/[name]/`
 2. Include `README.md` with description
 3. Add full documentation
 
 ### Adding a Work Mode
-1. Create `workspaces/ennui/work-modes/[name].md`
+1. Create `.dendrita/users/[user-id]/agents/[name].md`
 2. Document purpose and use cases
 
 ## Questions?

@@ -60,7 +60,7 @@ When starting a session or detecting an empty repository:
 
 3. **Use profile to customize behavior:**
    - Prioritize skills from `frequently_used_skills`
-   - Suggest work modes from `preferred_work_modes`
+   - Suggest agents from `preferred_agents`
    - Adapt communication style according to preferences
 
 **Documentation:** See `.dendrita/users/README.md` for complete details.

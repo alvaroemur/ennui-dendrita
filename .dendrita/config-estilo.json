@@ -1,0 +1,243 @@
+{
+  "_comment": "Configuración de estilo y reglas generales para el sistema dendrita. Este archivo contiene reglas de escritura, nomenclatura y convenciones que deben aplicarse a los componentes del sistema dendrita (agentes, skills, hooks, etc.).",
+  "_purpose": "Mantener consistencia en estilo, nomenclatura y convenciones en el sistema dendrita",
+  "sistema": "dendrita",
+  "version": "1.0",
+  "reglas_estilo": {
+    "nomenclatura": {
+      "agentes": {
+        "formato_archivo": "[rol]-[área].md",
+        "formato_descripcion": "minúsculas, guiones como separadores, sin espacios ni caracteres especiales",
+        "patrones": {
+          "español": {
+            "formato": "[rol]-[área-especialidad]",
+            "ejemplos": [
+              "analista-mel",
+              "especialista-fundraising",
+              "estratega-sostenibilidad",
+              "facilitador-aliados",
+              "gestor-proyectos"
+            ],
+            "reglas": [
+              "Usar sustantivo o rol profesional (analista, especialista, estratega, facilitador, gestor)",
+              "Separar con guión (-) del área o especialidad",
+              "Área puede ser: dominio (sostenibilidad, aliados), sigla (mel), o función (fundraising, proyectos)",
+              "Todo en minúsculas",
+              "Sin espacios ni caracteres especiales"
+            ]
+          },
+          "ingles": {
+            "formato": "[tipo]-[especialidad]-[rol] o [especialidad]-[rol]",
+            "ejemplos": [
+              "web-research-specialist"
+            ],
+            "reglas": [
+              "Usar cuando el nombre técnico o dominio específico requiere inglés",
+              "Seguir convención kebab-case (minúsculas con guiones)",
+              "Sin espacios ni caracteres especiales"
+            ]
+          }
+        },
+        "yaml_frontmatter": {
+          "name": "Debe coincidir exactamente con el nombre del archivo (sin .md)",
+          "description": "Descripción breve en inglés para uso en sistemas de búsqueda",
+          "formato": "Use this agent when you need [purpose]. This agent excels at [strength]."
+        },
+        "validacion": {
+          "verificar_coincidencia": "El campo 'name' en YAML frontmatter debe coincidir exactamente con el nombre del archivo",
+          "verificar_descripcion": "El campo 'description' debe estar en inglés y seguir el formato estándar",
+          "verificar_formato": "El nombre del archivo debe seguir el patrón [rol]-[área].md"
+        }
+      },
+      "skills": {
+        "formato_archivo": "[nombre-skill]/SKILL.md",
+        "formato_descripcion": "minúsculas, guiones como separadores",
+        "ejemplos": [
+          "gestion-proyectos",
+          "diagnostico-sostenibilidad",
+          "sistema-mel",
+          "pipeline-proyectos",
+          "bootcamp-fundraising"
+        ],
+        "reglas": [
+          "Usar sustantivo o función principal",
+          "Separar palabras con guión (-)",
+          "Todo en minúsculas",
+          "Sin espacios ni caracteres especiales"
+        ]
+      },
+      "hooks": {
+        "formato_archivo": "[nombre-hook].md",
+        "formato_descripcion": "kebab-case, descriptivo",
+        "ejemplos": [
+          "skill-activation-prompt",
+          "post-tool-use-tracker",
+          "dendrita-infrastructure-modification"
+        ],
+        "reglas": [
+          "Usar verbo o acción seguida del objeto o contexto",
+          "Separar con guión (-)",
+          "Todo en minúsculas",
+          "Ser descriptivo pero conciso"
+        ]
+      },
+      "chats": {
+        "formato_descripcion": "minúsculas, guiones como separadores, descriptivo",
+        "convenciones": {
+          "proyecto": {
+            "formato": "[workspace] - [proyecto] - [tarea]",
+            "ejemplos": [
+              "iami - energy-balls - actualizar README",
+              "ennui - ennui-x-NOSxOTROS - seguimiento tareas",
+              "ennui - bootcamp-fundraising - seguimiento tareas"
+            ],
+            "reglas": [
+              "Workspace en minúsculas",
+              "Nombre del proyecto como aparece en active-projects/",
+              "Tarea descriptiva pero concisa"
+            ]
+          },
+          "tipo_trabajo": {
+            "formato": "[workspace] - [tipo] - [descripcion]",
+            "tipos": [
+              "producto",
+              "mel",
+              "sostenibilidad",
+              "fundraising",
+              "aliados",
+              "proyectos"
+            ],
+            "ejemplos": [
+              "iami - producto - energy-balls README",
+              "ennui - mel - análisis trimestral",
+              "ennui - sostenibilidad - diagnóstico ESG"
+            ],
+            "reglas": [
+              "Workspace en minúsculas",
+              "Tipo de trabajo claro y específico",
+              "Descripción concisa del trabajo"
+            ]
+          },
+          "skill_agent": {
+            "formato": "[workspace] - [skill/agent] - [contexto]",
+            "ejemplos": [
+              "ennui - estratega-sostenibilidad - diagnóstico ESG",
+              "ennui - gestor-proyectos - seguimiento tareas",
+              "ennui - analista-mel - reporte trimestral"
+            ],
+            "reglas": [
+              "Workspace en minúsculas",
+              "Nombre del skill o agent exacto",
+              "Contexto específico de uso"
+            ]
+          },
+          "infraestructura": {
+            "formato": "dendrita - [tipo-componente] - [accion] - [nombre-especifico]",
+            "componentes": {
+              "skill": {
+                "acciones": ["add", "modify"],
+                "ejemplos": [
+                  "dendrita - skill - add - gestion-proyectos",
+                  "dendrita - skill - modify - sistema-mel"
+                ]
+              },
+              "agent": {
+                "acciones": ["add", "modify"],
+                "ejemplos": [
+                  "dendrita - agent - add - analista-mel",
+                  "dendrita - agent - modify - estratega-sostenibilidad"
+                ]
+              },
+              "hook": {
+                "acciones": ["add", "modify"],
+                "ejemplos": [
+                  "dendrita - hook - add - skill-activation-prompt",
+                  "dendrita - hook - modify - post-tool-use-tracker"
+                ]
+              },
+              "integration": {
+                "acciones": ["add", "modify"],
+                "ejemplos": [
+                  "dendrita - integration - add - google-workspace",
+                  "dendrita - integration - modify - supabase-sync"
+                ]
+              },
+              "structure": {
+                "acciones": ["modify"],
+                "ejemplos": [
+                  "dendrita - structure - modify - workspace-standards",
+                  "dendrita - structure - modify - naming-conventions"
+                ]
+              },
+              "config": {
+                "acciones": ["modify"],
+                "ejemplos": [
+                  "dendrita - config - modify - settings.json",
+                  "dendrita - config - modify - config-estilo.json"
+                ]
+              },
+              "refactor": {
+                "acciones": ["refactor"],
+                "ejemplos": [
+                  "dendrita - refactor - skills-modular-structure",
+                  "dendrita - refactor - agents-naming-conventions"
+                ]
+              },
+              "breaking": {
+                "acciones": ["breaking"],
+                "ejemplos": [
+                  "dendrita - breaking - structure - workspace-standards"
+                ]
+              }
+            },
+            "variaciones_cortas": {
+              "descripcion": "Para acciones simples, se puede omitir el nombre específico",
+              "ejemplos": [
+                "dendrita - skill - add",
+                "dendrita - hook - modify",
+                "dendrita - config - modify"
+              ]
+            },
+            "reglas": [
+              "Prefijo 'dendrita' siempre en minúsculas",
+              "Tipo de componente claro (skill, agent, hook, etc.)",
+              "Acción específica (add, modify, refactor, breaking)",
+              "Nombre específico descriptivo pero conciso",
+              "Usar guiones (-) como separadores",
+              "Todo en minúsculas"
+            ]
+          }
+        },
+        "reglas_generales": [
+          "Usar minúsculas siempre",
+          "Separar elementos con guión y espacio (' - ' para separar secciones principales)",
+          "Ser descriptivo pero conciso",
+          "Incluir contexto suficiente para identificar el chat rápidamente",
+          "Usar nombres de archivos/carpetas reales cuando sea posible"
+        ]
+      }
+    },
+    "convenciones": {
+      "aplicar_a": [
+        "Todos los archivos dentro de .dendrita/",
+        "Agentes en .dendrita/agents/",
+        "Skills en .dendrita/skills/",
+        "Hooks en .dendrita/hooks/",
+        "Documentación del sistema dendrita"
+      ],
+      "idioma": {
+        "agentes": "Español preferido para nombres de archivo, inglés para descripciones en YAML",
+        "skills": "Español",
+        "hooks": "Español o inglés según contexto técnico",
+        "documentacion": "Español preferido, inglés para documentación técnica"
+      }
+    }
+  },
+  "notas": [
+    "Estas reglas deben aplicarse automáticamente cuando se cree o modifique contenido en .dendrita/",
+    "Si hay conflicto con reglas de workspace, las reglas de dendrita tienen prioridad para componentes del sistema",
+    "Los agentes deben seguir estrictamente el formato de nombramiento para mantener consistencia",
+    "Las convenciones de nombramiento de chats son recomendaciones para mantener consistencia en la organización de conversaciones en Cursor",
+    "Los títulos de chat deben seguir estas convenciones cuando se crean manualmente"
+  ]
+}

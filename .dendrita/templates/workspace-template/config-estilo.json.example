@@ -1,0 +1,27 @@
+{
+  "_comment": "This is an example style configuration file for a workspace",
+  "workspace_name": "example-workspace",
+  "style_rules": {
+    "naming_conventions": {
+      "projects": "lowercase-with-hyphens",
+      "files": "lowercase-with-hyphens.md",
+      "folders": "lowercase-with-hyphens"
+    },
+    "documentation": {
+      "language": "en",
+      "date_format": "YYYY-MM-DD",
+      "header_levels": "standard"
+    }
+  },
+  "brand_guidelines": {
+    "company_name": "Example Company",
+    "writing_style": "professional",
+    "tone": "clear-and-concise"
+  },
+  "notes": {
+    "customization": "Replace this content with your workspace-specific style rules",
+    "scope": "Applies to all files within this workspace",
+    "override": "Project-level config-estilo.json can override workspace-level rules"
+  }
+}
+

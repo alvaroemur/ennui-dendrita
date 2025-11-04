@@ -12,7 +12,7 @@
   "work_context": {
     "primary_roles": ["sustainability-strategist", "project-manager"],
     "frequently_used_skills": ["diagnostico-sostenibilidad", "gestion-proyectos", "sistema-mel"],
-    "preferred_work_modes": ["sustainability-strategist", "project-manager"]
+    "preferred_agents": ["sustainability-strategist", "project-manager"]
   },
   "workspace_settings": {
     "default_project_type": "sustainability-diagnostic",

@@ -1,0 +1,53 @@
+{
+  "version": "1.0",
+  "description": "Skill activation triggers for example user. Controls when skills automatically suggest or block actions.",
+  "skills": {
+    "example-skill": {
+      "type": "domain",
+      "enforcement": "suggest",
+      "priority": "medium",
+      "description": "Example skill demonstrating structure and content",
+      "promptTriggers": {
+        "keywords": [
+          "example",
+          "template",
+          "demo"
+        ],
+        "intentPatterns": [
+          "(work|working|do).*?example",
+          "(create|make|build).*?template",
+          "(show|demonstrate).*?pattern"
+        ]
+      },
+      "fileTriggers": {
+        "pathPatterns": [
+          "workspaces/[workspace]/active-projects/**/*.md",
+          "workspaces/[workspace]/best-practices/**/*.md"
+        ],
+        "contentPatterns": [
+          "example",
+          "template"
+        ]
+      }
+    }
+  },
+  "notes": {
+    "enforcement_types": {
+      "suggest": "Skill suggestion appears but doesn't block execution",
+      "block": "Requires skill to be used before proceeding (guardrail)",
+      "warn": "Shows warning but allows proceeding"
+    },
+    "priority_levels": {
+      "critical": "Highest - Always trigger when matched",
+      "high": "Important - Trigger for most matches",
+      "medium": "Moderate - Trigger for clear matches",
+      "low": "Optional - Trigger only for explicit matches"
+    },
+    "customization": {
+      "pathPatterns": "These patterns match your project structure",
+      "keywords": "Keywords include terms relevant to your domain",
+      "intentPatterns": "Use regex for flexible user intent matching"
+    }
+  }
+}
+

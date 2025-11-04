@@ -1,0 +1,48 @@
+{
+  "user_id": "example-user",
+  "name": "Example User",
+  "email": "example@example.com",
+  "primary_workspace": "example-workspace",
+  "preferences": {
+    "language": "en",
+    "communication_style": "clear",
+    "update_frequency": "frequent"
+  },
+  "work_context": {
+    "primary_roles": [
+      "project-manager",
+      "strategist"
+    ],
+    "frequently_used_skills": [
+      "gestion-proyectos",
+      "example-skill"
+    ],
+    "preferred_agents": [
+      "project-manager"
+    ]
+  },
+  "professional_context": {
+    "experience": "Example professional experience",
+    "expertise": [
+      "Project management",
+      "Strategic planning"
+    ],
+    "languages": ["en"],
+    "technical_skills": [
+      "Example technical skills"
+    ]
+  },
+  "dendrita_alias": "my dendrita",
+  "dendrita_name": "Example",
+  "dendrita_settings": {
+    "default_context": "workspace",
+    "auto_activate": true
+  },
+  "integrations": {},
+  "metadata": {
+    "created_at": "2025-11-04T00:00:00Z",
+    "last_updated": "2025-11-04T00:00:00Z",
+    "note": "This is an example user profile for demonstration purposes. Replace with your own information."
+  }
+}
+

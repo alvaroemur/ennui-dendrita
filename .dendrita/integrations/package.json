@@ -1,0 +1,27 @@
+{
+  "name": "ennui-dendrita",
+  "version": "1.0.0",
+  "description": "Dendrita project management system with integrations",
+  "scripts": {
+    "test-reddit": "ts-node examples/reddit-test-connection.ts",
+    "test-calendar": "ts-node scripts/test-calendar.ts",
+    "test-gmail": "ts-node scripts/test-gmail.ts",
+    "search-emails": "ts-node scripts/search-emails.ts",
+    "test-drive": "ts-node scripts/test-drive.ts",
+    "list-drive-folders": "ts-node scripts/list-drive-folders.ts",
+    "setup-google": "ts-node scripts/get-refresh-token.ts",
+    "calendar-scraper": "ts-node scripts/calendar-scraper.ts",
+    "verify-calendar-setup": "ts-node scripts/verify-calendar-setup.ts",
+    "debug:identify": "ts-node ../archived/scripts/identify-test-debug-files.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0"
+  }
+}
+
+

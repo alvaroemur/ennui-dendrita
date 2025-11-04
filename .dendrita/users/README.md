@@ -26,9 +26,18 @@ This system allows:
 │   ├── profiles/                          # Additional profiles
 │   │   ├── [profile-name].json            # Specific profile
 │   │   └── workspace-[workspace-name].json # Profile per workspace
+│   ├── agents/                            # User-specific domain knowledge: specialized agents
+│   │   ├── README.md
+│   │   └── [agent-name].md
+│   ├── skills/                            # User-specific domain knowledge: contextual skills
+│   │   ├── README.md
+│   │   ├── skill-rules.json
+│   │   └── [skill-name]/SKILL.md
 │   └── workspace-defaults.json           # Default profiles configuration per workspace
 └── .gitignore                             # To exclude personal data from repository
 ```
+
+**IMPORTANT PARADIGM:** Agents and skills are user-specific domain knowledge (sustainability, social impact, project management methodologies) and are stored in `.dendrita/users/[user-id]/`. This reflects that they contain private, domain-specific knowledge rather than generic infrastructure (which belongs in `.dendrita/integrations/`).
 
 ---
 
@@ -40,7 +49,7 @@ When Cursor detects an empty repository or unconfigured users, it should:
 
 1. **Ask the user** for basic data:
    - Name or unique identifier
-   - Primary workspace (ennui, inspiro, entre-rutas, horizontes, iami, otros)
+   - Primary workspace (create any name you prefer)
    - Primary work type
    - Communication preferences
 
@@ -52,10 +61,10 @@ When Cursor detects an empty repository or unconfigured users, it should:
 
 ```json
 {
-  "user_id": "alvaro",
-  "name": "Álvaro",
-  "email": "alvaro.e.mur@gmail.com",
-  "primary_workspace": "ennui",
+  "user_id": "user-1",
+  "name": "User Name",
+  "email": "user@example.com",
+  "primary_workspace": "my-workspace",
   "preferences": {
     "language": "es",
     "communication_style": "direct",
@@ -108,7 +117,7 @@ Additional profiles are saved in `.dendrita/users/[user-id]/profiles/` and can b
   "work_context": {
     "primary_roles": ["sustainability-strategist", "project-manager"],
     "frequently_used_skills": ["diagnostico-sostenibilidad", "gestion-proyectos"],
-    "preferred_work_modes": ["sustainability-strategist", "project-manager"]
+    "preferred_agents": ["sustainability-strategist", "project-manager"]
   },
   "workspace_settings": {
     "default_project_type": "sustainability-diagnostic",
@@ -187,7 +196,7 @@ When a profile is active, Cursor must:
 
 2. **Apply work context:**
    - Suggest skills according to `frequently_used_skills`
-   - Activate work modes according to `preferred_work_modes`
+   - Activate agents according to `preferred_agents`
    - Use templates according to `preferred_templates`
 
 3. **Customize suggestions:**
@@ -209,8 +218,8 @@ When Cursor detects an empty repository (no users in `.dendrita/users/`):
    
    It looks like this is a new repository. To set it up, I need some basic information:
    
-   1. What is your name or unique identifier? (ex: alvaro, juan, team-1)
-   2. What is your primary workspace? (ennui, inspiro, entre-rutas, horizontes, iami, otros)
+   1. What is your name or unique identifier? (ex: user-1, juan, team-1)
+   2. What is your primary workspace? (create any name you prefer)
    3. What is your primary work type? (project-manager, sustainability-strategist, mel-analyst, stakeholder-facilitator, fundraising-specialist)
    4. Do you prefer direct or detailed communication? (direct, detailed)
    5. How often should we update current-context.md? (frequent, normal, minimal)
@@ -232,24 +241,24 @@ When Cursor detects an empty repository (no users in `.dendrita/users/`):
 ### Example 1: User with single workspace
 
 ```
-User: alvaro
-Primary workspace: ennui
+User: user-1
+Primary workspace: my-workspace
 Default profile: profile.json
-Profile for ennui: workspace-ennui.json (default for ennui)
+Profile for my-workspace: workspace-my-workspace.json (default for my-workspace)
 ```
 
-When working in `workspaces/ennui/`, Cursor uses `workspace-ennui.json`.
+When working in `workspaces/my-workspace/`, Cursor uses `workspace-my-workspace.json`.
 When working in other workspaces, uses `profile.json`.
 
 ### Example 2: User with multiple workspaces
 
 ```
-User: alvaro
-Primary workspace: ennui
+User: user-1
+Primary workspace: my-workspace
 Configured profiles:
-  - workspace-ennui.json (default for ennui)
-  - workspace-inspiro.json (default for inspiro)
-  - workspace-otros.json (default for otros)
+  - workspace-my-workspace.json (default for my-workspace)
+  - workspace-another-workspace.json (default for another-workspace)
+  - workspace-other.json (default for other)
 ```
 
 When switching between workspaces, Cursor automatically switches to corresponding profile.
@@ -258,7 +267,7 @@ When switching between workspaces, Cursor automatically switches to correspondin
 
 ```
 User: "I want to use the 'audit' profile"
-Cursor: Loads .dendrita/users/alvaro/profiles/audit.json and applies it during the session.
+Cursor: Loads .dendrita/users/user-1/profiles/audit.json and applies it during the session.
 ```
 
 ---
@@ -267,18 +276,27 @@ Cursor: Loads .dendrita/users/alvaro/profiles/audit.json and applies it during t
 
 ### Skills
 
-Profile system integrates with `.dendrita/skills/`:
+Profile system integrates with `.dendrita/users/[user-id]/skills/`:
 
 - Profiles can specify `frequently_used_skills`
 - Cursor prioritizes these skills when suggesting activation
 - `skill-activation-prompt` hook considers active profile
+- Skills are user-specific domain knowledge stored per user
 
-### Work Modes
+### Agents
 
-Profiles can specify `preferred_work_modes`:
+Profile system integrates with `.dendrita/users/[user-id]/agents/`:
 
-- Cursor suggests these work modes when relevant
-- Facilitates activation of frequent work modes
+- Agents contain user-specific domain knowledge (sustainability, social impact, project management)
+- Agents are stored per user to reflect domain-specific knowledge
+- Cursor can activate agents based on profile context
+
+### Preferred Agents
+
+Profiles can specify `preferred_agents`:
+
+- Cursor suggests these agents when relevant
+- Facilitates activation of frequent agents
 
 ### Workspace Structure
 
@@ -287,6 +305,19 @@ System respects workspace structure:
 - Each workspace can have its profile configured
 - Profiles can specify workspace-specific preferences
 - Consistency is maintained with standard structure
+
+## Paradigm: User-Specific Domain Knowledge
+
+**Agents and skills are user-specific domain knowledge**, not generic infrastructure:
+
+- **Agents** (`.dendrita/users/[user-id]/agents/`): Contain domain-specific methodologies (ESG, sustainability, MEL, fundraising)
+- **Skills** (`.dendrita/users/[user-id]/skills/`): Contain domain-specific patterns and best practices
+- **Integrations** (`.dendrita/integrations/`): Contain generic technical infrastructure (Google APIs, Supabase, etc.)
+
+This separation ensures that:
+- Domain knowledge stays with the user who owns it
+- Technical infrastructure remains generic and reusable
+- Users can have their own specialized agents and skills
 
 ---
 

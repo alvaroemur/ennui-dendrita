@@ -10,18 +10,31 @@
 
 `.dendrita/` is a reflective base that contains:
 
-1. **`.dendrita/skills/`** - Contextual knowledge skills for different types of work
+1. **`.dendrita/users/[user-id]/skills/`** - Contextual knowledge skills for different types of work (user-specific domain knowledge)
    - `skill-rules.json` - Defines when to suggest each skill based on prompts and files
    - Each skill has its documentation in `[skill-name]/SKILL.md`
+   - **Paradigm:** Skills contain user-specific domain knowledge (sustainability, social impact, project management) and are stored per user
 
-2. **`.dendrita/agents/`** - Specialized agents for complex tasks
+2. **`.dendrita/users/[user-id]/agents/`** - Specialized agents for complex tasks (user-specific domain knowledge)
    - Documentation of agents that can be activated based on context
+   - **Naming conventions:** See `.dendrita/config-estilo.json` and `.dendrita/users/[user-id]/agents/README.md` for agent naming rules
+   - **Paradigm:** Agents contain user-specific domain knowledge and are stored per user
 
-3. **`.dendrita/hooks/`** - Behavior logic references
+3. **`.dendrita/users/[user-id]/work-modes/`** - General work modes and user preferences (user-specific)
+   - `user-work-mode.md` - General user work preferences and behavior guidelines
+   - Acts as a "system prompt" base that applies to all sessions
+   - Can be adjusted dynamically when user requests changes
+   - **Paradigm:** Work-modes are user-specific preferences and serve as templates for other users
+
+4. **`.dendrita/hooks/`** - Behavior logic references
    - **NOTE:** These files are references/documentation, NOT executable
    - Document the expected behavior that Cursor must read and apply
 
-4. **`.dendrita/settings.json`** - Project metadata (not execution configuration)
+5. **`.dendrita/settings.json`** - Project metadata (not execution configuration)
+
+6. **`.dendrita/config-estilo.json`** - Style and naming conventions for dendrita system components
+   - Naming rules for agents, skills, and hooks
+   - Style guidelines for dendrita infrastructure
 
 ---
 
@@ -29,10 +42,15 @@
 
 ### 1. When receiving a user prompt:
 
-1. **Review `.dendrita/skills/skill-rules.json`** to identify relevant skills
-2. **Read the keywords and intentPatterns** from the prompt
-3. **If there are matches:**
-   - Read the corresponding `SKILL.md` file in `.dendrita/skills/[skill-name]/SKILL.md`
+1. **Apply `.dendrita/users/[user-id]/work-modes/user-work-mode.md`** - Always follow user's general work preferences
+   - Ask for context (workspace, project name, product relationship) before starting work
+   - Plan top-down and create documents iteratively
+   - Never create multiple documents at once without confirmation
+
+2. **Review `.dendrita/users/[user-id]/skills/skill-rules.json`** to identify relevant skills
+3. **Read the keywords and intentPatterns** from the prompt
+4. **If there are matches:**
+   - Read the corresponding `SKILL.md` file in `.dendrita/users/[user-id]/skills/[skill-name]/SKILL.md`
    - Apply the contextual knowledge from that skill
    - Suggest using the skill to the user if appropriate
 
@@ -41,14 +59,15 @@
 1. **Identify the project context** based on the file path:
    - `workspaces/[workspace]/active-projects/[proyecto]/` → Active project
    - `workspaces/[workspace]/best-practices/[tipo-proyecto]/` → Template/best practices (workspace-specific, fallback to ennui if missing)
-   - `workspaces/[workspace]/work-modes/[modo].md` → Specialized work mode (workspace-specific, fallback to ennui if missing)
+   - `workspaces/[workspace]/work-modes/[modo].md` → **DEPRECATED:** Work-modes de workspace han sido consolidados en agents y skills. Ver agents y skills en `.dendrita/users/[user-id]/` para metodologías especializadas.
    
-   **Note:** Each workspace has its own best-practices, work-modes, stakeholders, and tools-templates. If a workspace doesn't have specific content, fallback to `workspaces/ennui/` as the reference standard.
+   **Note:** Each workspace has its own best-practices, products, work-modes, stakeholders, and tools-templates. If a workspace doesn't have specific content, fallback to `workspaces/ennui/` as the reference standard.
 
 2. **Check for style configuration files** in the identified context:
-   - If working with `workspaces/[empresa]/`, check for `workspaces/[empresa]/config-estilo.json`
-   - If working with a project, check for `workspaces/[empresa]/active-projects/[proyecto]/config-estilo.json` (project-level overrides)
-   - **Apply style rules** from these configuration files (project-level rules override company-level rules if both exist)
+   - **For dendrita components** (agents, skills, hooks): Check `.dendrita/config-estilo.json`
+   - **For workspace files**: Check `workspaces/[empresa]/config-estilo.json`
+   - **For project files**: Check `workspaces/[empresa]/active-projects/[proyecto]/config-estilo.json` (project-level overrides)
+   - **Apply style rules** from these configuration files (project-level rules override company-level rules, dendrita rules apply to `.dendrita/` components)
 
 3. **Apply the best practices** from the identified context
 
@@ -66,15 +85,18 @@
 
 ---
 
-## Available skills in .dendrita
+## Available skills in .dendrita/users/[user-id]/
 
-Review `.dendrita/skills/skill-rules.json` to see all available skills and when to activate them:
+Review `.dendrita/users/[user-id]/skills/skill-rules.json` to see all available skills and when to activate them:
+
+**IMPORTANT:** Skills and agents are user-specific domain knowledge. They are stored in `.dendrita/users/[user-id]/` to reflect that they contain private, domain-specific knowledge rather than generic infrastructure.
 
 - **gestion-proyectos**: ennui-dendrita project management
 - **diagnostico-sostenibilidad**: ESG and sustainability diagnostics
 - **sistema-mel**: Monitoring, Evaluation and Learning systems
 - **pipeline-proyectos**: Project and alliance pipeline
 - **bootcamp-fundraising**: Fundraising bootcamps and capacity building
+- **gestion-stakeholders**: Stakeholder management, strategic alliances, and multi-actor coordination
 
 ---
 
@@ -84,15 +106,49 @@ Files in `.dendrita/hooks/` are **behavior references**, NOT executable scripts.
 
 **Expected behavior based on hooks:**
 
-1. **skill-activation-prompt**: 
-   - Reads `.dendrita/skills/skill-rules.json`
-   - Identifies relevant skills based on user prompt
-   - Suggests activating corresponding skills
+1. **session-initialization-verification** (ALWAYS run at start of new conversation):
+   - **CRITICAL:** At the start of EVERY new conversation, read `.dendrita/hooks/session-initialization-verification.md`
+   - Verify if user exists and is configured
+   - Verify if `dendrita_alias` is configured in user profile
+   - Verify if enabled integrations have credentials configured
+   - **Verify and execute active scrapers according to their rules** (daily initialization)
+   - Check scrapers in Supabase (Gmail, Calendar) and determine if they need execution based on `last_sync_at`
+   - If configuration is incomplete, perform soft-initialization of missing items
+   - Show brief summary of configuration status including scrapers status
+   - This hook MUST run before processing the first user message
 
-2. **post-tool-use-tracker**:
+2. **user-work-mode** (ALWAYS apply at start of new conversation):
+   - **CRITICAL:** At the start of EVERY new conversation, read `.dendrita/users/[user-id]/work-modes/user-work-mode.md`
+   - Apply user's general work preferences automatically
+   - Follow the guidelines for asking context, planning top-down, and creating documents iteratively
+   - Update this work-mode when user says "actúa más de esta determinada forma" or similar
+   - This work-mode MUST be applied before processing any user prompts
+
+3. **repo-initialization**:
+   - If no users exist in `.dendrita/users/`, start full initialization process
+   - Ask user for basic data (identifier, workspace, roles, preferences, alias)
+   - Create user structure and profile
+
+4. **skill-activation-prompt**: 
+   - Reads `.dendrita/users/[user-id]/skills/skill-rules.json`
+   - Identifies relevant skills based on user prompt
+   - Suggests activating corresponding skills from user's skills directory
+
+5. **dendrita-alias-activation**:
+   - When user mentions dendrita alias in prompt, activate workspace context
+   - Respond using information from user's workspaces
+
+6. **post-tool-use-tracker**:
    - Maintains mental record of which files have been edited
    - Identifies the context of edited files
    - Considers this context for future actions
+
+7. **dendrita-infrastructure-modification**:
+   - Detects when `.dendrita/` infrastructure is being modified
+   - Assesses impact on affected components
+   - Reviews documentation before making changes
+   - Maintains consistency and updates related files
+   - Warns about breaking changes and provides migration guidance
 
 **NOTE:** Do not attempt to execute these scripts. They are references to understand expected behavior.
 
@@ -107,7 +163,8 @@ ennui-dendrita/
 │   ├── archived-projects/         ← Proyectos archivados
 │   ├── company-management/        ← Gestión general (opcional)
 │   ├── best-practices/            ← Templates y metodologías (REQUIRED)
-│   ├── work-modes/                ← Modos de trabajo (REQUIRED)
+│   ├── products/                  ← Portafolio de productos (REQUIRED)
+│   ├── work-modes/                ← **DEPRECATED:** Work-modes de workspace consolidados en agents y skills
 │   ├── stakeholders/              ← Gestión de aliados (REQUIRED)
 │   ├── tools-templates/           ← Herramientas reutilizables (REQUIRED)
 │   ├── config-estilo.json        ← Reglas de estilo (opcional)
@@ -119,9 +176,15 @@ ennui-dendrita/
 │   └── tasks.md
 │
 └── .dendrita/          ← ALWAYS review first
-    ├── skills/
-    ├── agents/
+    ├── users/[user-id]/
+    │   ├── agents/     ← Conocimiento de dominio específico del usuario
+    │   ├── skills/     ← Conocimiento de dominio específico del usuario
+    │   ├── work-modes/ ← Preferencias generales de trabajo del usuario
+    │   ├── profile.json
+    │   └── profiles/
     ├── hooks/          ← References, do not execute
+    ├── integrations/   ← Herramientas técnicas genéricas (no conocimiento de dominio)
+    ├── templates/      ← Templates para workspaces y usuarios
     ├── WORKSPACE-STRUCTURE.md  ← Estructura estándar de workspaces
     └── settings.json   ← Metadata
 ```
@@ -132,15 +195,133 @@ ennui-dendrita/
 
 ## Recommended workflow
 
-1. **User sends prompt** → Review `.dendrita/skills/skill-rules.json`
-2. **Identify relevant skills** → Read corresponding `SKILL.md`
-3. **Identify project** → Read `current-context.md` and `tasks.md`
-4. **Respond with context** → Apply knowledge from skills and project
-5. **Update documents** → Update `current-context.md` if needed
+### At the start of a new conversation (BEFORE processing first user message):
+
+1. **Read `.dendrita/hooks/session-initialization-verification.md`** → Execute verification logic
+2. **Read `.dendrita/users/[user-id]/work-modes/user-work-mode.md`** → Apply user's general work preferences
+3. **Verify user configuration** → Check if user exists, alias configured, integrations connected
+4. **Perform soft-initialization** → Configure only missing items if needed
+5. **Show configuration status** → Brief summary to user
+
+### When receiving user prompts:
+
+1. **Apply `.dendrita/users/[user-id]/work-modes/user-work-mode.md`** → Follow user's general work preferences
+   - Ask for context (workspace, project name, product relationship) if not clear
+   - Plan top-down and create documents iteratively
+   - Never create multiple documents at once without confirmation
+
+2. **User sends prompt** → Review `.dendrita/users/[user-id]/skills/skill-rules.json`
+3. **Identify relevant skills** → Read corresponding `SKILL.md` from `.dendrita/users/[user-id]/skills/[skill-name]/SKILL.md`
+4. **Check for dendrita alias mentions** → If detected, activate workspace context
+5. **Identify project** → Read `current-context.md` and `tasks.md`
+6. **Respond with context** → Apply knowledge from skills and project
+7. **Update documents** → Update `current-context.md` if needed
 
 ---
 
-## Company and Project Style Configuration
+## Style Configuration
+
+### Dendrita System Style
+`.dendrita/config-estilo.json` contains naming conventions for dendrita system components:
+- **Agents**: Format `[rol]-[área].md` (e.g., `analista-mel.md`, `estratega-sostenibilidad.md`)
+- **Skills**: Format `[nombre-skill]/SKILL.md` (e.g., `gestion-proyectos/`)
+- **Hooks**: Format `[nombre-hook].md` (e.g., `skill-activation-prompt.md`)
+- **Rules**: All lowercase, hyphens as separators, no spaces or special characters
+- **YAML frontmatter**: `name` field must match filename exactly (without `.md`)
+
+**See `.dendrita/agents/README.md` for detailed agent naming conventions and validation checklist.**
+
+### Chat Naming Conventions
+
+**IMPORTANT:** While Cursor doesn't support automatic chat title generation, these conventions should be followed when manually naming chats for better organization.
+
+#### Project Chats
+**Format:** `[workspace] - [proyecto] - [tarea]`
+
+**Examples:**
+- `ennui - dendrita-comunicacion - revisar reglas de nombramiento`
+- `iami - energy-balls - actualizar README`
+- `ennui - ennui-x-NOSxOTROS - seguimiento tareas`
+
+**Rules:**
+- Workspace in lowercase
+- Project name as it appears in `active-projects/`
+- Task description concise but descriptive
+
+#### Work Type Chats
+**Format:** `[workspace] - [tipo] - [descripcion]`
+
+**Types:** `producto`, `mel`, `sostenibilidad`, `fundraising`, `aliados`, `proyectos`
+
+**Examples:**
+- `iami - producto - energy-balls README`
+- `ennui - mel - análisis trimestral`
+- `ennui - sostenibilidad - diagnóstico ESG`
+
+#### Skill/Agent Chats
+**Format:** `[workspace] - [skill/agent] - [contexto]`
+
+**Examples:**
+- `ennui - estratega-sostenibilidad - diagnóstico ESG`
+- `ennui - gestor-proyectos - seguimiento tareas`
+- `ennui - analista-mel - reporte trimestral`
+
+#### Infrastructure Modification Chats
+**Format:** `dendrita - [tipo-componente] - [accion] - [nombre-especifico]`
+
+**Components and Actions:**
+
+1. **Skills:**
+   - `dendrita - skill - add - [nombre-skill]`
+   - `dendrita - skill - modify - [nombre-skill]`
+   - Example: `dendrita - skill - add - gestion-proyectos`
+
+2. **Agents:**
+   - `dendrita - agent - add - [nombre-agent]`
+   - `dendrita - agent - modify - [nombre-agent]`
+   - Example: `dendrita - agent - modify - analista-mel`
+
+3. **Hooks:**
+   - `dendrita - hook - add - [nombre-hook]`
+   - `dendrita - hook - modify - [nombre-hook]`
+   - Example: `dendrita - hook - add - skill-activation-prompt`
+
+4. **Integrations:**
+   - `dendrita - integration - add - [nombre-integration]`
+   - `dendrita - integration - modify - [nombre-integration]`
+   - Example: `dendrita - integration - modify - supabase-sync`
+
+5. **Structure:**
+   - `dendrita - structure - modify - [área]`
+   - Example: `dendrita - structure - modify - workspace-standards`
+
+6. **Config:**
+   - `dendrita - config - modify - [archivo]`
+   - Example: `dendrita - config - modify - config-estilo.json`
+
+7. **Refactoring:**
+   - `dendrita - refactor - [descripcion]`
+   - Example: `dendrita - refactor - agents-naming-conventions`
+
+8. **Breaking Changes:**
+   - `dendrita - breaking - [componente] - [descripcion]`
+   - Example: `dendrita - breaking - structure - workspace-standards`
+
+**Short variations** (for simple actions):
+- `dendrita - skill - add`
+- `dendrita - hook - modify`
+
+**General Rules:**
+- Use lowercase always
+- Separate sections with ` - ` (space-hyphen-space)
+- Use hyphens `-` within section names
+- Be descriptive but concise
+- Include enough context to identify the chat quickly
+- Use actual file/folder names when possible
+
+**See `.dendrita/config-estilo.json` for complete chat naming conventions.**
+
+### Company and Project Style Configuration
 
 Each company can have a `config-estilo.json` file in `workspaces/[empresa]/` containing:
 - **Style rules**: Writing conventions, nomenclature, formatting guidelines
@@ -159,6 +340,10 @@ Projects can optionally override with their own `config-estilo.json` in `workspa
 - ✅ Hooks are behavior references, NOT executed
 - ✅ Always review `.dendrita/` before important actions
 - ✅ **Always check `config-estilo.json`** when working with company/project files
+- ✅ **For dendrita components (agents, skills, hooks): Check `.dendrita/config-estilo.json`** for naming conventions
+- ✅ **When creating agents:** Follow naming pattern `[rol]-[área].md` and ensure YAML `name` matches filename
+- ✅ **Paradigm:** Agents and skills are user-specific domain knowledge stored in `.dendrita/users/[user-id]/`, not generic infrastructure
+- ✅ **When naming chats manually:** Follow chat naming conventions from `.dendrita/config-estilo.json` for better organization
 - ✅ Maintain consistency with ennui-dendrita project structure
 - ✅ Update `current-context.md` after important decisions
 

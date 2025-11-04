@@ -23,13 +23,25 @@
     },
     "UserPromptSubmit": {
       "reference": ".dendrita/hooks/skill-activation-prompt.ts",
-      "behavior": "When receiving user prompt, review .dendrita/skills/skill-rules.json and identify relevant skills based on keywords and intentPatterns. Consider active user profile.",
+      "behavior": "When receiving user prompt, review .dendrita/users/[user-id]/skills/skill-rules.json and identify relevant skills based on keywords and intentPatterns. Consider active user profile. Skills are user-specific domain knowledge stored per user.",
       "documentation": ".dendrita/hooks/README.md"
     },
     "PostToolUse": {
       "reference": ".dendrita/hooks/post-tool-use-tracker.sh",
       "behavior": "After editing files, identify context (project, practice, mode) and maintain record of affected context",
       "documentation": ".dendrita/hooks/README.md"
+    },
+    "DendritaAliasActivation": {
+      "reference": ".dendrita/hooks/dendrita-alias-activation.md",
+      "behavior": "When detecting mentions of dendrita alias in user prompts, activate workspace context and respond as if talking with the user's dendrita system",
+      "trigger": "User mentions dendrita alias (e.g., 'mételo en mi [alias]' or '[alias], qué es esto')",
+      "documentation": ".dendrita/hooks/dendrita-alias-activation.md"
+    },
+    "SessionInitializationVerification": {
+      "reference": ".dendrita/hooks/session-initialization-verification.md",
+      "behavior": "At the start of each new conversation, verify if dendrita configuration is complete or missing elements (user, alias, integrations) and perform soft-initialization of missing items",
+      "trigger": "New conversation detected or session start",
+      "documentation": ".dendrita/hooks/session-initialization-verification.md"
     }
   },
   "_users_system": {
@@ -40,6 +52,22 @@
       "workspace_based": "Check workspace-defaults.json for workspace default profile",
       "default_profile": "Use user profile.json if no workspace profile exists",
       "manual_activation": "User can request activating specific profile"
+    }
+  },
+  "_work_modes_system": {
+    "_note": "Work modes system provides general work preferences. Specialized methodologies are now in agents and skills.",
+    "general_work_mode": {
+      "reference": ".dendrita/users/[user-id]/work-modes/user-work-mode.md",
+      "behavior": "At the start of each new conversation, read and apply user's general work preferences. This work-mode defines how to ask for context, plan top-down, and create documents iteratively. Can be adjusted dynamically when user requests changes.",
+      "trigger": "Start of each new conversation",
+      "documentation": ".dendrita/users/[user-id]/work-modes/README.md",
+      "paradigm": "Work-modes are user-specific preferences and serve as templates for other users"
+    },
+    "workspace_work_modes": {
+      "_note": "DEPRECATED: Work-modes de workspace han sido consolidados en agents y skills. Ver agents y skills en .dendrita/users/[user-id]/ para metodologías especializadas.",
+      "location": "workspaces/[workspace]/work-modes/",
+      "status": "deprecated",
+      "migration": "Content moved to agents and skills in .dendrita/users/[user-id]/"
     }
   }
 }

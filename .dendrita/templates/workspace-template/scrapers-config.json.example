@@ -1,0 +1,32 @@
+{
+  "_comment": "This is an example scraper configuration file for a workspace",
+  "workspace_name": "example-workspace",
+  "scrapers": {
+    "calendar": {
+      "enabled": false,
+      "settings": {
+        "time_min_offset_days": -30,
+        "time_max_offset_days": 90,
+        "max_results": 2500,
+        "single_events": true,
+        "sync_attendees": true,
+        "sync_metadata": true
+      },
+      "calendars": []
+    },
+    "gmail": {
+      "enabled": false,
+      "settings": {
+        "max_results": 100,
+        "query": "",
+        "label_ids": []
+      }
+    }
+  },
+  "notes": {
+    "customization": "Replace this content with your workspace-specific scraper configuration",
+    "enabled": "Set enabled to true only when you have configured credentials",
+    "setup": "See .dendrita/integrations/ for setup instructions"
+  }
+}
+

@@ -44,6 +44,41 @@ Thumbs.db
 credentials.json
 secrets.json
 
+# Node.js dependencies - Ignore at root level only
+# Allow in .dendrita/integrations/ for open-source replication
+node_modules/
+package-lock.json
+package.json
+tsconfig.json
+
+# But allow Node.js config files in .dendrita/integrations/ (needed for replication)
+!.dendrita/integrations/package.json
+!.dendrita/integrations/package-lock.json
+!.dendrita/integrations/tsconfig.json
+
+# Dendrita integrations - CRITICAL: Never expose credentials
+.dendrita/.env.local
+.dendrita/integrations/.env.local
+.dendrita/integrations/config.local.json
+.dendrita/integrations/credentials.local.json
+.dendrita/integrations/google-credentials-temp.json
+.dendrita/integrations/logs/
+.dendrita/integrations/.cache/
+.dendrita/integrations/node_modules/
+.dendrita/integrations/dist/
+.dendrita/integrations/build/
+.env.local
+.env
+.env.*.local
+env.local
+
+# Dendrita users and personal data - CRITICAL: Never expose personal information
+.dendrita/users/
+.dendrita/logs/
+
+# But allow example-user template (needed for open-source)
+!.dendrita/users/example-user/
+
 # Large files that shouldn't be in repo
 *.pdf
 *.xlsx
@@ -62,7 +97,19 @@ workspaces/entre-rutas/
 workspaces/horizontes/
 workspaces/iami/
 workspaces/otros/
+workspaces/personal/
 
 # But keep the template folder to show structure
 !workspaces/template/
 
+# Scripts temporales archivados (no subir a git)
+.dendrita/integrations/scripts/archived/
+.dendrita/integrations/scripts-archived.json
+
+# Archived logs and reports (generated files, may contain personal info)
+.dendrita/archived/logs/
+.dendrita/archived/test-debug-report.md
+
+# But keep archived scripts and documentation (useful for reference)
+!.dendrita/archived/scripts/
+!.dendrita/archived/INDEX.md

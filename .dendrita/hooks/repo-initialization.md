@@ -36,7 +36,7 @@ Cuando se activa la inicialización, Cursor debe:
 #### Paso 1: Saludo y Explicación
 
 ```markdown
-¡Bienvenido a ennui-dendrita!
+¡Bienvenido a dendrita!
 
 Este es un sistema de gestión de proyectos que te ayudará a:
 - Gestionar múltiples proyectos simultáneamente
@@ -61,9 +61,8 @@ Cursor debe preguntar en orden:
 2. **Workspace principal:**
    ```
    ¿Cuál es tu workspace principal?
-   Opciones: ennui, inspiro, entre-rutas, horizontes, iami, otros
    
-   Si no estás seguro, puedes usar "otros" y cambiarlo después.
+   Puedes crear un nuevo workspace o usar uno existente. Si no tienes un workspace, puedes crear uno nuevo con cualquier nombre.
    ```
 
 3. **Tipo de trabajo principal:**
@@ -95,6 +94,29 @@ Cursor debe preguntar en orden:
    - minimal: Solo actualizaciones críticas
    ```
 
+6. **Alias de dendrita:**
+   ```
+   ¿Qué nombre o alias quieres usar para referirte a tu dendrita?
+   
+   Puedes elegir entre diferentes tipos de nombres:
+   
+   - Nombres neutros: "dendrita", "mi sistema", "mi asistente"
+   - Nombres personalizados: el que prefieras (ej: "alex", "mi asistente virtual")
+   - Nombres descriptivos: "mi gestor de proyectos", "mi sistema de conocimiento"
+   
+   Ejemplos:
+   - "dendrita" → simple y directo
+   - "mi dendrita" → personal
+   - "mi sistema" → neutro
+   - "mi gestor de proyectos" → descriptivo
+   - "alex" → personalizado
+   
+   Podrás usar este alias para decir cosas como "mételo en mi [alias]" o "[alias], qué es esto"
+   y el sistema entenderá que estás hablando con la información en tus workspaces.
+   
+   Si no especificas uno, usaremos "dendrita" por defecto.
+   ```
+
 #### Paso 3: Confirmación y Creación
 
 Después de obtener las respuestas:
@@ -108,6 +130,7 @@ Después de obtener las respuestas:
    - Roles: [roles]
    - Estilo de comunicación: [style]
    - Frecuencia de actualización: [frequency]
+   - Alias de dendrita: [dendrita-alias]
    
    ¿Confirmar esta configuración? (sí/no)
    ```
@@ -170,6 +193,11 @@ Para más información sobre perfiles y cómo usarlos, consulta:
     "primary_roles": ["[role1]", "[role2]"],
     "frequently_used_skills": []
   },
+  "dendrita_alias": "[dendrita-alias]",
+  "dendrita_settings": {
+    "default_context": "workspace",
+    "auto_activate": true
+  },
   "metadata": {
     "created_at": "[ISO-date]",
     "last_updated": "[ISO-date]"
@@ -204,7 +232,7 @@ Para más información sobre perfiles y cómo usarlos, consulta:
   "work_context": {
     "primary_roles": ["[roles]"],
     "frequently_used_skills": [],
-    "preferred_work_modes": []
+    "preferred_agents": []
   },
   "workspace_settings": {
     "default_project_type": "",
@@ -229,8 +257,8 @@ Cursor debe validar:
    - Si ya existe, preguntar si quiere usar ese usuario o crear uno nuevo
 
 2. **Workspace:**
-   - Debe ser uno de: ennui, inspiro, entre-rutas, horizontes, iami, otros
-   - Si no es válido, sugerir "otros"
+   - Puede ser cualquier nombre válido para nombres de carpeta
+   - Si no existe, se puede crear uno nuevo
 
 3. **Roles:**
    - Deben ser válidos (project-manager, sustainability-strategist, etc.)
@@ -239,6 +267,16 @@ Cursor debe validar:
 4. **Estilo y frecuencia:**
    - Validar que sean opciones válidas
    - Si no es válido, usar valor predeterminado (balanced, normal)
+
+5. **Alias de dendrita:**
+   - Puede ser cualquier tipo de nombre:
+     - **Nombres neutros**: "dendrita", "mi sistema", "mi asistente"
+     - **Nombres personalizados**: cualquier nombre que el usuario prefiera (ej: "alex", "mi asistente virtual")
+     - **Nombres descriptivos**: "mi gestor de proyectos", "mi sistema de conocimiento"
+   - Puede tener múltiples palabras (recomendado 1-4 palabras)
+   - No debe contener caracteres especiales confusos
+   - Si no se especifica, usar "dendrita" como valor predeterminado
+   - Si está vacío o solo espacios, usar "dendrita" como valor predeterminado
 
 ---
 

@@ -30,7 +30,7 @@ The coordinating center of the work ecosystem is a dendrite that integrates info
    - `README.md` - Update for your context
    - `.dendrita/settings.json` - Add your project metadata
    - `workspaces/[your-company]/config-estilo.json` - Define your style guidelines
-5. **Start creating projects** following the structure in `workspaces/template/`
+5. **Start creating projects** following the structure in `.dendrita/templates/workspace-template/`
 
 ### Topics & Tags
 
@@ -55,11 +55,8 @@ A practical methodology that allows you to:
 ### For a new project
 
 1. **Identify the company you're working under:**
-   - ennui (main company registered in Peru)
-   - Inspiro
-   - Entre Rutas y Horizontes
-   - iami
-   - Others (for projects from other companies or contexts)
+   - Create your own workspace name (e.g., `my-company`, `workspace-1`)
+   - Use any name that identifies your organization or context
 
 2. **Create the project folder:**
    ```
@@ -72,7 +69,7 @@ A practical methodology that allows you to:
    - `tasks.md` - Task list with status
 
 4. **Use the corresponding template:**
-   - Review `workspaces/ennui/best-practices/` for your project type
+   - Review `.dendrita/templates/workspace-template/best-practices/` for your project type
    - Copy the template as a base
 
 ### First-time setup (Repository initialization)
@@ -80,8 +77,8 @@ A practical methodology that allows you to:
 When you first open this repository or when Cursor detects it's empty:
 
 1. **Cursor will ask you basic questions:**
-   - Your user identifier (e.g., alvaro, juan, equipo-1)
-   - Your primary workspace (ennui, inspiro, entre-rutas, horizontes, iami, otros)
+   - Your user identifier (e.g., `user-1`, `juan`, `team-1`)
+   - Your primary workspace (create any name you prefer)
    - Your primary work type (project-manager, sustainability-strategist, mel-analyst, stakeholder-facilitator, fundraising-specialist)
    - Communication style preferences
    - Update frequency preferences
@@ -115,53 +112,28 @@ ennui-dendrita/
 ├── README.md                           # This file
 │
 ├── workspaces/                           # Projects organized by company
-│   ├── ennui/                          # Main company (registered in Peru)
+│   ├── [workspace-name]/                # Your workspace
 │   │   ├── active-projects/
-│   │   └── archived-projects/
-│   ├── inspiro/
-│   │   ├── active-projects/
-│   │   └── archived-projects/
-│   ├── entre-rutas/
-│   │   ├── active-projects/
-│   │   └── archived-projects/
-│   ├── horizontes/
-│   │   ├── active-projects/
-│   │   └── archived-projects/
-│   ├── iami/
-│   │   ├── active-projects/
-│   │   └── archived-projects/
-│   └── otros/                          # Other contexts or companies
-│       ├── active-projects/
-│       └── archived-projects/
+│   │   ├── archived-projects/
+│   │   ├── best-practices/              # Templates and methodologies
+│   │   ├── products/                    # Products portfolio
+│   │   ├── stakeholders/                # Relationship management
+│   │   ├── tools-templates/            # Reusable tools
+│   │   └── company-management/         # General management
+│   └── template/                        # Workspace template (reference)
 │
-├── workspaces/ennui/best-practices/                   # Templates and best practices (shared)
-│   ├── bootcamp-fundraising/
-│   ├── sustainability-diagnostic/
-│   ├── project-pipeline/
-│   ├── mel-system/
-│   └── sustainability-implementation/
+├── .dendrita/templates/workspace-template/  # Workspace template reference
+│   ├── best-practices/                 # Example methodologies
+│   ├── products/                      # Example products structure
+│   ├── stakeholders/                  # Example stakeholder structure
+│   └── tools-templates/               # Example tools
 │
-├── workspaces/ennui/work-modes/                       # Specialized "Agents" (shared)
+├── .dendrita/users/[user-id]/agents/  # Specialized agents (per user)
 │   ├── sustainability-strategist.md
 │   ├── project-manager.md
 │   ├── mel-analyst.md
 │   ├── stakeholder-facilitator.md
 │   └── fundraising-specialist.md
-│
-├── workspaces/ennui/company-management/                     # General ennui management
-│   ├── projects-dashboard.md
-│   └── pipeline.md
-│
-├── workspaces/ennui/stakeholders/                # Relationship management
-│   ├── allies-mapping.md
-│   ├── templates-contratos/
-│   └── projects-governance.md
-│
-└── workspaces/ennui/tools-templates/            # Reusable tools
-    ├── checklist-kickoff.md
-    ├── quarterly-report-template.md
-    ├── change-theory-template.md
-    └── risk-matrix.md
 │
 └── .dendrita/                       # Reflexive metadata (ALWAYS review first)
     ├── users/                       # User profiles and preferences
@@ -183,10 +155,10 @@ ennui-dendrita/
 ### 1. Project Initiation
 
 ```
-1. Identify the company you're working under (ennui, inspiro, entre-rutas, horizontes, iami, otros)
+1. Identify the company you're working under (create your workspace name)
 2. Identify the project type
-3. Review the template in workspaces/ennui/best-practices/
-4. Create folder in workspaces/[empresa]/active-projects/[nombre-proyecto]/
+3. Review the template in `.dendrita/templates/workspace-template/best-practices/`
+4. Create folder in `workspaces/[workspace-name]/active-projects/[project-name]/`
 5. Generate the 3 files using the template
 6. Update current-context.md frequently
 ```
@@ -197,7 +169,7 @@ ennui-dendrita/
 1. Review current-context.md at the start of each session
 2. Mark completed tasks in tasks.md
 3. Update current-context.md after important decisions
-4. Use workspaces/ennui/work-modes/ when you need specific expertise
+4. Use `.dendrita/users/[user-id]/agents/` when you need specific expertise
 ```
 
 ### 3. Project Completion
@@ -242,25 +214,25 @@ Each project uses **3 key files** that maintain state:
 ## 🎨 Best Practices by Project Type
 
 ### Fundraising Bootcamp
-- See: `workspaces/ennui/best-practices/bootcamp-fundraising/`
+- See: `.dendrita/templates/workspace-template/best-practices/` for examples
 
 ### Sustainability Diagnostic (Phase 1)
-- See: `workspaces/ennui/best-practices/sustainability-diagnostic/`
+- See: `.dendrita/templates/workspace-template/best-practices/` for examples
 
 ### Project and Alliance Pipeline
-- See: `workspaces/ennui/best-practices/project-pipeline/`
+- See: `.dendrita/templates/workspace-template/best-practices/` for examples
 
 ### MEL System (Monitoring, Evaluation, and Learning)
-- See: `workspaces/ennui/best-practices/mel-system/`
+- See: `.dendrita/templates/workspace-template/best-practices/` for examples
 
 ### Sustainability Implementation (Phases 2-4)
-- See: `workspaces/ennui/best-practices/sustainability-implementation/`
+- See: `.dendrita/templates/workspace-template/best-practices/` for examples
 
 ---
 
 ## 🤖 Work Modes
 
-Activate a specialized mode by loading the corresponding file in `workspaces/ennui/work-modes/`:
+Activate a specialized agent by loading the corresponding file in `.dendrita/users/[user-id]/agents/`:
 
 - **sustainability-strategist.md** - For ESG strategic planning
 - **project-manager.md** - For operational coordination
@@ -277,21 +249,20 @@ Activate a specialized mode by loading the corresponding file in `workspaces/enn
 Create an `INSTRUCTION.md` file to use as initial context:
 
 ```
-You are my project management assistant for ennui, a company that 
-manages sustainability and social impact projects.
+You are my project management assistant for my organization.
 
 When you detect these situations:
 - **Diagnostic/Planning:** If I mention "diagnostic", "mapping", "plan"
-  → Use workspaces/ennui/work-modes/sustainability-strategist.md
+  → Use .dendrita/users/[user-id]/agents/sustainability-strategist.md
   
 - **Execution:** If I mention "implementation", "execution", "tracking"
-  → Use workspaces/ennui/work-modes/project-manager.md
+  → Use .dendrita/users/[user-id]/agents/project-manager.md
   
 - **Analysis:** If I mention "metrics", "report", "MEL", "impact"
-  → Use workspaces/ennui/work-modes/mel-analyst.md
+  → Use .dendrita/users/[user-id]/agents/mel-analyst.md
   
 - **Partners:** If I mention "partners", "stakeholders", "governance"
-  → Use workspaces/ennui/work-modes/stakeholder-facilitator.md
+  → Use .dendrita/users/[user-id]/agents/stakeholder-facilitator.md
 
 Always read the current-context.md file from the active project to 
 understand the current status before responding.
@@ -299,10 +270,10 @@ understand the current status before responding.
 
 ### Using with ChatGPT
 
-1. **Identify the company and project:** `workspaces/[empresa]/active-projects/[proyecto]/`
+1. **Identify the company and project:** `workspaces/[workspace-name]/active-projects/[project-name]/`
 2. **Upload the complete folder** of the active project
-3. **Include** `workspaces/ennui/work-modes/[modo-relevante].md` if you need expertise
-4. **Include** `workspaces/ennui/best-practices/[tipo-proyecto]/` as reference
+3. **Include** `.dendrita/users/[user-id]/agents/[agent-name].md` if you need expertise
+4. **Include** `.dendrita/templates/workspace-template/best-practices/[type]/` as reference
 5. ChatGPT will read all context and maintain continuity
 
 ---
@@ -311,22 +282,22 @@ understand the current status before responding.
 
 ### Projects Dashboard
 
-Create a `workspaces/ennui/company-management/projects-dashboard.md` file:
+Create a `workspaces/[workspace-name]/company-management/projects-dashboard.md` file:
 
 ```markdown
-# ennui Projects Dashboard
+# Projects Dashboard
 
 ## Active Projects
 
 | Project | Status | Phase | Responsible | Next Milestone |
 |---------|--------|-------|-------------|----------------|
-| Bootcamp RD | 🟡 In progress | Module 3 | Gustavo | Session 4 |
-| Company X Diagnostic | 🟡 In progress | Phase 2 | Álvaro | Roadmap |
+| Project A | 🟡 In progress | Phase 1 | Team Member | Milestone 1 |
+| Project B | 🟡 In progress | Phase 2 | Team Member | Milestone 2 |
 
 ## Archived Projects
 
-- Project Y (completed Q4 2024)
-- Project Z (completed Q3 2024)
+- Project X (completed Q4 2024)
+- Project Y (completed Q3 2024)
 ```
 
 Update weekly.
@@ -370,7 +341,7 @@ All projects must follow:
 
 ## 📚 Next Steps
 
-1. **Review** the templates in `workspaces/ennui/best-practices/`
+1. **Review** the templates in `.dendrita/templates/workspace-template/best-practices/`
 2. **Create** your first project following the structure
 3. **Customize** work modes as needed
 4. **Keep** `current-context.md` updated
@@ -380,10 +351,10 @@ All projects must follow:
 ## 🆘 Help
 
 If you have questions about:
-- **Which template to use:** Review the description in each folder of `workspaces/ennui/best-practices/`
+- **Which template to use:** Review the description in `.dendrita/templates/workspace-template/best-practices/`
 - **How to structure a new project:** Use any template as a base
-- **Multiple projects management:** Consult `workspaces/ennui/company-management/projects-dashboard.md`
-- **Reporting:** Use `workspaces/ennui/tools-templates/quarterly-report-template.md`
+- **Multiple projects management:** Create `workspaces/[workspace-name]/company-management/projects-dashboard.md`
+- **Reporting:** Use templates from `.dendrita/templates/workspace-template/tools-templates/`
 - **User profiles and initialization:** See `.dendrita/users/README.md` and `.dendrita/hooks/repo-initialization.md`
 - **How .dendrita works:** See `.dendrita/INIT.md` and `.dendrita/hooks/README.md`
 

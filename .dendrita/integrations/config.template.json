@@ -1,0 +1,108 @@
+{
+  "_comment": "TEMPLATE - Nunca guardes credenciales aquí. Usa .env.local en su lugar.",
+  "_security_note": "Este archivo es solo una referencia. Las credenciales reales deben estar en .env.local o variables de entorno, NUNCA en este repo.",
+  
+  "services": {
+    "google": {
+      "workspace": {
+        "enabled": true,
+        "description": "Google Workspace (Gmail, Calendar, Drive)",
+        "credentials_source": "Environment variables or .env.local",
+        "required_env_vars": [
+          "GOOGLE_WORKSPACE_CLIENT_ID",
+          "GOOGLE_WORKSPACE_CLIENT_SECRET",
+          "GOOGLE_WORKSPACE_REFRESH_TOKEN"
+        ],
+        "setup_url": "See hooks/google-auth-flow.md for setup instructions"
+      }
+    },
+    
+    "openai": {
+      "enabled": true,
+      "description": "OpenAI API for GPT and embeddings",
+      "credentials_source": "Environment variables or .env.local",
+      "required_env_vars": [
+        "OPENAI_API_KEY"
+      ],
+      "setup_url": "See hooks/openai-key-management.md for setup instructions"
+    },
+    
+    "supabase": {
+      "enabled": true,
+      "description": "Supabase (Database, Auth, Storage)",
+      "credentials_source": "Environment variables or .env.local",
+      "required_env_vars": [
+        "SUPABASE_URL",
+        "SUPABASE_ANON_KEY"
+      ],
+      "optional_env_vars": [
+        "SUPABASE_SERVICE_ROLE_KEY",
+        "SUPABASE_DB_URL"
+      ],
+      "setup_url": "See hooks/supabase-setup.md for setup instructions"
+    },
+    
+    "reddit": {
+      "enabled": true,
+      "description": "Reddit API for posting and community engagement",
+      "credentials_source": "Environment variables or .env.local",
+      "required_env_vars": [
+        "REDDIT_CLIENT_ID",
+        "REDDIT_CLIENT_SECRET",
+        "REDDIT_USER_AGENT"
+      ],
+      "optional_env_vars": [
+        "REDDIT_USERNAME",
+        "REDDIT_PASSWORD"
+      ],
+      "setup_url": "See hooks/reddit-setup.md for setup instructions",
+      "note": "Username/password required for posting. Without them, only read access is available."
+    },
+    
+    "clickup": {
+      "enabled": true,
+      "description": "ClickUp API for project management integration",
+      "credentials_source": "Environment variables or .env.local",
+      "required_env_vars": [
+        "CLICKUP_ACCESS_TOKEN"
+      ],
+      "setup_url": "See hooks/clickup-setup.md for setup instructions",
+      "note": "Personal Access Token required. Get it from ClickUp Settings → Apps → API"
+    },
+    
+    "asana": {
+      "enabled": true,
+      "description": "Asana API for project management integration",
+      "credentials_source": "Environment variables or .env.local",
+      "required_env_vars": [
+        "ASANA_ACCESS_TOKEN"
+      ],
+      "setup_url": "See hooks/asana-setup.md for setup instructions",
+      "note": "Personal Access Token required. Get it from Asana Developer Console"
+    },
+    
+    "notion": {
+      "enabled": true,
+      "description": "Notion API for project management integration",
+      "credentials_source": "Environment variables or .env.local",
+      "required_env_vars": [
+        "NOTION_INTEGRATION_TOKEN"
+      ],
+      "setup_url": "See hooks/notion-setup.md for setup instructions",
+      "note": "Integration Token required. Create integration at notion.so/my-integrations and connect to pages/databases"
+    }
+  },
+
+  "cache": {
+    "enabled": true,
+    "location": ".dendrita/.cache/",
+    "description": "Local caching for API responses to reduce requests"
+  },
+
+  "logging": {
+    "enabled": true,
+    "level": "info",
+    "location": ".dendrita/logs/",
+    "description": "Activity and error logging (never logs credentials)"
+  }
+}
