@@ -1,3 +1,13 @@
+---
+name: dendrita-infrastructure-modification
+description: "Dendrita Infrastructure Modification Hook"
+type: hook
+created: 2025-11-06
+updated: 2025-11-06
+tags: ["hook", "behavior-reference"]
+category: behavior-reference
+---
+
 # Dendrita Infrastructure Modification Hook
 
 Behavior reference for Cursor - modifications to dendrita infrastructure.

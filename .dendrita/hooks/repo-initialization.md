@@ -1,3 +1,13 @@
+---
+name: repo-initialization
+description: "Hook de Inicialización del Repositorio"
+type: hook
+created: 2025-11-06
+updated: 2025-11-06
+tags: ["hook", "behavior-reference"]
+category: behavior-reference
+---
+
 # Hook de Inicialización del Repositorio
 
 Referencia de comportamiento para Cursor - inicialización de repositorios dendrita nuevos.

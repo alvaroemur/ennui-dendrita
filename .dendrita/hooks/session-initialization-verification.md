@@ -1,3 +1,13 @@
+---
+name: session-initialization-verification
+description: "Hook de Verificación de Inicialización de Sesión"
+type: hook
+created: 2025-11-06
+updated: 2025-11-06
+tags: ["hook", "behavior-reference"]
+category: behavior-reference
+---
+
 # Hook de Verificación de Inicialización de Sesión
 
 Referencia de comportamiento para Cursor - verificación de configuración al inicio de cada conversación.
@@ -251,6 +261,21 @@ Si alguna falta:
 → Marcar como "habilitado pero no conectado"
 ```
 
+#### SSH (Opcional)
+
+```markdown
+Verificar si existe:
+- SSH_PRIVATE_KEY o SSH_PRIVATE_KEY_PATH
+
+Si falta:
+→ Marcar como "habilitado pero no conectado" (opcional)
+→ Mostrar estado de hosts SSH configurados si existen
+
+Si SSH está configurado:
+→ Listar hosts SSH configurados
+→ Mostrar estado de conectividad (opcional)
+```
+
 #### Reddit
 
 ```markdown
@@ -289,10 +314,15 @@ Al finalizar la verificación, Cursor debe:
   - ✅ Google Workspace
   - ✅ OpenAI
   - ✅ Supabase
+  - ✅ SSH ([X hosts configurados])
 
 📊 Scrapers activos:
   - ✅ Gmail: [X configuraciones activas] - [Estado: ejecutados/omitidos/errores]
   - ✅ Calendar: [X configuraciones activas] - [Estado: ejecutados/omitidos/errores]
+
+🔐 SSH Hosts:
+  - ✅ [host-name]: [host]@[user] (conectado)
+  - ✅ [host-name]: [host]@[user] (conectado)
 
 Todo listo para trabajar!
 ```
@@ -303,6 +333,11 @@ Todo listo para trabajar!
 ⚠️ Configuración incompleta detectada:
 
 [Mostrar lista de elementos faltantes]
+
+SSH (Opcional):
+  - ⚠️ SSH habilitado pero no conectado
+  - → Ver: .dendrita/integrations/hooks/ssh-setup.md
+  - → Nota: SSH es opcional, usado para ejecución remota de scrapers
 
 ¿Quieres configurar los elementos faltantes ahora?
 ```

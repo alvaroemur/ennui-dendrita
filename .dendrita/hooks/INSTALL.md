@@ -1,3 +1,13 @@
+---
+name: install
+description: "Referencias de Hooks - No Requiere Instalación"
+type: hook
+created: 2025-11-06
+updated: 2025-11-06
+tags: ["hook", "behavior-reference"]
+category: behavior-reference
+---
+
 # Referencias de Hooks - No Requiere Instalación
 
 ## Importante: NO es necesario instalar nada

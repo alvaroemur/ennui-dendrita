@@ -215,6 +215,55 @@
           "Incluir contexto suficiente para identificar el chat rápidamente",
           "Usar nombres de archivos/carpetas reales cuando sea posible"
         ]
+      },
+      "workspaces": {
+        "archivos_proyecto": {
+          "permitir_emojis": true,
+          "descripcion": "Archivos en company-management/ y dentro de proyectos (excepto archivos del sistema)",
+          "ejemplos": [
+            "✅ Participantes aceptados.md",
+            "📊 Dashboard Proyecto.md",
+            "🎯 Objetivos 2025.md"
+          ],
+          "reglas": [
+            "Emojis permitidos en nombres de archivos",
+            "Espacios permitidos en nombres de archivos",
+            "Cualquier idioma permitido",
+            "Backup automático con nombre sanitizado (oculto, prefijo .)"
+          ]
+        },
+        "carpetas_proyecto": {
+          "permitir_emojis": true,
+          "descripcion": "Carpetas de proyectos dentro de active-projects/ y archived-projects/",
+          "ejemplos": [
+            "✅ Proyecto Activo",
+            "📊 Análisis Q1",
+            "🎯 Objetivos 2025"
+          ],
+          "reglas": [
+            "Emojis permitidos en nombres de carpetas",
+            "Espacios permitidos en nombres de carpetas",
+            "Cualquier idioma permitido",
+            "Backup automático con nombre sanitizado (oculto, prefijo .)"
+          ]
+        },
+        "archivos_sistema": {
+          "permitir_emojis": false,
+          "descripcion": "Archivos del sistema que deben seguir convenciones estrictas",
+          "archivos": [
+            "master-plan.md",
+            "current-context.md",
+            "tasks.md",
+            "allies-mapping.md",
+            "projects-governance.md",
+            "projects-dashboard.md"
+          ],
+          "reglas": [
+            "NO permitir emojis",
+            "Deben seguir convenciones en inglés",
+            "Nombres estandarizados"
+          ]
+        }
       }
     },
     "convenciones": {

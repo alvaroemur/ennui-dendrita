@@ -1,0 +1,103 @@
+{
+  "version": "1.0.0",
+  "description": "Manifiesto de despliegue y ejecución automática de scripts de dendrita",
+  "last_updated": "2025-11-06T00:00:00Z",
+  
+  "sync": {
+    "enabled": true,
+    "source": {
+      "type": "local",
+      "path": ".",
+      "watch": true
+    },
+    "target": {
+      "type": "ssh",
+      "host": "dev",
+      "path": "/app/dendrita"
+    },
+    "exclude": [
+      ".git",
+      "node_modules",
+      ".dendrita/.cache",
+      ".dendrita/logs",
+      "_clippings",
+      "_temp",
+      "_working-export",
+      "*.log"
+    ],
+    "include": [
+      ".dendrita/integrations/scripts/**/*.ts",
+      ".dendrita/integrations/services/**/*.ts",
+      ".dendrita/integrations/utils/**/*.ts",
+      ".dendrita/deployment-manifest.json",
+      "package.json",
+      "tsconfig.json"
+    ]
+  },
+  
+  "scripts": {
+    "enabled": true,
+    "execution_mode": "manifest",
+    "scripts": [
+      {
+        "id": "sync-documents",
+        "name": "Sincronizar Documentos",
+        "script": ".dendrita/integrations/scripts/sync-documents.ts",
+        "enabled": true,
+        "schedule": {
+          "type": "interval",
+          "interval_hours": 24,
+          "run_on_sync": true
+        },
+        "timeout": 300000,
+        "retry": {
+          "enabled": true,
+          "max_attempts": 3,
+          "delay_seconds": 60
+        }
+      },
+      {
+        "id": "sync-user-services",
+        "name": "Sincronizar Servicios de Usuario",
+        "script": ".dendrita/integrations/scripts/sync-user-services.ts",
+        "enabled": true,
+        "schedule": {
+          "type": "interval",
+          "interval_hours": 12,
+          "run_on_sync": false
+        },
+        "timeout": 180000,
+        "retry": {
+          "enabled": true,
+          "max_attempts": 2,
+          "delay_seconds": 30
+        }
+      },
+      {
+        "id": "generate-dashboard-maestro",
+        "name": "Generar Dashboard Maestro",
+        "script": ".dendrita/integrations/scripts/generate-master-dashboard.ts",
+        "enabled": false,
+        "schedule": {
+          "type": "manual",
+          "run_on_sync": false
+        },
+        "timeout": 60000
+      }
+    ]
+  },
+  
+  "notifications": {
+    "enabled": false,
+    "on_success": false,
+    "on_error": true,
+    "channels": []
+  },
+  
+  "logging": {
+    "enabled": true,
+    "level": "info",
+    "path": "/app/dendrita/.dendrita/logs/deployment.log"
+  }
+}
+

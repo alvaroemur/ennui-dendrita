@@ -1,3 +1,13 @@
+---
+name: dendrita-alias-activation
+description: "Hook de Activación de Alias de Dendrita"
+type: hook
+created: 2025-11-06
+updated: 2025-11-06
+tags: ["hook", "behavior-reference"]
+category: behavior-reference
+---
+
 # Hook de Activación de Alias de Dendrita
 
 Referencia de comportamiento para Cursor - activación de contexto de workspaces mediante alias de dendrita.

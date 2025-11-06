@@ -1,3 +1,13 @@
+---
+name: blog-clipping-creation
+description: "blog-clipping-creation (BlogClippingCreation)"
+type: hook
+created: 2025-11-06
+updated: 2025-11-06
+tags: ["hook", "behavior-reference"]
+category: behavior-reference
+---
+
 # blog-clipping-creation (BlogClippingCreation)
 
 **Behavior reference:** Logic to create and manage blog clippings (notes/ideas) from work sessions, storing textual context, source references, and brief reflections for future blog posts.

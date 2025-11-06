@@ -1,3 +1,13 @@
+---
+name: journaling
+description: "Hook de Journaling"
+type: hook
+created: 2025-11-06
+updated: 2025-11-06
+tags: ["hook", "behavior-reference"]
+category: behavior-reference
+---
+
 # Hook de Journaling
 
 Referencia de comportamiento para Cursor - captura de narrativas de trabajo y extracción automática de insights y tareas.

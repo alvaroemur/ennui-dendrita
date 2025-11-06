@@ -34,6 +34,9 @@ Thumbs.db
 *-personal.md
 *-backup.md
 
+# Documentation index (local reference)
+DENDRITA-DOCS.md
+
 # Sensitive data patterns
 *secret*
 *confidential*

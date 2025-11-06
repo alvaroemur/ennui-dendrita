@@ -1,3 +1,13 @@
+---
+name: blog-publication
+description: "blog-publication (BlogPublication)"
+type: hook
+created: 2025-11-06
+updated: 2025-11-06
+tags: ["hook", "behavior-reference"]
+category: behavior-reference
+---
+
 # blog-publication (BlogPublication)
 
 **Behavior reference:** Logic to validate and publish blog posts under `.dendrita/blog/`, update the blog index (`.dendrita/blog/README.md`), perform a scoped deploy (Git commit/push only for blog changes), and register journaling/tasks derived from the post.
