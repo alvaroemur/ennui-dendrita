@@ -2,6 +2,12 @@
 
 **dendrita**
 
+<p align="center">
+  <a href="https://github.com/ennui-dendrita/ennui-dendrita/blob/main/.dendrita/blog/README.md"><img alt="Blog Índice" src="https://img.shields.io/badge/BLOG-%C3%8DNDICE-0a84ff?style=for-the-badge&logo=rss&logoColor=white"></a>
+  <a href="https://github.com/ennui-dendrita/ennui-dendrita/tree/main/.dendrita/blog/posts"><img alt="Blog Posts" src="https://img.shields.io/badge/BLOG-POSTS-0a84ff?style=for-the-badge"></a>
+  <a href="README.es.md"><img alt="README Español" src="https://img.shields.io/badge/README-ESPA%C3%91OL-0a84ff?style=for-the-badge"></a>
+</p>
+
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Latest Commit](https://img.shields.io/github/last-commit/ennui-dendrita/ennui-dendrita)](https://github.com/ennui-dendrita/ennui-dendrita)
 [![Platform](https://img.shields.io/badge/Platform-Google%20Apps%20Script%20%7C%20Cursor%20%7C%20ChatGPT-blue.svg)](https://github.com/ennui-dendrita/ennui-dendrita)
@@ -10,6 +16,97 @@
 Project management and business operations system adapted from infrastructure best practices, designed specifically for managing multiple business operations projects.
 
 The coordinating center of the work ecosystem is a dendrite that integrates information into structured decisions and actions.
+
+---
+
+## 🙏 Acknowledgments & Credits
+
+**ennui-dendrita** is inspired by and adapted from the [**Claude Code Infrastructure Showcase**](https://github.com/claude-code-infrastructure-showcase) project, which provided the foundational patterns and infrastructure concepts that made this system possible.
+
+The original project, developed over 6 months of real-world use managing complex TypeScript microservices, solved critical problems like automatic skill activation and scalable AI-assisted development. We adapted these patterns to create a methodology focused on business operations, project management, and multi-workspace coordination.
+
+**Key adaptations:**
+- Adapted `.claude/` infrastructure patterns to `.dendrita/` for business context
+- Transformed development-focused skills into business operation methodologies
+- Extended the workspace concept to support multiple companies/organizations
+- Added project-specific structures (`master-plan.md`, `current-context.md`, `tasks.md`)
+- Integrated domain-specific knowledge (sustainability, MEL, fundraising, stakeholder management)
+
+**Original Work:**
+- Repository: [Claude Code Infrastructure Showcase](https://github.com/claude-code-infrastructure-showcase)
+- License: MIT License
+- Original Contributors: Claude Code Infrastructure Contributors
+
+We are grateful to the original developers for sharing these patterns and making this adaptation possible.
+
+---
+
+## 🌟 Philosophy & Vision
+
+### Bridging the Gap: From No-Code to Hybrid-Code
+
+**ennui-dendrita** was created with a clear intention: to close the gap for people who don't know how to program or only dare to use no-code tools.
+
+Once you understand:
+- **Code logic** (ability to write pseudo-code)
+- **Basic nomenclature** (understanding what variables, functions, and files mean)
+- **A lot of curiosity** (the desire to learn and experiment)
+
+...you can make things happen with a **hybrid of code and a very organized way of working**.
+
+**Anyone can use a system like this.**
+
+### Who This Is For
+
+If someone looks at this and thinks "this is garbage," they might be looking at it with "programmer eyes" (or maybe I'm pre-judging). 
+
+**This is NOT a repository for programmers** (or at least not directed at them). It's for everyone else who always thinks that knowing how to use tools like Docs, Sheets, Slides, any Office suite tool, email, and other things from consultative life or professional life in general with skill is something for nerds.
+
+We want someone like them to **"dare" to download Cursor** (something they probably don't know, or if they do, they see it as an alien tool) and **pay for a $20 monthly account** to have the best productivity tool of their life.
+
+**If you already use ChatGPT for everything, imagine what you could do if you already had all the context at your disposal.**
+
+> "Look at the proposal Daniel asked me for and check if it meets the objectives Angela told me about"
+
+...becomes not just an ephemeral wish, but a **powerful actionable phrase**.
+
+### Building a Community & Methodology
+
+We hope this is seen as that and to generate a **community of people who build a WORK METHODOLOGY, a way of operating** (and also make applications on top of this, why not?).
+
+This is not just about tools—it's about **developing a systematic approach to work** that combines:
+- The power of AI-assisted development
+- The structure of well-organized documentation
+- The flexibility of a methodology that adapts to your context
+- The community knowledge that emerges from shared practices
+
+---
+
+## 💼 Commercial Vision & Partnerships
+
+**ennui-dendrita** is also a form of **self-employment** for its creator. We are developing applications with the intention of serving as **monetizable business modules**:
+
+### Planned Products
+
+1. **SaaS - Web Application**
+   - Full-featured project management platform based on dendrita methodology
+   - Multi-workspace management
+   - Team collaboration features
+   - Integration with external tools
+
+2. **End-User Products**
+   - **Chrome Extension** - Browser-based productivity tool
+   - **Mobile App** (potential) - On-the-go project management
+
+### Seeking Partners
+
+We value **support and collaboration**. If you're interested in:
+- **Technical partnership** - Development, architecture, or engineering expertise
+- **Business partnership** - Go-to-market, sales, or business development
+- **Investment** - Funding for product development and scaling
+- **Community building** - Helping grow the methodology and user base
+
+**Let's talk.** Reach out: [alvaro.e.mur@gmail.com](mailto:alvaro.e.mur@gmail.com)
 
 ---
 
@@ -244,37 +341,44 @@ Activate a specialized agent by loading the corresponding file in `.dendrita/use
 
 ## 🔗 ChatGPT Integration
 
-### Recommended General Instruction
+### Generate Optimized Prompts for External Platforms
 
-Create an `INSTRUCTION.md` file to use as initial context:
+Dendrita can automatically generate optimized prompts for external AI platforms (ChatGPT, Claude, Gemini, etc.) based on your active context.
 
-```
-You are my project management assistant for my organization.
+**How to use:**
 
-When you detect these situations:
-- **Diagnostic/Planning:** If I mention "diagnostic", "mapping", "plan"
-  → Use .dendrita/users/[user-id]/agents/sustainability-strategist.md
-  
-- **Execution:** If I mention "implementation", "execution", "tracking"
-  → Use .dendrita/users/[user-id]/agents/project-manager.md
-  
-- **Analysis:** If I mention "metrics", "report", "MEL", "impact"
-  → Use .dendrita/users/[user-id]/agents/mel-analyst.md
-  
-- **Partners:** If I mention "partners", "stakeholders", "governance"
-  → Use .dendrita/users/[user-id]/agents/stakeholder-facilitator.md
+1. **Ask Cursor to generate a prompt:**
+   - "genérame el contexto para trabajar este documento en ChatGPT"
+   - "vamos a trabajar la línea gráfica, genérame el prompt para hacer logos con Stable Diffusion"
+   - "hazme un agente para analizar en ChatGPT las transcripciones"
 
-Always read the current-context.md file from the active project to 
-understand the current status before responding.
-```
+2. **Cursor will automatically:**
+   - Detect your request for external platform prompt
+   - Identify active workspace, project, and relevant agent
+   - Recopile relevant information from dendrita documents
+   - Generate a markdown file ready to copy/paste
+   - Save it in `_working-export/` with format `[workspace]-[proyecto]-[agent]-YYYY-MM-DD.md`
 
-### Using with ChatGPT
+3. **The generated prompt includes:**
+   - Role and purpose instructions
+   - Project context (if active project exists)
+   - Relevant agent methodology
+   - Ennui principles (La Brújula)
+   - References to source files
+
+**For more details:** See `.dendrita/hooks/external-prompt-generator.md`
+
+### Manual Integration (Alternative)
+
+If you prefer to manually create prompts for ChatGPT:
 
 1. **Identify the company and project:** `workspaces/[workspace-name]/active-projects/[project-name]/`
 2. **Upload the complete folder** of the active project
 3. **Include** `.dendrita/users/[user-id]/agents/[agent-name].md` if you need expertise
 4. **Include** `.dendrita/templates/workspace-template/best-practices/[type]/` as reference
 5. ChatGPT will read all context and maintain continuity
+
+**Note:** The old `INSTRUCTION.md` file has been archived. Use the automatic prompt generator instead for optimized prompts.
 
 ---
 

@@ -154,5 +154,5 @@ La clave ha sido **no simplemente copiar**, sino **adaptar con propósito claro*
 
 ---
 
-**¿Quieres contribuir o aprender más?** Revisa el [README principal](../../../../README.md) o explora la estructura en `.dendrita/`.
+**¿Quieres contribuir o aprender más?** Revisa el [README principal](https://github.com/alvaroemur/ennui-dendrita/blob/README.md) o explora la estructura en `.dendrita/`.
 
