@@ -1,18 +1,34 @@
 ---
 name: blog-clipping-creation
-description: "blog-clipping-creation (BlogClippingCreation)"
+description: "blog-clipping-creation (ClippingCreation)"
 type: hook
-created: 2025-11-06
-updated: 2025-11-06
+created:
+  2025-11-06T00:00:00.000Z
+  
+updated:
+  2025-11-07T00:00:00.000Z
+  
 tags: ["hook", "behavior-reference"]
 category: behavior-reference
 ---
 
-# blog-clipping-creation (BlogClippingCreation)
+# blog-clipping-creation (ClippingCreation)
 
-**Behavior reference:** Logic to create and manage blog clippings (notes/ideas) from work sessions, storing textual context, source references, and brief reflections for future blog posts.
+**Behavior reference:** Logic to create and manage clippings (notes/ideas) from work sessions, storing textual context, source references, and brief reflections for future use in blog posts, documentation, projects, or other contexts.
 
 This is a reference for Cursor. It documents expected behavior to APPLY, not executable code.
+
+---
+
+## CRITICAL: Clipping Location
+
+**ALL clippings MUST be saved in `_clippings/` at the project root.**
+
+- **Location:** `_clippings/` (absolute path from project root)
+- **Index:** `_clippings/README.md` (MUST be updated when creating clippings)
+- **Structure:** `_clippings/[YYYY-MM]/YYYY-MM-DD-HHmm-[descripcion]-clipping.md`
+
+This is a shared location for all clippings across all users and workspaces. Do NOT create user-specific clipping directories.
 
 ---
 
@@ -24,15 +40,17 @@ This is a reference for Cursor. It documents expected behavior to APPLY, not exe
   - "guarda esto como idea para el blog"
   - "clipping de esta sesión"
   - "crea nota de blog de [contexto específico]"
+  - "guarda esto como referencia"
+  - "clipping para documentación"
 
 ---
 
 ## Scope
 
-- Location: `.dendrita/blog/clippings/`
+- Location: `_clippings/` (root directory)
 - Affects:
-  - `.dendrita/blog/clippings/[YYYY-MM]/YYYY-MM-DD-[hash]-clipping.md` (individual clippings)
-  - `.dendrita/blog/clippings/README.md` (index)
+  - `_clippings/[YYYY-MM]/YYYY-MM-DD-HHmm-[descripcion]-clipping.md` (individual clippings)
+  - `_clippings/README.md` (index)
   - `.dendrita/blog/posts/[post-slug].clippings.json` (memory of used/discarded clippings per post)
 
 ---
@@ -49,7 +67,7 @@ When the hook is triggered, collect the following information:
    - Capture the specific fragment or section being referenced
 
 2. **Source Reference** (required):
-   - Identify the source file/document (e.g., `workspaces/ennui/active-projects/dendrita-comms/master-plan.md`)
+   - Identify the source file/document (e.g., `workspaces/[workspace]/active-projects/[project-name]/master-plan.md`)
    - Include specific line numbers or section references if applicable
    - Format: `[filepath]:[line-range]` or `[filepath]#[section]`
    - Context description: workspace, project, document type
@@ -67,12 +85,21 @@ When the hook is triggered, collect the following information:
 
 ### 2. Create Clipping File
 
-**Location:** `.dendrita/blog/clippings/[YYYY-MM]/YYYY-MM-DD-[hash]-clipping.md`
+**Location:** `_clippings/[YYYY-MM]/YYYY-MM-DD-HHmm-[descripcion]-clipping.md`
+
+**CRITICAL:** All clippings MUST be saved in `_clippings/` at the project root. This is the single source of truth for all clippings regardless of user or workspace context.
 
 **Filename format:**
-- `YYYY-MM-DD-[hash]-clipping.md`
+- `YYYY-MM-DD-HHmm-[descripcion]-clipping.md`
 - `YYYY-MM-DD`: Date of creation
-- `[hash]`: Short hash (first 6-8 chars of content hash) for uniqueness
+- `HHmm`: Time of creation in 24-hour format without separator (e.g., `0957`, `2054`)
+- `[descripcion]`: Descriptive slug derived from the clipping title (kebab-case, max 50 chars)
+  - If title is available: slugified version of the title
+  - If no title: short hash (first 6-8 chars) as fallback
+- Examples:
+  - `2025-11-06-0957-workflow-dendritificacion-clipping.md`
+  - `2025-11-04-2054-cursor-journaling-automatizacion-clipping.md`
+  - `2025-11-05-1404-ironia-buscar-google-buscador-clipping.md`
 
 **File structure:**
 
@@ -112,18 +139,20 @@ status: draft
 
 ### 3. Update Clipping Index
 
-**Location:** `.dendrita/blog/clippings/README.md`
+**Location:** `_clippings/README.md`
 
-Maintain a markdown table with columns: Date | Source | Tags | Status | Link
+**CRITICAL:** Always update `_clippings/README.md` in the root directory. This is the central index for all clippings.
+
+Maintain a markdown table with columns: Date | Source | Workflow | Purpose | Tags | Status | Link
 
 - Insert or update the row for the clipping
 - Sort by date (newest first)
-- Link to the relative clipping path `./[YYYY-MM]/YYYY-MM-DD-[hash]-clipping.md`
+- Link to the relative clipping path `./[YYYY-MM]/YYYY-MM-DD-HHmm-[descripcion]-clipping.md`
 - Include tags and status for quick filtering
 
 Example row:
 
-| 2025-11-04 | `workspaces/ennui/active-projects/dendrita-comms/master-plan.md` | metodología, desarrollo | draft | [Ver clipping](./2025-11/2025-11-04-a3b2c1-clipping.md) |
+| 2025-11-04 | `workspaces/[workspace]/active-projects/[project-name]/master-plan.md` | blog | blog-idea | metodología, desarrollo | draft | [Ver clipping](./2025-11/2025-11-04-2054-metodologia-desarrollo-clipping.md) |
 
 ---
 
@@ -131,20 +160,27 @@ Example row:
 
 ### Directory Structure
 
+**CRITICAL:** Clippings are stored in `_clippings/` at the project root. This is a shared location for all clippings across all users and workspaces.
+
 ```
-.dendrita/blog/clippings/
-├── README.md                    # Main index
+_clippings/
+├── README.md                    # Main index (CRITICAL: always update this)
 ├── [YYYY-MM]/                   # Monthly organization
-│   ├── YYYY-MM-DD-[hash]-clipping.md
+│   ├── YYYY-MM-DD-HHmm-[descripcion]-clipping.md
 │   └── ...
-└── [post-slug].clippings.json   # Memory per post (in posts directory)
+└── _imported-manually/          # Manually imported clippings (optional)
 ```
+
+**IMPORTANT:** 
+- All clippings go to `_clippings/` regardless of user or workspace
+- The index `_clippings/README.md` is the single source of truth
+- Monthly folders organize clippings chronologically
 
 ### Tagging System
 
 Clippings should be tagged with:
-- **Workspace** tags: `ennui`, `iami`, `personal`, etc.
-- **Project** tags: `dendrita-comms`, `bootcamp-fundraising`, etc.
+- **Workspace** tags: `[workspace-name]`, etc.
+- **Project** tags: `[project-name]`, `bootcamp-fundraising`, etc.
 - **Theme** tags: `metodología`, `desarrollo`, `sostenibilidad`, `mel`, etc.
 - **Status** tags: `draft`, `ready`, `used`, `archived`
 
@@ -154,7 +190,9 @@ Clippings should be tagged with:
 
 ### Per-Post Memory
 
-**Location:** `.dendrita/blog/posts/[post-slug].clippings.json`
+**Location:** `.dendrita/blog/posts/[post-slug].clippings.json` (references clippings from `_clippings/`)
+
+**CRITICAL:** When referencing clippings in memory files, use paths relative to project root: `_clippings/[YYYY-MM]/YYYY-MM-DD-HHmm-[descripcion]-clipping.md`
 
 This file tracks which clippings were used or discarded for each blog post.
 
@@ -168,7 +206,7 @@ This file tracks which clippings were used or discarded for each blog post.
   "used": [
     {
       "clipping_id": "[hash]",
-      "clipping_path": "clippings/2025-11/2025-11-04-a3b2c1-clipping.md",
+      "clipping_path": "_clippings/2025-11/2025-11-04-2054-metodologia-desarrollo-clipping.md",
       "used_in_section": "Origen del proyecto",
       "used_date": "2025-11-04T19:23:00Z",
       "notes": "Used to explain the fork origin"
@@ -177,7 +215,7 @@ This file tracks which clippings were used or discarded for each blog post.
   "discarded": [
     {
       "clipping_id": "[hash]",
-      "clipping_path": "clippings/2025-11/2025-11-04-b4c5d6-clipping.md",
+      "clipping_path": "_clippings/2025-11/2025-11-04-2054-otro-tema-clipping.md",
       "discarded_date": "2025-11-04T19:23:00Z",
       "reason": "Not relevant for this post, but keep for future"
     }
@@ -246,8 +284,8 @@ When user requests to review clippings for a post:
 ## Output Summary (what Cursor should report)
 
 After creating a clipping, provide a short summary:
-- Created clipping: filename and path
-- Updated index: `.dendrita/blog/clippings/README.md` row added
+- Created clipping: filename and path in `_clippings/[YYYY-MM]/`
+- Updated index: `_clippings/README.md` row added
 - Source reference: original file and context
 - Tags assigned: list of tags
 - Next steps: suggestions for organizing or using the clipping
@@ -274,7 +312,9 @@ After creating a clipping, provide a short summary:
 ## Notes for Cursor
 
 - This file is a behavior reference. Read and apply the documented logic when the user requests clipping creation.
+- **CRITICAL:** Always save clippings to `_clippings/` at the project root, never to user-specific directories.
 - Always gather the three required components: textual content, source reference, and brief reflection.
+- Always update `_clippings/README.md` when creating a new clipping.
 - Maintain the memory system to track which clippings are used in which posts.
 - Organize clippings by month for easy navigation and management.
 - Use tags consistently for better search and discovery.

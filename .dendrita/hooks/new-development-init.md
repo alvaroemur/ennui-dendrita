@@ -2,8 +2,12 @@
 name: new-development-init
 description: "Hook de Inicialización de Nuevo Desarrollo"
 type: hook
-created: 2025-11-06
-updated: 2025-11-06
+created:
+  2025-11-06T00:00:00.000Z
+  
+updated:
+  2025-11-06T00:00:00.000Z
+  
 tags: ["hook", "behavior-reference", "development", "project-init"]
 category: behavior-reference
 ---
@@ -181,11 +185,11 @@ Antes de considerar el plan completo, Cursor debe verificar:
    - Referencias: `references/neuron/gas/`
 
 2. **Crear estructura:**
-   - `workspaces/ennui/🚀 active-projects/neuron-2-0-cloud-app/`
+   - `workspaces/[workspace]/🚀 active-projects/[project-name]/`
    - Archivos base: README.md, master-plan.md, current-context.md, tasks.md
 
 3. **Crear plan detallado:**
-   - `.cursor/plans/@neuron-2-0-cloud-app.plan.md`
+   - `.cursor/plans/@[project-name].plan.md`
    - Incluir:
      - Referencias exactas: `references/neuron/gas/pipeline.transcripts.js`
      - Configuración específica: `MATCHING.TIME_WINDOW_MINUTES: 30`
