@@ -251,6 +251,204 @@ export class DriveService extends BaseService {
   }
 
   /**
+   * Sube un archivo a Google Drive
+   */
+  async uploadFile(localPath: string, folderId: string, fileName: string): Promise<DriveFile> {
+    try {
+      if (!this.accessToken) {
+        await this.authenticate();
+      }
+
+      const fs = require('fs');
+      const fileContent = fs.readFileSync(localPath);
+      const mimeType = this.getMimeType(fileName);
+
+      logger.info(`Uploading file: ${fileName} to folder: ${folderId}`);
+
+      // Crear metadata del archivo
+      const metadata = {
+        name: fileName,
+        parents: [folderId],
+      };
+
+      // Crear multipart form data
+      const boundary = '----WebKitFormBoundary' + Math.random().toString(36).substring(2);
+      let body = '';
+      
+      // Metadata part
+      body += `--${boundary}\r\n`;
+      body += `Content-Disposition: form-data; name="metadata"\r\n`;
+      body += `Content-Type: application/json\r\n\r\n`;
+      body += JSON.stringify(metadata) + '\r\n';
+      
+      // File content part
+      body += `--${boundary}\r\n`;
+      body += `Content-Disposition: form-data; name="file"; filename="${fileName}"\r\n`;
+      body += `Content-Type: ${mimeType}\r\n\r\n`;
+      
+      const metadataPart = Buffer.from(body, 'utf-8');
+      const filePart = Buffer.from(fileContent);
+      const endBoundary = Buffer.from(`\r\n--${boundary}--\r\n`, 'utf-8');
+      
+      const requestBody = Buffer.concat([metadataPart, filePart, endBoundary]);
+
+      const url = 'https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart';
+      const response = await fetch(url, {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${this.accessToken}`,
+          'Content-Type': `multipart/related; boundary=${boundary}`,
+          'Content-Length': requestBody.length.toString(),
+        },
+        body: requestBody,
+      });
+
+      if (!response.ok) {
+        const errorText = await response.text();
+        throw new Error(`Drive API error: ${response.status} - ${errorText}`);
+      }
+
+      const file = await response.json();
+      logger.info(`File uploaded successfully: ${file.id}`);
+
+      return {
+        id: file.id,
+        name: file.name,
+        mimeType: file.mimeType || mimeType,
+        createdTime: file.createdTime,
+        modifiedTime: file.modifiedTime,
+        webViewLink: file.webViewLink,
+        parents: file.parents,
+      };
+    } catch (error) {
+      logger.error('Failed to upload file', error);
+      throw error;
+    }
+  }
+
+  /**
+   * Actualiza un archivo existente en Google Drive
+   */
+  async updateFile(fileId: string, localPath: string): Promise<DriveFile> {
+    try {
+      if (!this.accessToken) {
+        await this.authenticate();
+      }
+
+      const fs = require('fs');
+      const fileContent = fs.readFileSync(localPath);
+      const fileName = require('path').basename(localPath);
+      const mimeType = this.getMimeType(fileName);
+
+      logger.info(`Updating file: ${fileId}`);
+
+      // Primero actualizar el contenido del archivo
+      const url = `https://www.googleapis.com/upload/drive/v3/files/${encodeURIComponent(fileId)}?uploadType=media`;
+      const response = await fetch(url, {
+        method: 'PATCH',
+        headers: {
+          'Authorization': `Bearer ${this.accessToken}`,
+          'Content-Type': mimeType,
+        },
+        body: fileContent,
+      });
+
+      if (!response.ok) {
+        const errorText = await response.text();
+        throw new Error(`Drive API error: ${response.status} - ${errorText}`);
+      }
+
+      const file = await response.json();
+      logger.info(`File updated successfully: ${file.id}`);
+
+      return {
+        id: file.id,
+        name: file.name,
+        mimeType: file.mimeType || mimeType,
+        createdTime: file.createdTime,
+        modifiedTime: file.modifiedTime,
+        webViewLink: file.webViewLink,
+        parents: file.parents,
+      };
+    } catch (error) {
+      logger.error('Failed to update file', error);
+      throw error;
+    }
+  }
+
+  /**
+   * Crea una carpeta en Google Drive
+   */
+  async createFolder(folderName: string, parentFolderId?: string): Promise<DriveFile> {
+    try {
+      if (!this.accessToken) {
+        await this.authenticate();
+      }
+
+      logger.info(`Creating folder: ${folderName}`);
+
+      const metadata: any = {
+        name: folderName,
+        mimeType: 'application/vnd.google-apps.folder',
+      };
+
+      if (parentFolderId) {
+        metadata.parents = [parentFolderId];
+      }
+
+      const url = 'https://www.googleapis.com/drive/v3/files';
+      const response = await fetch(url, {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${this.accessToken}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(metadata),
+      });
+
+      if (!response.ok) {
+        const errorText = await response.text();
+        throw new Error(`Drive API error: ${response.status} - ${errorText}`);
+      }
+
+      const folder = await response.json();
+      logger.info(`Folder created successfully: ${folder.id}`);
+
+      return {
+        id: folder.id,
+        name: folder.name,
+        mimeType: folder.mimeType,
+        createdTime: folder.createdTime,
+        modifiedTime: folder.modifiedTime,
+        webViewLink: folder.webViewLink,
+        parents: folder.parents,
+      };
+    } catch (error) {
+      logger.error('Failed to create folder', error);
+      throw error;
+    }
+  }
+
+  // Funciones listFolders y listFilesInFolder están definidas más abajo con más opciones
+
+  /**
+   * Obtiene el MIME type de un archivo basado en su extensión
+   */
+  private getMimeType(fileName: string): string {
+    const ext = require('path').extname(fileName).toLowerCase();
+    const mimeTypes: Record<string, string> = {
+      '.json': 'application/json',
+      '.ts': 'application/typescript',
+      '.js': 'application/javascript',
+      '.md': 'text/markdown',
+      '.txt': 'text/plain',
+      '.html': 'text/html',
+      '.css': 'text/css',
+    };
+    return mimeTypes[ext] || 'application/octet-stream';
+  }
+
+  /**
    * Comparte un archivo con un usuario, grupo o dominio
    */
   async shareFile(fileId: string, options: FileShareOptions): Promise<void> {

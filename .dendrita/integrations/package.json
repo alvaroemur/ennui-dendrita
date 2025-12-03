@@ -4,24 +4,30 @@
   "description": "Dendrita project management system with integrations",
   "scripts": {
     "test-reddit": "ts-node examples/reddit-test-connection.ts",
-    "test-calendar": "ts-node scripts/test-calendar.ts",
-    "test-gmail": "ts-node scripts/test-gmail.ts",
-    "search-emails": "ts-node scripts/search-emails.ts",
-    "test-drive": "ts-node scripts/test-drive.ts",
-    "list-drive-folders": "ts-node scripts/list-drive-folders.ts",
-    "setup-google": "ts-node scripts/get-refresh-token.ts",
-    "calendar-scraper": "ts-node scripts/calendar-scraper.ts",
-    "verify-calendar-setup": "ts-node scripts/verify-calendar-setup.ts",
-    "debug:identify": "ts-node ../archived/scripts/identify-test-debug-files.ts"
+    "test-calendar": "ts-node scripts/pipelines/calendar-scraper-pipeline/test-calendar.ts",
+    "test-gmail": "ts-node scripts/test/test-gmail.ts",
+    "search-emails": "ts-node scripts/pipelines/google-workspace-pipeline/gmail/search-emails.ts",
+    "test-drive": "ts-node scripts/test/test-drive.ts",
+    "list-drive-folders": "ts-node scripts/pipelines/drive-scraper-pipeline/list-drive-folders.ts",
+    "setup-google": "ts-node scripts/pipelines/google-workspace-pipeline/auth/get-refresh-token.ts",
+    "calendar-scraper": "ts-node scripts/pipelines/calendar-scraper-pipeline/calendar-scraper.ts",
+    "verify-calendar-setup": "ts-node scripts/pipelines/calendar-scraper-pipeline/verify-calendar-setup.ts",
+    "debug:identify": "ts-node scripts/utils/archive-tools/identify-test-debug-files.ts",
+    "mcp-server": "ts-node services/ssh/mcp-server.ts"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
-    "typescript": "^5.0.0",
-    "ts-node": "^10.9.0"
+    "@types/ssh2": "^1.11.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.39.0"
+    "@modelcontextprotocol/sdk": "^0.5.0",
+    "@supabase/supabase-js": "^2.39.0",
+    "@types/pako": "^2.0.4",
+    "@types/uuid": "^9.0.0",
+    "pako": "^2.1.0",
+    "ssh2": "^1.15.0",
+    "uuid": "^9.0.0"
   }
 }
-
-

@@ -1,0 +1,22 @@
+{
+  "_comment": "Configuración para matching de transcripciones de reuniones",
+  "_description": "Parámetros para búsqueda y matching de transcripciones desde Tactiq y Google Meet",
+  "tactiq_folder": {
+    "path": ["📂 Registros", "Tactiq Transcription"],
+    "folder_id": null
+  },
+  "matching": {
+    "time_window_hours": 48,
+    "name_similarity_threshold": 0.45,
+    "time_weight": 0.7,
+    "name_weight": 0.3,
+    "participants_bonus": 0.05,
+    "min_final_score": 0.3
+  },
+  "google_meet": {
+    "enabled": true,
+    "prefer_captions": true,
+    "_note": "Google Meet captions are not directly available via Calendar API. This feature will be implemented when Google provides API access to Meet recordings/captions."
+  }
+}
+

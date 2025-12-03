@@ -1,3 +1,17 @@
+---
+name: supabase-sync
+description: "Sincronización Automática con Supabase"
+type: documentation
+created:
+  2025-11-06T00:00:00.000Z
+  
+updated:
+  2025-11-06T00:00:00.000Z
+  
+tags: ["documentation", "integration"]
+category: integration
+---
+
 # 🔄 Sincronización Automática con Supabase
 
 Cómo mantener dendrita sincronizado con Supabase automáticamente.
@@ -21,7 +35,7 @@ Cómo mantener dendrita sincronizado con Supabase automáticamente.
 
 ```bash
 cd /ruta/a/ennui-dendrita
-python3 .dendrita/integrations/scripts/sync-all.py
+npx ts-node .dendrita/integrations/scripts/sync/sync-all.ts
 ```
 
 **Qué sincroniza:**
@@ -45,7 +59,7 @@ cat > .git/hooks/post-commit << 'EOF'
 #!/bin/bash
 # Sincronizar con Supabase después de cada commit
 cd "$(git rev-parse --show-toplevel)"
-python3 .dendrita/integrations/scripts/sync-all.py > /dev/null 2>&1 || true
+npx ts-node .dendrita/integrations/scripts/sync/sync-all.ts > /dev/null 2>&1 || true
 EOF
 
 chmod +x .git/hooks/post-commit
@@ -65,7 +79,7 @@ Ejecuta sincronización periódica:
 crontab -e
 
 # Agregar (cada hora)
-0 * * * * cd /ruta/a/ennui-dendrita && python3 .dendrita/integrations/scripts/sync-all.py >> /tmp/dendrita-sync.log 2>&1
+0 * * * * cd /ruta/a/ennui-dendrita && npx ts-node .dendrita/integrations/scripts/sync/sync-all.ts >> /tmp/dendrita-sync.log 2>&1
 ```
 
 ### Opción 3: Watch Script
@@ -78,7 +92,7 @@ brew install watchman
 
 # Crear watch
 watchman watch .
-watchman -- trigger . dendrita-sync '**/*.md' -- python3 .dendrita/integrations/scripts/sync-all.py
+watchman -- trigger . dendrita-sync '**/*.md' -- npx ts-node .dendrita/integrations/scripts/sync/sync-all.ts
 ```
 
 ---
@@ -94,7 +108,7 @@ watchman -- trigger . dendrita-sync '**/*.md' -- python3 .dendrita/integrations/
 
 ### 2. Projects
 
-- **Código**: `active-projects/[nombre]/` y `archived-projects/[nombre]/`
+- **Código**: `active-projects/[nombre]/` y `_archived-projects/[nombre]/`
 - **Estado**: `active` o `archived` según ubicación
 - **Metadata**: Ruta del proyecto
 
@@ -143,7 +157,7 @@ SUPABASE_SERVICE_ROLE_KEY=tu_service_role_key  # Recomendado para upsert
 
 ```bash
 # Ver última sincronización
-python3 .dendrita/integrations/scripts/sync-all.py
+npx ts-node .dendrita/integrations/scripts/sync/sync-all.ts
 
 # Ver logs
 tail -f /tmp/dendrita-sync.log  # Si usas cron
@@ -169,7 +183,7 @@ Normal - significa que el registro ya existe y se actualizará.
 ### Documentos no se sincronizan
 
 - Verifica que el archivo `.md` existe y es legible
-- Verifica que el proyecto está en `active-projects/` o `archived-projects/`
+- Verifica que el proyecto está en `active-projects/` o `_archived-projects/`
 
 ---
 

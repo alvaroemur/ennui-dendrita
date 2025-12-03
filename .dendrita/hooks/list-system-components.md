@@ -2,8 +2,12 @@
 name: list-system-components
 description: "Hook de Listado de Componentes del Sistema"
 type: hook
-created: 2025-11-06
-updated: 2025-11-06
+created:
+  2025-11-06T00:00:00.000Z
+  
+updated:
+  2025-11-06T00:00:00.000Z
+  
 tags: ["hook", "behavior-reference"]
 category: behavior-reference
 ---
@@ -19,6 +23,8 @@ Referencia de comportamiento para Cursor - listado del sistema de hooks, agents,
 Este hook documenta el comportamiento esperado que Cursor debe aplicar cuando el usuario solicita listar el sistema de componentes de dendrita.
 
 **Propósito:** Proporcionar una vista completa y organizada de todos los componentes del sistema dendrita, separando la capa verbal (hooks, agents, skills) de la capa lógica (scripts).
+
+**System name:** The system is called **"dendrita"** or **"dendrita system"**. Components (hooks, agents, skills, scripts) are collectively referred to as "dendrita components" or "dendrita infrastructure". See `.dendrita/docs/SYSTEM-BEHAVIOR.md` for more details.
 
 **Estructura del sistema:**
 - **Capa Verbal:** Hooks, Agents, Skills (documentación y referencias de comportamiento)
@@ -72,7 +78,7 @@ Cuando se activa el listado, Cursor debe:
    - Inicialización: repo-initialization, session-initialization-verification
    - Activación: skill-activation-prompt, dendrita-alias-activation
    - Seguimiento: post-tool-use-tracker, working-context
-   - Modificación: dendrita-infrastructure-modification, dendritificar
+   - Modificación: dendrita-infrastructure-modification, dendritify
    - Verificación: markdown-source-of-truth-verification
    - Otros: journaling, blog-clipping-creation, code-debugging-archiving
 ```
@@ -97,7 +103,7 @@ Ubicación: `.dendrita/hooks/`
 
 #### Modificación
 - `dendrita-infrastructure-modification.md` - Modificación de infraestructura dendrita
-- `dendritificar.md` - Conversión de componentes a formato dendrita
+- `dendritify.md` - Conversión de componentes a formato dendrita
 
 #### Verificación
 - `markdown-source-of-truth-verification.md` - Verificación de markdown como fuente de verdad
@@ -254,6 +260,8 @@ El listado completo debe seguir este formato:
 
 ```markdown
 # Sistema de Componentes dendrita
+
+**Nota:** El sistema se denomina "dendrita" o "sistema dendrita". Los componentes se refieren colectivamente como "componentes del sistema dendrita".
 
 ## Capa Verbal (Documentación y Referencias de Comportamiento)
 

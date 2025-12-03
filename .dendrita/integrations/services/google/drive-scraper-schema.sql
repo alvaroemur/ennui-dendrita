@@ -24,6 +24,7 @@ CREATE TABLE IF NOT EXISTS drive_scraping_configs (
   extract_content BOOLEAN NOT NULL DEFAULT false, -- Extraer contenido de archivos (solo texto)
   extract_metadata BOOLEAN NOT NULL DEFAULT true, -- Extraer todos los metadatos
   extract_thumbnail BOOLEAN NOT NULL DEFAULT false, -- Extraer miniatura si está disponible
+  root_files_metadata_only BOOLEAN NOT NULL DEFAULT false, -- Si true, archivos sueltos en root solo se scrapean con metadata (sin contenido). Las carpetas en root siempre se scrapean recursivamente.
   
   -- Filtros opcionales
   mime_type_filter TEXT[], -- Filtrar por tipos MIME (ej: ['application/pdf', 'text/plain'])

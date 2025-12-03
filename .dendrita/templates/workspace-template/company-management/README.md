@@ -1,3 +1,17 @@
+---
+name: readme
+description: "Company Management"
+type: template
+created:
+  2025-11-06T00:00:00.000Z
+  
+updated:
+  2025-11-06T00:00:00.000Z
+  
+tags: ["template", "company-management", "readme", "documentation"]
+category: template
+---
+
 # Company Management
 
 This folder contains general company management documents.

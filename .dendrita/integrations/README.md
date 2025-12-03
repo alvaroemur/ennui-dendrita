@@ -1,3 +1,13 @@
+---
+name: readme
+description: "Integrations Module"
+type: documentation
+created: 2025-11-06
+updated: 2025-11-06
+tags: ["documentation", "integration", "readme"]
+category: integration
+---
+
 # 🔐 Integrations Module
 
 Sistema seguro de integración con APIs externas sin exponer datos sensibles.
@@ -236,6 +246,34 @@ python3 .dendrita/integrations/scripts/sync-all.py
 
 **Ver documentación completa:**
 - `.dendrita/integrations/hooks/supabase-sync.md`
+
+---
+
+## 🔍 Scripts de Utilidad
+
+### Extracción de Transcripciones de Reuniones
+
+```bash
+# Extraer transcripciones de reuniones desde Supabase
+npx ts-node .dendrita/integrations/scripts/extract-meeting-transcripts.ts
+
+# Especificar ruta de salida
+npx ts-node .dendrita/integrations/scripts/extract-meeting-transcripts.ts ./output/transcripts.json
+```
+
+**Nota**: Este script busca transcripciones en las tablas `calendar_events` y `calendar_event_instances`. En el futuro, esta funcionalidad será proporcionada por **Neuron por API**.
+
+Ver [README-extract-transcripts.md](scripts/README-extract-transcripts.md) para más detalles.
+
+### Inspección de Base de Datos
+
+```bash
+# Listar todas las tablas en Supabase
+npx ts-node .dendrita/integrations/scripts/list-supabase-tables.ts
+
+# Inspeccionar esquema de una tabla específica
+npx ts-node .dendrita/integrations/scripts/inspect-table-schema.ts <table_name>
+```
 
 ---
 

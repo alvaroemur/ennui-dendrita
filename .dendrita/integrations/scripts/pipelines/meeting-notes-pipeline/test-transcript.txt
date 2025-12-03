@@ -1,0 +1,29 @@
+Reunión Inspiro - Arturo y Álvaro
+Fecha: 2026-02-02
+Participantes: Arturo González del Valle, Álvaro Mur
+
+Arturo: Hola Álvaro, ¿cómo estás?
+Álvaro: Bien, gracias. ¿Y tú?
+Arturo: Muy bien. Hoy queremos revisar los avances del proyecto.
+Álvaro: Perfecto, tengo varios puntos para discutir.
+Arturo: Excelente. Empecemos con el cliente Grifos Espinoza.
+Álvaro: Sí, hemos identificado varias necesidades. Necesitan automatización de procesos.
+Arturo: ¿Qué tipo de procesos específicamente?
+Álvaro: Conciliaciones automáticas, facturas de proveedores, kardex en tiendas.
+Arturo: Entiendo. ¿Tienes una propuesta lista?
+Álvaro: Estoy trabajando en ella. Necesito definir el alcance exacto.
+Arturo: Perfecto. ¿Cuándo podrías tenerla lista?
+Álvaro: Para el viernes de esta semana.
+Arturo: Excelente. También quería revisar el portafolio de programación.
+Álvaro: Sí, lo tengo casi listo. Incluye ejemplos de proyectos anteriores.
+Arturo: Perfecto. Envíamelo cuando esté listo.
+Álvaro: Claro, lo haré hoy mismo.
+Arturo: Genial. ¿Algo más que quieras discutir?
+Álvaro: Sí, sobre la reunión con Carlos mañana.
+Arturo: ¿Qué necesitas?
+Álvaro: Quiero ajustar la propuesta antes de la reunión con el cliente.
+Arturo: Perfecto, coordina con Carlos.
+Álvaro: De acuerdo. Creo que eso es todo por hoy.
+Arturo: Perfecto. Nos vemos mañana entonces.
+Álvaro: Hasta mañana.
+

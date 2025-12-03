@@ -57,31 +57,33 @@
 ### 2. When editing files:
 
 1. **Identify the project context** based on the file path:
-   - `workspaces/[workspace]/active-projects/[proyecto]/` → Active project
-   - `workspaces/[workspace]/best-practices/[tipo-proyecto]/` → Template/best practices (workspace-specific, fallback to ennui if missing)
+   - `workspaces/[workspace]/🚀 active-projects/[proyecto]/` → Active project
+   - `workspaces/[workspace]/⚙️ company-management/📚 best-practices/[tipo-proyecto]/` → Template/best practices (workspace-specific, fallback to ennui if missing)
    - `workspaces/[workspace]/work-modes/[modo].md` → **DEPRECATED:** Work-modes de workspace han sido consolidados en agents y skills. Ver agents y skills en `.dendrita/users/[user-id]/` para metodologías especializadas.
    
-   **Note:** Each workspace has its own best-practices, products, work-modes, stakeholders, and tools-templates. If a workspace doesn't have specific content, fallback to `workspaces/ennui/` as the reference standard.
+   **Note:** Each workspace has its own best-practices (inside company-management), products, work-modes, stakeholders, and tools-templates. If a workspace doesn't have specific content, fallback to `workspaces/ennui/` as the reference standard.
 
 2. **Check for style configuration files** in the identified context:
    - **For dendrita components** (agents, skills, hooks): Check `.dendrita/config-estilo.json`
    - **For workspace files**: Check `workspaces/[empresa]/config-estilo.json`
-   - **For project files**: Check `workspaces/[empresa]/active-projects/[proyecto]/config-estilo.json` (project-level overrides)
+   - **For project files**: Check `workspaces/[empresa]/🚀 active-projects/[proyecto]/config-estilo.json` (project-level overrides)
    - **Apply style rules** from these configuration files (project-level rules override company-level rules, dendrita rules apply to `.dendrita/` components)
 
 3. **Apply the best practices** from the identified context
 
 4. **Maintain consistency** with the project's persistent documents:
    - `master-plan.md`
-   - `current-context.md`
+   - `project-context.json` (combines current-context.md, master-plan.md, and tasks.md)
    - `tasks.md`
 
 ### 3. When working with projects:
 
-1. **Always read `current-context.md`** from the project before responding
-2. **Review `tasks.md`** to understand the task status
-3. **Consult `master-plan.md`** to understand the general strategy
-4. **Update `current-context.md`** after important decisions
+1. **Always read `project-context.json`** from the project before responding (or `master-plan.md` and `tasks.md` if JSON doesn't exist yet)
+2. **Review `tasks.md`** to understand the task status (or use `project-context.json` which includes parsed tasks)
+3. **Consult `master-plan.md`** to understand the general strategy (or use `project-context.json` which includes parsed master-plan)
+4. **Update `project-context.json`** by running `tsx .dendrita/integrations/scripts/update-project-context.ts` after important decisions
+
+**NOTE:** `current-context.md` files have been migrated to `project-context.json`. Only JSON files are used for context.
 
 ---
 
@@ -150,6 +152,38 @@ Files in `.dendrita/hooks/` are **behavior references**, NOT executable scripts.
    - Maintains consistency and updates related files
    - Warns about breaking changes and provides migration guidance
 
+8. **dendrita-comunicacion** (ALWAYS run when infrastructure changes):
+   - **CRITICAL:** Automatically log all changes to dendrita infrastructure as "tweets" in timeline
+   - Detects changes in `.dendrita/hooks/` (hooks created, modified, deleted)
+   - Detects changes in `.dendrita/users/[user-id]/skills/` (skills created, modified, deleted)
+   - Detects changes in `.dendrita/users/[user-id]/agents/` (agents created, modified, deleted)
+   - Detects changes in `.dendrita/integrations/scripts/` (scripts created, modified, deleted)
+   - Generates tweet entry with timestamp, type badge, action, component name, and description
+   - Appends tweet to `.dendrita/comunicacion/timeline.md` (most recent first)
+   - Creates a communication channel for dendrita to document its own evolution
+   - This hook MUST run automatically when infrastructure changes are detected
+
+9. **work-timeline** (ALWAYS run when work changes):
+   - **CRITICAL:** Automatically log all changes to work projects as "tweets" in workspace timelines
+   - Detects changes in `workspaces/[workspace]/🚀 active-projects/**/*` (projects created, modified, archived)
+   - Detects changes in project files (`master-plan.md`, `project-context.json`, `tasks.md`)
+   - Detects task completions, milestones, decisions, and status changes
+   - Generates tweet entry with timestamp, type badge, action, project/component name, and description
+   - Appends tweet to `workspaces/[workspace]/📊 work-timeline.md` (most recent first)
+   - Creates a communication channel to document work evolution in each workspace
+   - This hook MUST run automatically when work changes are detected
+
+10. **markdown-source-of-truth-verification** (ALWAYS run when reading workspace markdown):
+   - **CRITICAL:** When reading a markdown document from `workspaces/[workspace]/`, execute verification script
+   - Verify that the markdown document is the "source of truth" by comparing it with JSON/CSV data from work systems
+   - Execute `.dendrita/integrations/scripts/verify-markdown-source-of-truth.ts` automatically
+   - Compare key data points between markdown and source data (JSON/CSV)
+   - Detect discrepancies (different values, missing data, additional data)
+   - Generate verification report
+   - Show results non-intrusively (don't block document reading)
+   - If discrepancies are found, suggest updating the document or regenerating from source
+   - This hook MUST run when reading workspace markdown documents that represent company memory
+
 **NOTE:** Do not attempt to execute these scripts. They are references to understand expected behavior.
 
 ---
@@ -159,20 +193,19 @@ Files in `.dendrita/hooks/` are **behavior references**, NOT executable scripts.
 ```
 ennui-dendrita/
 ├── workspaces/[workspace-name]/
-│   ├── active-projects/           ← Proyectos activos
-│   ├── archived-projects/         ← Proyectos archivados
-│   ├── company-management/        ← Gestión general (opcional)
-│   ├── best-practices/            ← Templates y metodologías (REQUIRED)
-│   ├── products/                  ← Portafolio de productos (REQUIRED)
-│   ├── work-modes/                ← **DEPRECATED:** Work-modes de workspace consolidados en agents y skills
-│   ├── stakeholders/              ← Gestión de aliados (REQUIRED)
-│   ├── tools-templates/           ← Herramientas reutilizables (REQUIRED)
-│   ├── config-estilo.json        ← Reglas de estilo (opcional)
-│   └── README.md                 ← Documentación del workspace
+│   ├── 🚀 active-projects/           ← Proyectos activos
+│   ├── .archived-projects/           ← Proyectos archivados (oculto)
+│   ├── ⚙️ company-management/        ← Gestión general (opcional)
+│   │   └── 📚 best-practices/        ← Templates y metodologías (REQUIRED)
+│   ├── 📦 products/                  ← Portafolio de productos (REQUIRED)
+│   ├── 🤝 stakeholders/              ← Gestión de aliados (REQUIRED)
+│   ├── 🛠️ tools-templates/            ← Herramientas reutilizables (REQUIRED)
+│   ├── config-estilo.json            ← Reglas de estilo y marca (opcional)
+│   └── README.md                     ← Documentación del workspace
 │
-│   Cada proyecto en active-projects/ debe tener:
+│   Cada proyecto en 🚀 active-projects/ debe tener:
 │   ├── master-plan.md
-│   ├── current-context.md
+│   ├── project-context.json (combina current-context.md, master-plan.md y tasks.md)
 │   └── tasks.md
 │
 └── .dendrita/          ← ALWAYS review first
@@ -213,9 +246,9 @@ ennui-dendrita/
 2. **User sends prompt** → Review `.dendrita/users/[user-id]/skills/skill-rules.json`
 3. **Identify relevant skills** → Read corresponding `SKILL.md` from `.dendrita/users/[user-id]/skills/[skill-name]/SKILL.md`
 4. **Check for dendrita alias mentions** → If detected, activate workspace context
-5. **Identify project** → Read `current-context.md` and `tasks.md`
+5. **Identify project** → Read `project-context.json` (or `master-plan.md` and `tasks.md` if JSON doesn't exist)
 6. **Respond with context** → Apply knowledge from skills and project
-7. **Update documents** → Update `current-context.md` if needed
+7. **Update documents** → Update `project-context.json` by running `tsx .dendrita/integrations/scripts/update-project-context.ts` if needed
 
 ---
 
@@ -245,7 +278,7 @@ ennui-dendrita/
 
 **Rules:**
 - Workspace in lowercase
-- Project name as it appears in `active-projects/`
+- Project name as it appears in `🚀 active-projects/`
 - Task description concise but descriptive
 
 #### Work Type Chats
@@ -321,6 +354,32 @@ ennui-dendrita/
 
 **See `.dendrita/config-estilo.json` for complete chat naming conventions.**
 
+### Emoji Files and Backup System
+
+#### Emojis in File/Folder Names
+- **Allowed**: Files in `⚙️ company-management/` and files within project folders (except system files)
+- **Allowed**: Project folder names in `🚀 active-projects/` and `.archived-projects/`
+- **Not allowed**: System files (`master-plan.md`, `project-context.json`, `tasks.md`, etc.)
+- **Not allowed**: System folder names (`📚 best-practices/`, `📦 products/`, `🤝 stakeholders/`, `🛠️ tools-templates/`, etc.)
+
+#### Backup System
+- Files/folders with emojis automatically get hidden backup versions
+- Backup files are prefixed with `.` (dot) and use sanitized names
+- Backups are updated on-demand when user requests
+- Use script: `ts-node .dendrita/integrations/scripts/update-emoji-backups.ts`
+
+#### When creating files with emojis:
+1. Create the file with emoji name (e.g., `✅ Participantes aceptados.md`)
+2. Automatically create hidden backup (e.g., `.participantes-aceptados.md`)
+3. Inform user about backup creation
+
+#### When user requests backup update:
+1. Run backup script for specified file/workspace
+2. Update hidden backup with current content
+3. Confirm update completion
+
+**See `.dendrita/hooks/emoji-files-backup.md` for complete backup system documentation.**
+
 ### Company and Project Style Configuration
 
 Each company can have a `config-estilo.json` file in `workspaces/[empresa]/` containing:
@@ -328,9 +387,11 @@ Each company can have a `config-estilo.json` file in `workspaces/[empresa]/` con
 - **Company-specific conventions**: Brand guidelines, naming standards
 - **Scope**: Applies to all files within that company's directory
 
-Projects can optionally override with their own `config-estilo.json` in `workspaces/[empresa]/active-projects/[proyecto]/`.
+Projects can optionally override with their own `config-estilo.json` in `workspaces/[empresa]/🚀 active-projects/[proyecto]/`.
 
-**Example**: `workspaces/ennui/config-estilo.json` specifies that "ennui" must always be written in lowercase as a style decision.
+**Note**: `config-estilo.json` now unifies both style rules (`reglas_estilo`) and brand configuration (`brand`) in a single file. Previously separated into `brand-config.json` and `config-estilo.json`.
+
+**Example**: `workspaces/ennui/config-estilo.json` specifies that "ennui" must always be written in lowercase as a style decision, and includes brand colors and typography configuration.
 
 ---
 
@@ -345,7 +406,8 @@ Projects can optionally override with their own `config-estilo.json` in `workspa
 - ✅ **Paradigm:** Agents and skills are user-specific domain knowledge stored in `.dendrita/users/[user-id]/`, not generic infrastructure
 - ✅ **When naming chats manually:** Follow chat naming conventions from `.dendrita/config-estilo.json` for better organization
 - ✅ Maintain consistency with ennui-dendrita project structure
-- ✅ Update `current-context.md` after important decisions
+- ✅ Update `project-context.json` by running `tsx .dendrita/integrations/scripts/update-project-context.ts` after important decisions
+- ✅ **NOTE:** `current-context.md` files have been migrated to `project-context.json`. Only JSON files are used for context.
 
 ---
 

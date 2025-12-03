@@ -10,7 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Example user template in `.dendrita/users/example-user/` with complete structure
 - Node.js integration setup (package.json, package-lock.json, tsconfig.json) in `.dendrita/integrations/`
-- Archived scripts and documentation in `.dendrita/archived/`
+- Archived scripts and documentation in `.archived/`
 
 ### Changed
 - **BREAKING**: Moved agents from `.dendrita/agents/` to `.dendrita/users/[user-id]/agents/`

@@ -1,3 +1,17 @@
+---
+name: clickup-setup
+description: "ClickUp Setup Guide"
+type: documentation
+created:
+  2025-11-06T00:00:00.000Z
+  
+updated:
+  2025-11-06T00:00:00.000Z
+  
+tags: ["documentation", "integration"]
+category: integration
+---
+
 # ClickUp Setup Guide
 
 Guía paso a paso para configurar la integración con ClickUp.
@@ -37,7 +51,7 @@ CLICKUP_ACCESS_TOKEN=pk_tu_token_aqui
 Ejecuta el script de exploración para verificar que todo funciona:
 
 ```bash
-npx ts-node .dendrita/integrations/explore/clickup-explore.ts
+npx ts-node _temp/dev-tools/explore/clickup-explore.ts
 ```
 
 O desde TypeScript:

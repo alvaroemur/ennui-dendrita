@@ -1,3 +1,17 @@
+---
+name: readme
+description: "Products"
+type: template
+created:
+  2025-11-06T00:00:00.000Z
+  
+updated:
+  2025-11-06T00:00:00.000Z
+  
+tags: ["template", "product", "readme", "documentation"]
+category: template
+---
+
 # Products
 
 This folder contains the products portfolio and product documentation.

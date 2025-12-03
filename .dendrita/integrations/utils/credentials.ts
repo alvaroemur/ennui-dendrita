@@ -40,6 +40,22 @@ export interface Credentials {
   notion?: {
     integrationToken: string;
   };
+  ssh?: {
+    privateKey?: string;
+    privateKeyPath?: string;
+    configPath?: string;
+    hosts?: Record<
+      string,
+      {
+        name: string;
+        host: string;
+        user: string;
+        port: number;
+        privateKey?: string;
+        privateKeyPath?: string;
+      }
+    >;
+  };
 }
 
 class CredentialsLoader {
@@ -128,6 +144,9 @@ class CredentialsLoader {
         integrationToken: process.env.NOTION_INTEGRATION_TOKEN,
       };
     }
+
+    // SSH
+    this.loadSSHFromEnv();
   }
 
   private tryLoadFromFile(): void {
@@ -223,6 +242,9 @@ class CredentialsLoader {
         integrationToken: envVars.NOTION_INTEGRATION_TOKEN,
       };
     }
+
+    // SSH
+    this.loadSSHFromFile(envVars);
   }
 
   /**
@@ -345,6 +367,207 @@ class CredentialsLoader {
   }
 
   /**
+   * Carga configuración SSH desde variables de entorno
+   */
+  private loadSSHFromEnv(): void {
+    const sshConfig: Credentials['ssh'] = {
+      privateKey: process.env.SSH_PRIVATE_KEY,
+      privateKeyPath: process.env.SSH_PRIVATE_KEY_PATH,
+      configPath: process.env.SSH_CONFIG_PATH,
+      hosts: {},
+    };
+
+    // Cargar hosts desde variables de entorno
+    // Formato: SSH_HOST_NAME, SSH_HOST_HOST, SSH_HOST_USER, SSH_HOST_PORT, SSH_HOST_PRIVATE_KEY
+    const hostKeys = Object.keys(process.env).filter((key) => key.startsWith('SSH_HOST_') && key.endsWith('_NAME'));
+    for (const hostNameKey of hostKeys) {
+      const hostName = process.env[hostNameKey];
+      if (!hostName) continue;
+
+      const hostKey = hostNameKey.replace('_NAME', '');
+      const host = process.env[`${hostKey}_HOST`];
+      const user = process.env[`${hostKey}_USER`];
+      const port = process.env[`${hostKey}_PORT`];
+      const privateKey = process.env[`${hostKey}_PRIVATE_KEY`];
+      const privateKeyPath = process.env[`${hostKey}_PRIVATE_KEY_PATH`];
+
+      if (host && user) {
+        sshConfig.hosts![hostName] = {
+          name: hostName,
+          host,
+          user,
+          port: port ? parseInt(port, 10) : 22,
+          privateKey,
+          privateKeyPath,
+        };
+      }
+    }
+
+    // Si hay alguna configuración SSH, guardarla
+    if (sshConfig.privateKey || sshConfig.privateKeyPath || sshConfig.configPath || Object.keys(sshConfig.hosts || {}).length > 0) {
+      this.loaded.ssh = sshConfig;
+    }
+  }
+
+  /**
+   * Carga configuración SSH desde archivo .env.local
+   */
+  private loadSSHFromFile(envVars: Record<string, string>): void {
+    const sshConfig: Credentials['ssh'] = {
+      privateKey: envVars.SSH_PRIVATE_KEY,
+      privateKeyPath: envVars.SSH_PRIVATE_KEY_PATH,
+      configPath: envVars.SSH_CONFIG_PATH,
+      hosts: {},
+    };
+
+    // Cargar hosts desde variables de entorno en archivo
+    const hostKeys = Object.keys(envVars).filter((key) => key.startsWith('SSH_HOST_') && key.endsWith('_NAME'));
+    for (const hostNameKey of hostKeys) {
+      const hostName = envVars[hostNameKey];
+      if (!hostName) continue;
+
+      const hostKey = hostNameKey.replace('_NAME', '');
+      const host = envVars[`${hostKey}_HOST`];
+      const user = envVars[`${hostKey}_USER`];
+      const port = envVars[`${hostKey}_PORT`];
+      const privateKey = envVars[`${hostKey}_PRIVATE_KEY`];
+      const privateKeyPath = envVars[`${hostKey}_PRIVATE_KEY_PATH`];
+
+      if (host && user) {
+        sshConfig.hosts![hostName] = {
+          name: hostName,
+          host,
+          user,
+          port: port ? parseInt(port, 10) : 22,
+          privateKey,
+          privateKeyPath,
+        };
+      }
+    }
+
+    // Si hay alguna configuración SSH, guardarla
+    if (sshConfig.privateKey || sshConfig.privateKeyPath || sshConfig.configPath || Object.keys(sshConfig.hosts || {}).length > 0) {
+      this.loaded.ssh = sshConfig;
+    }
+  }
+
+  /**
+   * Obtiene configuración SSH
+   */
+  getSSH() {
+    if (!this.loaded.ssh) {
+      throw new Error(
+        'SSH not configured. Set SSH_PRIVATE_KEY or SSH_PRIVATE_KEY_PATH in .env.local. See .dendrita/integrations/hooks/ssh-setup.md'
+      );
+    }
+
+    // Si hay SSH_CONFIG_PATH, intentar cargar desde archivo SSH config
+    if (this.loaded.ssh.configPath) {
+      try {
+        const sshConfigPath = path.resolve(this.loaded.ssh.configPath);
+        if (fs.existsSync(sshConfigPath)) {
+          const parsedConfig = this.parseSSHConfigFile(sshConfigPath);
+          return {
+            ...this.loaded.ssh,
+            hosts: {
+              ...this.loaded.ssh.hosts,
+              ...parsedConfig.hosts,
+            },
+          };
+        }
+      } catch (error) {
+        console.warn(`[Credentials] Failed to parse SSH config file: ${error}`);
+      }
+    }
+
+    return this.loaded.ssh;
+  }
+
+  /**
+   * Parsea archivo SSH config (~/.ssh/config)
+   */
+  private parseSSHConfigFile(configPath: string): { hosts: Record<string, any> } {
+    const hosts: Record<string, any> = {};
+    const content = fs.readFileSync(configPath, 'utf-8');
+    const lines = content.split('\n');
+
+    let currentHost: string | null = null;
+    let currentConfig: any = {};
+
+    for (const line of lines) {
+      const trimmed = line.trim();
+      if (!trimmed || trimmed.startsWith('#')) continue;
+
+      if (trimmed.startsWith('Host ')) {
+        // Guardar host anterior si existe
+        if (currentHost && currentConfig.host) {
+          hosts[currentHost] = {
+            name: currentHost,
+            host: currentConfig.host,
+            user: currentConfig.user || 'root',
+            port: currentConfig.port || 22,
+            privateKeyPath: currentConfig.identityfile,
+          };
+        }
+
+        // Iniciar nuevo host
+        currentHost = trimmed.substring(5).trim().split(' ')[0];
+        currentConfig = {};
+      } else if (currentHost) {
+        const [key, ...valueParts] = trimmed.split(/\s+/);
+        const value = valueParts.join(' ');
+
+        switch (key.toLowerCase()) {
+          case 'hostname':
+            currentConfig.host = value;
+            break;
+          case 'user':
+            currentConfig.user = value;
+            break;
+          case 'port':
+            currentConfig.port = parseInt(value, 10);
+            break;
+          case 'identityfile':
+            // Expandir ~ a home directory
+            currentConfig.identityfile = value.replace('~', process.env.HOME || process.env.USERPROFILE || '');
+            break;
+        }
+      }
+    }
+
+    // Guardar último host
+    if (currentHost && currentConfig.host) {
+      hosts[currentHost] = {
+        name: currentHost,
+        host: currentConfig.host,
+        user: currentConfig.user || 'root',
+        port: currentConfig.port || 22,
+        privateKeyPath: currentConfig.identityfile,
+      };
+    }
+
+    return { hosts };
+  }
+
+  /**
+   * Obtiene configuración de un host SSH específico
+   */
+  getSSHHost(hostName: string) {
+    const sshConfig = this.getSSH();
+    if (!sshConfig.hosts || !sshConfig.hosts[hostName]) {
+      throw new Error(`SSH host '${hostName}' not configured. Set SSH_HOST_${hostName.toUpperCase()}_HOST, SSH_HOST_${hostName.toUpperCase()}_USER in .env.local`);
+    }
+    return sshConfig.hosts[hostName];
+  }
+
+  /**
+   * Comprueba si SSH está configurado
+   */
+  hasSSH(): boolean {
+    return !!this.loaded.ssh;
+  }
+
+  /**
    * IMPORTANTE: Nunca retorna credenciales en logs o strings
    */
   getAvailableServices(): string[] {
@@ -356,6 +579,7 @@ class CredentialsLoader {
     if (this.hasClickUp()) services.push('ClickUp');
     if (this.hasAsana()) services.push('Asana');
     if (this.hasNotion()) services.push('Notion');
+    if (this.hasSSH()) services.push('SSH');
     return services;
   }
 }
@@ -371,5 +595,6 @@ export async function loadCredentials(): Promise<Credentials> {
     clickup: credentials.hasClickUp() ? credentials.getClickUp() : undefined,
     asana: credentials.hasAsana() ? credentials.getAsana() : undefined,
     notion: credentials.hasNotion() ? credentials.getNotion() : undefined,
+    ssh: credentials.hasSSH() ? credentials.getSSH() : undefined,
   };
 }

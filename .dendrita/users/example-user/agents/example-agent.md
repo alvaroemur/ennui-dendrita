@@ -1,6 +1,6 @@
 ---
 name: example-agent
-description: Use this agent when you need to perform example tasks. This is a template agent that demonstrates the structure and content expected in an agent file.
+description: "Use this agent when you need to perform example tasks. This is a template agent that demonstrates the structure and content expected in an agent file."
 ---
 
 # Agent: Example Agent

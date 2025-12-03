@@ -1,3 +1,14 @@
+---
+name: readme
+description: "Archived Projects"
+type: template
+project: README.md
+created: 2025-11-06
+updated: 2025-11-06
+tags: ["template", "archived-project", "readme", "documentation"]
+category: template
+---
+
 # Archived Projects
 
 This folder contains completed projects for the workspace.

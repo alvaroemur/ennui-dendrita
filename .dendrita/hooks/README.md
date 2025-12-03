@@ -2,8 +2,12 @@
 name: readme
 description: "Hooks for ennui-dendrita"
 type: hook
-created: 2025-11-06
-updated: 2025-11-06
+created:
+  2025-11-06T00:00:00.000Z
+  
+updated:
+  2025-11-06T00:00:00.000Z
+  
 tags: ["hook", "behavior-reference", "readme", "documentation"]
 category: behavior-reference
 ---
@@ -123,8 +127,7 @@ Hooks in `.dendrita/hooks/` are **behavior references**, NOT executable scripts.
    - Suggest to user activating the skill if appropriate
 
 **Reference files:**
-- `skill-activation-prompt.ts` - Documented TypeScript logic
-- `skill-activation-prompt.sh` - Bash wrapper (reference)
+- `skill-activation-prompt.ts` - Documented TypeScript logic (executable for future orchestrators)
 
 **For Cursor:**
 - Read these files to understand the logic
@@ -202,7 +205,7 @@ Hooks in `.dendrita/hooks/` are **behavior references**, NOT executable scripts.
 
 ---
 
-### dendrita-comunicacion (DendritaComunicacion)
+### dendrita-communication (DendritaCommunication)
 
 **Behavior reference:** Logic to automatically log infrastructure changes as "tweets" in timeline
 
@@ -221,10 +224,10 @@ Hooks in `.dendrita/hooks/` are **behavior references**, NOT executable scripts.
    - Include file path reference
 
 3. Update timeline:
-   - Append tweet to `.dendrita/comunicacion/timeline.md`
+   - Append tweet to `.dendrita/blog/posts/dev-timeline.md`
    - Prepend new tweet at top (most recent first)
    - Maintain chronological order
-   - Update last update timestamp
+   - Update last update timestamp and frontmatter `updated` field
 
 4. Tweet format:
    - Timestamp in ISO 8601 format
@@ -234,7 +237,7 @@ Hooks in `.dendrita/hooks/` are **behavior references**, NOT executable scripts.
    - File path in code format
 
 **Reference files:**
-- `dendrita-comunicacion.md` - Documented communication/logging logic
+- `dendrita-communication.md` - Documented communication/logging logic
 
 **For Cursor:**
 - Read this file to understand the logic
@@ -244,7 +247,7 @@ Hooks in `.dendrita/hooks/` are **behavior references**, NOT executable scripts.
 
 **Related documentation:**
 - `.dendrita/hooks/dendrita-infrastructure-modification.md` - Infrastructure modification hook (triggers this hook)
-- `.dendrita/comunicacion/timeline.md` - Timeline file where tweets are logged
+- `.dendrita/blog/posts/dev-timeline.md` - Timeline file where tweets are logged
 - `.dendrita/hooks/post-tool-use-tracker.sh` - File tracking reference (provides context)
 
 **Integration:**
@@ -448,7 +451,7 @@ Hooks in `.dendrita/hooks/` are **behavior references**, NOT executable scripts.
 - Apply documented behavior reflexively when working with temporary context files
 
 **Related documentation:**
-- `.dendrita/hooks/dendritificar.md` - Dendritification process (may trigger working-context)
+- `.dendrita/hooks/dendritify.md` - Dendritification process (may trigger working-context)
 - `.dendrita/hooks/post-tool-use-tracker.sh` - File tracking reference
 - `.dendrita/integrations/scripts/update-working-context.ts` - Script for automatic updates
 
@@ -460,20 +463,20 @@ Hooks in `.dendrita/hooks/` are **behavior references**, NOT executable scripts.
 
 ---
 
-### dendritificar (Dendritificar)
+### dendritify (Dendritify)
 
 **Behavior reference:** Logic to convert components into dendrita system components following dendrita patterns and conventions
 
 **Expected behavior that Cursor must apply:**
 
-1. When dendritificar behavior is activated:
-   - User explicitly requests "dendritificar" something
+1. When dendritify behavior is activated:
+   - User explicitly requests "dendritify" something
    - User mentions "convertir en hook/agent/skill"
    - User wants to make something "parte del sistema dendrita"
    - User requests to "estructurar como dendrita"
 
-2. When dendritificando:
-   - Identify what to dendritificar (script, process, workflow, concept)
+2. When dendritifying:
+   - Identify what to dendritify (script, process, workflow, concept)
    - Determine component type (hook, agent, skill, script, integration)
    - Analyze current state (read files, review patterns, identify requirements)
    - Plan conversion (structure, dependencies, documentation, naming)
@@ -487,15 +490,15 @@ Hooks in `.dendrita/hooks/` are **behavior references**, NOT executable scripts.
    - **Script:** Create `.dendrita/integrations/scripts/[script-name].ts` with proper structure
 
 **Reference files:**
-- `dendritificar.md` - Documented dendritification process logic
+- `dendritify.md` - Documented dendritification process logic
 
 **For Cursor:**
 - Read this file to understand the logic
 - NOT attempt to execute it
-- Apply documented behavior reflexively when user requests to dendritificar something
+- Apply documented behavior reflexively when user requests to dendritify something
 
 **Related documentation:**
-- `.dendrita/config-estilo.json` - Naming conventions and style rules
+- `.dendrita/users/[user-id]/config-estilo.json` - Naming conventions and style rules (user-specific)
 - `.dendrita/hooks/working-context.md` - Working context hook
 - `.dendrita/hooks/dendrita-infrastructure-modification.md` - Infrastructure modification hook
 - `.dendrita/users/[user-id]/agents/README.md` - Agent structure
@@ -530,7 +533,7 @@ Hooks in `.dendrita/hooks/` are **behavior references**, NOT executable scripts.
 
 3. **Archiving Phase:**
    - Create timestamped archive directory: `YYYY-MM-DD-[description]`
-   - Move files to `.dendrita/archived/` structure:
+   - Move files to `.archived/` structure:
      - Code → `archived/code/scripts/`, `archived/code/examples/`, `archived/code/tests/`
      - Rules → `archived/rules/skills/`, `archived/rules/agents/`, `archived/rules/hooks/`
    - Create `ARCHIVE-README.md` with reason, date, original location, dependencies, and restoration instructions
@@ -556,8 +559,8 @@ Hooks in `.dendrita/hooks/` are **behavior references**, NOT executable scripts.
   - System maintenance is needed
 
 **Related documentation:**
-- `.dendrita/archived/INDEX.md` - Archive index and maintenance
-- `.dendrita/archived/scripts/identify-test-debug-files.ts` - Script to identify archive candidates
+- `.dendrita/integrations/scripts/utils/archive-tools/identify-test-debug-files.ts` - Script to identify archive candidates
+- `.dendrita/hooks/code-debugging-archiving.md` - Archive process documentation
 - `.dendrita/integrations/README.md` - Integration documentation
 - `.dendrita/hooks/README.md` - Hooks documentation
 - `.dendrita/users/[user-id]/skills/README.md` - Skills documentation (user-specific domain knowledge)
@@ -620,17 +623,21 @@ Hooks in `.dendrita/hooks/` are **behavior references**, NOT executable scripts.
 
 ---
 
-### destápate-dendrita (DestapateDendrita)
+### dendrita-openup (DendritaOpenup)
 
 **Behavior reference:** Logic to reveal hidden insights, patterns, and non-obvious connections in the dendrita system
 
 **Expected behavior that Cursor should apply:**
 
-1. **Activation Phase:**
-   - User says "destápate dendrita" or "destápate"
+1. **Activation Phase (MANDATORY when triggered):**
+   - User says "dendrita openup" or "openup"
+   - User says "destápate" or "dendrita destápate"
    - User requests "muéstrame insights ocultos"
    - User asks "qué conexiones hay que no veo"
    - User mentions "revela patrones" or "muéstrame lo que no es obvio"
+   - User requests "análisis profundo" or "insights ocultos"
+   - User asks "qué me estoy perdiendo" or "qué debería saber"
+   - **CRITICAL:** This hook MUST be executed IMMEDIATELY when ANY trigger is detected. DO NOT skip it.
 
 2. **Revelation Process:**
    - **Analyze patterns:** Identify projects without recent updates, unused skills/agents, scripts with issues
@@ -644,12 +651,12 @@ Hooks in `.dendrita/hooks/` are **behavior references**, NOT executable scripts.
    - Prioritize by impact and urgency
 
 **Reference files:**
-- `destápate-dendrita.md` - Documented revelation logic
+- `dendrita-openup.md` - Documented revelation logic
 
 **For Cursor:**
 - Read this file to understand the revelation logic
 - NOT attempt to execute it
-- Apply documented behavior reflexively when user requests dendrita to "destaparse"
+- Apply documented behavior reflexively when user requests dendrita to "open up"
 
 **Related documentation:**
 - `.dendrita/hooks/list-system-components.md` - System components listing
@@ -663,7 +670,7 @@ Hooks in `.dendrita/hooks/` are **behavior references**, NOT executable scripts.
 
 ---
 
-### dendrita-memoria (DendritaMemoria)
+### dendrita-memory (DendritaMemory)
 
 **Behavior reference:** Logic to retrieve historical information and past context from the dendrita system
 
@@ -688,7 +695,7 @@ Hooks in `.dendrita/hooks/` are **behavior references**, NOT executable scripts.
    - Show lessons learned and patterns
 
 **Reference files:**
-- `dendrita-memoria.md` - Documented memory recovery logic
+- `dendrita-memory.md` - Documented memory recovery logic
 
 **For Cursor:**
 - Read this file to understand the memory recovery logic
@@ -707,7 +714,7 @@ Hooks in `.dendrita/hooks/` are **behavior references**, NOT executable scripts.
 
 ---
 
-### dendrita-conexiones (DendritaConexiones)
+### dendrita-connections (DendritaConnections)
 
 **Behavior reference:** Logic to identify and visualize connections between dendrita system components
 
@@ -732,7 +739,7 @@ Hooks in `.dendrita/hooks/` are **behavior references**, NOT executable scripts.
    - Provide network perspective
 
 **Reference files:**
-- `dendrita-conexiones.md` - Documented connection visualization logic
+- `dendrita-connections.md` - Documented connection visualization logic
 
 **For Cursor:**
 - Read this file to understand the connection logic
@@ -740,7 +747,7 @@ Hooks in `.dendrita/hooks/` are **behavior references**, NOT executable scripts.
 - Apply documented behavior reflexively when user requests connections
 
 **Related documentation:**
-- `.dendrita/hooks/destápate-dendrita.md` - Hidden insights revelation
+- `.dendrita/hooks/dendrita-openup.md` - Hidden insights revelation
 - `.dendrita/hooks/list-system-components.md` - System components listing
 
 **Difference from other hooks:**
@@ -751,7 +758,7 @@ Hooks in `.dendrita/hooks/` are **behavior references**, NOT executable scripts.
 
 ---
 
-### dendrita-sugerencia (DendritaSugerencia)
+### dendrita-suggestion (DendritaSuggestion)
 
 **Behavior reference:** Logic to generate intelligent suggestions based on dendrita system context
 
@@ -776,7 +783,7 @@ Hooks in `.dendrita/hooks/` are **behavior references**, NOT executable scripts.
    - Prioritize by impact and urgency
 
 **Reference files:**
-- `dendrita-sugerencia.md` - Documented suggestion generation logic
+- `dendrita-suggestion.md` - Documented suggestion generation logic
 
 **For Cursor:**
 - Read this file to understand the suggestion logic
@@ -784,7 +791,7 @@ Hooks in `.dendrita/hooks/` are **behavior references**, NOT executable scripts.
 - Apply documented behavior reflexively when user requests suggestions
 
 **Related documentation:**
-- `.dendrita/hooks/destápate-dendrita.md` - Hidden insights revelation
+- `.dendrita/hooks/dendrita-openup.md` - Hidden insights revelation
 - `.dendrita/hooks/working-context.md` - Current working context
 
 **Difference from other hooks:**
@@ -795,11 +802,156 @@ Hooks in `.dendrita/hooks/` are **behavior references**, NOT executable scripts.
 
 ---
 
+### dendrita-work-status (DendritaWorkStatus)
+
+**Behavior reference:** Logic to generate consolidated work status reports from all project contexts
+
+**Expected behavior that Cursor should apply:**
+
+1. **Activation Phase:**
+   - User asks "muéstrame todas las tareas pendientes" or "show me all pending tasks"
+   - User requests "estado de todos los proyectos" or "status of all projects"
+   - User asks "qué tareas tengo pendientes" or "what tasks do I have pending"
+   - User requests "reporte de trabajo" or "work report"
+   - User asks "resumen de proyectos" or "projects summary"
+
+2. **Report Generation Process:**
+   - **Execute script:** Run `generate-work-status-report.ts` to consolidate all project contexts
+   - **Read report:** Load generated report from `.dendrita/dashboards/work-status-report.md`
+   - **Present information:** Show summary, projects by workspace, and all tasks organized by status
+   - **Update contexts if needed:** Check if project contexts are outdated and update before generating report
+
+3. **Output Format:**
+   - Summary: Total projects, tasks by status
+   - By Workspace: Projects organized by workspace with status and task counts
+   - All Pending Tasks: Complete list organized by workspace and project
+   - All In Progress Tasks: Complete list organized by workspace and project
+   - All Blocked Tasks: Complete list organized by workspace and project
+
+**Reference files:**
+- `dendrita-work-status.md` - Documented work status report generation logic
+
+**For Cursor:**
+- Read this file to understand the work status logic
+- Execute the report generation script when user requests work status
+- Present the consolidated information in a clear, organized format
+
+**Related documentation:**
+- `.dendrita/integrations/scripts/pipelines/context-pipeline/generate-work-status-report.ts` - Report generation script
+- `.dendrita/integrations/scripts/pipelines/context-pipeline/update-project-context.ts` - Project context update script
+- `.dendrita/hooks/dendrita-openup.md` - Related hook for insights
+- `.dendrita/hooks/dendrita-suggestion.md` - Related hook for suggestions
+
+**Difference from other hooks:**
+- This hook is automatic: Uses existing `project_context.json` files to generate reports
+- Consolidates information: Aggregates data from all projects automatically
+- No manual entry: All information comes from existing project contexts
+- Can be filtered: Supports workspace filtering for focused reports
+
+---
+
+### content-management (ContentManagement)
+
+**Behavior reference:** Logic to create and manage content across multiple channels (blog, Reddit, LinkedIn, GitHub, etc.), including clippings creation, draft management, publication workflow, and tracking of published content.
+
+**Expected behavior that Cursor should apply:**
+
+1. **Content Flow:**
+   - Clippings → Drafts → Published → Tracking
+   - Support multiple channels: blog, reddit, linkedin, github, etc.
+   - Support multiple subchannels per channel (e.g., blog: dendrita, iami)
+
+2. **Clipping Creation:**
+   - Save clippings in project's content structure: `comms/content/clippings/[channel]/[YYYY-MM]/`
+   - Filename format: `YYYY-MM-DD-HHmm-[descripcion]-clipping.md`
+   - Include `channel` and `subchannel` in frontmatter
+
+3. **Draft Creation:**
+   - Save drafts in `comms/content/drafts/[channel]/[subchannel]/[slug].md`
+   - **CRITICAL:** Drafts NEVER have date in filename
+   - Include `created` and `updated` in frontmatter
+   - Date in filename is added ONLY when publishing
+
+4. **Publication:**
+   - Validate draft according to channel-specific rules
+   - Migrate draft to published location with channel-specific format
+   - Blog: `YYYY-MM-DD-[slug].md` (date from `created` or publication date)
+   - Reddit/LinkedIn/GitHub: `[slug].md` (no date, uses platform ID)
+   - Update `published/tracking.json` with slug/URL and metrics
+
+5. **Tracking:**
+   - Maintain centralized registry in `published/tracking.json`
+   - Include: channel, subchannel, title, slug, URL, published_at, metrics
+   - Update metrics when available (score, comments, views, etc.)
+
+**Reference files:**
+- `content-management.md` - Documented content management logic
+
+**For Cursor:**
+- Read this file to understand content management workflow
+- Apply documented behavior when user requests clipping creation, draft creation, or publication
+- **CRITICAL:** Never add date to draft filenames; only add when publishing
+- Always update tracking.json when publishing content
+
+**Related documentation:**
+- `.dendrita/blog/README.md` - Blog structure (for blog channel)
+- `.dendrita/WORKSPACE-STRUCTURE.md` - Workspace standards
+- `workspaces/[workspace]/🚀 active-projects/[project]/comms/config/channels.json` - Channel definitions
+
+**Difference from old hooks:**
+- Replaces `blog-clipping-creation.md` and `blog-publication.md`
+- Generalizes to support multiple channels (not just blog)
+- Adds tracking system for all published content
+- Separates drafts (no date) from published (date when published)
+
+---
+
+### date-handling-guidelines (DateHandlingGuidelines)
+
+**Behavior reference:** Guidelines for correctly handling dates in dendrita documents and scripts
+
+**Expected behavior that Cursor should apply:**
+
+1. **CRITICAL: Always verify current date before writing:**
+   - In agent mode: Execute `date +"%Y-%m-%d"` to get current date in ISO format
+   - In agent mode: Execute `date +"%d de %B de %Y"` and translate month to Spanish for Spanish format
+   - In ask mode: Ask user for current date if date is critical, or use placeholder `[FECHA]` if not critical
+   - **Never assume dates** - always verify from system or user
+
+2. **Use correct format for context:**
+   - ISO format (`YYYY-MM-DD`) for technical documents, JSON, frontmatter
+   - Spanish format (`DD de mes de AAAA`) for human-readable documents
+   - ISO with time (`YYYY-MM-DD HH:mm`) for timelines
+
+3. **Use utility functions when available:**
+   - Import from `utils/common.ts`: `getCurrentDateISO()`, `formatDateSpanish()`, `formatDateISO()`
+   - Use utilities in scripts to ensure consistency
+
+4. **Verify dates make sense:**
+   - Check if date is in the future (shouldn't be)
+   - Check if date is too far in the past (might be wrong)
+   - Compare with dates in related documents
+
+**Reference files:**
+- `date-handling-guidelines.md` - Documented date handling guidelines
+
+**For Cursor:**
+- Read this file to understand date handling requirements
+- Always verify current date before writing dates in documents
+- Use appropriate format for context
+- Never assume dates without verification
+
+**Related documentation:**
+- `.dendrita/integrations/scripts/pipelines/context-pipeline/utils/common.ts` - Date utility functions
+- `.dendrita/hooks/project-wrap-up.md` - Wrap-up process (uses dates)
+- `.dendrita/hooks/work-timeline.md` - Timeline format (uses dates with time)
+
+---
+
 ## Included Files (References)
 
 - `repo-initialization.md` - Reference: Logic for initializing empty repositories
-- `skill-activation-prompt.sh` - Reference: Bash wrapper for TypeScript hook
-- `skill-activation-prompt.ts` - Reference: Documented skill activation logic
+- `skill-activation-prompt.ts` - Reference: Documented skill activation logic (executable for future orchestrators)
 - `post-tool-use-tracker.sh` - Reference: Documented file tracking logic
 - `dendrita-infrastructure-modification.md` - Reference: Documented infrastructure modification logic
 - `dendrita-alias-activation.md` - Reference: Documented alias activation and workspace context logic
@@ -807,12 +959,13 @@ Hooks in `.dendrita/hooks/` are **behavior references**, NOT executable scripts.
 - `journaling.md` - Reference: Documented journaling behavior and automatic extraction logic
 - `code-debugging-archiving.md` - Reference: Documented code debugging and archiving process
 - `list-system-components.md` - Reference: Documented system listing logic
-- `destápate-dendrita.md` - Reference: Documented revelation logic for hidden insights
-- `dendrita-memoria.md` - Reference: Documented memory recovery logic
-- `dendrita-conexiones.md` - Reference: Documented connection visualization logic
-- `dendrita-sugerencia.md` - Reference: Documented suggestion generation logic
-- `package.json` - Reference: Node.js dependencies (for future reference)
-- `tsconfig.json` - Reference: TypeScript configuration (for future reference)
+- `dendrita-openup.md` - Reference: Documented revelation logic for hidden insights
+- `dendrita-memory.md` - Reference: Documented memory recovery logic
+- `dendrita-connections.md` - Reference: Documented connection visualization logic
+- `dendrita-suggestion.md` - Reference: Documented suggestion generation logic
+- `dendrita-work-status.md` - Reference: Documented work status report generation logic
+- `date-handling-guidelines.md` - Reference: Documented date handling guidelines and best practices
+- `content-management.md` - Reference: Documented content management logic (replaces blog-clipping-creation and blog-publication)
 
 **NOTE:** These files are references. Cursor should read them to understand expected behavior, but they are NOT executed.
 
@@ -821,7 +974,7 @@ Hooks in `.dendrita/hooks/` are **behavior references**, NOT executable scripts.
 ## Customization for ennui-dendrita
 
 Hooks are adapted to recognize:
-- Project structure (`active-projects/`, `archived-projects/`)
+- Project structure (`active-projects/`, `_archived-projects/`)
 - Work modes (`work-modes/`)
 - Best practices (`best-practices/`)
 - Business management (`company-management/`)
@@ -927,11 +1080,11 @@ Hooks are adapted to recognize:
    - Keep updates non-intrusive and maintain accuracy
    ```
 
-### How to apply dendritificar behavior:
+### How to apply dendritify behavior:
 
-1. **When user requests to dendritificar something:**
+1. **When user requests to dendritify something:**
    ```markdown
-   - Identify what to dendritificar (script, process, workflow, concept)
+   - Identify what to dendritify (script, process, workflow, concept)
    - Determine component type (hook, agent, skill, script, integration)
    - Analyze current state (read files, review patterns, identify requirements)
    - Plan conversion (structure, dependencies, documentation, naming)
@@ -949,7 +1102,7 @@ Hooks are adapted to recognize:
    - Review files for relevance and status
    - Check for deprecated or duplicate functionality
    - Create timestamped archive directory
-   - Move files to .dendrita/archived/ structure
+   - Move files to .archived/ structure
    - Create ARCHIVE-README.md with reason and restoration instructions
    - Update references in package.json and documentation
    - Remove archived files from original locations
@@ -970,9 +1123,9 @@ Hooks are adapted to recognize:
    - Provide summary with counts
    ```
 
-### How to apply destápate-dendrita behavior:
+### How to apply dendrita-openup behavior:
 
-1. **When user requests dendrita to "destaparse":**
+1. **When user requests dendrita to "open up":**
    ```markdown
    - Analyze projects to identify patterns
    - Identify connections between components
@@ -982,7 +1135,7 @@ Hooks are adapted to recognize:
    - Present in structured format
    ```
 
-### How to apply dendrita-memoria behavior:
+### How to apply dendrita-memory behavior:
 
 1. **When user requests memory:**
    ```markdown
@@ -994,7 +1147,7 @@ Hooks are adapted to recognize:
    - Highlight lessons learned
    ```
 
-### How to apply dendrita-conexiones behavior:
+### How to apply dendrita-connections behavior:
 
 1. **When user requests connections:**
    ```markdown
@@ -1006,7 +1159,7 @@ Hooks are adapted to recognize:
    - Provide network perspective
    ```
 
-### How to apply dendrita-sugerencia behavior:
+### How to apply dendrita-suggestion behavior:
 
 1. **When user requests suggestions:**
    ```markdown
@@ -1051,8 +1204,7 @@ These files are maintained for:
 
 **Verify:**
 1. Read reference files directly
-2. Check `.dendrita/hooks/INSTALL.md` for more context
-3. Review `.cursorrules` in root for instructions
+2. Review `.cursorrules` in root for instructions
 
 ---
 
@@ -1069,3 +1221,13 @@ These files are maintained for:
 **For more information:** See `.cursorrules` in project root and `.dendrita/users/[user-id]/agents/` and `.dendrita/users/[user-id]/skills/`
 
 **IMPORTANT PARADIGM:** Agents and skills are user-specific domain knowledge stored in `.dendrita/users/[user-id]/`, not generic infrastructure. This reflects that they contain private, domain-specific knowledge (sustainability, social impact, project management) rather than generic technical infrastructure (which belongs in `.dendrita/integrations/`).
+
+---
+
+## Backlinks
+
+**2025-11-06 19:09** | [System Behavior](../docs/SYSTEM-BEHAVIOR.md)
+
+Documento que muestra la jerarquía y relaciones entre hooks, agentes, skills y scripts. Menciona este README en la sección "Ver también".
+
+---

@@ -1,0 +1,269 @@
+{
+  "totalDocuments": 64,
+  "processedDocuments": 62,
+  "skippedDocuments": 0,
+  "totalBacklinks": 601,
+  "totalRelationships": 620,
+  "tokenUsage": {
+    "total": 1032908,
+    "prompt": 951720,
+    "completion": 81188,
+    "estimatedCost": 3.19118
+  },
+  "apiCalls": {
+    "semanticAnalysis": 683,
+    "relationshipDetection": 620,
+    "embeddings": 8145
+  },
+  "documentsByStatus": {
+    "processed": 62,
+    "skipped": 0
+  },
+  "backlinksByDocument": [
+    {
+      "document": "⚙️ README company-management.md",
+      "backlinks": 27
+    },
+    {
+      "document": "README ennui-x-NOSxOTROS.md",
+      "backlinks": 24
+    },
+    {
+      "document": "mission-fiche.md",
+      "backlinks": 21
+    },
+    {
+      "document": "README bootcamp-fundraising.md",
+      "backlinks": 18
+    },
+    {
+      "document": "INDEX.md",
+      "backlinks": 16
+    },
+    {
+      "document": "tasks.md",
+      "backlinks": 16
+    },
+    {
+      "document": "PROYECTO-CONSOLIDADO-SINTESIS.md",
+      "backlinks": 15
+    },
+    {
+      "document": "INDEX.md",
+      "backlinks": 14
+    },
+    {
+      "document": "💬 README dendrita-comms.md",
+      "backlinks": 13
+    },
+    {
+      "document": "🛠️ README tools-templates.md",
+      "backlinks": 13
+    },
+    {
+      "document": "🎓 README bootcamp-fundraising.md",
+      "backlinks": 13
+    },
+    {
+      "document": "master-plan.md",
+      "backlinks": 12
+    },
+    {
+      "document": "🔍 README ennui-rag.md",
+      "backlinks": 12
+    },
+    {
+      "document": "README impacto-instrument.md",
+      "backlinks": 12
+    },
+    {
+      "document": "master-plan.md",
+      "backlinks": 12
+    },
+    {
+      "document": "IMPACTO-Scan-Especificacion.md",
+      "backlinks": 11
+    },
+    {
+      "document": "collaboration-fiche.md",
+      "backlinks": 11
+    },
+    {
+      "document": "README published.md",
+      "backlinks": 10
+    },
+    {
+      "document": "README project-pipeline.md",
+      "backlinks": 9
+    },
+    {
+      "document": "🌱 README ennui.md",
+      "backlinks": 9
+    }
+  ],
+  "relationshipsByDocument": [
+    {
+      "document": ".communication-guidelines.md",
+      "relationships": 10
+    },
+    {
+      "document": ".drive-analysis.md",
+      "relationships": 10
+    },
+    {
+      "document": ".google-drive-reference.md",
+      "relationships": 10
+    },
+    {
+      "document": ".pipeline.md",
+      "relationships": 10
+    },
+    {
+      "document": ".projects-dashboard.md",
+      "relationships": 10
+    },
+    {
+      "document": ".team-profiles.md",
+      "relationships": 10
+    },
+    {
+      "document": "mission-fiches-archived.md",
+      "relationships": 10
+    },
+    {
+      "document": "README config.md",
+      "relationships": 10
+    },
+    {
+      "document": "README dashboards.md",
+      "relationships": 10
+    },
+    {
+      "document": "README data.md",
+      "relationships": 10
+    },
+    {
+      "document": "⚙️ README company-management.md",
+      "relationships": 10
+    },
+    {
+      "document": "👥 team-profiles.md",
+      "relationships": 10
+    },
+    {
+      "document": "📈 drive-analysis.md",
+      "relationships": 10
+    },
+    {
+      "document": "📊 projects-dashboard.md",
+      "relationships": 10
+    },
+    {
+      "document": "📋 communication-guidelines.md",
+      "relationships": 10
+    },
+    {
+      "document": "CURRICULUM.md",
+      "relationships": 10
+    },
+    {
+      "document": "ECOSISTEMA-PERU.md",
+      "relationships": 10
+    },
+    {
+      "document": "EVIDENCIA-OSC-LATAM.md",
+      "relationships": 10
+    },
+    {
+      "document": "IMPACTO-instrumento.md",
+      "relationships": 10
+    },
+    {
+      "document": "IMPLEMENTACION-HISTORICA.md",
+      "relationships": 10
+    }
+  ],
+  "tokenUsageByDocument": [
+    {
+      "document": ".drive-analysis.md",
+      "tokens": 21154
+    },
+    {
+      "document": "📈 drive-analysis.md",
+      "tokens": 21066
+    },
+    {
+      "document": "ECOSISTEMA-PERU.md",
+      "tokens": 20147
+    },
+    {
+      "document": "PROYECTO-CONSOLIDADO-SINTESIS.md",
+      "tokens": 19919
+    },
+    {
+      "document": "IMPACTO-Scan-Especificacion.md",
+      "tokens": 19656
+    },
+    {
+      "document": "INDEX.md",
+      "tokens": 19568
+    },
+    {
+      "document": "CURRICULUM.md",
+      "tokens": 19493
+    },
+    {
+      "document": "EVIDENCIA-OSC-LATAM.md",
+      "tokens": 19182
+    },
+    {
+      "document": "📋 IMPACTO-Scan-Guia-Entrevistas-Piloto.md",
+      "tokens": 19180
+    },
+    {
+      "document": "SOCIOS-IMPLEMENTADORES.md",
+      "tokens": 19177
+    },
+    {
+      "document": ".impacto-scan-guia-entrevistas-piloto.md",
+      "tokens": 19129
+    },
+    {
+      "document": "IMPACTO-instrumento.md",
+      "tokens": 18986
+    },
+    {
+      "document": "current-context.md",
+      "tokens": 18973
+    },
+    {
+      "document": "tasks.md",
+      "tokens": 18703
+    },
+    {
+      "document": "IMPLEMENTACION-HISTORICA.md",
+      "tokens": 18699
+    },
+    {
+      "document": ".️-reddit-scraper-config.md",
+      "tokens": 18500
+    },
+    {
+      "document": "master-plan.md",
+      "tokens": 18203
+    },
+    {
+      "document": "README ennui-x-NOSxOTROS.md",
+      "tokens": 18132
+    },
+    {
+      "document": "PERFIL-Alvaro-Mur.md",
+      "tokens": 17924
+    },
+    {
+      "document": "README bootcamp-fundraising.md",
+      "tokens": 17853
+    }
+  ],
+  "processingTimeline": []
+}

@@ -2,8 +2,12 @@
 name: repo-initialization
 description: "Hook de Inicialización del Repositorio"
 type: hook
-created: 2025-11-06
-updated: 2025-11-06
+created:
+  2025-11-06T00:00:00.000Z
+  
+updated:
+  2025-11-06T00:00:00.000Z
+  
 tags: ["hook", "behavior-reference"]
 category: behavior-reference
 ---

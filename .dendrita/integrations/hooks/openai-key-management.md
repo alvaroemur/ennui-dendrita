@@ -1,3 +1,17 @@
+---
+name: openai-key-management
+description: "OpenAI API Key Management"
+type: documentation
+created:
+  2025-11-06T00:00:00.000Z
+  
+updated:
+  2025-11-06T00:00:00.000Z
+  
+tags: ["documentation", "integration"]
+category: integration
+---
+
 # 🔐 OpenAI API Key Management
 
 Guía simple para configurar OpenAI en dendrita.

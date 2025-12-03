@@ -90,6 +90,25 @@
       ],
       "setup_url": "See hooks/notion-setup.md for setup instructions",
       "note": "Integration Token required. Create integration at notion.so/my-integrations and connect to pages/databases"
+    },
+    
+    "ssh": {
+      "enabled": true,
+      "description": "SSH for remote command execution, file deployment, and tunneling",
+      "credentials_source": "Environment variables or .env.local",
+      "required_env_vars": [
+        "SSH_PRIVATE_KEY or SSH_PRIVATE_KEY_PATH"
+      ],
+      "optional_env_vars": [
+        "SSH_CONFIG_PATH",
+        "SSH_HOST_[name]_HOST",
+        "SSH_HOST_[name]_USER",
+        "SSH_HOST_[name]_PORT",
+        "SSH_HOST_[name]_PRIVATE_KEY",
+        "SSH_HOST_[name]_PRIVATE_KEY_PATH"
+      ],
+      "setup_url": "See hooks/ssh-setup.md for setup instructions",
+      "note": "SSH allows remote execution of scrapers, file deployment, and port forwarding. Configure hosts using SSH_HOST_* environment variables or SSH config file."
     }
   },
 

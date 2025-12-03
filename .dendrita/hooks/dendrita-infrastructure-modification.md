@@ -2,8 +2,12 @@
 name: dendrita-infrastructure-modification
 description: "Dendrita Infrastructure Modification Hook"
 type: hook
-created: 2025-11-06
-updated: 2025-11-06
+created:
+  2025-11-06T00:00:00.000Z
+  
+updated:
+  2025-11-06T00:00:00.000Z
+  
 tags: ["hook", "behavior-reference"]
 category: behavior-reference
 ---
@@ -122,7 +126,7 @@ When making changes:
    - Update `.dendrita/users/[user-id]/skills/README.md` if adding/modifying skills
    - Update `.dendrita/users/[user-id]/agents/README.md` if adding/modifying agents
    - Update `.cursorrules` if changing behavior rules
-   - Update `.dendrita/ESTADO.md` if changing system status
+   - Update system status in relevant documentation if changing system status
 
 3. **Maintain backward compatibility:**
    - If breaking changes are necessary, document them clearly
@@ -495,7 +499,7 @@ Please:
 - `.dendrita/WORKSPACE-STRUCTURE.md` - Workspace structure standards
 - `.dendrita/integrations/README.md` - Integrations documentation
 - `.cursorrules` - Project rules and behavior
-- `.dendrita/ESTADO.md` - System status and configuration
+- `.dendrita/docs/QUICK-START.md` - System status and configuration
 
 ---
 

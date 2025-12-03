@@ -1,3 +1,13 @@
+---
+name: usage-logging
+description: "Sistema de Logging Interno de Integraciones"
+type: documentation
+created: 2025-11-06
+updated: 2025-11-06
+tags: ["documentation", "integration"]
+category: integration
+---
+
 # 📊 Sistema de Logging Interno de Integraciones
 
 Sistema de logging interno que registra automáticamente el uso de todas las integraciones sin exponer credenciales.

@@ -1,0 +1,137 @@
+graph TB
+    %% Dendrita Core Structure
+    dendrita[".dendrita<br/>Reflexive Metadata Base"]
+
+    %% Dendrita Components
+    subgraph dendrita_components["Dendrita Components"]
+        direction TB
+        users["users/<br/>User Profiles<br/>(2 users)"]
+        user_alvaro["alvaro"]
+        user_alvaro_agents["agents/<br/>7 agents"]
+        user_alvaro_skills["skills/<br/>6 skills"]
+        user_alvaro_workmodes["work-modes/"]
+        user_alvaro --> user_alvaro_agents
+        user_alvaro --> user_alvaro_skills
+        user_alvaro --> user_alvaro_workmodes
+        user_example_user["example-user"]
+        user_example_user_agents["agents/<br/>1 agents"]
+        user_example_user_skills["skills/<br/>1 skills"]
+        user_example_user_workmodes["work-modes/"]
+        user_example_user --> user_example_user_agents
+        user_example_user --> user_example_user_skills
+        user_example_user --> user_example_user_workmodes
+        users --> user_alvaro
+        hooks["hooks/<br/>Behavior References<br/>(21 hooks)"]
+        integrations["integrations/<br/>Technical Infrastructure"]
+        integrations_services["services/<br/>10 services"]
+        integrations_scripts["scripts/"]
+        integrations_hooks["hooks/"]
+        integrations --> integrations_services
+        integrations --> integrations_scripts
+        integrations --> integrations_hooks
+        templates["templates/<br/>Workspace Templates"]
+        comunicacion["comunicacion/<br/>Timeline & Logs"]
+        config_estilo["config-estilo.json<br/>Style Conventions"]
+        settings["settings.json<br/>Project Metadata"]
+    end
+
+    %% Workspaces
+    subgraph workspaces["workspaces/ - Workspace Data"]
+        direction TB
+        workspace_ennui["ennui"]
+        workspace_ennui_projects["🚀 active-projects/<br/>16 projects"]
+        workspace_ennui_archived[".archived-projects/"]
+        workspace_ennui_management["⚙️ company-management/"]
+        workspace_ennui_products["📦 products/"]
+        workspace_ennui_stakeholders["🤝 stakeholders/"]
+        workspace_ennui_tools["🛠️ tools-templates/"]
+        workspace_ennui --> workspace_ennui_projects
+        workspace_ennui --> workspace_ennui_archived
+        workspace_ennui --> workspace_ennui_management
+        workspace_ennui --> workspace_ennui_products
+        workspace_ennui --> workspace_ennui_stakeholders
+        workspace_ennui --> workspace_ennui_tools
+        workspace_entre_rutas["entre-rutas"]
+        workspace_entre_rutas_projects["🚀 active-projects/<br/>1 projects"]
+        workspace_entre_rutas_archived[".archived-projects/"]
+        workspace_entre_rutas_management["⚙️ company-management/"]
+        workspace_entre_rutas_products["📦 products/"]
+        workspace_entre_rutas_stakeholders["🤝 stakeholders/"]
+        workspace_entre_rutas_tools["🛠️ tools-templates/"]
+        workspace_entre_rutas --> workspace_entre_rutas_projects
+        workspace_entre_rutas --> workspace_entre_rutas_archived
+        workspace_entre_rutas --> workspace_entre_rutas_management
+        workspace_entre_rutas --> workspace_entre_rutas_products
+        workspace_entre_rutas --> workspace_entre_rutas_stakeholders
+        workspace_entre_rutas --> workspace_entre_rutas_tools
+        workspace_iami["iami"]
+        workspace_iami_projects["🚀 active-projects/<br/>1 projects"]
+        workspace_iami_archived[".archived-projects/"]
+        workspace_iami_management["⚙️ company-management/"]
+        workspace_iami_products["📦 products/"]
+        workspace_iami_stakeholders["🤝 stakeholders/"]
+        workspace_iami_tools["🛠️ tools-templates/"]
+        workspace_iami --> workspace_iami_projects
+        workspace_iami --> workspace_iami_archived
+        workspace_iami --> workspace_iami_management
+        workspace_iami --> workspace_iami_products
+        workspace_iami --> workspace_iami_stakeholders
+        workspace_iami --> workspace_iami_tools
+        workspace_inspiro["inspiro"]
+        workspace_inspiro_projects["🚀 active-projects/<br/>0 projects"]
+        workspace_inspiro_archived[".archived-projects/"]
+        workspace_inspiro_management["⚙️ company-management/"]
+        workspace_inspiro_products["📦 products/"]
+        workspace_inspiro_stakeholders["🤝 stakeholders/"]
+        workspace_inspiro_tools["🛠️ tools-templates/"]
+        workspace_inspiro --> workspace_inspiro_projects
+        workspace_inspiro --> workspace_inspiro_archived
+        workspace_inspiro --> workspace_inspiro_management
+        workspace_inspiro --> workspace_inspiro_products
+        workspace_inspiro --> workspace_inspiro_stakeholders
+        workspace_inspiro --> workspace_inspiro_tools
+        workspace_otros["otros"]
+        workspace_otros_projects["🚀 active-projects/<br/>1 projects"]
+        workspace_otros_archived[".archived-projects/"]
+        workspace_otros_management["⚙️ company-management/"]
+        workspace_otros_products["📦 products/"]
+        workspace_otros_stakeholders["🤝 stakeholders/"]
+        workspace_otros_tools["🛠️ tools-templates/"]
+        workspace_otros --> workspace_otros_projects
+        workspace_otros --> workspace_otros_archived
+        workspace_otros --> workspace_otros_management
+        workspace_otros --> workspace_otros_products
+        workspace_otros --> workspace_otros_stakeholders
+        workspace_otros --> workspace_otros_tools
+        workspace_personal["personal"]
+        workspace_personal_projects["🚀 active-projects/<br/>3 projects"]
+        workspace_personal_archived[".archived-projects/"]
+        workspace_personal_management["⚙️ company-management/"]
+        workspace_personal_products["📦 products/"]
+        workspace_personal_stakeholders["🤝 stakeholders/"]
+        workspace_personal_tools["🛠️ tools-templates/"]
+        workspace_personal --> workspace_personal_projects
+        workspace_personal --> workspace_personal_archived
+        workspace_personal --> workspace_personal_management
+        workspace_personal --> workspace_personal_products
+        workspace_personal --> workspace_personal_stakeholders
+        workspace_personal --> workspace_personal_tools
+    end
+
+    %% Relationships
+    dendrita --> dendrita_components
+    dendrita_components --> users
+    dendrita_components --> integrations
+    dendrita -->|"applies to"| workspaces
+    users -.->|"user-specific<br/>domain knowledge"| dendrita_components
+    integrations -.->|"generic<br/>technical infrastructure"| dendrita_components
+
+    %% Styling
+    classDef dendritaStyle fill:#e1f5ff,stroke:#01579b,stroke-width:3px
+    classDef userStyle fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
+    classDef workspaceStyle fill:#e8f5e9,stroke:#1b5e20,stroke-width:2px
+    classDef genericStyle fill:#fff3e0,stroke:#e65100,stroke-width:2px
+    class dendrita,dendrita_components dendritaStyle
+    class users,user_* userStyle
+    class workspace_* workspaceStyle
+    class integrations,integrations_* genericStyle

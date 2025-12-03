@@ -1,3 +1,13 @@
+---
+name: index
+description: "Índice de Integrations en Dendrita"
+type: documentation
+created: 2025-11-06
+updated: 2025-11-06
+tags: ["documentation", "integration"]
+category: integration
+---
+
 # 📚 Índice de Integrations en Dendrita
 
 Guía de navegación para el sistema de integraciones seguro.

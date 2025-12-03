@@ -9,9 +9,9 @@
 # Comportamiento esperado:
 # - Después de editar un archivo (Edit, Write, MultiEdit), identificar el contexto
 # - El contexto se identifica basado en la ruta del archivo:
-#   - empresas/[empresa]/proyectos-activos/[proyecto]/ → Proyecto activo
-#   - mejores-practicas/[tipo-proyecto]/ → Mejores prácticas
-#   - modos-trabajo/[modo].md → Modo de trabajo
+#   - workspaces/[workspace]/🚀 active-projects/[proyecto]/ → Proyecto activo
+#   - workspaces/[workspace]/⚙️ company-management/📚 best-practices/[tipo-proyecto]/ → Mejores prácticas
+#   - workspaces/[workspace]/work-modes/[modo].md → Modo de trabajo (DEPRECATED - usar agents/skills)
 # - Mantener registro del contexto afectado
 # - Considerar este contexto para futuras acciones relacionadas
 # 
@@ -54,36 +54,41 @@ detect_context() {
     local context=$(echo "$relative_path" | cut -d'/' -f1)
 
     # Project structure patterns for ennui-dendrita
-    case "$context" in
-        proyectos-activos|proyectos-archivo)
-            # For projects, get the project name
-            local project=$(echo "$relative_path" | cut -d'/' -f2)
+    # Check for workspace structure
+    if [[ "$relative_path" =~ ^workspaces/ ]]; then
+        local workspace=$(echo "$relative_path" | cut -d'/' -f2)
+        local rest_path=$(echo "$relative_path" | cut -d'/' -f3-)
+        
+        # Check for active projects
+        if [[ "$rest_path" =~ ^🚀\ active-projects/ ]]; then
+            local project=$(echo "$rest_path" | cut -d'/' -f2)
             if [[ -n "$project" ]]; then
-                echo "proyecto:$project"
+                echo "proyecto:$workspace:$project"
             else
-                echo "$context"
+                echo "workspace:$workspace"
             fi
-            ;;
-        mejores-practicas)
-            local practice=$(echo "$relative_path" | cut -d'/' -f2)
+        # Check for best practices
+        elif [[ "$rest_path" =~ ^⚙️\ company-management/📚\ best-practices/ ]]; then
+            local practice=$(echo "$rest_path" | cut -d'/' -f3)
             if [[ -n "$practice" ]]; then
-                echo "practica:$practice"
+                echo "practica:$workspace:$practice"
             else
-                echo "$context"
+                echo "workspace:$workspace"
             fi
-            ;;
-        modos-trabajo|gestion-empresa|aliados-stakeholders|herramientas-plantillas|referencias)
-            echo "$context"
-            ;;
-        *)
-            # Check if it's a config file
-            if [[ "$relative_path" =~ ^\.dendrita/ ]]; then
-                echo "config"
-            else
-                echo "root"
-            fi
-            ;;
-    esac
+        # Check for other workspace structures
+        elif [[ "$rest_path" =~ ^(work-modes|📦\ products|🤝\ stakeholders|🛠️\ tools-templates)/ ]]; then
+            echo "workspace:$workspace"
+        else
+            echo "workspace:$workspace"
+        fi
+    else
+        # Check if it's a config file
+        if [[ "$relative_path" =~ ^\.dendrita/ ]]; then
+            echo "config"
+        else
+            echo "root"
+        fi
+    fi
 }
 
 # Detect context

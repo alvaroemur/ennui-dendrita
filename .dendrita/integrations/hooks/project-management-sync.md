@@ -1,3 +1,17 @@
+---
+name: project-management-sync
+description: "Project Management Tools Synchronization - Evaluation"
+type: documentation
+created:
+  2025-11-06T00:00:00.000Z
+  
+updated:
+  2025-11-06T00:00:00.000Z
+  
+tags: ["documentation", "integration"]
+category: integration
+---
+
 # Project Management Tools Synchronization - Evaluation
 
 Documentación de evaluación de qué funciona y qué no en cada herramienta de gestión de proyectos.

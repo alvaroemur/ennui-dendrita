@@ -22,13 +22,68 @@ This is a reference for Cursor. It documents expected behavior to APPLY, not exe
 
 ## CRITICAL: Clipping Location
 
-**ALL clippings MUST be saved in `_clippings/` at the project root.**
+**Clippings MUST be saved in the project's blog structure, organized by blog name.**
 
-- **Location:** `_clippings/` (absolute path from project root)
-- **Index:** `_clippings/README.md` (MUST be updated when creating clippings)
-- **Structure:** `_clippings/[YYYY-MM]/YYYY-MM-DD-HHmm-[descripcion]-clipping.md`
+### Location Detection Logic
 
-This is a shared location for all clippings across all users and workspaces. Do NOT create user-specific clipping directories.
+1. **Identify project context:**
+   - From source reference: `workspaces/[workspace]/🚀 active-projects/[project-name]/...`
+   - From current working directory
+   - From user prompt (if explicitly mentioned)
+
+2. **Determine blog name:**
+   - **Default:** If project has `comms/` area, use project name as blog name
+   - **Explicit:** If user specifies blog name (e.g., "clipping para blog dendrita"), use that
+   - **Inference:** From context tags, categories, or metadata
+   - **Fallback:** Use project name as blog name
+
+3. **Determine base path:**
+   - **Priority 1:** `workspaces/[workspace]/🚀 active-projects/[project]/comms/content/blog/[blog-name]/clippings/`
+   - **Priority 2:** `workspaces/[workspace]/🚀 active-projects/[project]/blog/[blog-name]/clippings/`
+   - **Priority 3:** `workspaces/[workspace]/🚀 active-projects/[project]/content/blog/[blog-name]/clippings/`
+
+### Structure
+
+```
+workspaces/[workspace]/🚀 active-projects/[project]/
+└── [comms|blog|content]/
+    └── [blog|content]/
+        └── [blog-name]/
+            └── clippings/
+                ├── README.md          # Index for this blog
+                └── [YYYY-MM]/
+                    └── YYYY-MM-DD-HHmm-[descripcion]-clipping.md
+```
+
+### Examples
+
+**Example 1: dendrita-development (with comms area)**
+- Project: `💻 dev/📚 dendrita-development`
+- Blog name: `dendrita` (default from project context)
+- Path: `workspaces/🌱 ennui/🚀 active-projects/💻 dev/📚 dendrita-development/comms/content/blog/dendrita/clippings/`
+
+**Example 2: Personal project (simple blog structure)**
+- Project: `alvaro-gpt`
+- Blog name: `personal` (from project context)
+- Path: `workspaces/🌱 personal/🚀 active-projects/alvaro-gpt/blog/personal/clippings/`
+
+**Example 3: Multiple blogs in same project**
+- Project: `ennui-x-Mosaico`
+- Blog names: `ennui`, `mosaico`, `collaboration`
+- Paths:
+  - `workspaces/🌱 ennui/🚀 active-projects/ennui-x-Mosaico/blog/ennui/clippings/`
+  - `workspaces/🌱 ennui/🚀 active-projects/ennui-x-Mosaico/blog/mosaico/clippings/`
+  - `workspaces/🌱 ennui/🚀 active-projects/ennui-x-Mosaico/blog/collaboration/clippings/`
+
+### Blog Name Detection
+
+When creating a clipping, determine blog name using this priority:
+
+1. **Explicit in prompt:** "clipping para blog [nombre]"
+2. **From metadata:** `blog` field in frontmatter or metadata
+3. **From project context:** Project name or associated product
+4. **From tags/categories:** Blog-related tags
+5. **Default:** Project name (slugified)
 
 ---
 
@@ -85,9 +140,29 @@ When the hook is triggered, collect the following information:
 
 ### 2. Create Clipping File
 
-**Location:** `_clippings/[YYYY-MM]/YYYY-MM-DD-HHmm-[descripcion]-clipping.md`
+**Location Detection:**
 
-**CRITICAL:** All clippings MUST be saved in `_clippings/` at the project root. This is the single source of truth for all clippings regardless of user or workspace context.
+1. **Identify project:**
+   - From source reference: Extract `workspaces/[workspace]/🚀 active-projects/[project]/`
+   - From current context: Use active project if available
+   - Ask user if ambiguous
+
+2. **Determine blog name:**
+   - Check if user specified blog name in prompt
+   - Check metadata for `blog` field
+   - Infer from project context
+   - Default to project name (slugified)
+
+3. **Determine base path:**
+   - Check if project has `comms/content/blog/` structure
+   - Check if project has `blog/` structure
+   - Check if project has `content/blog/` structure
+   - Create appropriate structure if none exists
+
+4. **Final path:**
+   ```
+   [base-path]/[blog-name]/clippings/[YYYY-MM]/YYYY-MM-DD-HHmm-[descripcion]-clipping.md
+   ```
 
 **Filename format:**
 - `YYYY-MM-DD-HHmm-[descripcion]-clipping.md`
@@ -109,6 +184,7 @@ id: [hash]
 created: YYYY-MM-DDTHH:mm:ssZ
 source: [filepath]
 source_context: [workspace/project/document description]
+blog: [blog-name]
 tags: [array of tags]
 categories: [array of categories]
 status: draft
@@ -137,11 +213,13 @@ status: draft
 [Additional notes or thoughts]
 ```
 
+**IMPORTANT:** Always include `blog: [blog-name]` in the frontmatter metadata.
+
 ### 3. Update Clipping Index
 
-**Location:** `_clippings/README.md`
+**Location:** `[blog-path]/clippings/README.md`
 
-**CRITICAL:** Always update `_clippings/README.md` in the root directory. This is the central index for all clippings.
+**CRITICAL:** Always update the blog-specific `clippings/README.md`. Each blog has its own index file.
 
 Maintain a markdown table with columns: Date | Source | Workflow | Purpose | Tags | Status | Link
 
@@ -152,7 +230,9 @@ Maintain a markdown table with columns: Date | Source | Workflow | Purpose | Tag
 
 Example row:
 
-| 2025-11-04 | `workspaces/[workspace]/active-projects/[project-name]/master-plan.md` | blog | blog-idea | metodología, desarrollo | draft | [Ver clipping](./2025-11/2025-11-04-2054-metodologia-desarrollo-clipping.md) |
+| 2025-11-04 | `workspaces/[workspace]/🚀 active-projects/[project-name]/master-plan.md` | blog | blog-idea | metodología, desarrollo | draft | [Ver clipping](./2025-11/2025-11-04-2054-metodologia-desarrollo-clipping.md) |
+
+**Note:** Each blog maintains its own independent index. If the blog's `clippings/README.md` doesn't exist, create it with the standard structure.
 
 ---
 
@@ -160,20 +240,30 @@ Example row:
 
 ### Directory Structure
 
-**CRITICAL:** Clippings are stored in `_clippings/` at the project root. This is a shared location for all clippings across all users and workspaces.
+**Flexible structure based on project organization:**
 
 ```
-_clippings/
-├── README.md                    # Main index (CRITICAL: always update this)
-├── [YYYY-MM]/                   # Monthly organization
-│   ├── YYYY-MM-DD-HHmm-[descripcion]-clipping.md
-│   └── ...
-└── _imported-manually/          # Manually imported clippings (optional)
+workspaces/[workspace]/🚀 active-projects/[project]/
+├── comms/                          # Preferred for communication projects
+│   └── content/
+│       └── blog/
+│           └── [blog-name]/
+│               └── clippings/
+│                   ├── README.md
+│                   └── [YYYY-MM]/
+│
+└── blog/                           # Alternative for simple projects
+    └── [blog-name]/
+        └── clippings/
+            ├── README.md
+            └── [YYYY-MM]/
 ```
 
 **IMPORTANT:** 
-- All clippings go to `_clippings/` regardless of user or workspace
-- The index `_clippings/README.md` is the single source of truth
+- Each blog has its own `clippings/` directory
+- Each blog has its own `README.md` index
+- Clippings are organized by month within each blog
+- Multiple blogs can exist in the same project
 - Monthly folders organize clippings chronologically
 
 ### Tagging System
@@ -190,9 +280,10 @@ Clippings should be tagged with:
 
 ### Per-Post Memory
 
-**Location:** `.dendrita/blog/posts/[post-slug].clippings.json` (references clippings from `_clippings/`)
+**Location:** `.dendrita/blog/posts/[post-slug].clippings.json` (references clippings from project blogs)
 
-**CRITICAL:** When referencing clippings in memory files, use paths relative to project root: `_clippings/[YYYY-MM]/YYYY-MM-DD-HHmm-[descripcion]-clipping.md`
+**CRITICAL:** When referencing clippings in memory files, use full paths relative to project root:
+- `workspaces/[workspace]/🚀 active-projects/[project]/comms/content/blog/[blog-name]/clippings/[YYYY-MM]/YYYY-MM-DD-HHmm-[descripcion]-clipping.md`
 
 This file tracks which clippings were used or discarded for each blog post.
 
@@ -202,11 +293,13 @@ This file tracks which clippings were used or discarded for each blog post.
 {
   "post_slug": "2025-11-04-de-fork-a-metodologia",
   "post_title": "De Fork a Metodología: El Origen de ennui-dendrita",
+  "blog": "dendrita",
   "updated": "2025-11-04T19:23:00Z",
   "used": [
     {
       "clipping_id": "[hash]",
-      "clipping_path": "_clippings/2025-11/2025-11-04-2054-metodologia-desarrollo-clipping.md",
+      "clipping_path": "workspaces/🌱 ennui/🚀 active-projects/💻 dev/📚 dendrita-development/comms/content/blog/dendrita/clippings/2025-11/2025-11-04-2054-metodologia-desarrollo-clipping.md",
+      "blog": "dendrita",
       "used_in_section": "Origen del proyecto",
       "used_date": "2025-11-04T19:23:00Z",
       "notes": "Used to explain the fork origin"
@@ -215,7 +308,8 @@ This file tracks which clippings were used or discarded for each blog post.
   "discarded": [
     {
       "clipping_id": "[hash]",
-      "clipping_path": "_clippings/2025-11/2025-11-04-2054-otro-tema-clipping.md",
+      "clipping_path": "workspaces/🌱 ennui/🚀 active-projects/💻 dev/📚 dendrita-development/comms/content/blog/dendrita/clippings/2025-11/2025-11-04-2054-otro-tema-clipping.md",
+      "blog": "dendrita",
       "discarded_date": "2025-11-04T19:23:00Z",
       "reason": "Not relevant for this post, but keep for future"
     }
@@ -284,8 +378,9 @@ When user requests to review clippings for a post:
 ## Output Summary (what Cursor should report)
 
 After creating a clipping, provide a short summary:
-- Created clipping: filename and path in `_clippings/[YYYY-MM]/`
-- Updated index: `_clippings/README.md` row added
+- Created clipping: filename and path in `[blog-path]/clippings/[YYYY-MM]/`
+- Blog: blog name where clipping was saved
+- Updated index: `[blog-path]/clippings/README.md` row added
 - Source reference: original file and context
 - Tags assigned: list of tags
 - Next steps: suggestions for organizing or using the clipping
@@ -309,13 +404,48 @@ After creating a clipping, provide a short summary:
 
 ---
 
+## Multiple Blogs Support
+
+### When to Create Multiple Blogs
+
+- Different audiences (e.g., technical blog vs. business blog)
+- Different topics (e.g., product blog vs. company blog)
+- Different projects within same workspace
+- Different brands/products
+
+### Managing Multiple Blogs
+
+1. **Each blog has its own directory:**
+   ```
+   comms/content/blog/
+   ├── dendrita/          # Blog técnico de dendrita
+   ├── ennui/             # Blog de la empresa
+   └── personal/          # Blog personal
+   ```
+
+2. **Each blog has its own index:**
+   - `clippings/README.md` per blog
+   - Independent tracking of clippings
+
+3. **When creating clippings:**
+   - Specify blog name if multiple exist: "clipping para blog dendrita"
+   - System will detect from context if only one blog exists
+   - Ask user if ambiguous
+
+4. **Blog identification in metadata:**
+   - Add `blog: [blog-name]` to clipping frontmatter
+   - Use for filtering and organization
+
+---
+
 ## Notes for Cursor
 
 - This file is a behavior reference. Read and apply the documented logic when the user requests clipping creation.
-- **CRITICAL:** Always save clippings to `_clippings/` at the project root, never to user-specific directories.
+- **CRITICAL:** Save clippings to the project's blog structure, organized by blog name.
 - Always gather the three required components: textual content, source reference, and brief reflection.
-- Always update `_clippings/README.md` when creating a new clipping.
+- Always update the blog-specific `clippings/README.md` when creating a new clipping.
 - Maintain the memory system to track which clippings are used in which posts.
 - Organize clippings by month for easy navigation and management.
 - Use tags consistently for better search and discovery.
+- Support multiple blogs per project by organizing clippings in separate directories.
 

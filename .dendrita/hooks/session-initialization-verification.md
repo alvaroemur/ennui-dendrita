@@ -2,8 +2,12 @@
 name: session-initialization-verification
 description: "Hook de Verificación de Inicialización de Sesión"
 type: hook
-created: 2025-11-06
-updated: 2025-11-06
+created:
+  2025-11-06T00:00:00.000Z
+  
+updated:
+  2025-11-06T00:00:00.000Z
+  
 tags: ["hook", "behavior-reference"]
 category: behavior-reference
 ---
@@ -134,7 +138,7 @@ Cuando se activa la verificación, Cursor debe verificar en orden:
   - Si existe y es anterior a 24 horas → Ejecutar
   - Si existe y es del mismo día → Omitir (ya actualizado hoy)
 - Ejecutar usando: `.dendrita/integrations/services/google/calendar-scraper.ts`
-- Comando sugerido: `npx ts-node .dendrita/integrations/scripts/calendar-scraper.ts <user_id> [profile_id]`
+- Comando sugerido: `npx ts-node .dendrita/integrations/scripts/pipelines/calendar-scraper-pipeline/calendar-scraper.ts <user_id> [profile_id]`
 
 **Notas importantes:**
 - Cursor debe verificar las reglas pero NO ejecutar directamente los scrapers (son scripts TypeScript)
@@ -299,6 +303,32 @@ Cursor debe verificar las variables de entorno de esta manera:
 
 **Nota:** Cursor NO debe leer ni mostrar los valores de las credenciales, solo verificar si existen.
 
+#### Paso 5: Verificar Contexto JSON
+
+**Verificar existencia de context.json y sugerir actualización si hay context-input:**
+
+```markdown
+1. Verificar si existe .dendrita/users/[user-id]/context.json
+2. Si no existe:
+   → Sugerir ejecutar script de migración: tsx .dendrita/integrations/scripts/pipelines/context-pipeline/migrate-context-to-json.ts
+   → O crear contexto inicial si no hay archivos MD antiguos
+
+3. Verificar si existe _temp/context-input.md o .txt
+4. Si existe:
+   → Sugerir ejecutar script de actualización: tsx .dendrita/integrations/scripts/pipelines/context-pipeline/update-context.ts
+   → El script leerá context-input y actualizará contextos
+
+5. Si context.json existe:
+   → Leer quickReference para mostrar resumen rápido al usuario
+   → Mostrar memorias recientes, workspaces activos, proyectos activos
+```
+
+**Uso de quickReference al inicio de sesión:**
+- Leer `quickReference.recentMemories` para mostrar últimas memorias
+- Leer `quickReference.activeWorkspaces` para mostrar workspaces activos
+- Leer `quickReference.quickLinks` para acceso rápido a proyectos
+- Esto permite al usuario ver rápidamente el estado actual sin buscar en todas las memorias
+
 ### 6. Resultado de la Verificación
 
 Al finalizar la verificación, Cursor debe:
@@ -323,6 +353,13 @@ Al finalizar la verificación, Cursor debe:
 🔐 SSH Hosts:
   - ✅ [host-name]: [host]@[user] (conectado)
   - ✅ [host-name]: [host]@[user] (conectado)
+
+📝 Contexto:
+  - ✅ context.json: [existe/no existe]
+  - ℹ️  Memorias recientes: [X memorias activas]
+  - ℹ️  Workspaces activos: [lista de workspaces]
+  - ℹ️  Proyectos activos: [X proyectos]
+  - [Si hay context-input.md:] ⚠️  Hay context-input.md - ejecutar: tsx .dendrita/integrations/scripts/pipelines/context-pipeline/update-context.ts
 
 Todo listo para trabajar!
 ```
@@ -490,6 +527,13 @@ Ya puedes usar las funcionalidades de [Servicio].
    - Informar al usuario sobre scrapers que requieren ejecución
    - Sugerir ejecución si es necesario, pero no forzar
    - Los scrapers son idempotentes: pueden ejecutarse múltiples veces sin duplicar datos
+
+7. **Verificar y usar contexto JSON:**
+   - Verificar existencia de `context.json` de usuario
+   - Si existe, leer `quickReference` para mostrar resumen rápido
+   - Si hay `context-input.md` o `.txt`, sugerir ejecutar `update-context.ts`
+   - Usar `quickReference` para búsqueda rápida cuando el usuario menciona algo nuevo
+   - Solo JSON files son usados - no hay archivos MD de contexto
 
 ---
 

@@ -4,6 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/ennui-dendrita/ennui-dendrita/blob/main/.dendrita/blog/README.md"><img alt="Blog Índice" src="https://img.shields.io/badge/BLOG-%C3%8DNDICE-0a84ff?style=for-the-badge&logo=rss&logoColor=white"></a>
+  <a href="https://github.com/ennui-dendrita/ennui-dendrita/blob/main/.dendrita/blog/posts/dev-timeline.md"><img alt="Development Timeline" src="https://img.shields.io/badge/TIMELINE-EVOLUCI%C3%93N-ff6b6b?style=for-the-badge&logo=clock&logoColor=white"></a>
   <a href="https://github.com/ennui-dendrita/ennui-dendrita/tree/main/.dendrita/blog/posts"><img alt="Blog Posts" src="https://img.shields.io/badge/BLOG-POSTS-0a84ff?style=for-the-badge"></a>
   <a href="README.es.md"><img alt="README Español" src="https://img.shields.io/badge/README-ESPA%C3%91OL-0a84ff?style=for-the-badge"></a>
 </p>
@@ -29,7 +30,7 @@ The original project, developed over 6 months of real-world use managing complex
 - Adapted `.claude/` infrastructure patterns to `.dendrita/` for business context
 - Transformed development-focused skills into business operation methodologies
 - Extended the workspace concept to support multiple companies/organizations
-- Added project-specific structures (`master-plan.md`, `current-context.md`, `tasks.md`)
+- Added project-specific structures (`master_plan.md`, `current_context.md`, `tasks.md`)
 - Integrated domain-specific knowledge (sustainability, MEL, fundraising, stakeholder management)
 
 **Original Work:**
@@ -79,6 +80,16 @@ This is not just about tools—it's about **developing a systematic approach to 
 - The structure of well-organized documentation
 - The flexibility of a methodology that adapts to your context
 - The community knowledge that emerges from shared practices
+
+---
+
+## 📅 Development Timeline
+
+**Follow dendrita's evolution in real time**
+
+The [Development Timeline](.dendrita/blog/posts/dev-timeline.md) documents all changes to dendrita infrastructure as "tweets" in first person. Every modification to hooks, skills, agents, and scripts is automatically registered, creating a communication channel where dendrita documents its own evolution.
+
+**View timeline:** [📅 Development Timeline](.dendrita/blog/posts/dev-timeline.md)
 
 ---
 
@@ -137,10 +148,10 @@ This project is tagged with: `template` `project-management` `impact` `melt` `su
 
 ## 🎯 What is this?
 
-A practical methodology that allows you to:
+**ennui-dendrita** is a system and methodology for managing multiple projects in parallel, maintaining continuity between sessions and applying best practices consistently. It's adapted for business operations and project management, integrating structured documentation, specialized agents, and reusable templates.
 
 - ✅ **Manage multiple projects simultaneously** without losing track
-- ✅ **Maintain continuity between sessions** with ChatGPT or other tools
+- ✅ **Maintain continuity between sessions** (docs-as-code)
 - ✅ **Apply best practices** automatically based on project type
 - ✅ **Report and document** systematically and consistently
 - ✅ **Orchestrate teams and partners** with clarity and governance
@@ -149,56 +160,21 @@ A practical methodology that allows you to:
 
 ## 🚀 Quick Start
 
-### For a new project
+1. **Create your workspace:** `workspaces/[your-company]/`
+2. **Create a project:** `workspaces/[your-company]/🚀 active-projects/[your-project]/`
+3. **Add the 3 base files:**
+   - `master-plan.md` (master plan)
+   - `current-context.md` (living context)
+   - `tasks.md` (tasks)
+4. **Use templates from** `.dendrita/templates/workspace-template/` based on project type
+5. **Keep `current-context.md` updated** after important decisions
 
-1. **Identify the company you're working under:**
-   - Create your own workspace name (e.g., `my-company`, `workspace-1`)
-   - Use any name that identifies your organization or context
+**If using this repo as a template:**
+- Update `LICENSE` with your organization's information
+- Define style in `workspaces/[your-company]/config-estilo.json`
+- Customize `.dendrita/settings.json` with your project metadata
 
-2. **Create the project folder:**
-   ```
-   workspaces/[nombre-empresa]/active-projects/[nombre-proyecto]/
-   ```
-
-3. **Create the 3 base files:**
-   - `master-plan.md` - Project master plan
-   - `current-context.md` - Current status and decisions
-   - `tasks.md` - Task list with status
-
-4. **Use the corresponding template:**
-   - Review `.dendrita/templates/workspace-template/best-practices/` for your project type
-   - Copy the template as a base
-
-### First-time setup (Repository initialization)
-
-When you first open this repository or when Cursor detects it's empty:
-
-1. **Cursor will ask you basic questions:**
-   - Your user identifier (e.g., `user-1`, `juan`, `team-1`)
-   - Your primary workspace (create any name you prefer)
-   - Your primary work type (project-manager, sustainability-strategist, mel-analyst, stakeholder-facilitator, fundraising-specialist)
-   - Communication style preferences
-   - Update frequency preferences
-
-2. **A user profile will be created:**
-   - Saved in `.dendrita/users/[user-id]/`
-   - Contains your preferences and work context
-   - Allows Cursor to personalize its behavior
-
-3. **Workspace-specific profiles:**
-   - You can create profiles for specific workspaces
-   - Profiles activate automatically when working in that workspace
-   - See `.dendrita/users/README.md` for more information
-
-**For more details:** See `.dendrita/hooks/repo-initialization.md` and `.dendrita/users/README.md`
-
-### For general business management
-
-Use `company-management/` for topics that don't belong to a specific project:
-- Annual strategic planning
-- Human resources management
-- Internal process improvement
-- Financial planning
+**For general business management:** Use `⚙️ company-management/` for topics that don't belong to a specific project (strategic planning, HR, process improvement, financial planning).
 
 ---
 
@@ -206,205 +182,95 @@ Use `company-management/` for topics that don't belong to a specific project:
 
 ```
 ennui-dendrita/
-├── README.md                           # This file
-│
-├── workspaces/                           # Projects organized by company
-│   ├── [workspace-name]/                # Your workspace
-│   │   ├── active-projects/
-│   │   ├── archived-projects/
-│   │   ├── best-practices/              # Templates and methodologies
-│   │   ├── products/                    # Products portfolio
-│   │   ├── stakeholders/                # Relationship management
-│   │   ├── tools-templates/            # Reusable tools
-│   │   └── company-management/         # General management
-│   └── template/                        # Workspace template (reference)
-│
-├── .dendrita/templates/workspace-template/  # Workspace template reference
-│   ├── best-practices/                 # Example methodologies
-│   ├── products/                      # Example products structure
-│   ├── stakeholders/                  # Example stakeholder structure
-│   └── tools-templates/               # Example tools
-│
-├── .dendrita/users/[user-id]/agents/  # Specialized agents (per user)
-│   ├── sustainability-strategist.md
-│   ├── project-manager.md
-│   ├── mel-analyst.md
-│   ├── stakeholder-facilitator.md
-│   └── fundraising-specialist.md
-│
-└── .dendrita/                       # Reflexive metadata (ALWAYS review first)
-    ├── users/                       # User profiles and preferences
-    │   ├── [user-id]/               # User folders (created during initialization)
-    │   │   ├── profile.json         # Default user profile
-    │   │   ├── profiles/            # Additional profiles
-    │   │   └── workspace-defaults.json
-    │   └── README.md                 # User system documentation
-    ├── skills/                      # Contextual knowledge skills
-    ├── agents/                      # Specialized agents
-    ├── hooks/                       # Behavior references (NOT executable)
-    └── settings.json                # Project metadata
+├── README.md / README.es.md
+├── workspaces/
+│   └── [workspace-name]/
+│       ├── 🚀 active-projects/
+│       ├── .archived-projects/
+│       ├── 📚 best-practices/
+│       ├── 📦 products/
+│       ├── 🤝 stakeholders/
+│       ├── 🛠️ tools-templates/
+│       └── ⚙️ company-management/
+└── .dendrita/                 # Reflexive metadata (ALWAYS review first)
+    ├── users/                 # User profiles, agents, and skills per user
+    ├── skills/                # Contextual knowledge
+    ├── agents/                # Specialized agents
+    ├── hooks/                 # Behavior references (NOT executable)
+    └── settings.json          # Project metadata
 ```
+
+**Important notes:**
+- Each workspace can define its `config-estilo.json` (naming and writing conventions)
+- Active projects must have: `master-plan.md`, `current-context.md`, `tasks.md`
+- Maintain consistency with `workspaces/[company]/📚 best-practices/`
 
 ---
 
-## 🔄 Workflow
+## 🔄 Recommended Workflow
 
-### 1. Project Initiation
+### 1. Initiation
+- Create project folder and the 3 base files
+- Review the project type template in `📚 best-practices/`
 
-```
-1. Identify the company you're working under (create your workspace name)
-2. Identify the project type
-3. Review the template in `.dendrita/templates/workspace-template/best-practices/`
-4. Create folder in `workspaces/[workspace-name]/active-projects/[project-name]/`
-5. Generate the 3 files using the template
-6. Update current-context.md frequently
-```
+### 2. Execution
+- Review `current-context.md` at the start of each session
+- Update tasks and key decisions
+- Activate agents from `.dendrita/users/[user-id]/agents/` when you need specialized methodologies
 
-### 2. During Execution
-
-```
-1. Review current-context.md at the start of each session
-2. Mark completed tasks in tasks.md
-3. Update current-context.md after important decisions
-4. Use `.dendrita/users/[user-id]/agents/` when you need specific expertise
-```
-
-### 3. Project Completion
-
-```
-1. Complete final reports
-2. Archive the project: mv workspaces/[empresa]/active-projects/[proyecto] workspaces/[empresa]/archived-projects/
-3. Document learnings in best-practices/
-4. Update partner mapping if applicable
-```
+### 3. Completion
+- Complete final reports
+- Archive the project (move to `.archived-projects/`)
+- Document learnings in `📚 best-practices/`
 
 ---
 
-## 📋 Persistent Documents System
+## 📚 Persistent Documents System
 
-Each project uses **3 key files** that maintain state:
-
-### `master-plan.md`
-- Executive summary
-- Project phases
-- Success metrics
-- Timeline
-- Risks and mitigations
-
-### `current-context.md` ⚠️ UPDATE FREQUENTLY
-- **SESSION PROGRESS** (date)
-  - ✅ Completed
-  - 🟡 In progress
-  - ⚠️ Blockers
-- Key decisions
-- Important files
-- Next steps
-
-### `tasks.md`
-- Checklist by phases
-- Task status
-- Acceptance criteria
-- Responsible parties
+- **`master-plan.md`**: Executive summary, phases, metrics, timeline, risks
+- **`current-context.md`** (update frequently): Progress, decisions, blockers, next steps
+- **`tasks.md`**: Checklist by phases, status, acceptance criteria, responsible parties
+- **`project-context.json`** ⚠️ UPDATE FREQUENTLY: Combines all above into a single JSON
 
 ---
 
-## 🎨 Best Practices by Project Type
+## 🧩 Best Practices (Examples)
 
-### Fundraising Bootcamp
-- See: `.dendrita/templates/workspace-template/best-practices/` for examples
-
-### Sustainability Diagnostic (Phase 1)
-- See: `.dendrita/templates/workspace-template/best-practices/` for examples
-
-### Project and Alliance Pipeline
-- See: `.dendrita/templates/workspace-template/best-practices/` for examples
-
-### MEL System (Monitoring, Evaluation, and Learning)
-- See: `.dendrita/templates/workspace-template/best-practices/` for examples
-
-### Sustainability Implementation (Phases 2-4)
-- See: `.dendrita/templates/workspace-template/best-practices/` for examples
+Review `.dendrita/templates/workspace-template/📚 best-practices/` for examples of:
+- Fundraising Bootcamp
+- Sustainability Diagnostic (Phase 1)
+- Project and Alliance Pipeline
+- MEL System (Monitoring, Evaluation, and Learning)
+- Sustainability Implementation (Phases 2-4)
 
 ---
 
-## 🤖 Work Modes
+## 🤖 Agents and Work Modes
 
-Activate a specialized agent by loading the corresponding file in `.dendrita/users/[user-id]/agents/`:
+Activate agents by loading files in `.dendrita/users/[user-id]/agents/` as needed (sustainability strategy, project management, MEL analysis, stakeholder management, fundraising).
 
-- **sustainability-strategist.md** - For ESG strategic planning
-- **project-manager.md** - For operational coordination
-- **mel-analyst.md** - For data and impact analysis
-- **stakeholder-facilitator.md** - For stakeholder management
-- **fundraising-specialist.md** - For financial proposal design
+General work preferences: `.dendrita/users/[user-id]/work-modes/user-work-mode.md`
 
 ---
 
-## 🔗 ChatGPT Integration
+## 🔗 Integration with ChatGPT or Other AI
 
-### Generate Optimized Prompts for External Platforms
-
-Dendrita can automatically generate optimized prompts for external AI platforms (ChatGPT, Claude, Gemini, etc.) based on your active context.
+Dendrita can generate optimized prompts based on active context.
 
 **How to use:**
+- Ask: "generate the context/prompt to work on X in ChatGPT/Gemini/Claude"
+- Context from workspace/project/agent is collected
+- A file is generated in `_working-export/` ready to copy/paste
 
-1. **Ask Cursor to generate a prompt:**
-   - "genérame el contexto para trabajar este documento en ChatGPT"
-   - "vamos a trabajar la línea gráfica, genérame el prompt para hacer logos con Stable Diffusion"
-   - "hazme un agente para analizar en ChatGPT las transcripciones"
-
-2. **Cursor will automatically:**
-   - Detect your request for external platform prompt
-   - Identify active workspace, project, and relevant agent
-   - Recopile relevant information from dendrita documents
-   - Generate a markdown file ready to copy/paste
-   - Save it in `_working-export/` with format `[workspace]-[proyecto]-[agent]-YYYY-MM-DD.md`
-
-3. **The generated prompt includes:**
-   - Role and purpose instructions
-   - Project context (if active project exists)
-   - Relevant agent methodology
-   - Ennui principles (La Brújula)
-   - References to source files
-
-**For more details:** See `.dendrita/hooks/external-prompt-generator.md`
-
-### Manual Integration (Alternative)
-
-If you prefer to manually create prompts for ChatGPT:
-
-1. **Identify the company and project:** `workspaces/[workspace-name]/active-projects/[project-name]/`
-2. **Upload the complete folder** of the active project
-3. **Include** `.dendrita/users/[user-id]/agents/[agent-name].md` if you need expertise
-4. **Include** `.dendrita/templates/workspace-template/best-practices/[type]/` as reference
-5. ChatGPT will read all context and maintain continuity
-
-**Note:** The old `INSTRUCTION.md` file has been archived. Use the automatic prompt generator instead for optimized prompts.
+**More details:** `.dendrita/hooks/external-prompt-generator.md`
 
 ---
 
 ## 📊 Multiple Projects Management
 
-### Projects Dashboard
-
-Create a `workspaces/[workspace-name]/company-management/projects-dashboard.md` file:
-
-```markdown
-# Projects Dashboard
-
-## Active Projects
-
-| Project | Status | Phase | Responsible | Next Milestone |
-|---------|--------|-------|-------------|----------------|
-| Project A | 🟡 In progress | Phase 1 | Team Member | Milestone 1 |
-| Project B | 🟡 In progress | Phase 2 | Team Member | Milestone 2 |
-
-## Archived Projects
-
-- Project X (completed Q4 2024)
-- Project Y (completed Q3 2024)
-```
-
-Update weekly.
+- Use `⚙️ company-management/projects-dashboard.md` per workspace
+- Update weekly with status, phase, and upcoming milestones
+- Maintain `🤝 stakeholders/` for key relationships and partners
 
 ---
 
@@ -420,35 +286,11 @@ All projects must follow:
 
 ---
 
-## 🔄 Frequent Updates
+## 🧩 Standards & Style
 
-### Current Context
-**Update whenever:**
-- You complete an important task
-- You make a key decision
-- You identify a blocker
-- Project status changes
-
-### Task Tracking
-**Update when:**
-- You mark a task as completed
-- You add a new task
-- A task status changes
-
-### Strategic Plan
-**Update when:**
-- Project scope changes
-- You discover new phases
-- You significantly adjust the timeline
-
----
-
-## 📚 Next Steps
-
-1. **Review** the templates in `.dendrita/templates/workspace-template/best-practices/`
-2. **Create** your first project following the structure
-3. **Customize** work modes as needed
-4. **Keep** `current-context.md` updated
+- For `.dendrita/` components, follow `.dendrita/config-estilo.json`
+- For workspace/project files, follow `workspaces/[company]/config-estilo.json`
+- Respect lowercase names with hyphens when indicated (e.g., "ennui")
 
 ---
 
@@ -473,6 +315,23 @@ If you have questions about:
 
 ---
 
+## 📬 Contact
+
+**Creator and maintainer:** **Álvaro E. Mur** — [alvaro.e.mur@gmail.com](mailto:alvaro.e.mur@gmail.com)
+
+**About ennui:** Social and environmental consulting firm (Peru) focused on project implementation, development services for impact organizations, impact measurement (MEL), stakeholder management & fundraising, and sustainability diagnostics.
+
+---
+
+## 📎 Useful Links
+
+- Spanish version: `README.es.md`
+- Hooks documentation: `.dendrita/hooks/README.md`
+- User system: `.dendrita/users/README.md`
+- Workspace templates: `.dendrita/templates/workspace-template/`
+
+---
+
 ## 👨‍💻 About the Developer
 
 **Álvaro E. Mur** is the creator and maintainer of ennui-dendrita. He specializes in:
@@ -482,19 +341,17 @@ If you have questions about:
 - 🤖 **AI & Automation:** Leveraging AI tools for strategic decision-making and document management
 - 💡 **Innovation:** Building systems that integrate business operations with social value
 
-**Contact:** [alvaro.e.mur@gmail.com](mailto:alvaro.e.mur@gmail.com)
-
 ---
 
 ## 🏢 About ennui
 
 **ennui** is a social and environmental consulting firm registered in Peru that specializes in:
 
-- 🌍 **Sustainability Diagnostics:** Comprehensive ESG assessments for organizations
-- 💰 **Fundraising Strategy:** Design and implementation of funding strategies for social enterprises
-- 🎯 **Impact Measurement:** MEL (Monitoring, Evaluation, and Learning) systems for social programs
-- 🤝 **Stakeholder Management:** Facilitating collaboration between organizations and partners
 - 🚀 **Project Implementation:** End-to-end execution of sustainability and social impact initiatives
+- 💻 **Development Services:** Custom development solutions, especially for impact organizations
+- 🎯 **Impact Measurement:** MEL (Monitoring, Evaluation, and Learning) systems for social programs
+- 🤝 **Stakeholder Management & Fundraising:** Facilitating collaboration between organizations and partners, including fundraising strategy design and implementation
+- 🌍 **Sustainability Diagnostics:** Comprehensive ESG assessments for organizations
 
 **Core Philosophy:** Utility over ornamentation. Every action, every measurement, every deliverable must enable informed decisions and create measurable value.
 
@@ -503,4 +360,3 @@ If you have questions about:
 ---
 
 **ennui(); – purpose is also managed**
-

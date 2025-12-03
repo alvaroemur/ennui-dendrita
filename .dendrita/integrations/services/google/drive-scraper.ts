@@ -32,6 +32,7 @@ export interface DriveScrapingConfig {
   mime_type_filter?: string[]; // Filtrar por tipos MIME
   date_min?: string; // Solo archivos modificados después de esta fecha
   date_max?: string; // Solo archivos modificados antes de esta fecha
+  root_files_metadata_only?: boolean; // Si true, archivos sueltos en root solo se scrapean con metadata (sin contenido). Las carpetas en root siempre se scrapean recursivamente.
 }
 
 export interface DriveScrapingResult {
@@ -182,10 +183,32 @@ export class DriveScraper {
   async loadConfigFromWorkspace(workspace: string, userId?: string): Promise<DriveScrapingConfig[]> {
     try {
       const projectRoot = path.resolve(__dirname, '../../../..');
-      const configPath = path.join(projectRoot, 'workspaces', workspace, 'scrapers-config.json');
+      
+      // Buscar el directorio del workspace (puede tener emojis)
+      const workspacesDir = path.join(projectRoot, 'workspaces');
+      let workspaceDir = workspace;
+      
+      if (!fs.existsSync(path.join(workspacesDir, workspace))) {
+        // Buscar coincidencia sin emojis
+        const normalizedName = workspace.toLowerCase().replace(/[^\w\s]/g, '').trim();
+        const entries = fs.readdirSync(workspacesDir, { withFileTypes: true });
+        
+        for (const entry of entries) {
+          if (entry.isDirectory()) {
+            const normalizedEntry = entry.name.toLowerCase().replace(/[^\w\s]/g, '').trim();
+            if (normalizedEntry === normalizedName || normalizedEntry.includes(normalizedName) || normalizedName.includes(normalizedEntry)) {
+              workspaceDir = entry.name;
+              logger.info(`Found workspace directory: ${workspaceDir} (searched for: ${workspace})`);
+              break;
+            }
+          }
+        }
+      }
+      
+      const configPath = path.join(workspacesDir, workspaceDir, 'scrapers-config.json');
       
       if (!fs.existsSync(configPath)) {
-        logger.warn(`No scrapers-config.json found for workspace ${workspace}`);
+        logger.warn(`No scrapers-config.json found for workspace ${workspace} (searched in: ${workspaceDir})`);
         return [];
       }
       
@@ -212,12 +235,61 @@ export class DriveScraper {
         extract_content: cfg.extract_content ?? false,
         extract_metadata: cfg.extract_metadata ?? true,
         extract_thumbnail: cfg.extract_thumbnail ?? false,
+        root_files_metadata_only: cfg.root_files_metadata_only ?? false,
         mime_type_filter: cfg.mime_type_filter || undefined,
         date_min: cfg.date_min || undefined,
         date_max: cfg.date_max || undefined,
       }));
     } catch (error) {
       logger.error('Failed to load config from workspace', error);
+      throw error;
+    }
+  }
+
+  /**
+   * Carga configuración de scraping desde archivo local del usuario
+   * Paradigma de .dendrita: configuración en .dendrita/users/[user-id]/scrapers-config.json
+   */
+  async loadConfigFromUser(userId: string): Promise<DriveScrapingConfig[]> {
+    try {
+      const projectRoot = path.resolve(__dirname, '../../../..');
+      const configPath = path.join(projectRoot, '.dendrita', 'users', userId, 'scrapers-config.json');
+      
+      if (!fs.existsSync(configPath)) {
+        logger.warn(`No scrapers-config.json found for user ${userId}`);
+        return [];
+      }
+      
+      const configContent = fs.readFileSync(configPath, 'utf-8');
+      const config = JSON.parse(configContent);
+      
+      if (!config.drive || !config.drive.configs) {
+        logger.warn(`No drive configuration found in scrapers-config.json for user ${userId}`);
+        return [];
+      }
+      
+      return config.drive.configs.map((cfg: any) => ({
+        user_id: userId,
+        profile_id: undefined,
+        workspace: undefined, // Configs a nivel de usuario no tienen workspace
+        config_name: cfg.config_name,
+        enabled: cfg.enabled ?? true,
+        folder_ids: cfg.folder_ids || [],
+        include_subfolders: cfg.include_subfolders ?? true,
+        max_results: cfg.max_results ?? 1000,
+        page_token: cfg.page_token || undefined,
+        extract_permissions: cfg.extract_permissions ?? true,
+        extract_revisions: cfg.extract_revisions ?? false,
+        extract_content: cfg.extract_content ?? false,
+        extract_metadata: cfg.extract_metadata ?? true,
+        extract_thumbnail: cfg.extract_thumbnail ?? false,
+        root_files_metadata_only: cfg.root_files_metadata_only ?? false,
+        mime_type_filter: cfg.mime_type_filter || undefined,
+        date_min: cfg.date_min || undefined,
+        date_max: cfg.date_max || undefined,
+      }));
+    } catch (error) {
+      logger.error('Failed to load config from user', error);
       throw error;
     }
   }
@@ -278,6 +350,7 @@ export class DriveScraper {
         extract_content: cfg.extract_content ?? false,
         extract_metadata: cfg.extract_metadata ?? true,
         extract_thumbnail: cfg.extract_thumbnail ?? false,
+        root_files_metadata_only: cfg.root_files_metadata_only ?? false,
         mime_type_filter: cfg.mime_type_filter || undefined,
         date_min: cfg.date_min || undefined,
         date_max: cfg.date_max || undefined,
@@ -299,14 +372,80 @@ export class DriveScraper {
   }
 
   /**
+   * Guarda o actualiza configuración de scraping en archivo local del usuario
+   * Paradigma de .dendrita: configuración en .dendrita/users/[user-id]/scrapers-config.json
+   */
+  async saveUserConfig(userId: string, configs: DriveScrapingConfig[]): Promise<void> {
+    try {
+      const projectRoot = path.resolve(__dirname, '../../../..');
+      const configPath = path.join(projectRoot, '.dendrita', 'users', userId, 'scrapers-config.json');
+      const userDir = path.dirname(configPath);
+      
+      // Crear directorio si no existe
+      if (!fs.existsSync(userDir)) {
+        fs.mkdirSync(userDir, { recursive: true });
+      }
+      
+      // Cargar configuración existente o crear nueva
+      let config: any = {};
+      if (fs.existsSync(configPath)) {
+        const configContent = fs.readFileSync(configPath, 'utf-8');
+        config = JSON.parse(configContent);
+      } else {
+        config.user_id = userId;
+        config.drive = { configs: [] };
+      }
+      
+      // Actualizar sección de drive
+      if (!config.drive) {
+        config.drive = { configs: [] };
+      }
+      
+      // Actualizar configuraciones de drive
+      config.drive.configs = configs.map(cfg => ({
+        config_name: cfg.config_name,
+        enabled: cfg.enabled ?? true,
+        folder_ids: cfg.folder_ids || [],
+        include_subfolders: cfg.include_subfolders ?? true,
+        max_results: cfg.max_results ?? 1000,
+        page_token: cfg.page_token || undefined,
+        extract_permissions: cfg.extract_permissions ?? true,
+        extract_revisions: cfg.extract_revisions ?? false,
+        extract_content: cfg.extract_content ?? false,
+        extract_metadata: cfg.extract_metadata ?? true,
+        extract_thumbnail: cfg.extract_thumbnail ?? false,
+        root_files_metadata_only: cfg.root_files_metadata_only ?? false,
+        mime_type_filter: cfg.mime_type_filter || undefined,
+        date_min: cfg.date_min || undefined,
+        date_max: cfg.date_max || undefined,
+      }));
+      
+      // Actualizar metadata
+      config.metadata = {
+        ...config.metadata,
+        last_updated: new Date().toISOString(),
+      };
+      
+      // Guardar archivo
+      fs.writeFileSync(configPath, JSON.stringify(config, null, 2), 'utf-8');
+      logger.info(`Config saved for user ${userId} in ${configPath}`);
+    } catch (error) {
+      logger.error('Failed to save user config', error);
+      throw error;
+    }
+  }
+
+  /**
    * @deprecated Use saveConfig() instead. Kept for backward compatibility.
    * Crea o actualiza configuración de scraping
    */
   async upsertConfig(config: DriveScrapingConfig): Promise<void> {
-    if (!config.workspace) {
-      throw new Error('Workspace is required for Drive scraper config');
+    if (config.workspace) {
+      await this.saveConfig(config.workspace, [config]);
+    } else {
+      // Si no tiene workspace, es una config a nivel de usuario
+      await this.saveUserConfig(config.user_id, [config]);
     }
-    await this.saveConfig(config.workspace, [config]);
   }
 
   /**
@@ -588,7 +727,12 @@ export class DriveScraper {
       let contentExtracted = false;
       let contentExtractionError: string | null = null;
 
-      if (config.extract_content && !isFolder) {
+      // Verificar si el archivo está en root y si root_files_metadata_only está habilitado
+      const isInRoot = (fileMetadata.parents || []).includes('root');
+      const shouldExtractContent = config.extract_content && !isFolder && 
+        !(config.root_files_metadata_only && isInRoot);
+
+      if (shouldExtractContent) {
         try {
           contentText = await this.getFileContent(fileMetadata.id, fileMetadata.mimeType);
           contentExtracted = contentText !== null;
@@ -596,6 +740,8 @@ export class DriveScraper {
           contentExtractionError = error.message;
           logger.error(`Failed to extract content for file ${fileMetadata.id}`, error);
         }
+      } else if (config.root_files_metadata_only && isInRoot && !isFolder) {
+        logger.info(`Skipping content extraction for root file ${fileMetadata.name} (root_files_metadata_only enabled)`);
       }
 
       const fileData: any = {
@@ -906,10 +1052,10 @@ export class DriveScraper {
     try {
       logger.info(`Starting scrape for user ${config.user_id}, workspace ${config.workspace || 'default'}, config ${config.config_name}`);
 
-      // Obtener configuración de Supabase para obtener el config_id
+      // Obtener configuración de Supabase para obtener el config_id y last_sync_at
       const { data: configData } = await this.db
         .from('drive_scraping_configs')
-        .select('id')
+        .select('id, last_sync_at')
         .eq('user_id', config.user_id)
         .eq('profile_id', config.profile_id || null)
         .eq('workspace', config.workspace || null)
@@ -917,6 +1063,25 @@ export class DriveScraper {
         .maybeSingle();
 
       const configId = configData?.id;
+      
+      // Optimización incremental: Si hay una última sincronización y no hay date_min explícito,
+      // usar last_sync_at como date_min para solo obtener archivos modificados desde la última sincronización.
+      // Esto evita procesar archivos que no han cambiado, mejorando significativamente el rendimiento
+      // en carpetas grandes con muchos archivos (como carpetas de fotos).
+      // Si no hay last_sync_at (primera ejecución), se indexará todo.
+      let effectiveDateMin = config.date_min;
+      if (!effectiveDateMin && configData?.last_sync_at) {
+        effectiveDateMin = configData.last_sync_at;
+        logger.info(`Using last_sync_at (${effectiveDateMin}) as date_min for incremental sync`);
+      } else if (!configData?.last_sync_at) {
+        logger.info('No previous sync found - will index all files (first run)');
+      }
+      
+      // Crear una copia de la configuración con el date_min efectivo
+      const effectiveConfig: DriveScrapingConfig = {
+        ...config,
+        date_min: effectiveDateMin,
+      };
 
       // Procesar cada carpeta configurada
       const processedFiles = new Set<string>();
@@ -924,7 +1089,7 @@ export class DriveScraper {
       for (const folderId of config.folder_ids) {
         try {
           logger.info(`Processing folder: ${folderId}`);
-          const files = await this.getAllFilesInFolder(folderId, config, processedFiles);
+          const files = await this.getAllFilesInFolder(folderId, effectiveConfig, processedFiles);
 
           logger.info(`Found ${files.length} files in folder ${folderId}`);
 
@@ -1029,15 +1194,21 @@ export class DriveScraper {
 
   /**
    * Ejecuta scraping para un usuario, perfil y workspace específicos
+   * Si no se especifica workspace, carga configs a nivel de usuario
    */
   async scrapeForUser(userId: string, profileId?: string, workspace?: string): Promise<DriveScrapingResult[]> {
-    if (!workspace) {
-      throw new Error('Workspace is required for Drive scraper');
+    let configs: DriveScrapingConfig[] = [];
+
+    if (workspace) {
+      // Cargar configs del workspace
+      configs = await this.loadConfigFromWorkspace(workspace, userId);
+    } else {
+      // Cargar configs a nivel de usuario
+      configs = await this.loadConfigFromUser(userId);
     }
-    const configs = await this.loadConfigFromWorkspace(workspace, userId);
 
     if (configs.length === 0) {
-      logger.warn(`No scraping configs found for user ${userId}${profileId ? ` with profile ${profileId}` : ''}${workspace ? ` in workspace ${workspace}` : ''}`);
+      logger.warn(`No scraping configs found for user ${userId}${profileId ? ` with profile ${profileId}` : ''}${workspace ? ` in workspace ${workspace}` : ' (user-level)'}`);
       return [];
     }
 

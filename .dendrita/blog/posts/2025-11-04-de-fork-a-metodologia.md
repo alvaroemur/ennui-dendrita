@@ -1,3 +1,17 @@
+---
+name: 2025-11-04-de-fork-a-metodologia
+description: "De Fork a Metodología: El Origen de ennui-dendrita"
+type: blog-post
+created:
+  2025-11-06T00:00:00.000Z
+  
+updated:
+  2025-11-06T00:00:00.000Z
+  
+tags: ["blog-post", "blog"]
+category: blog
+---
+
 # De Fork a Metodología: El Origen de ennui-dendrita
 
 **Fecha:** 2025-11-04  
@@ -68,7 +82,7 @@ workspaces/
 
 Cada workspace mantiene su propia estructura:
 - `active-projects/` - Proyectos activos
-- `archived-projects/` - Proyectos archivados
+- `_archived-projects/` - Proyectos archivados
 - `best-practices/` - Metodologías específicas del workspace
 - `products/` - Portafolio de productos
 - `stakeholders/` - Gestión de aliados
@@ -120,29 +134,13 @@ Sin esta base sólida, ennui-dendrita no habría sido posible. Agradecemos a los
 
 ## Lo Que Viene
 
-### Productos en Desarrollo
+### Desarrollo Iterativo y Showcase de Capacidades
 
-Estamos desarrollando aplicaciones con intención de servir como **módulos de negocio monetizables**:
+Mi plan es seguir desarrollando las capacidades del sistema poco a poco mientras trabajo en mis proyectos. **dendrita** evoluciona con cada proyecto que gestiono, mejorando y refinándose a través del uso real.
 
-1. **SaaS - Web Application**
-   - Plataforma completa de gestión de proyectos basada en metodología dendrita
-   - Gestión multi-workspace
-   - Funciones de colaboración en equipo
-   - Integración con herramientas externas
+Mi propio sistema RAG de project management se convierte en una **herramienta compartible**—algo que otros pueden usar, adaptar y mejorar—pero también en un **showcase de capacidades de desarrollo** que estoy implementando en mi oferta al público.
 
-2. **Productos para End-Users**
-   - **Extensión de Chrome** - Herramienta de productividad basada en navegador
-   - **App Móvil** (potencial) - Gestión de proyectos en movimiento
-
-### Buscando Socios
-
-Valoramos el **apoyo y la colaboración**. Si estás interesado en:
-- **Asociación técnica** - Desarrollo, arquitectura o experiencia en ingeniería
-- **Asociación comercial** - Go-to-market, ventas o desarrollo de negocio
-- **Inversión** - Financiamiento para desarrollo de productos y escalamiento
-- **Construcción de comunidad** - Ayudar a hacer crecer la metodología y base de usuarios
-
-**Hablemos:** [alvaro.e.mur@gmail.com](mailto:alvaro.e.mur@gmail.com)
+Cada mejora que hago para mis propios proyectos se convierte en una demostración de lo que es posible cuando se combinan metodologías sólidas con herramientas de IA modernas. No es solo un repositorio—es una forma de mostrar cómo trabajo y qué puedo construir.
 
 ## Reflexiones Finales
 

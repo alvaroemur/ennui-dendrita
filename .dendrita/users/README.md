@@ -1,3 +1,17 @@
+---
+name: readme
+description: "User and Profile System"
+type: documentation
+created:
+  2025-11-06T00:00:00.000Z
+  
+updated:
+  2025-11-06T00:00:00.000Z
+  
+tags: ["documentation", "infrastructure", "user-specific", "readme"]
+category: infrastructure
+---
+
 # User and Profile System
 
 User and profile management system for ennui-dendrita that allows customizing Cursor behavior according to user and work context.
@@ -21,20 +35,31 @@ This system allows:
 ```
 .dendrita/users/
 ├── README.md                              # This file
-├── [user-id]/                             # Folder per user
-│   ├── profile.json                       # User default profile
-│   ├── profiles/                          # Additional profiles
-│   │   ├── [profile-name].json            # Specific profile
-│   │   └── workspace-[workspace-name].json # Profile per workspace
-│   ├── agents/                            # User-specific domain knowledge: specialized agents
-│   │   ├── README.md
-│   │   └── [agent-name].md
-│   ├── skills/                            # User-specific domain knowledge: contextual skills
-│   │   ├── README.md
-│   │   ├── skill-rules.json
-│   │   └── [skill-name]/SKILL.md
-│   └── workspace-defaults.json           # Default profiles configuration per workspace
-└── .gitignore                             # To exclude personal data from repository
+├── example-user/                          # User template (contains all .example files)
+│   ├── profile.json                       # Template base profile
+│   ├── profile.example.json               # Example structure for user profile
+│   ├── context.json.example               # Example structure for user context
+│   ├── workspace-defaults.example.json     # Example structure for workspace defaults
+│   ├── scrapers-config.json.example       # Example structure for scrapers config
+│   ├── reddit-comments-monitoring.json.example  # Example structure for Reddit monitoring
+│   ├── profiles/                          # Profile templates
+│   │   └── profile-workspace.example.json  # Example structure for workspace profile
+│   ├── agents/                            # Agent templates
+│   ├── skills/                            # Skill templates
+│   └── work-modes/                        # Work-mode templates
+└── [user-id]/                             # Folder per user
+    ├── profile.json                       # User default profile
+    ├── profiles/                          # Additional profiles
+    │   ├── [profile-name].json            # Specific profile
+    │   └── workspace-[workspace-name].json # Profile per workspace
+    ├── agents/                            # User-specific domain knowledge: specialized agents
+    │   ├── README.md
+    │   └── [agent-name].md
+    ├── skills/                            # User-specific domain knowledge: contextual skills
+    │   ├── README.md
+    │   ├── skill-rules.json
+    │   └── [skill-name]/SKILL.md
+    └── workspace-defaults.json           # Default profiles configuration per workspace
 ```
 
 **IMPORTANT PARADIGM:** Agents and skills are user-specific domain knowledge (sustainability, social impact, project management methodologies) and are stored in `.dendrita/users/[user-id]/`. This reflects that they contain private, domain-specific knowledge rather than generic infrastructure (which belongs in `.dendrita/integrations/`).

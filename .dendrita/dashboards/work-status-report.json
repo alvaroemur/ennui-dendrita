@@ -1,0 +1,6169 @@
+{
+  "generatedAt": "2025-12-02T07:52:05.186Z",
+  "summary": {
+    "totalProjects": 20,
+    "active": 19,
+    "paused": 1,
+    "completed": 0,
+    "totalTasks": {
+      "pending": 484,
+      "inProgress": 1,
+      "blocked": 0,
+      "completed": 100
+    }
+  },
+  "byWorkspace": {
+    "🌱 ennui": {
+      "projects": [
+        {
+          "name": ".bootcamp-fundraising",
+          "status": "active",
+          "lastActivity": "2025-11-09T10:12:38.608Z",
+          "tasks": {
+            "pending": 19,
+            "inProgress": 0,
+            "blocked": 0
+          },
+          "pendingTasks": [
+            {
+              "description": "Confirmar fechas y sedes por región",
+              "status": "pending"
+            },
+            {
+              "description": "Definir pricing final y modelo de becas",
+              "status": "pending"
+            },
+            {
+              "description": "Elaborar brochure y materiales de comunicación",
+              "status": "pending"
+            },
+            {
+              "description": "Contactar aliados locales para logística",
+              "status": "pending"
+            },
+            {
+              "description": "Preparar toolkit IA y materiales Canvas",
+              "status": "pending"
+            },
+            {
+              "description": "Diseñar estructura de seguimiento online (8 semanas)",
+              "status": "pending"
+            },
+            {
+              "description": "Lanzar campaña de inscripciones",
+              "status": "pending"
+            },
+            {
+              "description": "Gestionar early‑bird pricing",
+              "status": "pending"
+            },
+            {
+              "description": "Confirmar inscripciones (meta: 25 ONG)",
+              "status": "pending"
+            },
+            {
+              "description": "Procesar becas si aplican",
+              "status": "pending"
+            },
+            {
+              "description": "Preparar logística de sede",
+              "status": "pending"
+            },
+            {
+              "description": "Confirmar facilitadores y equipo",
+              "status": "pending"
+            },
+            {
+              "description": "Preparar materiales y recursos",
+              "status": "pending"
+            },
+            {
+              "description": "Ejecutar bootcamp (2 días)",
+              "status": "pending"
+            },
+            {
+              "description": "Iniciar seguimiento online (8 semanas)",
+              "status": "pending"
+            },
+            {
+              "description": "Monitorear avances de participantes",
+              "status": "pending"
+            },
+            {
+              "description": "Facilitar mentorías grupales",
+              "status": "pending"
+            },
+            {
+              "description": "Recopilar feedback y aprendizajes",
+              "status": "pending"
+            },
+            {
+              "description": "Evaluar resultados (NPS, postulaciones, financiamientos)",
+              "status": "pending"
+            }
+          ],
+          "inProgressTasks": [],
+          "blockedTasks": []
+        },
+        {
+          "name": ".dendrita-comms",
+          "status": "active",
+          "lastActivity": "2025-11-09T10:12:38.611Z",
+          "tasks": {
+            "pending": 21,
+            "inProgress": 0,
+            "blocked": 0
+          },
+          "pendingTasks": [
+            {
+              "description": "**Definir voz y tono**",
+              "status": "pending"
+            },
+            {
+              "description": "**Crear calendario editorial**",
+              "status": "pending"
+            },
+            {
+              "description": "**Escribir primeros 5 posts**",
+              "status": "pending"
+            },
+            {
+              "description": "**Crear banco de contenido**",
+              "status": "pending"
+            },
+            {
+              "description": "**Publicar según calendario**",
+              "status": "pending"
+            },
+            {
+              "description": "**Monitorear y aprender**",
+              "status": "pending"
+            },
+            {
+              "description": "**Generar feedback**",
+              "status": "pending"
+            },
+            {
+              "description": "**Ampliar tipos de contenido**",
+              "status": "pending"
+            },
+            {
+              "description": "**Optimizar engagement**",
+              "status": "pending"
+            },
+            {
+              "description": "**Construir banco de contenido**",
+              "status": "pending"
+            },
+            {
+              "description": "**Evaluar resultados del mes 1**",
+              "status": "pending"
+            },
+            {
+              "description": "**Mejorar contenido basado en feedback**",
+              "status": "pending"
+            },
+            {
+              "description": "**Explorar nuevos canales** (Opcional)",
+              "status": "pending"
+            },
+            {
+              "description": "Publicar 2-3 posts según calendario",
+              "status": "pending"
+            },
+            {
+              "description": "Responder a comentarios y mensajes",
+              "status": "pending"
+            },
+            {
+              "description": "Trackear métricas semanales",
+              "status": "pending"
+            },
+            {
+              "description": "Preparar contenido para próxima semana",
+              "status": "pending"
+            },
+            {
+              "description": "Revisar métricas del mes",
+              "status": "pending"
+            },
+            {
+              "description": "Evaluar estrategia y ajustar",
+              "status": "pending"
+            },
+            {
+              "description": "Planificar temas del próximo mes",
+              "status": "pending"
+            },
+            {
+              "description": "Consolidar feedback y compartir con equipo",
+              "status": "pending"
+            }
+          ],
+          "inProgressTasks": [],
+          "blockedTasks": []
+        },
+        {
+          "name": ".ennui-x-mosaico",
+          "status": "active",
+          "lastActivity": "2025-11-09T10:12:38.614Z",
+          "tasks": {
+            "pending": 15,
+            "inProgress": 0,
+            "blocked": 0
+          },
+          "pendingTasks": [
+            {
+              "description": "Verificar si Mosaico compartió información del programa con Mercy Corps",
+              "status": "pending"
+            },
+            {
+              "description": "Seguimiento con Daniel Block (Mercy Corps) si es necesario",
+              "status": "pending"
+            },
+            {
+              "description": "Evaluar si hay posibilidad de retomar conversación con Mercy Corps",
+              "status": "pending"
+            },
+            {
+              "description": "Mapear potenciales financiadores para programa \"Comuna Nación\"",
+              "status": "pending"
+            },
+            {
+              "description": "Evaluar fit de cada oportunidad con el programa",
+              "status": "pending"
+            },
+            {
+              "description": "Priorizar oportunidades según potencial y probabilidad",
+              "status": "pending"
+            },
+            {
+              "description": "Preparar materiales del programa para presentaciones",
+              "status": "pending"
+            },
+            {
+              "description": "Coordinación con Álvaro Henzler (Mosaico)",
+              "status": "pending"
+            },
+            {
+              "description": "Seguimiento sobre información compartida con Mercy Corps",
+              "status": "pending"
+            },
+            {
+              "description": "Evaluar estrategia y próximos pasos",
+              "status": "pending"
+            },
+            {
+              "description": "Revisar modelo de negocio y meta de recaudación",
+              "status": "pending"
+            },
+            {
+              "description": "Preparar presentación del programa \"Comuna Nación\"",
+              "status": "pending"
+            },
+            {
+              "description": "Contactar potenciales financiadores identificados",
+              "status": "pending"
+            },
+            {
+              "description": "Presentar programa a financiadores prioritarios",
+              "status": "pending"
+            },
+            {
+              "description": "Seguimiento de presentaciones",
+              "status": "pending"
+            }
+          ],
+          "inProgressTasks": [],
+          "blockedTasks": []
+        },
+        {
+          "name": "ennui-x-NOSxOTROS",
+          "status": "active",
+          "lastActivity": "2025-11-09T10:19:42.123Z",
+          "tasks": {
+            "pending": 101,
+            "inProgress": 0,
+            "blocked": 0
+          },
+          "pendingTasks": [
+            {
+              "description": "Enviar invitaciones al piloto",
+              "status": "pending"
+            },
+            {
+              "description": "**URGENTE:** Chequear estado de entrevistas reprogramadas",
+              "status": "pending"
+            },
+            {
+              "description": "**URGENTE:** Hacer seguimiento a las últimas programaciones",
+              "status": "pending"
+            },
+            {
+              "description": "**URGENTE:** Si no hay respuesta, pedir ayuda a Luis Alberto Flores (NOSxOTROS) para empujar convocatoria",
+              "status": "pending"
+            },
+            {
+              "description": "Conducir 10 entrevistas completas",
+              "status": "pending"
+            },
+            {
+              "description": "Recopilar respuestas de formulario",
+              "status": "pending"
+            },
+            {
+              "description": "Consolidar hallazgos de entrevistas hasta ahora",
+              "status": "pending"
+            },
+            {
+              "description": "Análisis preliminar de datos",
+              "status": "pending"
+            },
+            {
+              "description": "Generar reportes iniciales",
+              "status": "pending"
+            },
+            {
+              "description": "Entregar reportes a participantes",
+              "status": "pending"
+            },
+            {
+              "description": "Consolidar feedback de piloto",
+              "status": "pending"
+            },
+            {
+              "description": "**Usar hallazgos de entrevistas para afinar cuestionario IMPACTO-Scan** (iteración-mini de IMPACTO)",
+              "status": "pending"
+            },
+            {
+              "description": "Identificar preguntas clave que funcionan",
+              "status": "pending"
+            },
+            {
+              "description": "Ajustar modelo de análisis",
+              "status": "pending"
+            },
+            {
+              "description": "Documentar lecciones aprendidas",
+              "status": "pending"
+            },
+            {
+              "description": "**Usar hallazgos para avanzar con planeación del bootcamp**",
+              "status": "pending"
+            },
+            {
+              "description": "**Programar herramienta IMPACTO para procesamiento automático**",
+              "status": "pending"
+            },
+            {
+              "description": "Testear herramienta con 3 casos reales",
+              "status": "pending"
+            },
+            {
+              "description": "Validar outputs y reportes",
+              "status": "pending"
+            },
+            {
+              "description": "Documentar manual de uso",
+              "status": "pending"
+            },
+            {
+              "description": "**Avanzar con planeación del bootcamp usando hallazgos de entrevistas hasta ahora**",
+              "status": "pending"
+            },
+            {
+              "description": "Definir 4-5 módulos principales",
+              "status": "pending"
+            },
+            {
+              "description": "Estructura de sesiones (duración, formato)",
+              "status": "pending"
+            },
+            {
+              "description": "Seleccionar facilitadores/mentores",
+              "status": "pending"
+            },
+            {
+              "description": "Preparar slides y materiales base",
+              "status": "pending"
+            },
+            {
+              "description": "Diseñar materiales de convocatoria",
+              "status": "pending"
+            },
+            {
+              "description": "Lanzar campaña digital (redes + email)",
+              "status": "pending"
+            },
+            {
+              "description": "Recibir inscripciones (meta: 50+)",
+              "status": "pending"
+            },
+            {
+              "description": "Aplicar criterios de selección",
+              "status": "pending"
+            },
+            {
+              "description": "Confirmar 20-25 participantes",
+              "status": "pending"
+            },
+            {
+              "description": "Sesión introductoria / inspiración",
+              "status": "pending"
+            },
+            {
+              "description": "Dinámica de cohesión de grupo",
+              "status": "pending"
+            },
+            {
+              "description": "Presentación de expectativas y dinámicas",
+              "status": "pending"
+            },
+            {
+              "description": "Asignación de mentores (1 mentor por 3-4 equipos)",
+              "status": "pending"
+            },
+            {
+              "description": "Sesión 1: Teoría de Cambio",
+              "status": "pending"
+            },
+            {
+              "description": "Sesión 2: Marco Lógico y Resultados",
+              "status": "pending"
+            },
+            {
+              "description": "Trabajo en grupo: Mapeo de iniciales",
+              "status": "pending"
+            },
+            {
+              "description": "Entrega: Diagrama de Marco Lógico",
+              "status": "pending"
+            },
+            {
+              "description": "Sesión 3: Presupuesto y Sostenibilidad",
+              "status": "pending"
+            },
+            {
+              "description": "Sesión 4: Narrativa y Pitch",
+              "status": "pending"
+            },
+            {
+              "description": "Trabajo en grupo: Presupuesto preliminar",
+              "status": "pending"
+            },
+            {
+              "description": "Entrega: Borrador de pitch (1-2 min)",
+              "status": "pending"
+            },
+            {
+              "description": "Sesión 5: MEL y Monitoreo de Impacto",
+              "status": "pending"
+            },
+            {
+              "description": "Sesiones de mentoría individual (15 min c/u)",
+              "status": "pending"
+            },
+            {
+              "description": "Presentaciones finales (5-7 min c/u)",
+              "status": "pending"
+            },
+            {
+              "description": "Feedback estructurado de facilitadores",
+              "status": "pending"
+            },
+            {
+              "description": "Pulido de presentaciones con feedback",
+              "status": "pending"
+            },
+            {
+              "description": "Preparación de fichas técnicas (1-page summary)",
+              "status": "pending"
+            },
+            {
+              "description": "Ensayos finales",
+              "status": "pending"
+            },
+            {
+              "description": "Grabación de pitches (backup para Cosecha)",
+              "status": "pending"
+            },
+            {
+              "description": "Definir formato del evento",
+              "status": "pending"
+            },
+            {
+              "description": "Estructura de presentaciones (5-7 min + Q&A)",
+              "status": "pending"
+            },
+            {
+              "description": "Criterios de evaluación",
+              "status": "pending"
+            },
+            {
+              "description": "Diseño de ronda de preguntas",
+              "status": "pending"
+            },
+            {
+              "description": "Contactar potenciales jurados/mentores",
+              "status": "pending"
+            },
+            {
+              "description": "Confirmar asistencia (meta: 8-10 jurados)",
+              "status": "pending"
+            },
+            {
+              "description": "Preparar briefing para jurados",
+              "status": "pending"
+            },
+            {
+              "description": "Coordinar logistics (Zoom/presencial)",
+              "status": "pending"
+            },
+            {
+              "description": "Sesión de ensayo general",
+              "status": "pending"
+            },
+            {
+              "description": "Calibración de timing (5-7 min por pitch)",
+              "status": "pending"
+            },
+            {
+              "description": "Revisión de fichas técnicas",
+              "status": "pending"
+            },
+            {
+              "description": "Logística final (zoom, grabación, etc.)",
+              "status": "pending"
+            },
+            {
+              "description": "Ejecución del evento",
+              "status": "pending"
+            },
+            {
+              "description": "Grabación de presentaciones",
+              "status": "pending"
+            },
+            {
+              "description": "Retroalimentación en vivo",
+              "status": "pending"
+            },
+            {
+              "description": "Identificación de top 3-5 proyectos",
+              "status": "pending"
+            },
+            {
+              "description": "Consolidar feedback de jurados",
+              "status": "pending"
+            },
+            {
+              "description": "Identificar oportunidades de financiamiento por proyecto",
+              "status": "pending"
+            },
+            {
+              "description": "Acompañamiento inicial (matchmaking ONGs-Financiadores)",
+              "status": "pending"
+            },
+            {
+              "description": "Reporte final con KPIs y lecciones",
+              "status": "pending"
+            },
+            {
+              "description": "Crear landing page / explainer",
+              "status": "pending"
+            },
+            {
+              "description": "Video demo de herramienta (2 min)",
+              "status": "pending"
+            },
+            {
+              "description": "Campaña \"Conoce tu diagnóstico en 48 horas\"",
+              "status": "pending"
+            },
+            {
+              "description": "Posts en LinkedIn, Instagram, Twitter",
+              "status": "pending"
+            },
+            {
+              "description": "Diseño de materiales (flyers, videos, memes)",
+              "status": "pending"
+            },
+            {
+              "description": "Campaña de inscripción (3 olas de comunicación)",
+              "status": "pending"
+            },
+            {
+              "description": "Live sessions de Q&A sobre Bootcamp",
+              "status": "pending"
+            },
+            {
+              "description": "Testimonios de orgs piloto",
+              "status": "pending"
+            },
+            {
+              "description": "Fotos/videos de sesiones (con consentimiento)",
+              "status": "pending"
+            },
+            {
+              "description": "Recaps en redes (mini-clips de 30-60 seg)",
+              "status": "pending"
+            },
+            {
+              "description": "Newsletter semanal de aprendizajes",
+              "status": "pending"
+            },
+            {
+              "description": "Caso destacado post-bootcamp",
+              "status": "pending"
+            },
+            {
+              "description": "Press release del evento",
+              "status": "pending"
+            },
+            {
+              "description": "Invitación a medios",
+              "status": "pending"
+            },
+            {
+              "description": "Teasers gráficos (countdown, teaser clips)",
+              "status": "pending"
+            },
+            {
+              "description": "Entrevistas previas con participantes clave",
+              "status": "pending"
+            },
+            {
+              "description": "Seleccionar 2-3 casos destacados",
+              "status": "pending"
+            },
+            {
+              "description": "Reportaje de cada caso (video + artículo)",
+              "status": "pending"
+            },
+            {
+              "description": "Lecciones aprendidas compartidas",
+              "status": "pending"
+            },
+            {
+              "description": "Convocatoria para Bootcamp 2 (si aplica)",
+              "status": "pending"
+            },
+            {
+              "description": "10 reportes entregados",
+              "status": "pending"
+            },
+            {
+              "description": "NPS ≥ 4/5",
+              "status": "pending"
+            },
+            {
+              "description": "Herramienta v1.0 automatizada",
+              "status": "pending"
+            },
+            {
+              "description": "50+ inscripciones",
+              "status": "pending"
+            },
+            {
+              "description": "20-25 participantes seleccionados",
+              "status": "pending"
+            },
+            {
+              "description": "≥90% asistencia",
+              "status": "pending"
+            },
+            {
+              "description": "20+ proyectos presentables",
+              "status": "pending"
+            },
+            {
+              "description": "8-10 jurados confirmados",
+              "status": "pending"
+            },
+            {
+              "description": "15+ proyectos presentados",
+              "status": "pending"
+            },
+            {
+              "description": "5+ oportunidades identificadas",
+              "status": "pending"
+            },
+            {
+              "description": "2+ acuerdos iniciales",
+              "status": "pending"
+            }
+          ],
+          "inProgressTasks": [],
+          "blockedTasks": []
+        },
+        {
+          "name": "🎓 bootcamp-fundraising",
+          "status": "active",
+          "lastActivity": "2025-11-09T10:19:42.125Z",
+          "tasks": {
+            "pending": 19,
+            "inProgress": 0,
+            "blocked": 0
+          },
+          "pendingTasks": [
+            {
+              "description": "Confirmar fechas y sedes por región",
+              "status": "pending"
+            },
+            {
+              "description": "Definir pricing final y modelo de becas",
+              "status": "pending"
+            },
+            {
+              "description": "Elaborar brochure y materiales de comunicación",
+              "status": "pending"
+            },
+            {
+              "description": "Contactar aliados locales para logística",
+              "status": "pending"
+            },
+            {
+              "description": "Preparar toolkit IA y materiales Canvas",
+              "status": "pending"
+            },
+            {
+              "description": "Diseñar estructura de seguimiento online (8 semanas)",
+              "status": "pending"
+            },
+            {
+              "description": "Lanzar campaña de inscripciones",
+              "status": "pending"
+            },
+            {
+              "description": "Gestionar early‑bird pricing",
+              "status": "pending"
+            },
+            {
+              "description": "Confirmar inscripciones (meta: 25 ONG)",
+              "status": "pending"
+            },
+            {
+              "description": "Procesar becas si aplican",
+              "status": "pending"
+            },
+            {
+              "description": "Preparar logística de sede",
+              "status": "pending"
+            },
+            {
+              "description": "Confirmar facilitadores y equipo",
+              "status": "pending"
+            },
+            {
+              "description": "Preparar materiales y recursos",
+              "status": "pending"
+            },
+            {
+              "description": "Ejecutar bootcamp (2 días)",
+              "status": "pending"
+            },
+            {
+              "description": "Iniciar seguimiento online (8 semanas)",
+              "status": "pending"
+            },
+            {
+              "description": "Monitorear avances de participantes",
+              "status": "pending"
+            },
+            {
+              "description": "Facilitar mentorías grupales",
+              "status": "pending"
+            },
+            {
+              "description": "Recopilar feedback y aprendizajes",
+              "status": "pending"
+            },
+            {
+              "description": "Evaluar resultados (NPS, postulaciones, financiamientos)",
+              "status": "pending"
+            }
+          ],
+          "inProgressTasks": [],
+          "blockedTasks": []
+        },
+        {
+          "name": "🎨 ennui-x-Mosaico",
+          "status": "active",
+          "lastActivity": "2025-11-09T10:19:42.127Z",
+          "tasks": {
+            "pending": 15,
+            "inProgress": 0,
+            "blocked": 0
+          },
+          "pendingTasks": [
+            {
+              "description": "Verificar si Mosaico compartió información del programa con Mercy Corps",
+              "status": "pending"
+            },
+            {
+              "description": "Seguimiento con Daniel Block (Mercy Corps) si es necesario",
+              "status": "pending"
+            },
+            {
+              "description": "Evaluar si hay posibilidad de retomar conversación con Mercy Corps",
+              "status": "pending"
+            },
+            {
+              "description": "Mapear potenciales financiadores para programa \"Comuna Nación\"",
+              "status": "pending"
+            },
+            {
+              "description": "Evaluar fit de cada oportunidad con el programa",
+              "status": "pending"
+            },
+            {
+              "description": "Priorizar oportunidades según potencial y probabilidad",
+              "status": "pending"
+            },
+            {
+              "description": "Preparar materiales del programa para presentaciones",
+              "status": "pending"
+            },
+            {
+              "description": "Coordinación con Álvaro Henzler (Mosaico)",
+              "status": "pending"
+            },
+            {
+              "description": "Seguimiento sobre información compartida con Mercy Corps",
+              "status": "pending"
+            },
+            {
+              "description": "Evaluar estrategia y próximos pasos",
+              "status": "pending"
+            },
+            {
+              "description": "Revisar modelo de negocio y meta de recaudación",
+              "status": "pending"
+            },
+            {
+              "description": "Preparar presentación del programa \"Comuna Nación\"",
+              "status": "pending"
+            },
+            {
+              "description": "Contactar potenciales financiadores identificados",
+              "status": "pending"
+            },
+            {
+              "description": "Presentar programa a financiadores prioritarios",
+              "status": "pending"
+            },
+            {
+              "description": "Seguimiento de presentaciones",
+              "status": "pending"
+            }
+          ],
+          "inProgressTasks": [],
+          "blockedTasks": []
+        },
+        {
+          "name": "💬 dendrita-comms",
+          "status": "active",
+          "lastActivity": "2025-11-09T10:19:42.130Z",
+          "tasks": {
+            "pending": 21,
+            "inProgress": 0,
+            "blocked": 0
+          },
+          "pendingTasks": [
+            {
+              "description": "**Definir voz y tono**",
+              "status": "pending"
+            },
+            {
+              "description": "**Crear calendario editorial**",
+              "status": "pending"
+            },
+            {
+              "description": "**Escribir primeros 5 posts**",
+              "status": "pending"
+            },
+            {
+              "description": "**Crear banco de contenido**",
+              "status": "pending"
+            },
+            {
+              "description": "**Publicar según calendario**",
+              "status": "pending"
+            },
+            {
+              "description": "**Monitorear y aprender**",
+              "status": "pending"
+            },
+            {
+              "description": "**Generar feedback**",
+              "status": "pending"
+            },
+            {
+              "description": "**Ampliar tipos de contenido**",
+              "status": "pending"
+            },
+            {
+              "description": "**Optimizar engagement**",
+              "status": "pending"
+            },
+            {
+              "description": "**Construir banco de contenido**",
+              "status": "pending"
+            },
+            {
+              "description": "**Evaluar resultados del mes 1**",
+              "status": "pending"
+            },
+            {
+              "description": "**Mejorar contenido basado en feedback**",
+              "status": "pending"
+            },
+            {
+              "description": "**Explorar nuevos canales** (Opcional)",
+              "status": "pending"
+            },
+            {
+              "description": "Publicar 2-3 posts según calendario",
+              "status": "pending"
+            },
+            {
+              "description": "Responder a comentarios y mensajes",
+              "status": "pending"
+            },
+            {
+              "description": "Trackear métricas semanales",
+              "status": "pending"
+            },
+            {
+              "description": "Preparar contenido para próxima semana",
+              "status": "pending"
+            },
+            {
+              "description": "Revisar métricas del mes",
+              "status": "pending"
+            },
+            {
+              "description": "Evaluar estrategia y ajustar",
+              "status": "pending"
+            },
+            {
+              "description": "Planificar temas del próximo mes",
+              "status": "pending"
+            },
+            {
+              "description": "Consolidar feedback y compartir con equipo",
+              "status": "pending"
+            }
+          ],
+          "inProgressTasks": [],
+          "blockedTasks": []
+        },
+        {
+          "name": "💻 dev",
+          "status": "active",
+          "lastActivity": "2025-11-26T20:59:19.931Z",
+          "tasks": {
+            "pending": 35,
+            "inProgress": 0,
+            "blocked": 0
+          },
+          "pendingTasks": [
+            {
+              "description": "Definir prioridades iniciales para el desarrollo",
+              "status": "pending"
+            },
+            {
+              "description": "Establecer roadmap de corto y mediano plazo",
+              "status": "pending"
+            },
+            {
+              "description": "Revisar y mejorar agentes existentes",
+              "status": "pending"
+            },
+            {
+              "description": "Identificar necesidad de nuevos agentes",
+              "status": "pending"
+            },
+            {
+              "description": "Validar formato y documentación de agentes",
+              "status": "pending"
+            },
+            {
+              "description": "Revisar y mejorar skills existentes",
+              "status": "pending"
+            },
+            {
+              "description": "Identificar nuevos skills necesarios",
+              "status": "pending"
+            },
+            {
+              "description": "Actualizar skill-rules.json",
+              "status": "pending"
+            },
+            {
+              "description": "Revisar y mejorar hooks existentes",
+              "status": "pending"
+            },
+            {
+              "description": "Identificar nuevos hooks necesarios",
+              "status": "pending"
+            },
+            {
+              "description": "Mejorar integración entre hooks",
+              "status": "pending"
+            },
+            {
+              "description": "Actualizar config-estilo.json si es necesario",
+              "status": "pending"
+            },
+            {
+              "description": "Revisar settings.json",
+              "status": "pending"
+            },
+            {
+              "description": "Actualizar WORKSPACE-STRUCTURE.md",
+              "status": "pending"
+            },
+            {
+              "description": "Evaluar prioridad de nuevas integraciones (Notion, Asana, ClickUp, etc.)",
+              "status": "pending"
+            },
+            {
+              "description": "Planificar estructura de nuevas integraciones",
+              "status": "pending"
+            },
+            {
+              "description": "Crear documentación de setup",
+              "status": "pending"
+            },
+            {
+              "description": "Revisar integraciones existentes (Google Workspace, OpenAI, Supabase, Reddit)",
+              "status": "pending"
+            },
+            {
+              "description": "Identificar mejoras prioritarias",
+              "status": "pending"
+            },
+            {
+              "description": "Optimizar performance y sincronización",
+              "status": "pending"
+            },
+            {
+              "description": "Revisar estándares actuales",
+              "status": "pending"
+            },
+            {
+              "description": "Identificar mejoras necesarias",
+              "status": "pending"
+            },
+            {
+              "description": "Crear validadores de estructura",
+              "status": "pending"
+            },
+            {
+              "description": "Mejorar templates de workspace",
+              "status": "pending"
+            },
+            {
+              "description": "Actualizar README.md principal",
+              "status": "pending"
+            },
+            {
+              "description": "Revisar y actualizar .cursorrules",
+              "status": "pending"
+            },
+            {
+              "description": "Actualizar ESTADO.md",
+              "status": "pending"
+            },
+            {
+              "description": "Actualizar READMEs de componentes (Agents, Skills, Hooks, Integrations)",
+              "status": "pending"
+            },
+            {
+              "description": "Evaluar necesidades de performance",
+              "status": "pending"
+            },
+            {
+              "description": "Revisar seguridad y manejo de credenciales",
+              "status": "pending"
+            },
+            {
+              "description": "Crear validadores y tests",
+              "status": "pending"
+            },
+            {
+              "description": "Implementar sistema de logging",
+              "status": "pending"
+            },
+            {
+              "description": "Evaluar features de sistema prioritarias",
+              "status": "pending"
+            },
+            {
+              "description": "Planificar features de usuario",
+              "status": "pending"
+            },
+            {
+              "description": "Crear roadmap de implementación",
+              "status": "pending"
+            }
+          ],
+          "inProgressTasks": [],
+          "blockedTasks": []
+        },
+        {
+          "name": "🔍 ennui-rag",
+          "status": "active",
+          "lastActivity": "2025-11-09T10:19:42.258Z",
+          "tasks": {
+            "pending": 14,
+            "inProgress": 0,
+            "blocked": 0
+          },
+          "pendingTasks": [
+            {
+              "description": "Generar embeddings para documentos de prueba (opcional - requiere cargar `fuentes_verdad`)",
+              "status": "pending"
+            },
+            {
+              "description": "Integrar con aplicación existente de Axon como UI",
+              "status": "pending"
+            },
+            {
+              "description": "Implementar consultas híbridas (SQL + Vector)",
+              "status": "pending"
+            },
+            {
+              "description": "Desarrollar sistema de recuperación de contexto relevante",
+              "status": "pending"
+            },
+            {
+              "description": "Implementar generación de respuestas contextualizadas con RAG",
+              "status": "pending"
+            },
+            {
+              "description": "Probar flujo completo de chat RAG",
+              "status": "pending"
+            },
+            {
+              "description": "Implementar extractor automatizado de datos desde Google Drive",
+              "status": "pending"
+            },
+            {
+              "description": "Sistema de detección y resolución automática de conflictos",
+              "status": "pending"
+            },
+            {
+              "description": "Pipeline automatizado de procesamiento y actualización",
+              "status": "pending"
+            },
+            {
+              "description": "Integración con fuentes de verdad (Google Drive)",
+              "status": "pending"
+            },
+            {
+              "description": "Optimizar rendimiento de consultas",
+              "status": "pending"
+            },
+            {
+              "description": "Mejorar escalabilidad del sistema",
+              "status": "pending"
+            },
+            {
+              "description": "Documentar APIs y interfaces",
+              "status": "pending"
+            },
+            {
+              "description": "Crear guías de uso y desarrollo",
+              "status": "pending"
+            }
+          ],
+          "inProgressTasks": [],
+          "blockedTasks": []
+        }
+      ]
+    },
+    "🌱 personal": {
+      "projects": [
+        {
+          "name": "alvaro-gpt",
+          "status": "active",
+          "lastActivity": "2025-11-09T10:19:42.291Z",
+          "tasks": {
+            "pending": 0,
+            "inProgress": 0,
+            "blocked": 0
+          },
+          "pendingTasks": [],
+          "inProgressTasks": [],
+          "blockedTasks": []
+        },
+        {
+          "name": "la-cata",
+          "status": "active",
+          "lastActivity": "2025-11-09T10:19:42.365Z",
+          "tasks": {
+            "pending": 19,
+            "inProgress": 0,
+            "blocked": 0
+          },
+          "pendingTasks": [
+            {
+              "description": "**Contactar nuevamente a \"Fuego y Arte\"** (Noviembre 2025)",
+              "status": "pending"
+            },
+            {
+              "description": "Convocatoria voluntarios y aliados",
+              "status": "pending"
+            },
+            {
+              "description": "Diagnóstico territorial",
+              "status": "pending"
+            },
+            {
+              "description": "Diseño de talleres para 4‑6 municipios",
+              "status": "pending"
+            },
+            {
+              "description": "Logística de brigada itinerante",
+              "status": "pending"
+            },
+            {
+              "description": "Pre‑selección de 12 agentes",
+              "status": "pending"
+            },
+            {
+              "description": "Ejecutar 8‑12 talleres vivenciales",
+              "status": "pending"
+            },
+            {
+              "description": "Acompañamiento emocional",
+              "status": "pending"
+            },
+            {
+              "description": "Formación completa de 12 agentes",
+              "status": "pending"
+            },
+            {
+              "description": "Activación de colectivos",
+              "status": "pending"
+            },
+            {
+              "description": "Apoyo a agentes en micro‑talleres",
+              "status": "pending"
+            },
+            {
+              "description": "Seguimiento de proyectos propios",
+              "status": "pending"
+            },
+            {
+              "description": "Mantener red local activa",
+              "status": "pending"
+            },
+            {
+              "description": "Mentoría cruzada",
+              "status": "pending"
+            },
+            {
+              "description": "Rotación territorial",
+              "status": "pending"
+            },
+            {
+              "description": "Diseño de cohorte 2",
+              "status": "pending"
+            },
+            {
+              "description": "Desarrollo de portal web",
+              "status": "pending"
+            },
+            {
+              "description": "Carga de recursos abiertos",
+              "status": "pending"
+            },
+            {
+              "description": "Sistema de actualización comunitaria",
+              "status": "pending"
+            }
+          ],
+          "inProgressTasks": [],
+          "blockedTasks": []
+        },
+        {
+          "name": "mejora-documentacion-profesional",
+          "status": "active",
+          "lastActivity": "2025-12-02T07:07:19.491Z",
+          "tasks": {
+            "pending": 2,
+            "inProgress": 0,
+            "blocked": 0
+          },
+          "pendingTasks": [
+            {
+              "description": "Completar career-roadmap.md con objetivos de carrera a 3-5 años",
+              "status": "pending",
+              "priority": "medium"
+            },
+            {
+              "description": "Actualizar experiencias-formativas.md con conexión a liderazgo de proyectos",
+              "status": "pending",
+              "priority": "medium"
+            }
+          ],
+          "inProgressTasks": [],
+          "blockedTasks": []
+        },
+        {
+          "name": "postulaciones-trabajos",
+          "status": "active",
+          "lastActivity": "2025-11-30T21:32:42.243Z",
+          "tasks": {
+            "pending": 38,
+            "inProgress": 0,
+            "blocked": 0
+          },
+          "pendingTasks": [
+            {
+              "description": "Revisar pipeline semanalmente",
+              "status": "pending"
+            },
+            {
+              "description": "Actualizar estadísticas mensualmente",
+              "status": "pending"
+            },
+            {
+              "description": "Consolidar aprendizajes en lecciones-aprendidas.md",
+              "status": "pending"
+            },
+            {
+              "description": "Actualizar CV base basado en validaciones de postulaciones",
+              "status": "pending"
+            },
+            {
+              "description": "Crear carpeta de postulación",
+              "status": "pending"
+            },
+            {
+              "description": "Llenar `detalles-postulacion.md` con información de la posición",
+              "status": "pending"
+            },
+            {
+              "description": "**Validar CV y experiencia:**",
+              "status": "pending"
+            },
+            {
+              "description": "Adaptar CV usando template",
+              "status": "pending"
+            },
+            {
+              "description": "Crear carta de presentación (si aplica)",
+              "status": "pending"
+            },
+            {
+              "description": "Revisar documentos antes de enviar",
+              "status": "pending"
+            },
+            {
+              "description": "Enviar postulación",
+              "status": "pending"
+            },
+            {
+              "description": "Actualizar pipeline con estado \"enviada\"",
+              "status": "pending"
+            },
+            {
+              "description": "Registrar fecha de envío en seguimiento.md",
+              "status": "pending"
+            },
+            {
+              "description": "Agendar seguimiento (si aplica)",
+              "status": "pending"
+            },
+            {
+              "description": "Actualizar seguimiento.md con cada interacción",
+              "status": "pending"
+            },
+            {
+              "description": "Registrar fechas de respuesta/entrevistas",
+              "status": "pending"
+            },
+            {
+              "description": "Documentar feedback recibido",
+              "status": "pending"
+            },
+            {
+              "description": "Actualizar pipeline con estado actual",
+              "status": "pending"
+            },
+            {
+              "description": "Preparar para entrevistas (si aplica)",
+              "status": "pending"
+            },
+            {
+              "description": "Registrar resultado final (aceptada/rechazada)",
+              "status": "pending"
+            },
+            {
+              "description": "Documentar feedback final (si recibido)",
+              "status": "pending"
+            },
+            {
+              "description": "Actualizar pipeline con estado final",
+              "status": "pending"
+            },
+            {
+              "description": "Consolidar aprendizajes en lecciones-aprendidas.md",
+              "status": "pending"
+            },
+            {
+              "description": "Actualizar CV base si se identificaron mejoras",
+              "status": "pending"
+            },
+            {
+              "description": "Revisar gaps identificados en postulaciones",
+              "status": "pending"
+            },
+            {
+              "description": "Consolidar habilidades frecuentemente requeridas",
+              "status": "pending"
+            },
+            {
+              "description": "Actualizar descripciones basadas en feedback",
+              "status": "pending"
+            },
+            {
+              "description": "Mejorar presentación de información relevante",
+              "status": "pending"
+            },
+            {
+              "description": "Agregar experiencias faltantes si son relevantes",
+              "status": "pending"
+            },
+            {
+              "description": "Actualizar preguntas-entrevista.md con nuevas preguntas",
+              "status": "pending"
+            },
+            {
+              "description": "Actualizar networking.md con nuevos contactos",
+              "status": "pending"
+            },
+            {
+              "description": "Documentar lecciones aprendidas",
+              "status": "pending"
+            },
+            {
+              "description": "Revisar y mejorar templates si es necesario",
+              "status": "pending"
+            },
+            {
+              "description": "Revisar estadísticas mensualmente",
+              "status": "pending"
+            },
+            {
+              "description": "Identificar patrones en rechazos/aceptaciones",
+              "status": "pending"
+            },
+            {
+              "description": "Analizar tasa de respuesta",
+              "status": "pending"
+            },
+            {
+              "description": "Analizar tasa de conversión",
+              "status": "pending"
+            },
+            {
+              "description": "Identificar áreas de mejora en el proceso",
+              "status": "pending"
+            }
+          ],
+          "inProgressTasks": [],
+          "blockedTasks": []
+        }
+      ]
+    },
+    "🌸 inspiro": {
+      "projects": [
+        {
+          "name": "Curso IA",
+          "status": "paused",
+          "lastActivity": "1970-01-01T00:00:00.000Z",
+          "tasks": {
+            "pending": 0,
+            "inProgress": 0,
+            "blocked": 0
+          },
+          "pendingTasks": [],
+          "inProgressTasks": [],
+          "blockedTasks": []
+        }
+      ]
+    },
+    "🍪 iami": {
+      "projects": [
+        {
+          "name": "busqueda-locales-comerciales",
+          "status": "active",
+          "lastActivity": "2025-12-02T07:01:29.584Z",
+          "tasks": {
+            "pending": 44,
+            "inProgress": 0,
+            "blocked": 0
+          },
+          "pendingTasks": [
+            {
+              "description": "**Mapear gimnasios en Lima**",
+              "status": "pending"
+            },
+            {
+              "description": "**Mapear hostales en Lima**",
+              "status": "pending"
+            },
+            {
+              "description": "**Priorizar lista de contactos**",
+              "status": "pending"
+            },
+            {
+              "description": "**Preparar kit de presentación**",
+              "status": "pending"
+            },
+            {
+              "description": "**Crear propuesta comercial base**",
+              "status": "pending"
+            },
+            {
+              "description": "**Preparar material de punto de venta (opcional)**",
+              "status": "pending"
+            },
+            {
+              "description": "**Crear script de presentación**",
+              "status": "pending"
+            },
+            {
+              "description": "**Preparar stock para muestras**",
+              "status": "pending"
+            },
+            {
+              "description": "**Contactar primeros 5-7 gimnasios**",
+              "status": "pending"
+            },
+            {
+              "description": "**Contactar primeros 5-7 hostales**",
+              "status": "pending"
+            },
+            {
+              "description": "**Seguimiento de contactos iniciales**",
+              "status": "pending"
+            },
+            {
+              "description": "**Negociar condiciones con locales interesados**",
+              "status": "pending"
+            },
+            {
+              "description": "**Cerrar primeros 3-5 acuerdos**",
+              "status": "pending"
+            },
+            {
+              "description": "**Contactar locales adicionales si es necesario**",
+              "status": "pending"
+            },
+            {
+              "description": "**Preparar stock para primeros locales**",
+              "status": "pending"
+            },
+            {
+              "description": "**Entregar producto a locales**",
+              "status": "pending"
+            },
+            {
+              "description": "**Establecer proceso de reposición**",
+              "status": "pending"
+            },
+            {
+              "description": "**Monitorear rotación inicial**",
+              "status": "pending"
+            },
+            {
+              "description": "**Realizar primera reposición**",
+              "status": "pending"
+            },
+            {
+              "description": "**Monitorear ventas por local**",
+              "status": "pending"
+            },
+            {
+              "description": "**Ajustar cantidades según demanda**",
+              "status": "pending"
+            },
+            {
+              "description": "**Optimizar proceso de reposición**",
+              "status": "pending"
+            },
+            {
+              "description": "**Expandir a más locales si hay éxito**",
+              "status": "pending"
+            },
+            {
+              "description": "**Documentar aprendizajes**",
+              "status": "pending"
+            },
+            {
+              "description": "Locales contactados (objetivo: 10-15 en mes 1)",
+              "status": "pending"
+            },
+            {
+              "description": "Presentaciones realizadas (objetivo: 8-12 en mes 1)",
+              "status": "pending"
+            },
+            {
+              "description": "Tasa de interés (presentaciones → interés expresado)",
+              "status": "pending"
+            },
+            {
+              "description": "Acuerdos cerrados (objetivo: 3-5 en mes 1)",
+              "status": "pending"
+            },
+            {
+              "description": "Locales activos (objetivo: 3-5 en mes 1, 5-8 en mes 3)",
+              "status": "pending"
+            },
+            {
+              "description": "Ventas mensuales por local",
+              "status": "pending"
+            },
+            {
+              "description": "Rotación (días de inventario)",
+              "status": "pending"
+            },
+            {
+              "description": "Frecuencia de reposición",
+              "status": "pending"
+            },
+            {
+              "description": "Margen promedio por local",
+              "status": "pending"
+            },
+            {
+              "description": "Total de ventas B2B vs. B2C",
+              "status": "pending"
+            },
+            {
+              "description": "Costos de logística de reposición",
+              "status": "pending"
+            },
+            {
+              "description": "Rentabilidad por local",
+              "status": "pending"
+            },
+            {
+              "description": "Contacto con locales activos",
+              "status": "pending"
+            },
+            {
+              "description": "Monitoreo de rotación",
+              "status": "pending"
+            },
+            {
+              "description": "Gestión de reposiciones",
+              "status": "pending"
+            },
+            {
+              "description": "Seguimiento de nuevos contactos",
+              "status": "pending"
+            },
+            {
+              "description": "Revisar métricas de ventas por local",
+              "status": "pending"
+            },
+            {
+              "description": "Evaluar desempeño de locales",
+              "status": "pending"
+            },
+            {
+              "description": "Ajustar estrategia según resultados",
+              "status": "pending"
+            },
+            {
+              "description": "Planificar expansión si hay éxito",
+              "status": "pending"
+            }
+          ],
+          "inProgressTasks": [],
+          "blockedTasks": []
+        },
+        {
+          "name": "energy-balls",
+          "status": "active",
+          "lastActivity": "2025-11-09T10:19:42.404Z",
+          "tasks": {
+            "pending": 36,
+            "inProgress": 0,
+            "blocked": 0
+          },
+          "pendingTasks": [
+            {
+              "description": "**Crear contenido para redes sociales**",
+              "status": "pending"
+            },
+            {
+              "description": "**Definir estrategia de precios**",
+              "status": "pending"
+            },
+            {
+              "description": "**Establecer proceso de pedidos y entrega**",
+              "status": "pending"
+            },
+            {
+              "description": "**Iniciar promoción en redes sociales**",
+              "status": "pending"
+            },
+            {
+              "description": "**Gestionar primeras ventas**",
+              "status": "pending"
+            },
+            {
+              "description": "**Obtener feedback de clientes**",
+              "status": "pending"
+            },
+            {
+              "description": "**Ajustar estrategia según resultados**",
+              "status": "pending"
+            },
+            {
+              "description": "**Planificar producción adicional**",
+              "status": "pending"
+            },
+            {
+              "description": "**Producción escalada**",
+              "status": "pending"
+            },
+            {
+              "description": "**Documentar procesos y recetas**",
+              "status": "pending"
+            },
+            {
+              "description": "**Ampliar estrategia de marketing**",
+              "status": "pending"
+            },
+            {
+              "description": "**Establecer sistema de pedidos más robusto**",
+              "status": "pending"
+            },
+            {
+              "description": "**Vender 200 bolsas**",
+              "status": "pending"
+            },
+            {
+              "description": "**Analizar resultados de fases anteriores**",
+              "status": "pending"
+            },
+            {
+              "description": "**Optimizar procesos**",
+              "status": "pending"
+            },
+            {
+              "description": "**Expandir canales de venta**",
+              "status": "pending"
+            },
+            {
+              "description": "**Planificar crecimiento futuro**",
+              "status": "pending"
+            },
+            {
+              "description": "Bolsas vendidas (objetivo: 40 en mes 1)",
+              "status": "pending"
+            },
+            {
+              "description": "Clientes nuevos (objetivo: 10+ en mes 1)",
+              "status": "pending"
+            },
+            {
+              "description": "Tasa de conversión (consultas → ventas)",
+              "status": "pending"
+            },
+            {
+              "description": "Ingresos totales",
+              "status": "pending"
+            },
+            {
+              "description": "Publicaciones en redes sociales",
+              "status": "pending"
+            },
+            {
+              "description": "Engagement rate",
+              "status": "pending"
+            },
+            {
+              "description": "Alcance orgánico",
+              "status": "pending"
+            },
+            {
+              "description": "Crecimiento de seguidores",
+              "status": "pending"
+            },
+            {
+              "description": "Tiempo de producción por lote",
+              "status": "pending"
+            },
+            {
+              "description": "Costos de materiales",
+              "status": "pending"
+            },
+            {
+              "description": "Eficiencia del proceso",
+              "status": "pending"
+            },
+            {
+              "description": "Publicar contenido en redes sociales (mínimo 3-4 veces/semana)",
+              "status": "pending"
+            },
+            {
+              "description": "Responder a consultas y pedidos diariamente",
+              "status": "pending"
+            },
+            {
+              "description": "Gestionar entregas",
+              "status": "pending"
+            },
+            {
+              "description": "Revisar métricas de ventas",
+              "status": "pending"
+            },
+            {
+              "description": "Revisar y ajustar estrategia",
+              "status": "pending"
+            },
+            {
+              "description": "Analizar resultados",
+              "status": "pending"
+            },
+            {
+              "description": "Planificar producción del próximo mes",
+              "status": "pending"
+            },
+            {
+              "description": "Obtener feedback de clientes",
+              "status": "pending"
+            }
+          ],
+          "inProgressTasks": [],
+          "blockedTasks": []
+        },
+        {
+          "name": "participacion-feria-la-magia-de-emprender",
+          "status": "active",
+          "lastActivity": "2025-12-01T17:28:11.655Z",
+          "tasks": {
+            "pending": 29,
+            "inProgress": 0,
+            "blocked": 0
+          },
+          "pendingTasks": [
+            {
+              "description": "Completar ficha de participación con información del emprendimiento",
+              "status": "pending",
+              "priority": "high"
+            },
+            {
+              "description": "Agregar logo a la ficha (actualmente placeholder)",
+              "status": "pending"
+            },
+            {
+              "description": "Seleccionar productos destacados para exhibición",
+              "status": "pending",
+              "priority": "high"
+            },
+            {
+              "description": "Completar información de productos destacados (imágenes, descripciones, precios)",
+              "status": "pending"
+            },
+            {
+              "description": "Completar datos de contacto en la ficha",
+              "status": "pending"
+            },
+            {
+              "description": "Definir si habrá catálogo virtual y prepararlo",
+              "status": "pending"
+            },
+            {
+              "description": "Diseñar materiales de marketing (banners, folletos)",
+              "status": "pending",
+              "priority": "medium"
+            },
+            {
+              "description": "Preparar catálogo virtual (si aplica)",
+              "status": "pending",
+              "priority": "medium"
+            },
+            {
+              "description": "Organizar logística del stand (mobiliario, materiales)",
+              "status": "pending",
+              "priority": "medium"
+            },
+            {
+              "description": "Preparar sistema de ventas y cobros",
+              "status": "pending",
+              "priority": "medium"
+            },
+            {
+              "description": "Producir stock suficiente para el evento",
+              "status": "pending",
+              "priority": "high"
+            },
+            {
+              "description": "Preparar muestras para degustación",
+              "status": "pending",
+              "priority": "medium"
+            },
+            {
+              "description": "Organizar empaques para ventas",
+              "status": "pending",
+              "priority": "low"
+            },
+            {
+              "description": "Capacitar equipo de atención al público (si aplica)",
+              "status": "pending",
+              "priority": "low"
+            },
+            {
+              "description": "Montaje del stand",
+              "status": "pending"
+            },
+            {
+              "description": "Exhibición de productos",
+              "status": "pending"
+            },
+            {
+              "description": "Atención al público y ventas",
+              "status": "pending"
+            },
+            {
+              "description": "Networking con otros emprendedores",
+              "status": "pending"
+            },
+            {
+              "description": "Recolección de datos de contacto de clientes potenciales",
+              "status": "pending"
+            },
+            {
+              "description": "Documentación fotográfica del evento",
+              "status": "pending"
+            },
+            {
+              "description": "Contactar leads generados durante la feria",
+              "status": "pending"
+            },
+            {
+              "description": "Evaluar resultados (ventas, contactos, feedback)",
+              "status": "pending"
+            },
+            {
+              "description": "Actualizar estrategia de marketing basada en aprendizajes",
+              "status": "pending"
+            },
+            {
+              "description": "Mantener relación con contactos establecidos",
+              "status": "pending"
+            },
+            {
+              "description": "Documentar lecciones aprendidas",
+              "status": "pending"
+            },
+            {
+              "description": "Confirmar fecha y ubicación exacta de la feria",
+              "status": "pending"
+            },
+            {
+              "description": "Revisar requisitos y reglamento del evento",
+              "status": "pending"
+            },
+            {
+              "description": "Coordinar con organizadores de la feria",
+              "status": "pending"
+            },
+            {
+              "description": "Promocionar participación en redes sociales",
+              "status": "pending"
+            }
+          ],
+          "inProgressTasks": [],
+          "blockedTasks": []
+        }
+      ]
+    },
+    "📁 otros": {
+      "projects": [
+        {
+          "name": "EJEMPLO-proyecto",
+          "status": "active",
+          "lastActivity": "2025-11-09T10:19:42.409Z",
+          "tasks": {
+            "pending": 4,
+            "inProgress": 1,
+            "blocked": 0
+          },
+          "pendingTasks": [
+            {
+              "description": "[Tarea 3] ⏳ **PENDIENTE**",
+              "status": "pending"
+            },
+            {
+              "description": "[Tarea 1] ⏳ **PENDIENTE**",
+              "status": "pending"
+            },
+            {
+              "description": "[Tarea 2] ⏳ **PENDIENTE**",
+              "status": "pending"
+            },
+            {
+              "description": "[Tarea nueva identificada durante la ejecución]",
+              "status": "pending"
+            }
+          ],
+          "inProgressTasks": [
+            {
+              "description": "[Tarea 2] 🟡 **EN PROGRESO**",
+              "status": "in-progress"
+            }
+          ],
+          "blockedTasks": []
+        }
+      ]
+    },
+    "🧭 entre-rutas": {
+      "projects": [
+        {
+          "name": "podcast-temporada-2",
+          "status": "active",
+          "lastActivity": "2025-11-09T10:19:42.418Z",
+          "tasks": {
+            "pending": 24,
+            "inProgress": 0,
+            "blocked": 0
+          },
+          "pendingTasks": [
+            {
+              "description": "**Programar sesión de grabación** de cortina de inicio",
+              "status": "pending"
+            },
+            {
+              "description": "**Grabar cortina** de inicio de los episodios",
+              "status": "pending"
+            },
+            {
+              "description": "**Editar cortina** y preparar para uso",
+              "status": "pending"
+            },
+            {
+              "description": "**Integrar cortina** en capítulos editados",
+              "status": "pending"
+            },
+            {
+              "description": "Continuar edición de capítulos",
+              "status": "pending"
+            },
+            {
+              "description": "Corrección de audio",
+              "status": "pending"
+            },
+            {
+              "description": "**URGENTE:** Grabar cortina de inicio",
+              "status": "pending"
+            },
+            {
+              "description": "Integrar cortina en capítulos editados",
+              "status": "pending"
+            },
+            {
+              "description": "Revisión de calidad de edición",
+              "status": "pending"
+            },
+            {
+              "description": "Preparar versiones finales de capítulos",
+              "status": "pending"
+            },
+            {
+              "description": "Integración de cortina de inicio",
+              "status": "pending"
+            },
+            {
+              "description": "Finalización de audio",
+              "status": "pending"
+            },
+            {
+              "description": "Revisión de calidad completa",
+              "status": "pending"
+            },
+            {
+              "description": "Preparación de archivos finales",
+              "status": "pending"
+            },
+            {
+              "description": "Revisión final de todos los episodios",
+              "status": "pending"
+            },
+            {
+              "description": "Preparar materiales para plataformas",
+              "status": "pending"
+            },
+            {
+              "description": "Crear descripciones de episodios",
+              "status": "pending"
+            },
+            {
+              "description": "Preparar arte/thumbnail para episodios",
+              "status": "pending"
+            },
+            {
+              "description": "Subir a Spotify",
+              "status": "pending"
+            },
+            {
+              "description": "Subir a Apple Podcasts",
+              "status": "pending"
+            },
+            {
+              "description": "Subir a otras plataformas",
+              "status": "pending"
+            },
+            {
+              "description": "Configurar RSS feed",
+              "status": "pending"
+            },
+            {
+              "description": "Promoción y marketing",
+              "status": "pending"
+            },
+            {
+              "description": "Monitoreo de distribución",
+              "status": "pending"
+            }
+          ],
+          "inProgressTasks": [],
+          "blockedTasks": []
+        },
+        {
+          "name": "taller-liderazgo-impacto-latam",
+          "status": "active",
+          "lastActivity": "2025-11-20T07:48:33.545Z",
+          "tasks": {
+            "pending": 28,
+            "inProgress": 0,
+            "blocked": 0
+          },
+          "pendingTasks": [
+            {
+              "description": "**Revisar presentación base** y identificar áreas de enriquecimiento",
+              "status": "pending"
+            },
+            {
+              "description": "**Definir objetivos de aprendizaje** específicos del taller",
+              "status": "pending"
+            },
+            {
+              "description": "**Diseñar estructura** del taller (timing, dinámicas, actividades)",
+              "status": "pending"
+            },
+            {
+              "description": "**Identificar contenido adicional** necesario (ejemplos, casos, recursos)",
+              "status": "pending"
+            },
+            {
+              "description": "**Diseñar dinámicas interactivas** para el taller virtual",
+              "status": "pending"
+            },
+            {
+              "description": "**Preparar materiales complementarios** (si aplica)",
+              "status": "pending"
+            },
+            {
+              "description": "**Enriquecer presentación** con información adicional",
+              "status": "pending"
+            },
+            {
+              "description": "**Crear guía de facilitación** detallada",
+              "status": "pending"
+            },
+            {
+              "description": "**Preparar recursos para participantes** (handouts, materiales, links)",
+              "status": "pending"
+            },
+            {
+              "description": "**Diseñar ejercicios prácticos** y actividades",
+              "status": "pending"
+            },
+            {
+              "description": "**Preparar preguntas de reflexión** para conversaciones",
+              "status": "pending"
+            },
+            {
+              "description": "**Crear materiales visuales** adicionales (si necesario)",
+              "status": "pending"
+            },
+            {
+              "description": "**Revisión completa** de todos los materiales",
+              "status": "pending"
+            },
+            {
+              "description": "**Prueba de dinámicas** y actividades",
+              "status": "pending"
+            },
+            {
+              "description": "**Ajustes finales** basados en pruebas",
+              "status": "pending"
+            },
+            {
+              "description": "**Preparación técnica** (plataforma, herramientas, acceso)",
+              "status": "pending"
+            },
+            {
+              "description": "**Coordinación con organizadores** del evento",
+              "status": "pending"
+            },
+            {
+              "description": "**Verificar logística** del taller (horario, duración, formato)",
+              "status": "pending"
+            },
+            {
+              "description": "**Preparación final** antes del taller",
+              "status": "pending"
+            },
+            {
+              "description": "**Facilitación del taller** en vivo",
+              "status": "pending"
+            },
+            {
+              "description": "**Interacción con participantes** durante la sesión",
+              "status": "pending"
+            },
+            {
+              "description": "**Documentación** de la sesión (notas, insights)",
+              "status": "pending"
+            },
+            {
+              "description": "**Cierre y seguimiento** con participantes",
+              "status": "pending"
+            },
+            {
+              "description": "**Recopilación de feedback** de participantes",
+              "status": "pending"
+            },
+            {
+              "description": "**Documentación de aprendizajes** del taller",
+              "status": "pending"
+            },
+            {
+              "description": "**Compartir recursos** con participantes (si aplica)",
+              "status": "pending"
+            },
+            {
+              "description": "**Evaluación del taller** (qué funcionó, qué mejorar)",
+              "status": "pending"
+            },
+            {
+              "description": "**Actualizar documentación** del proyecto",
+              "status": "pending"
+            }
+          ],
+          "inProgressTasks": [],
+          "blockedTasks": []
+        }
+      ]
+    }
+  },
+  "allPendingTasks": [
+    {
+      "workspace": "🌱 ennui",
+      "project": ".bootcamp-fundraising",
+      "task": {
+        "description": "Confirmar fechas y sedes por región",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".bootcamp-fundraising",
+      "task": {
+        "description": "Definir pricing final y modelo de becas",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".bootcamp-fundraising",
+      "task": {
+        "description": "Elaborar brochure y materiales de comunicación",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".bootcamp-fundraising",
+      "task": {
+        "description": "Contactar aliados locales para logística",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".bootcamp-fundraising",
+      "task": {
+        "description": "Preparar toolkit IA y materiales Canvas",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".bootcamp-fundraising",
+      "task": {
+        "description": "Diseñar estructura de seguimiento online (8 semanas)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".bootcamp-fundraising",
+      "task": {
+        "description": "Lanzar campaña de inscripciones",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".bootcamp-fundraising",
+      "task": {
+        "description": "Gestionar early‑bird pricing",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".bootcamp-fundraising",
+      "task": {
+        "description": "Confirmar inscripciones (meta: 25 ONG)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".bootcamp-fundraising",
+      "task": {
+        "description": "Procesar becas si aplican",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".bootcamp-fundraising",
+      "task": {
+        "description": "Preparar logística de sede",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".bootcamp-fundraising",
+      "task": {
+        "description": "Confirmar facilitadores y equipo",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".bootcamp-fundraising",
+      "task": {
+        "description": "Preparar materiales y recursos",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".bootcamp-fundraising",
+      "task": {
+        "description": "Ejecutar bootcamp (2 días)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".bootcamp-fundraising",
+      "task": {
+        "description": "Iniciar seguimiento online (8 semanas)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".bootcamp-fundraising",
+      "task": {
+        "description": "Monitorear avances de participantes",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".bootcamp-fundraising",
+      "task": {
+        "description": "Facilitar mentorías grupales",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".bootcamp-fundraising",
+      "task": {
+        "description": "Recopilar feedback y aprendizajes",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".bootcamp-fundraising",
+      "task": {
+        "description": "Evaluar resultados (NPS, postulaciones, financiamientos)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".dendrita-comms",
+      "task": {
+        "description": "**Definir voz y tono**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".dendrita-comms",
+      "task": {
+        "description": "**Crear calendario editorial**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".dendrita-comms",
+      "task": {
+        "description": "**Escribir primeros 5 posts**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".dendrita-comms",
+      "task": {
+        "description": "**Crear banco de contenido**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".dendrita-comms",
+      "task": {
+        "description": "**Publicar según calendario**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".dendrita-comms",
+      "task": {
+        "description": "**Monitorear y aprender**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".dendrita-comms",
+      "task": {
+        "description": "**Generar feedback**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".dendrita-comms",
+      "task": {
+        "description": "**Ampliar tipos de contenido**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".dendrita-comms",
+      "task": {
+        "description": "**Optimizar engagement**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".dendrita-comms",
+      "task": {
+        "description": "**Construir banco de contenido**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".dendrita-comms",
+      "task": {
+        "description": "**Evaluar resultados del mes 1**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".dendrita-comms",
+      "task": {
+        "description": "**Mejorar contenido basado en feedback**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".dendrita-comms",
+      "task": {
+        "description": "**Explorar nuevos canales** (Opcional)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".dendrita-comms",
+      "task": {
+        "description": "Publicar 2-3 posts según calendario",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".dendrita-comms",
+      "task": {
+        "description": "Responder a comentarios y mensajes",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".dendrita-comms",
+      "task": {
+        "description": "Trackear métricas semanales",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".dendrita-comms",
+      "task": {
+        "description": "Preparar contenido para próxima semana",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".dendrita-comms",
+      "task": {
+        "description": "Revisar métricas del mes",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".dendrita-comms",
+      "task": {
+        "description": "Evaluar estrategia y ajustar",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".dendrita-comms",
+      "task": {
+        "description": "Planificar temas del próximo mes",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".dendrita-comms",
+      "task": {
+        "description": "Consolidar feedback y compartir con equipo",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".ennui-x-mosaico",
+      "task": {
+        "description": "Verificar si Mosaico compartió información del programa con Mercy Corps",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".ennui-x-mosaico",
+      "task": {
+        "description": "Seguimiento con Daniel Block (Mercy Corps) si es necesario",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".ennui-x-mosaico",
+      "task": {
+        "description": "Evaluar si hay posibilidad de retomar conversación con Mercy Corps",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".ennui-x-mosaico",
+      "task": {
+        "description": "Mapear potenciales financiadores para programa \"Comuna Nación\"",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".ennui-x-mosaico",
+      "task": {
+        "description": "Evaluar fit de cada oportunidad con el programa",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".ennui-x-mosaico",
+      "task": {
+        "description": "Priorizar oportunidades según potencial y probabilidad",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".ennui-x-mosaico",
+      "task": {
+        "description": "Preparar materiales del programa para presentaciones",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".ennui-x-mosaico",
+      "task": {
+        "description": "Coordinación con Álvaro Henzler (Mosaico)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".ennui-x-mosaico",
+      "task": {
+        "description": "Seguimiento sobre información compartida con Mercy Corps",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".ennui-x-mosaico",
+      "task": {
+        "description": "Evaluar estrategia y próximos pasos",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".ennui-x-mosaico",
+      "task": {
+        "description": "Revisar modelo de negocio y meta de recaudación",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".ennui-x-mosaico",
+      "task": {
+        "description": "Preparar presentación del programa \"Comuna Nación\"",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".ennui-x-mosaico",
+      "task": {
+        "description": "Contactar potenciales financiadores identificados",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".ennui-x-mosaico",
+      "task": {
+        "description": "Presentar programa a financiadores prioritarios",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": ".ennui-x-mosaico",
+      "task": {
+        "description": "Seguimiento de presentaciones",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Enviar invitaciones al piloto",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "**URGENTE:** Chequear estado de entrevistas reprogramadas",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "**URGENTE:** Hacer seguimiento a las últimas programaciones",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "**URGENTE:** Si no hay respuesta, pedir ayuda a Luis Alberto Flores (NOSxOTROS) para empujar convocatoria",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Conducir 10 entrevistas completas",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Recopilar respuestas de formulario",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Consolidar hallazgos de entrevistas hasta ahora",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Análisis preliminar de datos",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Generar reportes iniciales",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Entregar reportes a participantes",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Consolidar feedback de piloto",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "**Usar hallazgos de entrevistas para afinar cuestionario IMPACTO-Scan** (iteración-mini de IMPACTO)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Identificar preguntas clave que funcionan",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Ajustar modelo de análisis",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Documentar lecciones aprendidas",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "**Usar hallazgos para avanzar con planeación del bootcamp**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "**Programar herramienta IMPACTO para procesamiento automático**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Testear herramienta con 3 casos reales",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Validar outputs y reportes",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Documentar manual de uso",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "**Avanzar con planeación del bootcamp usando hallazgos de entrevistas hasta ahora**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Definir 4-5 módulos principales",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Estructura de sesiones (duración, formato)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Seleccionar facilitadores/mentores",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Preparar slides y materiales base",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Diseñar materiales de convocatoria",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Lanzar campaña digital (redes + email)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Recibir inscripciones (meta: 50+)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Aplicar criterios de selección",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Confirmar 20-25 participantes",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Sesión introductoria / inspiración",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Dinámica de cohesión de grupo",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Presentación de expectativas y dinámicas",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Asignación de mentores (1 mentor por 3-4 equipos)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Sesión 1: Teoría de Cambio",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Sesión 2: Marco Lógico y Resultados",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Trabajo en grupo: Mapeo de iniciales",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Entrega: Diagrama de Marco Lógico",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Sesión 3: Presupuesto y Sostenibilidad",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Sesión 4: Narrativa y Pitch",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Trabajo en grupo: Presupuesto preliminar",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Entrega: Borrador de pitch (1-2 min)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Sesión 5: MEL y Monitoreo de Impacto",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Sesiones de mentoría individual (15 min c/u)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Presentaciones finales (5-7 min c/u)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Feedback estructurado de facilitadores",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Pulido de presentaciones con feedback",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Preparación de fichas técnicas (1-page summary)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Ensayos finales",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Grabación de pitches (backup para Cosecha)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Definir formato del evento",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Estructura de presentaciones (5-7 min + Q&A)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Criterios de evaluación",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Diseño de ronda de preguntas",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Contactar potenciales jurados/mentores",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Confirmar asistencia (meta: 8-10 jurados)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Preparar briefing para jurados",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Coordinar logistics (Zoom/presencial)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Sesión de ensayo general",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Calibración de timing (5-7 min por pitch)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Revisión de fichas técnicas",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Logística final (zoom, grabación, etc.)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Ejecución del evento",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Grabación de presentaciones",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Retroalimentación en vivo",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Identificación de top 3-5 proyectos",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Consolidar feedback de jurados",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Identificar oportunidades de financiamiento por proyecto",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Acompañamiento inicial (matchmaking ONGs-Financiadores)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Reporte final con KPIs y lecciones",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Crear landing page / explainer",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Video demo de herramienta (2 min)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Campaña \"Conoce tu diagnóstico en 48 horas\"",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Posts en LinkedIn, Instagram, Twitter",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Diseño de materiales (flyers, videos, memes)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Campaña de inscripción (3 olas de comunicación)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Live sessions de Q&A sobre Bootcamp",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Testimonios de orgs piloto",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Fotos/videos de sesiones (con consentimiento)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Recaps en redes (mini-clips de 30-60 seg)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Newsletter semanal de aprendizajes",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Caso destacado post-bootcamp",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Press release del evento",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Invitación a medios",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Teasers gráficos (countdown, teaser clips)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Entrevistas previas con participantes clave",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Seleccionar 2-3 casos destacados",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Reportaje de cada caso (video + artículo)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Lecciones aprendidas compartidas",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Convocatoria para Bootcamp 2 (si aplica)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "10 reportes entregados",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "NPS ≥ 4/5",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "Herramienta v1.0 automatizada",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "50+ inscripciones",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "20-25 participantes seleccionados",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "≥90% asistencia",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "20+ proyectos presentables",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "8-10 jurados confirmados",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "15+ proyectos presentados",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "5+ oportunidades identificadas",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "ennui-x-NOSxOTROS",
+      "task": {
+        "description": "2+ acuerdos iniciales",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🎓 bootcamp-fundraising",
+      "task": {
+        "description": "Confirmar fechas y sedes por región",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🎓 bootcamp-fundraising",
+      "task": {
+        "description": "Definir pricing final y modelo de becas",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🎓 bootcamp-fundraising",
+      "task": {
+        "description": "Elaborar brochure y materiales de comunicación",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🎓 bootcamp-fundraising",
+      "task": {
+        "description": "Contactar aliados locales para logística",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🎓 bootcamp-fundraising",
+      "task": {
+        "description": "Preparar toolkit IA y materiales Canvas",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🎓 bootcamp-fundraising",
+      "task": {
+        "description": "Diseñar estructura de seguimiento online (8 semanas)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🎓 bootcamp-fundraising",
+      "task": {
+        "description": "Lanzar campaña de inscripciones",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🎓 bootcamp-fundraising",
+      "task": {
+        "description": "Gestionar early‑bird pricing",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🎓 bootcamp-fundraising",
+      "task": {
+        "description": "Confirmar inscripciones (meta: 25 ONG)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🎓 bootcamp-fundraising",
+      "task": {
+        "description": "Procesar becas si aplican",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🎓 bootcamp-fundraising",
+      "task": {
+        "description": "Preparar logística de sede",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🎓 bootcamp-fundraising",
+      "task": {
+        "description": "Confirmar facilitadores y equipo",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🎓 bootcamp-fundraising",
+      "task": {
+        "description": "Preparar materiales y recursos",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🎓 bootcamp-fundraising",
+      "task": {
+        "description": "Ejecutar bootcamp (2 días)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🎓 bootcamp-fundraising",
+      "task": {
+        "description": "Iniciar seguimiento online (8 semanas)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🎓 bootcamp-fundraising",
+      "task": {
+        "description": "Monitorear avances de participantes",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🎓 bootcamp-fundraising",
+      "task": {
+        "description": "Facilitar mentorías grupales",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🎓 bootcamp-fundraising",
+      "task": {
+        "description": "Recopilar feedback y aprendizajes",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🎓 bootcamp-fundraising",
+      "task": {
+        "description": "Evaluar resultados (NPS, postulaciones, financiamientos)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🎨 ennui-x-Mosaico",
+      "task": {
+        "description": "Verificar si Mosaico compartió información del programa con Mercy Corps",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🎨 ennui-x-Mosaico",
+      "task": {
+        "description": "Seguimiento con Daniel Block (Mercy Corps) si es necesario",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🎨 ennui-x-Mosaico",
+      "task": {
+        "description": "Evaluar si hay posibilidad de retomar conversación con Mercy Corps",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🎨 ennui-x-Mosaico",
+      "task": {
+        "description": "Mapear potenciales financiadores para programa \"Comuna Nación\"",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🎨 ennui-x-Mosaico",
+      "task": {
+        "description": "Evaluar fit de cada oportunidad con el programa",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🎨 ennui-x-Mosaico",
+      "task": {
+        "description": "Priorizar oportunidades según potencial y probabilidad",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🎨 ennui-x-Mosaico",
+      "task": {
+        "description": "Preparar materiales del programa para presentaciones",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🎨 ennui-x-Mosaico",
+      "task": {
+        "description": "Coordinación con Álvaro Henzler (Mosaico)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🎨 ennui-x-Mosaico",
+      "task": {
+        "description": "Seguimiento sobre información compartida con Mercy Corps",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🎨 ennui-x-Mosaico",
+      "task": {
+        "description": "Evaluar estrategia y próximos pasos",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🎨 ennui-x-Mosaico",
+      "task": {
+        "description": "Revisar modelo de negocio y meta de recaudación",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🎨 ennui-x-Mosaico",
+      "task": {
+        "description": "Preparar presentación del programa \"Comuna Nación\"",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🎨 ennui-x-Mosaico",
+      "task": {
+        "description": "Contactar potenciales financiadores identificados",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🎨 ennui-x-Mosaico",
+      "task": {
+        "description": "Presentar programa a financiadores prioritarios",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🎨 ennui-x-Mosaico",
+      "task": {
+        "description": "Seguimiento de presentaciones",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💬 dendrita-comms",
+      "task": {
+        "description": "**Definir voz y tono**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💬 dendrita-comms",
+      "task": {
+        "description": "**Crear calendario editorial**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💬 dendrita-comms",
+      "task": {
+        "description": "**Escribir primeros 5 posts**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💬 dendrita-comms",
+      "task": {
+        "description": "**Crear banco de contenido**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💬 dendrita-comms",
+      "task": {
+        "description": "**Publicar según calendario**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💬 dendrita-comms",
+      "task": {
+        "description": "**Monitorear y aprender**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💬 dendrita-comms",
+      "task": {
+        "description": "**Generar feedback**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💬 dendrita-comms",
+      "task": {
+        "description": "**Ampliar tipos de contenido**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💬 dendrita-comms",
+      "task": {
+        "description": "**Optimizar engagement**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💬 dendrita-comms",
+      "task": {
+        "description": "**Construir banco de contenido**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💬 dendrita-comms",
+      "task": {
+        "description": "**Evaluar resultados del mes 1**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💬 dendrita-comms",
+      "task": {
+        "description": "**Mejorar contenido basado en feedback**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💬 dendrita-comms",
+      "task": {
+        "description": "**Explorar nuevos canales** (Opcional)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💬 dendrita-comms",
+      "task": {
+        "description": "Publicar 2-3 posts según calendario",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💬 dendrita-comms",
+      "task": {
+        "description": "Responder a comentarios y mensajes",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💬 dendrita-comms",
+      "task": {
+        "description": "Trackear métricas semanales",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💬 dendrita-comms",
+      "task": {
+        "description": "Preparar contenido para próxima semana",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💬 dendrita-comms",
+      "task": {
+        "description": "Revisar métricas del mes",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💬 dendrita-comms",
+      "task": {
+        "description": "Evaluar estrategia y ajustar",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💬 dendrita-comms",
+      "task": {
+        "description": "Planificar temas del próximo mes",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💬 dendrita-comms",
+      "task": {
+        "description": "Consolidar feedback y compartir con equipo",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💻 dev",
+      "task": {
+        "description": "Definir prioridades iniciales para el desarrollo",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💻 dev",
+      "task": {
+        "description": "Establecer roadmap de corto y mediano plazo",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💻 dev",
+      "task": {
+        "description": "Revisar y mejorar agentes existentes",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💻 dev",
+      "task": {
+        "description": "Identificar necesidad de nuevos agentes",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💻 dev",
+      "task": {
+        "description": "Validar formato y documentación de agentes",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💻 dev",
+      "task": {
+        "description": "Revisar y mejorar skills existentes",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💻 dev",
+      "task": {
+        "description": "Identificar nuevos skills necesarios",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💻 dev",
+      "task": {
+        "description": "Actualizar skill-rules.json",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💻 dev",
+      "task": {
+        "description": "Revisar y mejorar hooks existentes",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💻 dev",
+      "task": {
+        "description": "Identificar nuevos hooks necesarios",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💻 dev",
+      "task": {
+        "description": "Mejorar integración entre hooks",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💻 dev",
+      "task": {
+        "description": "Actualizar config-estilo.json si es necesario",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💻 dev",
+      "task": {
+        "description": "Revisar settings.json",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💻 dev",
+      "task": {
+        "description": "Actualizar WORKSPACE-STRUCTURE.md",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💻 dev",
+      "task": {
+        "description": "Evaluar prioridad de nuevas integraciones (Notion, Asana, ClickUp, etc.)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💻 dev",
+      "task": {
+        "description": "Planificar estructura de nuevas integraciones",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💻 dev",
+      "task": {
+        "description": "Crear documentación de setup",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💻 dev",
+      "task": {
+        "description": "Revisar integraciones existentes (Google Workspace, OpenAI, Supabase, Reddit)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💻 dev",
+      "task": {
+        "description": "Identificar mejoras prioritarias",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💻 dev",
+      "task": {
+        "description": "Optimizar performance y sincronización",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💻 dev",
+      "task": {
+        "description": "Revisar estándares actuales",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💻 dev",
+      "task": {
+        "description": "Identificar mejoras necesarias",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💻 dev",
+      "task": {
+        "description": "Crear validadores de estructura",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💻 dev",
+      "task": {
+        "description": "Mejorar templates de workspace",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💻 dev",
+      "task": {
+        "description": "Actualizar README.md principal",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💻 dev",
+      "task": {
+        "description": "Revisar y actualizar .cursorrules",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💻 dev",
+      "task": {
+        "description": "Actualizar ESTADO.md",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💻 dev",
+      "task": {
+        "description": "Actualizar READMEs de componentes (Agents, Skills, Hooks, Integrations)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💻 dev",
+      "task": {
+        "description": "Evaluar necesidades de performance",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💻 dev",
+      "task": {
+        "description": "Revisar seguridad y manejo de credenciales",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💻 dev",
+      "task": {
+        "description": "Crear validadores y tests",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💻 dev",
+      "task": {
+        "description": "Implementar sistema de logging",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💻 dev",
+      "task": {
+        "description": "Evaluar features de sistema prioritarias",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💻 dev",
+      "task": {
+        "description": "Planificar features de usuario",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "💻 dev",
+      "task": {
+        "description": "Crear roadmap de implementación",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🔍 ennui-rag",
+      "task": {
+        "description": "Generar embeddings para documentos de prueba (opcional - requiere cargar `fuentes_verdad`)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🔍 ennui-rag",
+      "task": {
+        "description": "Integrar con aplicación existente de Axon como UI",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🔍 ennui-rag",
+      "task": {
+        "description": "Implementar consultas híbridas (SQL + Vector)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🔍 ennui-rag",
+      "task": {
+        "description": "Desarrollar sistema de recuperación de contexto relevante",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🔍 ennui-rag",
+      "task": {
+        "description": "Implementar generación de respuestas contextualizadas con RAG",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🔍 ennui-rag",
+      "task": {
+        "description": "Probar flujo completo de chat RAG",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🔍 ennui-rag",
+      "task": {
+        "description": "Implementar extractor automatizado de datos desde Google Drive",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🔍 ennui-rag",
+      "task": {
+        "description": "Sistema de detección y resolución automática de conflictos",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🔍 ennui-rag",
+      "task": {
+        "description": "Pipeline automatizado de procesamiento y actualización",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🔍 ennui-rag",
+      "task": {
+        "description": "Integración con fuentes de verdad (Google Drive)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🔍 ennui-rag",
+      "task": {
+        "description": "Optimizar rendimiento de consultas",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🔍 ennui-rag",
+      "task": {
+        "description": "Mejorar escalabilidad del sistema",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🔍 ennui-rag",
+      "task": {
+        "description": "Documentar APIs y interfaces",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 ennui",
+      "project": "🔍 ennui-rag",
+      "task": {
+        "description": "Crear guías de uso y desarrollo",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "la-cata",
+      "task": {
+        "description": "**Contactar nuevamente a \"Fuego y Arte\"** (Noviembre 2025)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "la-cata",
+      "task": {
+        "description": "Convocatoria voluntarios y aliados",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "la-cata",
+      "task": {
+        "description": "Diagnóstico territorial",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "la-cata",
+      "task": {
+        "description": "Diseño de talleres para 4‑6 municipios",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "la-cata",
+      "task": {
+        "description": "Logística de brigada itinerante",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "la-cata",
+      "task": {
+        "description": "Pre‑selección de 12 agentes",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "la-cata",
+      "task": {
+        "description": "Ejecutar 8‑12 talleres vivenciales",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "la-cata",
+      "task": {
+        "description": "Acompañamiento emocional",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "la-cata",
+      "task": {
+        "description": "Formación completa de 12 agentes",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "la-cata",
+      "task": {
+        "description": "Activación de colectivos",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "la-cata",
+      "task": {
+        "description": "Apoyo a agentes en micro‑talleres",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "la-cata",
+      "task": {
+        "description": "Seguimiento de proyectos propios",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "la-cata",
+      "task": {
+        "description": "Mantener red local activa",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "la-cata",
+      "task": {
+        "description": "Mentoría cruzada",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "la-cata",
+      "task": {
+        "description": "Rotación territorial",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "la-cata",
+      "task": {
+        "description": "Diseño de cohorte 2",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "la-cata",
+      "task": {
+        "description": "Desarrollo de portal web",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "la-cata",
+      "task": {
+        "description": "Carga de recursos abiertos",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "la-cata",
+      "task": {
+        "description": "Sistema de actualización comunitaria",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "mejora-documentacion-profesional",
+      "task": {
+        "description": "Completar career-roadmap.md con objetivos de carrera a 3-5 años",
+        "status": "pending",
+        "priority": "medium"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "mejora-documentacion-profesional",
+      "task": {
+        "description": "Actualizar experiencias-formativas.md con conexión a liderazgo de proyectos",
+        "status": "pending",
+        "priority": "medium"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "postulaciones-trabajos",
+      "task": {
+        "description": "Revisar pipeline semanalmente",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "postulaciones-trabajos",
+      "task": {
+        "description": "Actualizar estadísticas mensualmente",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "postulaciones-trabajos",
+      "task": {
+        "description": "Consolidar aprendizajes en lecciones-aprendidas.md",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "postulaciones-trabajos",
+      "task": {
+        "description": "Actualizar CV base basado en validaciones de postulaciones",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "postulaciones-trabajos",
+      "task": {
+        "description": "Crear carpeta de postulación",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "postulaciones-trabajos",
+      "task": {
+        "description": "Llenar `detalles-postulacion.md` con información de la posición",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "postulaciones-trabajos",
+      "task": {
+        "description": "**Validar CV y experiencia:**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "postulaciones-trabajos",
+      "task": {
+        "description": "Adaptar CV usando template",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "postulaciones-trabajos",
+      "task": {
+        "description": "Crear carta de presentación (si aplica)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "postulaciones-trabajos",
+      "task": {
+        "description": "Revisar documentos antes de enviar",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "postulaciones-trabajos",
+      "task": {
+        "description": "Enviar postulación",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "postulaciones-trabajos",
+      "task": {
+        "description": "Actualizar pipeline con estado \"enviada\"",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "postulaciones-trabajos",
+      "task": {
+        "description": "Registrar fecha de envío en seguimiento.md",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "postulaciones-trabajos",
+      "task": {
+        "description": "Agendar seguimiento (si aplica)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "postulaciones-trabajos",
+      "task": {
+        "description": "Actualizar seguimiento.md con cada interacción",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "postulaciones-trabajos",
+      "task": {
+        "description": "Registrar fechas de respuesta/entrevistas",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "postulaciones-trabajos",
+      "task": {
+        "description": "Documentar feedback recibido",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "postulaciones-trabajos",
+      "task": {
+        "description": "Actualizar pipeline con estado actual",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "postulaciones-trabajos",
+      "task": {
+        "description": "Preparar para entrevistas (si aplica)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "postulaciones-trabajos",
+      "task": {
+        "description": "Registrar resultado final (aceptada/rechazada)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "postulaciones-trabajos",
+      "task": {
+        "description": "Documentar feedback final (si recibido)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "postulaciones-trabajos",
+      "task": {
+        "description": "Actualizar pipeline con estado final",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "postulaciones-trabajos",
+      "task": {
+        "description": "Consolidar aprendizajes en lecciones-aprendidas.md",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "postulaciones-trabajos",
+      "task": {
+        "description": "Actualizar CV base si se identificaron mejoras",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "postulaciones-trabajos",
+      "task": {
+        "description": "Revisar gaps identificados en postulaciones",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "postulaciones-trabajos",
+      "task": {
+        "description": "Consolidar habilidades frecuentemente requeridas",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "postulaciones-trabajos",
+      "task": {
+        "description": "Actualizar descripciones basadas en feedback",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "postulaciones-trabajos",
+      "task": {
+        "description": "Mejorar presentación de información relevante",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "postulaciones-trabajos",
+      "task": {
+        "description": "Agregar experiencias faltantes si son relevantes",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "postulaciones-trabajos",
+      "task": {
+        "description": "Actualizar preguntas-entrevista.md con nuevas preguntas",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "postulaciones-trabajos",
+      "task": {
+        "description": "Actualizar networking.md con nuevos contactos",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "postulaciones-trabajos",
+      "task": {
+        "description": "Documentar lecciones aprendidas",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "postulaciones-trabajos",
+      "task": {
+        "description": "Revisar y mejorar templates si es necesario",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "postulaciones-trabajos",
+      "task": {
+        "description": "Revisar estadísticas mensualmente",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "postulaciones-trabajos",
+      "task": {
+        "description": "Identificar patrones en rechazos/aceptaciones",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "postulaciones-trabajos",
+      "task": {
+        "description": "Analizar tasa de respuesta",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "postulaciones-trabajos",
+      "task": {
+        "description": "Analizar tasa de conversión",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🌱 personal",
+      "project": "postulaciones-trabajos",
+      "task": {
+        "description": "Identificar áreas de mejora en el proceso",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "busqueda-locales-comerciales",
+      "task": {
+        "description": "**Mapear gimnasios en Lima**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "busqueda-locales-comerciales",
+      "task": {
+        "description": "**Mapear hostales en Lima**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "busqueda-locales-comerciales",
+      "task": {
+        "description": "**Priorizar lista de contactos**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "busqueda-locales-comerciales",
+      "task": {
+        "description": "**Preparar kit de presentación**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "busqueda-locales-comerciales",
+      "task": {
+        "description": "**Crear propuesta comercial base**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "busqueda-locales-comerciales",
+      "task": {
+        "description": "**Preparar material de punto de venta (opcional)**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "busqueda-locales-comerciales",
+      "task": {
+        "description": "**Crear script de presentación**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "busqueda-locales-comerciales",
+      "task": {
+        "description": "**Preparar stock para muestras**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "busqueda-locales-comerciales",
+      "task": {
+        "description": "**Contactar primeros 5-7 gimnasios**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "busqueda-locales-comerciales",
+      "task": {
+        "description": "**Contactar primeros 5-7 hostales**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "busqueda-locales-comerciales",
+      "task": {
+        "description": "**Seguimiento de contactos iniciales**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "busqueda-locales-comerciales",
+      "task": {
+        "description": "**Negociar condiciones con locales interesados**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "busqueda-locales-comerciales",
+      "task": {
+        "description": "**Cerrar primeros 3-5 acuerdos**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "busqueda-locales-comerciales",
+      "task": {
+        "description": "**Contactar locales adicionales si es necesario**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "busqueda-locales-comerciales",
+      "task": {
+        "description": "**Preparar stock para primeros locales**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "busqueda-locales-comerciales",
+      "task": {
+        "description": "**Entregar producto a locales**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "busqueda-locales-comerciales",
+      "task": {
+        "description": "**Establecer proceso de reposición**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "busqueda-locales-comerciales",
+      "task": {
+        "description": "**Monitorear rotación inicial**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "busqueda-locales-comerciales",
+      "task": {
+        "description": "**Realizar primera reposición**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "busqueda-locales-comerciales",
+      "task": {
+        "description": "**Monitorear ventas por local**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "busqueda-locales-comerciales",
+      "task": {
+        "description": "**Ajustar cantidades según demanda**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "busqueda-locales-comerciales",
+      "task": {
+        "description": "**Optimizar proceso de reposición**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "busqueda-locales-comerciales",
+      "task": {
+        "description": "**Expandir a más locales si hay éxito**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "busqueda-locales-comerciales",
+      "task": {
+        "description": "**Documentar aprendizajes**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "busqueda-locales-comerciales",
+      "task": {
+        "description": "Locales contactados (objetivo: 10-15 en mes 1)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "busqueda-locales-comerciales",
+      "task": {
+        "description": "Presentaciones realizadas (objetivo: 8-12 en mes 1)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "busqueda-locales-comerciales",
+      "task": {
+        "description": "Tasa de interés (presentaciones → interés expresado)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "busqueda-locales-comerciales",
+      "task": {
+        "description": "Acuerdos cerrados (objetivo: 3-5 en mes 1)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "busqueda-locales-comerciales",
+      "task": {
+        "description": "Locales activos (objetivo: 3-5 en mes 1, 5-8 en mes 3)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "busqueda-locales-comerciales",
+      "task": {
+        "description": "Ventas mensuales por local",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "busqueda-locales-comerciales",
+      "task": {
+        "description": "Rotación (días de inventario)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "busqueda-locales-comerciales",
+      "task": {
+        "description": "Frecuencia de reposición",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "busqueda-locales-comerciales",
+      "task": {
+        "description": "Margen promedio por local",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "busqueda-locales-comerciales",
+      "task": {
+        "description": "Total de ventas B2B vs. B2C",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "busqueda-locales-comerciales",
+      "task": {
+        "description": "Costos de logística de reposición",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "busqueda-locales-comerciales",
+      "task": {
+        "description": "Rentabilidad por local",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "busqueda-locales-comerciales",
+      "task": {
+        "description": "Contacto con locales activos",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "busqueda-locales-comerciales",
+      "task": {
+        "description": "Monitoreo de rotación",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "busqueda-locales-comerciales",
+      "task": {
+        "description": "Gestión de reposiciones",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "busqueda-locales-comerciales",
+      "task": {
+        "description": "Seguimiento de nuevos contactos",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "busqueda-locales-comerciales",
+      "task": {
+        "description": "Revisar métricas de ventas por local",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "busqueda-locales-comerciales",
+      "task": {
+        "description": "Evaluar desempeño de locales",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "busqueda-locales-comerciales",
+      "task": {
+        "description": "Ajustar estrategia según resultados",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "busqueda-locales-comerciales",
+      "task": {
+        "description": "Planificar expansión si hay éxito",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "energy-balls",
+      "task": {
+        "description": "**Crear contenido para redes sociales**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "energy-balls",
+      "task": {
+        "description": "**Definir estrategia de precios**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "energy-balls",
+      "task": {
+        "description": "**Establecer proceso de pedidos y entrega**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "energy-balls",
+      "task": {
+        "description": "**Iniciar promoción en redes sociales**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "energy-balls",
+      "task": {
+        "description": "**Gestionar primeras ventas**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "energy-balls",
+      "task": {
+        "description": "**Obtener feedback de clientes**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "energy-balls",
+      "task": {
+        "description": "**Ajustar estrategia según resultados**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "energy-balls",
+      "task": {
+        "description": "**Planificar producción adicional**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "energy-balls",
+      "task": {
+        "description": "**Producción escalada**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "energy-balls",
+      "task": {
+        "description": "**Documentar procesos y recetas**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "energy-balls",
+      "task": {
+        "description": "**Ampliar estrategia de marketing**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "energy-balls",
+      "task": {
+        "description": "**Establecer sistema de pedidos más robusto**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "energy-balls",
+      "task": {
+        "description": "**Vender 200 bolsas**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "energy-balls",
+      "task": {
+        "description": "**Analizar resultados de fases anteriores**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "energy-balls",
+      "task": {
+        "description": "**Optimizar procesos**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "energy-balls",
+      "task": {
+        "description": "**Expandir canales de venta**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "energy-balls",
+      "task": {
+        "description": "**Planificar crecimiento futuro**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "energy-balls",
+      "task": {
+        "description": "Bolsas vendidas (objetivo: 40 en mes 1)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "energy-balls",
+      "task": {
+        "description": "Clientes nuevos (objetivo: 10+ en mes 1)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "energy-balls",
+      "task": {
+        "description": "Tasa de conversión (consultas → ventas)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "energy-balls",
+      "task": {
+        "description": "Ingresos totales",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "energy-balls",
+      "task": {
+        "description": "Publicaciones en redes sociales",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "energy-balls",
+      "task": {
+        "description": "Engagement rate",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "energy-balls",
+      "task": {
+        "description": "Alcance orgánico",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "energy-balls",
+      "task": {
+        "description": "Crecimiento de seguidores",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "energy-balls",
+      "task": {
+        "description": "Tiempo de producción por lote",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "energy-balls",
+      "task": {
+        "description": "Costos de materiales",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "energy-balls",
+      "task": {
+        "description": "Eficiencia del proceso",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "energy-balls",
+      "task": {
+        "description": "Publicar contenido en redes sociales (mínimo 3-4 veces/semana)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "energy-balls",
+      "task": {
+        "description": "Responder a consultas y pedidos diariamente",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "energy-balls",
+      "task": {
+        "description": "Gestionar entregas",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "energy-balls",
+      "task": {
+        "description": "Revisar métricas de ventas",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "energy-balls",
+      "task": {
+        "description": "Revisar y ajustar estrategia",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "energy-balls",
+      "task": {
+        "description": "Analizar resultados",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "energy-balls",
+      "task": {
+        "description": "Planificar producción del próximo mes",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "energy-balls",
+      "task": {
+        "description": "Obtener feedback de clientes",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "participacion-feria-la-magia-de-emprender",
+      "task": {
+        "description": "Completar ficha de participación con información del emprendimiento",
+        "status": "pending",
+        "priority": "high"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "participacion-feria-la-magia-de-emprender",
+      "task": {
+        "description": "Agregar logo a la ficha (actualmente placeholder)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "participacion-feria-la-magia-de-emprender",
+      "task": {
+        "description": "Seleccionar productos destacados para exhibición",
+        "status": "pending",
+        "priority": "high"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "participacion-feria-la-magia-de-emprender",
+      "task": {
+        "description": "Completar información de productos destacados (imágenes, descripciones, precios)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "participacion-feria-la-magia-de-emprender",
+      "task": {
+        "description": "Completar datos de contacto en la ficha",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "participacion-feria-la-magia-de-emprender",
+      "task": {
+        "description": "Definir si habrá catálogo virtual y prepararlo",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "participacion-feria-la-magia-de-emprender",
+      "task": {
+        "description": "Diseñar materiales de marketing (banners, folletos)",
+        "status": "pending",
+        "priority": "medium"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "participacion-feria-la-magia-de-emprender",
+      "task": {
+        "description": "Preparar catálogo virtual (si aplica)",
+        "status": "pending",
+        "priority": "medium"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "participacion-feria-la-magia-de-emprender",
+      "task": {
+        "description": "Organizar logística del stand (mobiliario, materiales)",
+        "status": "pending",
+        "priority": "medium"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "participacion-feria-la-magia-de-emprender",
+      "task": {
+        "description": "Preparar sistema de ventas y cobros",
+        "status": "pending",
+        "priority": "medium"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "participacion-feria-la-magia-de-emprender",
+      "task": {
+        "description": "Producir stock suficiente para el evento",
+        "status": "pending",
+        "priority": "high"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "participacion-feria-la-magia-de-emprender",
+      "task": {
+        "description": "Preparar muestras para degustación",
+        "status": "pending",
+        "priority": "medium"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "participacion-feria-la-magia-de-emprender",
+      "task": {
+        "description": "Organizar empaques para ventas",
+        "status": "pending",
+        "priority": "low"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "participacion-feria-la-magia-de-emprender",
+      "task": {
+        "description": "Capacitar equipo de atención al público (si aplica)",
+        "status": "pending",
+        "priority": "low"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "participacion-feria-la-magia-de-emprender",
+      "task": {
+        "description": "Montaje del stand",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "participacion-feria-la-magia-de-emprender",
+      "task": {
+        "description": "Exhibición de productos",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "participacion-feria-la-magia-de-emprender",
+      "task": {
+        "description": "Atención al público y ventas",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "participacion-feria-la-magia-de-emprender",
+      "task": {
+        "description": "Networking con otros emprendedores",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "participacion-feria-la-magia-de-emprender",
+      "task": {
+        "description": "Recolección de datos de contacto de clientes potenciales",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "participacion-feria-la-magia-de-emprender",
+      "task": {
+        "description": "Documentación fotográfica del evento",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "participacion-feria-la-magia-de-emprender",
+      "task": {
+        "description": "Contactar leads generados durante la feria",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "participacion-feria-la-magia-de-emprender",
+      "task": {
+        "description": "Evaluar resultados (ventas, contactos, feedback)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "participacion-feria-la-magia-de-emprender",
+      "task": {
+        "description": "Actualizar estrategia de marketing basada en aprendizajes",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "participacion-feria-la-magia-de-emprender",
+      "task": {
+        "description": "Mantener relación con contactos establecidos",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "participacion-feria-la-magia-de-emprender",
+      "task": {
+        "description": "Documentar lecciones aprendidas",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "participacion-feria-la-magia-de-emprender",
+      "task": {
+        "description": "Confirmar fecha y ubicación exacta de la feria",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "participacion-feria-la-magia-de-emprender",
+      "task": {
+        "description": "Revisar requisitos y reglamento del evento",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "participacion-feria-la-magia-de-emprender",
+      "task": {
+        "description": "Coordinar con organizadores de la feria",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🍪 iami",
+      "project": "participacion-feria-la-magia-de-emprender",
+      "task": {
+        "description": "Promocionar participación en redes sociales",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "📁 otros",
+      "project": "EJEMPLO-proyecto",
+      "task": {
+        "description": "[Tarea 3] ⏳ **PENDIENTE**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "📁 otros",
+      "project": "EJEMPLO-proyecto",
+      "task": {
+        "description": "[Tarea 1] ⏳ **PENDIENTE**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "📁 otros",
+      "project": "EJEMPLO-proyecto",
+      "task": {
+        "description": "[Tarea 2] ⏳ **PENDIENTE**",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "📁 otros",
+      "project": "EJEMPLO-proyecto",
+      "task": {
+        "description": "[Tarea nueva identificada durante la ejecución]",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "podcast-temporada-2",
+      "task": {
+        "description": "**Programar sesión de grabación** de cortina de inicio",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "podcast-temporada-2",
+      "task": {
+        "description": "**Grabar cortina** de inicio de los episodios",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "podcast-temporada-2",
+      "task": {
+        "description": "**Editar cortina** y preparar para uso",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "podcast-temporada-2",
+      "task": {
+        "description": "**Integrar cortina** en capítulos editados",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "podcast-temporada-2",
+      "task": {
+        "description": "Continuar edición de capítulos",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "podcast-temporada-2",
+      "task": {
+        "description": "Corrección de audio",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "podcast-temporada-2",
+      "task": {
+        "description": "**URGENTE:** Grabar cortina de inicio",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "podcast-temporada-2",
+      "task": {
+        "description": "Integrar cortina en capítulos editados",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "podcast-temporada-2",
+      "task": {
+        "description": "Revisión de calidad de edición",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "podcast-temporada-2",
+      "task": {
+        "description": "Preparar versiones finales de capítulos",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "podcast-temporada-2",
+      "task": {
+        "description": "Integración de cortina de inicio",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "podcast-temporada-2",
+      "task": {
+        "description": "Finalización de audio",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "podcast-temporada-2",
+      "task": {
+        "description": "Revisión de calidad completa",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "podcast-temporada-2",
+      "task": {
+        "description": "Preparación de archivos finales",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "podcast-temporada-2",
+      "task": {
+        "description": "Revisión final de todos los episodios",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "podcast-temporada-2",
+      "task": {
+        "description": "Preparar materiales para plataformas",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "podcast-temporada-2",
+      "task": {
+        "description": "Crear descripciones de episodios",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "podcast-temporada-2",
+      "task": {
+        "description": "Preparar arte/thumbnail para episodios",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "podcast-temporada-2",
+      "task": {
+        "description": "Subir a Spotify",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "podcast-temporada-2",
+      "task": {
+        "description": "Subir a Apple Podcasts",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "podcast-temporada-2",
+      "task": {
+        "description": "Subir a otras plataformas",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "podcast-temporada-2",
+      "task": {
+        "description": "Configurar RSS feed",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "podcast-temporada-2",
+      "task": {
+        "description": "Promoción y marketing",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "podcast-temporada-2",
+      "task": {
+        "description": "Monitoreo de distribución",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "taller-liderazgo-impacto-latam",
+      "task": {
+        "description": "**Revisar presentación base** y identificar áreas de enriquecimiento",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "taller-liderazgo-impacto-latam",
+      "task": {
+        "description": "**Definir objetivos de aprendizaje** específicos del taller",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "taller-liderazgo-impacto-latam",
+      "task": {
+        "description": "**Diseñar estructura** del taller (timing, dinámicas, actividades)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "taller-liderazgo-impacto-latam",
+      "task": {
+        "description": "**Identificar contenido adicional** necesario (ejemplos, casos, recursos)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "taller-liderazgo-impacto-latam",
+      "task": {
+        "description": "**Diseñar dinámicas interactivas** para el taller virtual",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "taller-liderazgo-impacto-latam",
+      "task": {
+        "description": "**Preparar materiales complementarios** (si aplica)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "taller-liderazgo-impacto-latam",
+      "task": {
+        "description": "**Enriquecer presentación** con información adicional",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "taller-liderazgo-impacto-latam",
+      "task": {
+        "description": "**Crear guía de facilitación** detallada",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "taller-liderazgo-impacto-latam",
+      "task": {
+        "description": "**Preparar recursos para participantes** (handouts, materiales, links)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "taller-liderazgo-impacto-latam",
+      "task": {
+        "description": "**Diseñar ejercicios prácticos** y actividades",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "taller-liderazgo-impacto-latam",
+      "task": {
+        "description": "**Preparar preguntas de reflexión** para conversaciones",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "taller-liderazgo-impacto-latam",
+      "task": {
+        "description": "**Crear materiales visuales** adicionales (si necesario)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "taller-liderazgo-impacto-latam",
+      "task": {
+        "description": "**Revisión completa** de todos los materiales",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "taller-liderazgo-impacto-latam",
+      "task": {
+        "description": "**Prueba de dinámicas** y actividades",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "taller-liderazgo-impacto-latam",
+      "task": {
+        "description": "**Ajustes finales** basados en pruebas",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "taller-liderazgo-impacto-latam",
+      "task": {
+        "description": "**Preparación técnica** (plataforma, herramientas, acceso)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "taller-liderazgo-impacto-latam",
+      "task": {
+        "description": "**Coordinación con organizadores** del evento",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "taller-liderazgo-impacto-latam",
+      "task": {
+        "description": "**Verificar logística** del taller (horario, duración, formato)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "taller-liderazgo-impacto-latam",
+      "task": {
+        "description": "**Preparación final** antes del taller",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "taller-liderazgo-impacto-latam",
+      "task": {
+        "description": "**Facilitación del taller** en vivo",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "taller-liderazgo-impacto-latam",
+      "task": {
+        "description": "**Interacción con participantes** durante la sesión",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "taller-liderazgo-impacto-latam",
+      "task": {
+        "description": "**Documentación** de la sesión (notas, insights)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "taller-liderazgo-impacto-latam",
+      "task": {
+        "description": "**Cierre y seguimiento** con participantes",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "taller-liderazgo-impacto-latam",
+      "task": {
+        "description": "**Recopilación de feedback** de participantes",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "taller-liderazgo-impacto-latam",
+      "task": {
+        "description": "**Documentación de aprendizajes** del taller",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "taller-liderazgo-impacto-latam",
+      "task": {
+        "description": "**Compartir recursos** con participantes (si aplica)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "taller-liderazgo-impacto-latam",
+      "task": {
+        "description": "**Evaluación del taller** (qué funcionó, qué mejorar)",
+        "status": "pending"
+      }
+    },
+    {
+      "workspace": "🧭 entre-rutas",
+      "project": "taller-liderazgo-impacto-latam",
+      "task": {
+        "description": "**Actualizar documentación** del proyecto",
+        "status": "pending"
+      }
+    }
+  ],
+  "allInProgressTasks": [
+    {
+      "workspace": "📁 otros",
+      "project": "EJEMPLO-proyecto",
+      "task": {
+        "description": "[Tarea 2] 🟡 **EN PROGRESO**",
+        "status": "in-progress"
+      }
+    }
+  ],
+  "allBlockedTasks": []
+}

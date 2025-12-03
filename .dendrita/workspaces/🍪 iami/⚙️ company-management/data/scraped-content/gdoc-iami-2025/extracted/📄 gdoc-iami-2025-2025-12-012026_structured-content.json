@@ -1,0 +1,2996 @@
+{
+  "tabs": [
+    {
+      "index": 0,
+      "name": "Competencia",
+      "sections": [
+        {
+          "index": 1,
+          "paragraphs": [
+            {
+              "text": "Competencia",
+              "style": "HEADING_1",
+              "level": 1
+            }
+          ],
+          "tables": [],
+          "links": [],
+          "title": "Competencia"
+        },
+        {
+          "index": 2,
+          "paragraphs": [
+            {
+              "text": "Calypso",
+              "style": "HEADING_2",
+              "level": 2
+            },
+            {
+              "text": "[https://www.instagram.com/calypso.superfoods/](https://www.instagram.com/calypso.superfoods/)",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            }
+          ],
+          "tables": [],
+          "links": [
+            {
+              "url": "https://www.instagram.com/calypso.superfoods/",
+              "text": "https://www.instagram.com/calypso.superfoods/"
+            }
+          ],
+          "title": "Calypso"
+        }
+      ],
+      "totalSections": 2,
+      "paragraphs": [
+        {
+          "text": "Competencia",
+          "style": "HEADING_1",
+          "level": 1
+        },
+        {
+          "text": "Calypso",
+          "style": "HEADING_2",
+          "level": 2
+        },
+        {
+          "text": "[https://www.instagram.com/calypso.superfoods/](https://www.instagram.com/calypso.superfoods/)",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        }
+      ],
+      "tables": [],
+      "links": [
+        {
+          "url": "https://www.instagram.com/calypso.superfoods/",
+          "text": "https://www.instagram.com/calypso.superfoods/"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "name": "Ficha Técnica De Producto",
+      "sections": [
+        {
+          "index": 1,
+          "paragraphs": [
+            {
+              "text": "Ficha Técnica De Producto",
+              "style": "HEADING_1",
+              "level": 1
+            },
+            {
+              "text": "**Ficha Técnica De Producto**",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "**1\\. Identificación del Producto**",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Nombre Comercial:**  iami",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Nombre Técnico:** Snack energético esférico (Energy Ball)",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Categoría:** Alimento / Snack / Repostería natural",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Descripción General:** Producto alimenticio de formato esférico, no horneado (raw), elaborado mediante la compactación de ingredientes naturales. Su formulación se basa en un equilibrio de cereales, frutos secos, frutas deshidratadas y aglutinantes naturales.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "**2\\. Principio de Formulación y Composición**",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "La arquitectura de cada variedad de **iamis** se fundamenta en un balance estructural calculado de tres categorías de ingredientes. La proporción de estas categorías determina la textura, el perfil nutricional y el sabor del producto final.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Categoría 1: Componentes Secos (Base Estructural)**",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Función:** Proporcionan el cuerpo principal, la textura (mordida), fibra y una base de sabor tostado.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Ingredientes Tipo:** Cereales (ej. Avena entera), oleaginosas (ej. Almendras, Pecanas, Maní), semillas (ej. Chía, Linaza).",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Categoría 2: Componentes Húmedos (Núcleo de Sabor y Dulzor)**",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Función:** Aportan el dulzor natural (fructosa), la densidad y la humedad cohesiva.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Ingredientes Tipo:** Frutas deshidratadas o pastas de fruta (ej. Dátiles, Damascos, Manzana deshidratada, Fresa deshidratada, Cáscara de naranja deshidratada).",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Categoría 3: Componentes Líquidos (Aglutinante y Vehículo)**",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Función:** Actúan como el agente aglutinante principal que une los componentes secos y húmedos. Aportan untuosidad, riqueza (grasas) y sabores secundarios o de complemento.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Ingredientes Tipo:** Mantequillas de oleaginosas (ej. Mantequilla de maní), siropes naturales (ej. Miel de panela).",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "**3\\. Proceso Básico de Manufactura**",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "1. **Pesaje y Dosificación** de ingredientes según la fórmula de la variedad.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "2. **Procesamiento/Mezclado:** Integración de los tres componentes (Secos, Húmedos, Líquidos) hasta alcanzar una masa homogénea y maleable.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "3. **Formación (Boleado):** Extrusión y/o formado manual/mecánico de la masa en unidades esféricas de peso estandarizado.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "4. **Envasado:** Colocación de las unidades en el empaque primario (Doypack).",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "5. **Sellado y Loteado.**",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "**4\\. Características Físico-Químicas y Organolépticas**",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Formato:** Esfera de 12g **Formato:** Esfera de 12g o 20g por unidad, según referencia.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Textura:** Densa, compacta, suave al corte, no quebradiza. Masticable.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Sabor y Olor:** Característicos de la mezcla de ingredientes de la variedad (ej. notas cítricas y cacao para \"Naranja-Chocolate\"; especiado para \"Gingerbread\").",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Color:** Determinado por los ingredientes predominantes (ej. marrón oscuro, pardo, rojizo).",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "**5\\. Línea de Productos (Variedades Base)**",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* Naranja-Chocolate",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* Gingerbread",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* Fresa-Chocolate",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* Apple Pie",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "**6\\. Empaque y Almacenamiento**",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Empaque Primario:** Bolsa tipo Doypack con cierre hermético (material kraft y bilaminado.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Presentación:** Múltiples unidades (ej. 12 unidades x 12g).",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Almacenamiento:** Conservar en lugar fresco, seco (T° \\< 25°C, HR \\< 65%). Proteger de la luz solar directa y olores fuertes. No requiere refrigeración obligatoria, pero se recomienda para máxima frescura post-apertura.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Vida Útil:** \\[Definir según pruebas de estabilidad, ej: 60 días\\].",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            }
+          ],
+          "tables": [],
+          "links": [],
+          "title": "Ficha Técnica De Producto"
+        }
+      ],
+      "totalSections": 1,
+      "paragraphs": [
+        {
+          "text": "Ficha Técnica De Producto",
+          "style": "HEADING_1",
+          "level": 1
+        },
+        {
+          "text": "**Ficha Técnica De Producto**",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "**1\\. Identificación del Producto**",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Nombre Comercial:**  iami",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Nombre Técnico:** Snack energético esférico (Energy Ball)",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Categoría:** Alimento / Snack / Repostería natural",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Descripción General:** Producto alimenticio de formato esférico, no horneado (raw), elaborado mediante la compactación de ingredientes naturales. Su formulación se basa en un equilibrio de cereales, frutos secos, frutas deshidratadas y aglutinantes naturales.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "**2\\. Principio de Formulación y Composición**",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "La arquitectura de cada variedad de **iamis** se fundamenta en un balance estructural calculado de tres categorías de ingredientes. La proporción de estas categorías determina la textura, el perfil nutricional y el sabor del producto final.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Categoría 1: Componentes Secos (Base Estructural)**",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Función:** Proporcionan el cuerpo principal, la textura (mordida), fibra y una base de sabor tostado.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Ingredientes Tipo:** Cereales (ej. Avena entera), oleaginosas (ej. Almendras, Pecanas, Maní), semillas (ej. Chía, Linaza).",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Categoría 2: Componentes Húmedos (Núcleo de Sabor y Dulzor)**",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Función:** Aportan el dulzor natural (fructosa), la densidad y la humedad cohesiva.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Ingredientes Tipo:** Frutas deshidratadas o pastas de fruta (ej. Dátiles, Damascos, Manzana deshidratada, Fresa deshidratada, Cáscara de naranja deshidratada).",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Categoría 3: Componentes Líquidos (Aglutinante y Vehículo)**",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Función:** Actúan como el agente aglutinante principal que une los componentes secos y húmedos. Aportan untuosidad, riqueza (grasas) y sabores secundarios o de complemento.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Ingredientes Tipo:** Mantequillas de oleaginosas (ej. Mantequilla de maní), siropes naturales (ej. Miel de panela).",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "**3\\. Proceso Básico de Manufactura**",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "1. **Pesaje y Dosificación** de ingredientes según la fórmula de la variedad.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "2. **Procesamiento/Mezclado:** Integración de los tres componentes (Secos, Húmedos, Líquidos) hasta alcanzar una masa homogénea y maleable.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "3. **Formación (Boleado):** Extrusión y/o formado manual/mecánico de la masa en unidades esféricas de peso estandarizado.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "4. **Envasado:** Colocación de las unidades en el empaque primario (Doypack).",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "5. **Sellado y Loteado.**",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "**4\\. Características Físico-Químicas y Organolépticas**",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Formato:** Esfera de 12g **Formato:** Esfera de 12g o 20g por unidad, según referencia.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Textura:** Densa, compacta, suave al corte, no quebradiza. Masticable.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Sabor y Olor:** Característicos de la mezcla de ingredientes de la variedad (ej. notas cítricas y cacao para \"Naranja-Chocolate\"; especiado para \"Gingerbread\").",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Color:** Determinado por los ingredientes predominantes (ej. marrón oscuro, pardo, rojizo).",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "**5\\. Línea de Productos (Variedades Base)**",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* Naranja-Chocolate",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* Gingerbread",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* Fresa-Chocolate",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* Apple Pie",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "**6\\. Empaque y Almacenamiento**",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Empaque Primario:** Bolsa tipo Doypack con cierre hermético (material kraft y bilaminado.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Presentación:** Múltiples unidades (ej. 12 unidades x 12g).",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Almacenamiento:** Conservar en lugar fresco, seco (T° \\< 25°C, HR \\< 65%). Proteger de la luz solar directa y olores fuertes. No requiere refrigeración obligatoria, pero se recomienda para máxima frescura post-apertura.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Vida Útil:** \\[Definir según pruebas de estabilidad, ej: 60 días\\].",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        }
+      ],
+      "tables": [],
+      "links": []
+    },
+    {
+      "index": 2,
+      "name": "Top 10 posts más efectivos (por engagement total)",
+      "sections": [
+        {
+          "index": 1,
+          "paragraphs": [
+            {
+              "text": "Top 10 posts más efectivos (por engagement total)",
+              "style": "HEADING_1",
+              "level": 1
+            }
+          ],
+          "tables": [],
+          "links": [],
+          "title": "Top 10 posts más efectivos (por engagement total)"
+        },
+        {
+          "index": 2,
+          "paragraphs": [
+            {
+              "text": "**Top 10 posts más efectivos (por engagement total)**",
+              "style": "HEADING_2",
+              "level": 2
+            },
+            {
+              "text": "1. 2020-08-25",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* Imagen: 17863937399039743.jpg",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* URI: media/posts/202008/17863937399039743.jpg",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* Engagement: 60 total (49 likes, 2 comentarios, 9 saves)",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "1. 2020-09-02",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* Imagen: 17869802542912014.jpg",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* URI: media/posts/202009/17869802542912014.jpg",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* Engagement: 47 total (30 likes, 17 comentarios)",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "1. 2020-09-12",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* Imagen: 17852099393263048.jpg",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* URI: media/posts/202009/17852099393263048.jpg",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* Engagement: 33 total (31 likes, 2 comentarios)",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "1. 2020-09-08",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* Imagen: 17879401897785626.jpg",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* URI: media/posts/202009/17879401897785626.jpg",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* Engagement: 32 total (31 likes, 1 save)",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "1. 2020-09-03",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* Imagen: 17856385193151782.jpg",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* URI: media/posts/202009/17856385193151782.jpg",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* Engagement: 37 total (37 likes)",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "1. 2020-09-13",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* Imagen: 17833916193410423.jpg",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* URI: media/posts/202009/17933916193410423.jpg",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* Engagement: 26 total (26 likes)",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "1. 2020-08-27",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* Imagen: 17906268589503103.jpg",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* URI: media/posts/202008/17906268589503103.jpg",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* Engagement: 31 total (29 likes, 2 saves)",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "1. 2020-08-30",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* Imagen: 17856881339131236.jpg",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* URI: media/posts/202008/17856881339131236.jpg",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* Engagement: 27 total (24 likes, 3 comentarios)",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "1. 2020-08-26",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* Imagen: 17863805711013738.jpg",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* URI: media/posts/202008/17863805711013738.jpg",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* Engagement: 26 total (22 likes, 4 comentarios)",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "1. 2020-08-24",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* Imagen: 17877773191770647.jpg",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* URI: media/posts/202008/17877773191770647.jpg",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* Engagement: 29 total (29 likes)",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            }
+          ],
+          "tables": [],
+          "links": [],
+          "title": "**Top 10 posts más efectivos (por engagement total)**"
+        }
+      ],
+      "totalSections": 2,
+      "paragraphs": [
+        {
+          "text": "Top 10 posts más efectivos (por engagement total)",
+          "style": "HEADING_1",
+          "level": 1
+        },
+        {
+          "text": "**Top 10 posts más efectivos (por engagement total)**",
+          "style": "HEADING_2",
+          "level": 2
+        },
+        {
+          "text": "1. 2020-08-25",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* Imagen: 17863937399039743.jpg",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* URI: media/posts/202008/17863937399039743.jpg",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* Engagement: 60 total (49 likes, 2 comentarios, 9 saves)",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "1. 2020-09-02",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* Imagen: 17869802542912014.jpg",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* URI: media/posts/202009/17869802542912014.jpg",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* Engagement: 47 total (30 likes, 17 comentarios)",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "1. 2020-09-12",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* Imagen: 17852099393263048.jpg",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* URI: media/posts/202009/17852099393263048.jpg",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* Engagement: 33 total (31 likes, 2 comentarios)",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "1. 2020-09-08",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* Imagen: 17879401897785626.jpg",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* URI: media/posts/202009/17879401897785626.jpg",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* Engagement: 32 total (31 likes, 1 save)",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "1. 2020-09-03",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* Imagen: 17856385193151782.jpg",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* URI: media/posts/202009/17856385193151782.jpg",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* Engagement: 37 total (37 likes)",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "1. 2020-09-13",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* Imagen: 17833916193410423.jpg",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* URI: media/posts/202009/17933916193410423.jpg",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* Engagement: 26 total (26 likes)",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "1. 2020-08-27",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* Imagen: 17906268589503103.jpg",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* URI: media/posts/202008/17906268589503103.jpg",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* Engagement: 31 total (29 likes, 2 saves)",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "1. 2020-08-30",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* Imagen: 17856881339131236.jpg",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* URI: media/posts/202008/17856881339131236.jpg",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* Engagement: 27 total (24 likes, 3 comentarios)",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "1. 2020-08-26",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* Imagen: 17863805711013738.jpg",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* URI: media/posts/202008/17863805711013738.jpg",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* Engagement: 26 total (22 likes, 4 comentarios)",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "1. 2020-08-24",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* Imagen: 17877773191770647.jpg",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* URI: media/posts/202008/17877773191770647.jpg",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* Engagement: 29 total (29 likes)",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        }
+      ],
+      "tables": [],
+      "links": []
+    },
+    {
+      "index": 3,
+      "name": "Estrategia De Marca Y Comunicación - iami",
+      "sections": [
+        {
+          "index": 1,
+          "paragraphs": [
+            {
+              "text": "**Estrategia De Marca Y Comunicación \\- iami**",
+              "style": "HEADING_1",
+              "level": 1
+            }
+          ],
+          "tables": [],
+          "links": [],
+          "title": "**Estrategia De Marca Y Comunicación \\- iami**"
+        },
+        {
+          "index": 2,
+          "paragraphs": [
+            {
+              "text": "**1\\. Identidad del Producto**",
+              "style": "HEADING_2",
+              "level": 2
+            },
+            {
+              "text": "Nombre: iami (Snack energético esférico / Energy Ball)",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "Categoría: Snack saludable / Repostería natural (Raw)",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "Formato: Esferas de 12g o 20g.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "Esencia: Snack honesto, sin horneado, basado en el equilibrio de componentes secos, húmedos y líquidos.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            }
+          ],
+          "tables": [],
+          "links": [],
+          "title": "**1\\. Identidad del Producto**"
+        },
+        {
+          "index": 3,
+          "paragraphs": [
+            {
+              "text": "**2\\. Concepto Central**",
+              "style": "HEADING_2",
+              "level": 2
+            },
+            {
+              "text": "\"Energía de bolsillo, honesta y deliciosa.\"",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "iami se apropia del formato esférico para diferenciarse en un mercado saturado de barras. Es la dosis justa de energía natural, fácil de comer, que no sacrifica el placer del sabor por la funcionalidad nutricional.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            }
+          ],
+          "tables": [],
+          "links": [],
+          "title": "**2\\. Concepto Central**"
+        },
+        {
+          "index": 4,
+          "paragraphs": [
+            {
+              "text": "**3\\. Buyer Personas (Público Objetivo)**",
+              "style": "HEADING_2",
+              "level": 2
+            },
+            {
+              "text": "**Perfil A: El \"Active Go-Getter\" (Consumo Diario)**",
+              "style": "HEADING_3",
+              "level": 3
+            },
+            {
+              "text": "* **Quién es:** Estudiantes, oficinistas o personas que trabajan y entrenan (Gym/Crossfit). Viven con agenda llena.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Necesidad:** Sufren de ansiedad o hambre a media mañana/tarde (11 am / 4 pm). Buscan saciedad rápida sin recurrir a comida chatarra.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Motivación de compra:** Accesibilidad (precio justo) y practicidad (comer sin ensuciarse).",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Uso:** Pre-entreno o snack de oficina.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "**Perfil B: El Explorador Consciente (Nicho de Valor)**",
+              "style": "HEADING_3",
+              "level": 3
+            },
+            {
+              "text": "* **Quién es:** Turista (nacional o extranjero), senderista, trekker, posiblemente vegano.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Necesidad:** \"Fuel\" (combustible) ligero para llevar en la mochila, que aguante cambios de temperatura y aporte calorías de calidad.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Motivación de compra:** Ingredientes reales (Clean Label) y densidad nutricional.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Uso:** Durante caminatas, excursiones o viajes largos.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            }
+          ],
+          "tables": [],
+          "links": [],
+          "title": "**3\\. Buyer Personas (Público Objetivo)**"
+        },
+        {
+          "index": 5,
+          "paragraphs": [
+            {
+              "text": "**4\\. Propuesta de Valor y Diferenciales**",
+              "style": "HEADING_2",
+              "level": 2
+            },
+            {
+              "text": "**El \"Superpoder\"**",
+              "style": "HEADING_3",
+              "level": 3
+            },
+            {
+              "text": "* **Sabor a Postre, Funcionalidad de Superalimento:** Rompe el mito de que lo sano es aburrido. Variedades como *Apple Pie* o *Gingerbread* evocan repostería casera.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Saciedad sin culpa:** Gracias a las grasas saludables y la fibra, quita el hambre real y la ansiedad dulce.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "**Ventaja Competitiva**",
+              "style": "HEADING_3",
+              "level": 3
+            },
+            {
+              "text": "1. **Formato:** Frente a las barras tradicionales (ej. *Dyfferent*), la esfera ofrece una mejor experiencia de mordida (más húmeda/suave) y dosificación.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "2. **Precio:** Posicionamiento \"Democrático\". Nutrición premium accesible frente a competidores costosos.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "3. **Transparencia:** Al ser un producto *Raw* (sin hornear), los ingredientes mantienen sus propiedades intactas.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            }
+          ],
+          "tables": [],
+          "links": [],
+          "title": "**4\\. Propuesta de Valor y Diferenciales**"
+        },
+        {
+          "index": 6,
+          "paragraphs": [
+            {
+              "text": "**5\\. Personalidad y Tono de Voz: \"Vitalidad Accesible\"**",
+              "style": "HEADING_2",
+              "level": 2
+            },
+            {
+              "text": "La marca se comporta como un entrenador amigo: te motiva, te cuida, pero no te regaña.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Tono:** Una mezcla equilibrada de tres facetas:",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Amigable (Cercano):** Para conectar emocionalmente. *\"¿Antojo de algo rico?\"*",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Energético (Dinámico):** Para los momentos de acción/deporte. *\"Recarga y sigue.\"*",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Sofisticado (Minimalista):** Para hablar de la calidad del producto. *\"Ingredientes reales. Nada más.\"*",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            }
+          ],
+          "tables": [],
+          "links": [],
+          "title": "**5\\. Personalidad y Tono de Voz: \"Vitalidad Accesible\"**"
+        },
+        {
+          "index": 7,
+          "paragraphs": [
+            {
+              "text": "**6\\. Territorios de Comunicación (Temas Clave)**",
+              "style": "HEADING_2",
+              "level": 2
+            },
+            {
+              "text": "1. **Funcionalidad:** Energía para entrenar/trabajar.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "2. **Placer Saludable:** El sabor y la textura (Indulgencia sana).",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "3. **Transparencia:** Mostrar los ingredientes (Avena, Dátiles, Frutos secos).",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "4. **Estilo de Vida:** Outdoor, oficina, gimnasio, movimiento.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            }
+          ],
+          "tables": [],
+          "links": [],
+          "title": "**6\\. Territorios de Comunicación (Temas Clave)**"
+        }
+      ],
+      "totalSections": 7,
+      "paragraphs": [
+        {
+          "text": "**Estrategia De Marca Y Comunicación \\- iami**",
+          "style": "HEADING_1",
+          "level": 1
+        },
+        {
+          "text": "**1\\. Identidad del Producto**",
+          "style": "HEADING_2",
+          "level": 2
+        },
+        {
+          "text": "Nombre: iami (Snack energético esférico / Energy Ball)",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "Categoría: Snack saludable / Repostería natural (Raw)",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "Formato: Esferas de 12g o 20g.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "Esencia: Snack honesto, sin horneado, basado en el equilibrio de componentes secos, húmedos y líquidos.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "**2\\. Concepto Central**",
+          "style": "HEADING_2",
+          "level": 2
+        },
+        {
+          "text": "\"Energía de bolsillo, honesta y deliciosa.\"",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "iami se apropia del formato esférico para diferenciarse en un mercado saturado de barras. Es la dosis justa de energía natural, fácil de comer, que no sacrifica el placer del sabor por la funcionalidad nutricional.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "**3\\. Buyer Personas (Público Objetivo)**",
+          "style": "HEADING_2",
+          "level": 2
+        },
+        {
+          "text": "**Perfil A: El \"Active Go-Getter\" (Consumo Diario)**",
+          "style": "HEADING_3",
+          "level": 3
+        },
+        {
+          "text": "* **Quién es:** Estudiantes, oficinistas o personas que trabajan y entrenan (Gym/Crossfit). Viven con agenda llena.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Necesidad:** Sufren de ansiedad o hambre a media mañana/tarde (11 am / 4 pm). Buscan saciedad rápida sin recurrir a comida chatarra.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Motivación de compra:** Accesibilidad (precio justo) y practicidad (comer sin ensuciarse).",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Uso:** Pre-entreno o snack de oficina.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "**Perfil B: El Explorador Consciente (Nicho de Valor)**",
+          "style": "HEADING_3",
+          "level": 3
+        },
+        {
+          "text": "* **Quién es:** Turista (nacional o extranjero), senderista, trekker, posiblemente vegano.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Necesidad:** \"Fuel\" (combustible) ligero para llevar en la mochila, que aguante cambios de temperatura y aporte calorías de calidad.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Motivación de compra:** Ingredientes reales (Clean Label) y densidad nutricional.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Uso:** Durante caminatas, excursiones o viajes largos.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "**4\\. Propuesta de Valor y Diferenciales**",
+          "style": "HEADING_2",
+          "level": 2
+        },
+        {
+          "text": "**El \"Superpoder\"**",
+          "style": "HEADING_3",
+          "level": 3
+        },
+        {
+          "text": "* **Sabor a Postre, Funcionalidad de Superalimento:** Rompe el mito de que lo sano es aburrido. Variedades como *Apple Pie* o *Gingerbread* evocan repostería casera.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Saciedad sin culpa:** Gracias a las grasas saludables y la fibra, quita el hambre real y la ansiedad dulce.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "**Ventaja Competitiva**",
+          "style": "HEADING_3",
+          "level": 3
+        },
+        {
+          "text": "1. **Formato:** Frente a las barras tradicionales (ej. *Dyfferent*), la esfera ofrece una mejor experiencia de mordida (más húmeda/suave) y dosificación.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "2. **Precio:** Posicionamiento \"Democrático\". Nutrición premium accesible frente a competidores costosos.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "3. **Transparencia:** Al ser un producto *Raw* (sin hornear), los ingredientes mantienen sus propiedades intactas.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "**5\\. Personalidad y Tono de Voz: \"Vitalidad Accesible\"**",
+          "style": "HEADING_2",
+          "level": 2
+        },
+        {
+          "text": "La marca se comporta como un entrenador amigo: te motiva, te cuida, pero no te regaña.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Tono:** Una mezcla equilibrada de tres facetas:",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Amigable (Cercano):** Para conectar emocionalmente. *\"¿Antojo de algo rico?\"*",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Energético (Dinámico):** Para los momentos de acción/deporte. *\"Recarga y sigue.\"*",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Sofisticado (Minimalista):** Para hablar de la calidad del producto. *\"Ingredientes reales. Nada más.\"*",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "**6\\. Territorios de Comunicación (Temas Clave)**",
+          "style": "HEADING_2",
+          "level": 2
+        },
+        {
+          "text": "1. **Funcionalidad:** Energía para entrenar/trabajar.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "2. **Placer Saludable:** El sabor y la textura (Indulgencia sana).",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "3. **Transparencia:** Mostrar los ingredientes (Avena, Dátiles, Frutos secos).",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "4. **Estilo de Vida:** Outdoor, oficina, gimnasio, movimiento.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        }
+      ],
+      "tables": [],
+      "links": []
+    },
+    {
+      "index": 4,
+      "name": "Identidad Visual Esencial - iami",
+      "sections": [
+        {
+          "index": 1,
+          "paragraphs": [
+            {
+              "text": "**Identidad Visual Esencial \\- iami**",
+              "style": "HEADING_1",
+              "level": 1
+            }
+          ],
+          "tables": [],
+          "links": [],
+          "title": "**Identidad Visual Esencial \\- iami**"
+        },
+        {
+          "index": 2,
+          "paragraphs": [
+            {
+              "text": "**1\\. Concepto Visual: \"Autenticidad Elevada\"**",
+              "style": "HEADING_2",
+              "level": 2
+            },
+            {
+              "text": "El objetivo es que las fotos se vean **artesanales pero profesionales**. No esconderemos que es hecho en casa, al contrario, lo usaremos para mostrar frescura y honestidad, pero con una calidad de imagen nítida e impactante.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            }
+          ],
+          "tables": [],
+          "links": [],
+          "title": "**1\\. Concepto Visual: \"Autenticidad Elevada\"**"
+        },
+        {
+          "index": 3,
+          "paragraphs": [
+            {
+              "text": "**2\\. Reglas de Oro para Fotografía (Con Celular)**",
+              "style": "HEADING_2",
+              "level": 2
+            },
+            {
+              "text": "Estas son las únicas reglas técnicas que necesitas seguir para elevar la calidad inmediatamente:",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Luz Natural Lateral (La Clave del Éxito):**",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* Nunca uses el flash.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* Ubica el producto cerca de una ventana. La luz debe pegarle de lado, no de frente. Esto crea sombras suaves que resaltan la textura \"rugosa\" y deliciosa de la *energy ball*.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Enfoque en la Textura (Macro):**",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* Toca la pantalla para enfocar bien la superficie del producto.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* Queremos que se vean los trocitos de avena, chía o chocolate. Eso es lo que despierta el apetito (el *appetite appeal*).",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **La \"Mordida\":**",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* Sigue mostrando el interior. Una esfera mordida o cortada a la mitad comunica suavidad y humedad, diferenciándote de las barras secas.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            }
+          ],
+          "tables": [],
+          "links": [],
+          "title": "**2\\. Reglas de Oro para Fotografía (Con Celular)**"
+        },
+        {
+          "index": 4,
+          "paragraphs": [
+            {
+              "text": "**3\\. Paleta y Composición (Usando tus Recursos)**",
+              "style": "HEADING_2",
+              "level": 2
+            },
+            {
+              "text": "Utiliza tus fondos actuales (madera, mármol, granito) con esta lógica simple de contraste:",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Si el empaque es Kraft (Marrón):** Usa fondos claros (Mármol, blanco, granito claro) para que el empaque resalte y no se pierda.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Si el empaque es Blanco:** Usa fondos cálidos u oscuros (Madera, granito oscuro) para crear contraste.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Ingredientes como Decoración:**",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* Rodea la *energy ball* con sus propios ingredientes crudos (avena suelta, nueces, trozos de chocolate). Esto valida lo natural y llena el espacio visualmente de forma económica.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            }
+          ],
+          "tables": [],
+          "links": [],
+          "title": "**3\\. Paleta y Composición (Usando tus Recursos)**"
+        },
+        {
+          "index": 5,
+          "paragraphs": [
+            {
+              "text": "**4\\. Uso de IA y Edición**",
+              "style": "HEADING_2",
+              "level": 2
+            },
+            {
+              "text": "* **Corrección, no invención:** Usa la IA o apps de edición solo para:",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "1. Mejorar la iluminación (si quedó oscura).",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "2. Aumentar la nitidez (Sharpening) para resaltar la textura.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "3. Limpiar manchas indeseadas en el fondo.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            }
+          ],
+          "tables": [],
+          "links": [],
+          "title": "**4\\. Uso de IA y Edición**"
+        }
+      ],
+      "totalSections": 5,
+      "paragraphs": [
+        {
+          "text": "**Identidad Visual Esencial \\- iami**",
+          "style": "HEADING_1",
+          "level": 1
+        },
+        {
+          "text": "**1\\. Concepto Visual: \"Autenticidad Elevada\"**",
+          "style": "HEADING_2",
+          "level": 2
+        },
+        {
+          "text": "El objetivo es que las fotos se vean **artesanales pero profesionales**. No esconderemos que es hecho en casa, al contrario, lo usaremos para mostrar frescura y honestidad, pero con una calidad de imagen nítida e impactante.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "**2\\. Reglas de Oro para Fotografía (Con Celular)**",
+          "style": "HEADING_2",
+          "level": 2
+        },
+        {
+          "text": "Estas son las únicas reglas técnicas que necesitas seguir para elevar la calidad inmediatamente:",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Luz Natural Lateral (La Clave del Éxito):**",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* Nunca uses el flash.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* Ubica el producto cerca de una ventana. La luz debe pegarle de lado, no de frente. Esto crea sombras suaves que resaltan la textura \"rugosa\" y deliciosa de la *energy ball*.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Enfoque en la Textura (Macro):**",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* Toca la pantalla para enfocar bien la superficie del producto.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* Queremos que se vean los trocitos de avena, chía o chocolate. Eso es lo que despierta el apetito (el *appetite appeal*).",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **La \"Mordida\":**",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* Sigue mostrando el interior. Una esfera mordida o cortada a la mitad comunica suavidad y humedad, diferenciándote de las barras secas.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "**3\\. Paleta y Composición (Usando tus Recursos)**",
+          "style": "HEADING_2",
+          "level": 2
+        },
+        {
+          "text": "Utiliza tus fondos actuales (madera, mármol, granito) con esta lógica simple de contraste:",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Si el empaque es Kraft (Marrón):** Usa fondos claros (Mármol, blanco, granito claro) para que el empaque resalte y no se pierda.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Si el empaque es Blanco:** Usa fondos cálidos u oscuros (Madera, granito oscuro) para crear contraste.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Ingredientes como Decoración:**",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* Rodea la *energy ball* con sus propios ingredientes crudos (avena suelta, nueces, trozos de chocolate). Esto valida lo natural y llena el espacio visualmente de forma económica.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "**4\\. Uso de IA y Edición**",
+          "style": "HEADING_2",
+          "level": 2
+        },
+        {
+          "text": "* **Corrección, no invención:** Usa la IA o apps de edición solo para:",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "1. Mejorar la iluminación (si quedó oscura).",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "2. Aumentar la nitidez (Sharpening) para resaltar la textura.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "3. Limpiar manchas indeseadas en el fondo.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        }
+      ],
+      "tables": [],
+      "links": []
+    },
+    {
+      "index": 5,
+      "name": "Tab 6",
+      "sections": [
+        {
+          "index": 1,
+          "paragraphs": [
+            {
+              "text": "Tab 6",
+              "style": "HEADING_1",
+              "level": 1
+            }
+          ],
+          "tables": [],
+          "links": [],
+          "title": "Tab 6"
+        }
+      ],
+      "totalSections": 1,
+      "paragraphs": [
+        {
+          "text": "Tab 6",
+          "style": "HEADING_1",
+          "level": 1
+        }
+      ],
+      "tables": [],
+      "links": []
+    },
+    {
+      "index": 6,
+      "name": "ESTRATEGIA DE CONTENIDOS - PILARES",
+      "sections": [
+        {
+          "index": 1,
+          "paragraphs": [
+            {
+              "text": "**ESTRATEGIA DE CONTENIDOS \\- PILARES**",
+              "style": "HEADING_1",
+              "level": 1
+            }
+          ],
+          "tables": [],
+          "links": [],
+          "title": "**ESTRATEGIA DE CONTENIDOS \\- PILARES**"
+        },
+        {
+          "index": 2,
+          "paragraphs": [
+            {
+              "text": "**Pilar 1: Producto & Apetito (40%)**",
+              "style": "HEADING_2",
+              "level": 2
+            },
+            {
+              "text": "**Objetivo:** Antojar y mostrar la calidad.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Texturas:** Primeros planos (macro) de la mordida, la humedad interna y los trozos de ingredientes.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Transparencia:** Mostrar los ingredientes crudos alrededor del producto (Avena, dátiles, cacao).",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Variedad:** Diferencias visuales entre la de *Naranja-Chocolate* y la de *Gingerbread*.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            }
+          ],
+          "tables": [],
+          "links": [],
+          "title": "**Pilar 1: Producto & Apetito (40%)**"
+        },
+        {
+          "index": 3,
+          "paragraphs": [
+            {
+              "text": "**Pilar 2: Momento de Consumo (30%)**",
+              "style": "HEADING_2",
+              "level": 2
+            },
+            {
+              "text": "**Objetivo:** Educar sobre cuándo comerlo.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Oficina/Estudio:** El snack limpio que no ensucia el teclado. Energía para el \"bajón\" de la tarde.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Outdoor/Trekking:** El \"fuel\" ligero y resistente para la mochila.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Pre-Workout:** Energía rápida y digestiva antes de entrenar.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            }
+          ],
+          "tables": [],
+          "links": [],
+          "title": "**Pilar 2: Momento de Consumo (30%)**"
+        },
+        {
+          "index": 4,
+          "paragraphs": [
+            {
+              "text": "**Pilar 3: Estilo de Vida & Valores (30%)**",
+              "style": "HEADING_2",
+              "level": 2
+            },
+            {
+              "text": "**Objetivo:** Conectar con la identidad del cliente.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Clean Label:** Explicar por qué \"crudo\" (raw) es mejor que horneado.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Vida Activa:** Motivación simple y directa.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Artesanal:** Pequeños vistazos al proceso manual (boleado, mezclado) para validar lo \"hecho en casa\".",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            }
+          ],
+          "tables": [],
+          "links": [],
+          "title": "**Pilar 3: Estilo de Vida & Valores (30%)**"
+        }
+      ],
+      "totalSections": 4,
+      "paragraphs": [
+        {
+          "text": "**ESTRATEGIA DE CONTENIDOS \\- PILARES**",
+          "style": "HEADING_1",
+          "level": 1
+        },
+        {
+          "text": "**Pilar 1: Producto & Apetito (40%)**",
+          "style": "HEADING_2",
+          "level": 2
+        },
+        {
+          "text": "**Objetivo:** Antojar y mostrar la calidad.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Texturas:** Primeros planos (macro) de la mordida, la humedad interna y los trozos de ingredientes.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Transparencia:** Mostrar los ingredientes crudos alrededor del producto (Avena, dátiles, cacao).",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Variedad:** Diferencias visuales entre la de *Naranja-Chocolate* y la de *Gingerbread*.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "**Pilar 2: Momento de Consumo (30%)**",
+          "style": "HEADING_2",
+          "level": 2
+        },
+        {
+          "text": "**Objetivo:** Educar sobre cuándo comerlo.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Oficina/Estudio:** El snack limpio que no ensucia el teclado. Energía para el \"bajón\" de la tarde.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Outdoor/Trekking:** El \"fuel\" ligero y resistente para la mochila.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Pre-Workout:** Energía rápida y digestiva antes de entrenar.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "**Pilar 3: Estilo de Vida & Valores (30%)**",
+          "style": "HEADING_2",
+          "level": 2
+        },
+        {
+          "text": "**Objetivo:** Conectar con la identidad del cliente.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Clean Label:** Explicar por qué \"crudo\" (raw) es mejor que horneado.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Vida Activa:** Motivación simple y directa.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Artesanal:** Pequeños vistazos al proceso manual (boleado, mezclado) para validar lo \"hecho en casa\".",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        }
+      ],
+      "tables": [],
+      "links": []
+    },
+    {
+      "index": 7,
+      "name": "Tab 7",
+      "sections": [
+        {
+          "index": 1,
+          "paragraphs": [
+            {
+              "text": "Tab 7",
+              "style": "HEADING_1",
+              "level": 1
+            }
+          ],
+          "tables": [],
+          "links": [],
+          "title": "Tab 7"
+        }
+      ],
+      "totalSections": 1,
+      "paragraphs": [
+        {
+          "text": "Tab 7",
+          "style": "HEADING_1",
+          "level": 1
+        }
+      ],
+      "tables": [],
+      "links": []
+    },
+    {
+      "index": 8,
+      "name": "EXPANSIÓN DE ESTRATEGIA DE CONTENIDOS - iami",
+      "sections": [
+        {
+          "index": 1,
+          "paragraphs": [
+            {
+              "text": "**EXPANSIÓN DE ESTRATEGIA DE CONTENIDOS \\- iami**",
+              "style": "HEADING_1",
+              "level": 1
+            },
+            {
+              "text": "Aquí tienes diferentes enfoques para organizar tu comunicación y una lista de ideas concretas (Low cost / High impact).",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            }
+          ],
+          "tables": [],
+          "links": [],
+          "title": "**EXPANSIÓN DE ESTRATEGIA DE CONTENIDOS \\- iami**"
+        },
+        {
+          "index": 2,
+          "paragraphs": [
+            {
+              "text": "**OPCIÓN A: Organización por \"Beneficio\" (El enfoque funcional)**",
+              "style": "HEADING_2",
+              "level": 2
+            },
+            {
+              "text": "En lugar de pensar en \"¿qué foto tomo?\", piensas en \"¿qué problema resuelvo hoy?\".",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "1. **Pilar: Energía Real (Funcional)**",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* *Enfoque:* Te ayuda a rendir más.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* *Ideas:*",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* Foto de reloj a las 4:00 PM: \"¿Batería baja? Recarga aquí\".",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* Video corto: Guardando iami en el bolsillo de la ropa de gym.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* Comparativa gráfica simple: Una barra procesada vs. una Energy Ball (Mostrando la lista de ingredientes).",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "2. **Pilar: Placer sin Culpa (Emocional)**",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* *Enfoque:* Sabe a postre, pero te hace bien.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* *Ideas:*",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* \"Antojo de Chocolate vs. Realidad Saludable\": Mostrar la variedad de chocolate.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* Close-up extremo (Macro): Enfocando un trozo de dátil brillante o una nuez.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* ASMR visual: Aplastando suavemente la bolita para ver su densidad (sin sonido o con música suave).",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "3. **Pilar: Honestidad Radical (Transparencia)**",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* *Enfoque:* No escondemos nada.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* *Ideas:*",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* Foto \"Flat lay\" (desde arriba): 5 ingredientes a la izquierda \\= 1 iami a la derecha.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* \"Detrás de cámaras\": Tus manos llenas de mezcla (limpias, pero trabajando). Muestra el trabajo artesanal.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* El error: Una foto de una bolita que salió deforme con el texto \"No somos máquinas, somos personas. (Pero igual sabe deliciosa)\".",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            }
+          ],
+          "tables": [],
+          "links": [],
+          "title": "**OPCIÓN A: Organización por \"Beneficio\" (El enfoque funcional)**"
+        },
+        {
+          "index": 3,
+          "paragraphs": [
+            {
+              "text": "**OPCIÓN B: Organización por \"Momentos\" (El enfoque narrativo)**",
+              "style": "HEADING_2",
+              "level": 2
+            },
+            {
+              "text": "Sigues la cronología del día de tu cliente.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "1. **La Preparación (Morning/Pre-work)**",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* Armando la mochila/bolso.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* El café de la mañana acompañado de una iami (maridaje).",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* La producción: Tú preparando el lote fresco de la semana.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "2. **La Acción (During)**",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* Foto en el sendero/montaña (aunque sea en un parque local simulando naturaleza).",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* Foto junto al laptop/teclado (Clean eating).",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* Video: Sacando la iami del empaque con una sola mano (facilidad de uso).",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "3. **La Recompensa (After)**",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* Post-entreno: \"Te lo ganaste\".",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* Unboxing relajante de un pedido que le llega a un cliente.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            }
+          ],
+          "tables": [],
+          "links": [],
+          "title": "**OPCIÓN B: Organización por \"Momentos\" (El enfoque narrativo)**"
+        },
+        {
+          "index": 4,
+          "paragraphs": [
+            {
+              "text": "**💡 LLUVIA DE IDEAS \"LOW COST\" (Para hacer con celular en casa)**",
+              "style": "HEADING_2",
+              "level": 2
+            },
+            {
+              "text": "Si te quedas sin creatividad, usa esta lista de emergencia. No requieren modelos ni locaciones complejas.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "**1\\. La Prueba de Textura (Video/Reel de 5 seg)**",
+              "style": "HEADING_3",
+              "level": 3
+            },
+            {
+              "text": "* **Idea:** Sostén una iami con dos dedos y apriétala suavemente.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Mensaje:** \"Mira qué suave. Cero seca.\"",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Recurso:** Luz de ventana, fondo neutro.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "**2\\. El \"Pocket Dump\" (Foto)**",
+              "style": "HEADING_3",
+              "level": 3
+            },
+            {
+              "text": "* **Idea:** Sobre una mesa vacía tus bolsillos: Llaves, Celular, Audífonos y una iami.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Mensaje:** \"Lo esencial para salir.\"",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Recurso:** Fondo de madera o concreto.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "**3\\. Ingrediente Héroe (Foto)**",
+              "style": "HEADING_3",
+              "level": 3
+            },
+            {
+              "text": "* **Idea:** Un puñado de nueces o avena cayendo sobre la mesa (congelar el movimiento) y la iami al lado.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Mensaje:** \"Solo lo bueno. Sin rellenos.\"",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Recurso:** Modo ráfaga del celular para captar la caída.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "**4\\. El \"Zoom In\" (Carrusel)**",
+              "style": "HEADING_3",
+              "level": 3
+            },
+            {
+              "text": "* **Slide 1:** La bolsa cerrada.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Slide 2:** La bolsa abierta viendo las bolitas dentro.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Slide 3:** Una bolita mordida súper cerca.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Mensaje:** \"De afuera hacia adentro: Calidad total.\"",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "**5\\. Maridajes Simples (Foto)**",
+              "style": "HEADING_3",
+              "level": 3
+            },
+            {
+              "text": "* **Idea:** Iami de Gingerbread junto a una taza de té humeante. Iami de Naranja junto a un vaso de agua con hielo.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Mensaje:** \"¿Cuál es tu combo perfecto?\"",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "**6\\. Educación Flash (Gráfico simple en foto)**",
+              "style": "HEADING_3",
+              "level": 3
+            },
+            {
+              "text": "* **Idea:** Foto de la iami con flechas señalando sus partes: \"Fibra (Avena)\", \"Energía (Dátiles)\", \"Sabor (Cacao)\".",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* **Mensaje:** Anatomía de una Energy Ball.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            }
+          ],
+          "tables": [],
+          "links": [],
+          "title": "**💡 LLUVIA DE IDEAS \"LOW COST\" (Para hacer con celular en casa)**"
+        }
+      ],
+      "totalSections": 4,
+      "paragraphs": [
+        {
+          "text": "**EXPANSIÓN DE ESTRATEGIA DE CONTENIDOS \\- iami**",
+          "style": "HEADING_1",
+          "level": 1
+        },
+        {
+          "text": "Aquí tienes diferentes enfoques para organizar tu comunicación y una lista de ideas concretas (Low cost / High impact).",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "**OPCIÓN A: Organización por \"Beneficio\" (El enfoque funcional)**",
+          "style": "HEADING_2",
+          "level": 2
+        },
+        {
+          "text": "En lugar de pensar en \"¿qué foto tomo?\", piensas en \"¿qué problema resuelvo hoy?\".",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "1. **Pilar: Energía Real (Funcional)**",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* *Enfoque:* Te ayuda a rendir más.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* *Ideas:*",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* Foto de reloj a las 4:00 PM: \"¿Batería baja? Recarga aquí\".",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* Video corto: Guardando iami en el bolsillo de la ropa de gym.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* Comparativa gráfica simple: Una barra procesada vs. una Energy Ball (Mostrando la lista de ingredientes).",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "2. **Pilar: Placer sin Culpa (Emocional)**",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* *Enfoque:* Sabe a postre, pero te hace bien.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* *Ideas:*",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* \"Antojo de Chocolate vs. Realidad Saludable\": Mostrar la variedad de chocolate.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* Close-up extremo (Macro): Enfocando un trozo de dátil brillante o una nuez.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* ASMR visual: Aplastando suavemente la bolita para ver su densidad (sin sonido o con música suave).",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "3. **Pilar: Honestidad Radical (Transparencia)**",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* *Enfoque:* No escondemos nada.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* *Ideas:*",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* Foto \"Flat lay\" (desde arriba): 5 ingredientes a la izquierda \\= 1 iami a la derecha.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* \"Detrás de cámaras\": Tus manos llenas de mezcla (limpias, pero trabajando). Muestra el trabajo artesanal.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* El error: Una foto de una bolita que salió deforme con el texto \"No somos máquinas, somos personas. (Pero igual sabe deliciosa)\".",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "**OPCIÓN B: Organización por \"Momentos\" (El enfoque narrativo)**",
+          "style": "HEADING_2",
+          "level": 2
+        },
+        {
+          "text": "Sigues la cronología del día de tu cliente.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "1. **La Preparación (Morning/Pre-work)**",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* Armando la mochila/bolso.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* El café de la mañana acompañado de una iami (maridaje).",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* La producción: Tú preparando el lote fresco de la semana.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "2. **La Acción (During)**",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* Foto en el sendero/montaña (aunque sea en un parque local simulando naturaleza).",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* Foto junto al laptop/teclado (Clean eating).",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* Video: Sacando la iami del empaque con una sola mano (facilidad de uso).",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "3. **La Recompensa (After)**",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* Post-entreno: \"Te lo ganaste\".",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* Unboxing relajante de un pedido que le llega a un cliente.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "**💡 LLUVIA DE IDEAS \"LOW COST\" (Para hacer con celular en casa)**",
+          "style": "HEADING_2",
+          "level": 2
+        },
+        {
+          "text": "Si te quedas sin creatividad, usa esta lista de emergencia. No requieren modelos ni locaciones complejas.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "**1\\. La Prueba de Textura (Video/Reel de 5 seg)**",
+          "style": "HEADING_3",
+          "level": 3
+        },
+        {
+          "text": "* **Idea:** Sostén una iami con dos dedos y apriétala suavemente.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Mensaje:** \"Mira qué suave. Cero seca.\"",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Recurso:** Luz de ventana, fondo neutro.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "**2\\. El \"Pocket Dump\" (Foto)**",
+          "style": "HEADING_3",
+          "level": 3
+        },
+        {
+          "text": "* **Idea:** Sobre una mesa vacía tus bolsillos: Llaves, Celular, Audífonos y una iami.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Mensaje:** \"Lo esencial para salir.\"",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Recurso:** Fondo de madera o concreto.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "**3\\. Ingrediente Héroe (Foto)**",
+          "style": "HEADING_3",
+          "level": 3
+        },
+        {
+          "text": "* **Idea:** Un puñado de nueces o avena cayendo sobre la mesa (congelar el movimiento) y la iami al lado.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Mensaje:** \"Solo lo bueno. Sin rellenos.\"",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Recurso:** Modo ráfaga del celular para captar la caída.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "**4\\. El \"Zoom In\" (Carrusel)**",
+          "style": "HEADING_3",
+          "level": 3
+        },
+        {
+          "text": "* **Slide 1:** La bolsa cerrada.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Slide 2:** La bolsa abierta viendo las bolitas dentro.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Slide 3:** Una bolita mordida súper cerca.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Mensaje:** \"De afuera hacia adentro: Calidad total.\"",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "**5\\. Maridajes Simples (Foto)**",
+          "style": "HEADING_3",
+          "level": 3
+        },
+        {
+          "text": "* **Idea:** Iami de Gingerbread junto a una taza de té humeante. Iami de Naranja junto a un vaso de agua con hielo.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Mensaje:** \"¿Cuál es tu combo perfecto?\"",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "**6\\. Educación Flash (Gráfico simple en foto)**",
+          "style": "HEADING_3",
+          "level": 3
+        },
+        {
+          "text": "* **Idea:** Foto de la iami con flechas señalando sus partes: \"Fibra (Avena)\", \"Energía (Dátiles)\", \"Sabor (Cacao)\".",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* **Mensaje:** Anatomía de una Energy Ball.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        }
+      ],
+      "tables": [],
+      "links": []
+    },
+    {
+      "index": 9,
+      "name": "Tab 8",
+      "sections": [
+        {
+          "index": 1,
+          "paragraphs": [
+            {
+              "text": "Tab 8",
+              "style": "HEADING_1",
+              "level": 1
+            }
+          ],
+          "tables": [],
+          "links": [],
+          "title": "Tab 8"
+        }
+      ],
+      "totalSections": 1,
+      "paragraphs": [
+        {
+          "text": "Tab 8",
+          "style": "HEADING_1",
+          "level": 1
+        }
+      ],
+      "tables": [],
+      "links": []
+    },
+    {
+      "index": 10,
+      "name": "BANCO DE IDEAS ESTRATÉGICAS - iami",
+      "sections": [
+        {
+          "index": 1,
+          "paragraphs": [
+            {
+              "text": "**BANCO DE IDEAS ESTRATÉGICAS \\- iami**",
+              "style": "HEADING_1",
+              "level": 1
+            },
+            {
+              "text": "Esta tabla conecta el pilar de contenido con la ejecución visual y el texto (copy) específico.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "| Concepto / Pilar | Dirección Visual (Foto/Video) | Gancho (Primera línea) | Cuerpo del Copy (Borrador) | Hashtags Clave |",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "| :---- | :---- | :---- | :---- | :---- |",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "| **1\\. Textura Real** (Producto) | **Primer plano (Macro):** Una *iami* partida a la mitad con las manos. Luz lateral fuerte para que se vea húmeda y densa, no seca. Fondo: Tabla de madera. | ¿Seca como una barra o suave como un postre? | La mayoría de snacks energéticos son ladrillos secos. iami es diferente. Al ser raw (no horneado), mantenemos la humedad natural de los dátiles y las nueces. Energía densa que se disfruta, no se sufre. 📍 Pide tu pack mixto en el link de la bio. | \\#energyballs \\#snacknatural \\#rawvegan \\#comidasana |",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "| **2\\. Anatomía** (Transparencia) | **Flat Lay (Desde arriba):** Al centro la *iami* terminada. Alrededor, formando un círculo, montoncitos de sus ingredientes (avena, cacao, nueces). Fondo: Mármol o blanco. | 5 Ingredientes. Nada que esconder. | Sin jarabes raros, sin conservantes impronunciables. Solo comida real compactada para darte energía sostenida. Lo que ves es lo que comes. Literalmente. Variedad: Naranja-Chocolate 🍊🍫 | \\#cleanlabel \\#ingredientesreales \\#sinprocesados \\#iami |",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "| **3\\. El \"Bajón\"** (Consumo Oficina) | **Lifestyle Casero:** La *iami* sobre un escritorio, al lado de un mouse o teclado y una taza de café. Luz suave. | A las 4:00 PM tu cerebro pide azúcar. | Dale algo mejor. En lugar de galletas que te dan sueño a la media hora, cómete una iami. Grasa saludable \\+ fibra \\= Saciedad y energía estable para terminar el día. Tu yo de las 6:00 PM te lo agradecerá. | \\#snackoficina \\#productividad \\#bajondeenergia \\#coffebreak |",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "| **4\\. Fuel Ligero** (Outdoor/Trekking) | **Mano alzada:** Tu mano sosteniendo el empaque Doypack contra un fondo de \"naturaleza\" (puede ser el cielo, un árbol del parque o una planta de casa desenfocada). | 12g de potencia. 0g de peso extra. | Cuando cada gramo cuenta en la mochila, necesitas densidad nutricional. iami aguanta el trayecto, no se hace migas y te da el *boost* para llegar a la cima (o al final del sendero). El snack favorito de los que no paran. ⛰️👟 | \\#trekkingperu \\#senderismo \\#snackviajero \\#outdoorlife |",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "| **5\\. Placer Culposo?** (Sabor/Indulgencia) | **Bodegón Cálido:** Variedad *Apple Pie* o *Gingerbread* con una ramita de canela o una manzana cortada al lado. Luz cálida (atardecer). | Sabe a tarta de la abuela. Funciona como superalimento. | ¿Por qué elegir entre rico y sano? Nuestras variedades especiadas engañan a tu paladar. Crees que comes postre, pero estás metiéndole al cuerpo avena, fibra y energía limpia. El pre-entreno más rico que vas a probar. | \\#postresaludable \\#applepie \\#sinazucaranadida \\#fitfood |",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "| **6\\. Recién Hecho** (Proceso Artesanal) | **Acción:** Foto o video corto de la bandeja llena de bolitas recién hechas, antes de empacar. O tus manos (con guantes) terminando el boleado. | Aquí no hay máquinas gigantes. | Hay manos, ingredientes frescos y mucha dedicación. Cada lote de iami se hace en pequeñas cantidades para asegurar que te llegue fresco, suave y potente. Stock renovado de esta semana. 🥣✨ | \\#hechoencasa \\#artesanal \\#smallbatch \\#compralocal |",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            }
+          ],
+          "tables": [],
+          "links": [],
+          "title": "**BANCO DE IDEAS ESTRATÉGICAS \\- iami**"
+        },
+        {
+          "index": 2,
+          "paragraphs": [
+            {
+              "text": "**📝 NOTAS DE ESTRATEGIA DE POSTEO**",
+              "style": "HEADING_2",
+              "level": 2
+            },
+            {
+              "text": "**1\\. Frecuencia Sugerida (Inicial):**",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* 3 Posts a la semana (Ej: Lunes, Miércoles, Viernes).",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* Historias (Stories): Días alternos mostrando \"tras bastidores\" o reposteando clientes.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "2\\. Llamados a la Acción (CTA):",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "No uses siempre \"Compra aquí\". Varía según el objetivo:",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* *Venta directa:* \"Link en bio para pedir.\" / \"DM para enviarte el catálogo.\"",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* *Interacción:* \"¿Eres team Chocolate o team Fruta?\" / \"Guarda este post para tu próxima compra.\"",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "**3\\. Formatos Visuales:**",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* Alterna: Una foto de cerca (textura) \\-\\> Una foto de contexto (lifestyle) \\-\\> Una foto informativa (ingredientes).",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* Esto hace que el perfil (grid) se vea dinámico y no monótono.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            }
+          ],
+          "tables": [],
+          "links": [],
+          "title": "**📝 NOTAS DE ESTRATEGIA DE POSTEO**"
+        },
+        {
+          "index": 3,
+          "paragraphs": [
+            {
+              "text": "**🛠️ ESTRUCTURA MAESTRA PARA TUS CAPTIONS**",
+              "style": "HEADING_2",
+              "level": 2
+            },
+            {
+              "text": "Usa esta fórmula cuando se te acaben las ideas de la tabla. Garantiza que el post sea efectivo.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "1. **EL GANCHO (Línea 1):** Debe ser corto y despertar curiosidad o tocar un dolor.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* *Ejemplo:* \"Deja de comer cartón.\" / \"El secreto de tu energía.\"",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "2. **EL CONTEXTO (Cuerpo):** Explica el \"por qué\". Aporta valor educativo o sensorial.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* *Ejemplo:* \"Nuestras bolitas tienen dátiles, que son energía pura...\"",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "3. **EL CIERRE (CTA):** Dile a la gente qué hacer.",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* *Ejemplo:* \"Pide por DM.\" / \"Comenta un 🍊 si amas la naranja.\"",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            }
+          ],
+          "tables": [],
+          "links": [],
+          "title": "**🛠️ ESTRUCTURA MAESTRA PARA TUS CAPTIONS**"
+        },
+        {
+          "index": 4,
+          "paragraphs": [
+            {
+              "text": "**✅ CHECKLIST DE CALIDAD (Antes de Publicar)**",
+              "style": "HEADING_2",
+              "level": 2
+            },
+            {
+              "text": "* \\[ \\] **Luz:** ¿La foto tiene luz natural y se ve nítida la textura?",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* \\[ \\] **Formato:** ¿Está vertical (4:5 para posts, 9:16 para Reels/Stories) ocupando toda la pantalla?",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* \\[ \\] **Ortografía:** ¿Revisaste tildes y gramática?",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            },
+            {
+              "text": "* \\[ \\] **Bio:** ¿El link en tu biografía funciona correctamente para recibir pedidos?",
+              "style": "NORMAL_TEXT",
+              "level": 0
+            }
+          ],
+          "tables": [],
+          "links": [],
+          "title": "**✅ CHECKLIST DE CALIDAD (Antes de Publicar)**"
+        }
+      ],
+      "totalSections": 4,
+      "paragraphs": [
+        {
+          "text": "**BANCO DE IDEAS ESTRATÉGICAS \\- iami**",
+          "style": "HEADING_1",
+          "level": 1
+        },
+        {
+          "text": "Esta tabla conecta el pilar de contenido con la ejecución visual y el texto (copy) específico.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "| Concepto / Pilar | Dirección Visual (Foto/Video) | Gancho (Primera línea) | Cuerpo del Copy (Borrador) | Hashtags Clave |",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "| :---- | :---- | :---- | :---- | :---- |",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "| **1\\. Textura Real** (Producto) | **Primer plano (Macro):** Una *iami* partida a la mitad con las manos. Luz lateral fuerte para que se vea húmeda y densa, no seca. Fondo: Tabla de madera. | ¿Seca como una barra o suave como un postre? | La mayoría de snacks energéticos son ladrillos secos. iami es diferente. Al ser raw (no horneado), mantenemos la humedad natural de los dátiles y las nueces. Energía densa que se disfruta, no se sufre. 📍 Pide tu pack mixto en el link de la bio. | \\#energyballs \\#snacknatural \\#rawvegan \\#comidasana |",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "| **2\\. Anatomía** (Transparencia) | **Flat Lay (Desde arriba):** Al centro la *iami* terminada. Alrededor, formando un círculo, montoncitos de sus ingredientes (avena, cacao, nueces). Fondo: Mármol o blanco. | 5 Ingredientes. Nada que esconder. | Sin jarabes raros, sin conservantes impronunciables. Solo comida real compactada para darte energía sostenida. Lo que ves es lo que comes. Literalmente. Variedad: Naranja-Chocolate 🍊🍫 | \\#cleanlabel \\#ingredientesreales \\#sinprocesados \\#iami |",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "| **3\\. El \"Bajón\"** (Consumo Oficina) | **Lifestyle Casero:** La *iami* sobre un escritorio, al lado de un mouse o teclado y una taza de café. Luz suave. | A las 4:00 PM tu cerebro pide azúcar. | Dale algo mejor. En lugar de galletas que te dan sueño a la media hora, cómete una iami. Grasa saludable \\+ fibra \\= Saciedad y energía estable para terminar el día. Tu yo de las 6:00 PM te lo agradecerá. | \\#snackoficina \\#productividad \\#bajondeenergia \\#coffebreak |",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "| **4\\. Fuel Ligero** (Outdoor/Trekking) | **Mano alzada:** Tu mano sosteniendo el empaque Doypack contra un fondo de \"naturaleza\" (puede ser el cielo, un árbol del parque o una planta de casa desenfocada). | 12g de potencia. 0g de peso extra. | Cuando cada gramo cuenta en la mochila, necesitas densidad nutricional. iami aguanta el trayecto, no se hace migas y te da el *boost* para llegar a la cima (o al final del sendero). El snack favorito de los que no paran. ⛰️👟 | \\#trekkingperu \\#senderismo \\#snackviajero \\#outdoorlife |",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "| **5\\. Placer Culposo?** (Sabor/Indulgencia) | **Bodegón Cálido:** Variedad *Apple Pie* o *Gingerbread* con una ramita de canela o una manzana cortada al lado. Luz cálida (atardecer). | Sabe a tarta de la abuela. Funciona como superalimento. | ¿Por qué elegir entre rico y sano? Nuestras variedades especiadas engañan a tu paladar. Crees que comes postre, pero estás metiéndole al cuerpo avena, fibra y energía limpia. El pre-entreno más rico que vas a probar. | \\#postresaludable \\#applepie \\#sinazucaranadida \\#fitfood |",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "| **6\\. Recién Hecho** (Proceso Artesanal) | **Acción:** Foto o video corto de la bandeja llena de bolitas recién hechas, antes de empacar. O tus manos (con guantes) terminando el boleado. | Aquí no hay máquinas gigantes. | Hay manos, ingredientes frescos y mucha dedicación. Cada lote de iami se hace en pequeñas cantidades para asegurar que te llegue fresco, suave y potente. Stock renovado de esta semana. 🥣✨ | \\#hechoencasa \\#artesanal \\#smallbatch \\#compralocal |",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "**📝 NOTAS DE ESTRATEGIA DE POSTEO**",
+          "style": "HEADING_2",
+          "level": 2
+        },
+        {
+          "text": "**1\\. Frecuencia Sugerida (Inicial):**",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* 3 Posts a la semana (Ej: Lunes, Miércoles, Viernes).",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* Historias (Stories): Días alternos mostrando \"tras bastidores\" o reposteando clientes.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "2\\. Llamados a la Acción (CTA):",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "No uses siempre \"Compra aquí\". Varía según el objetivo:",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* *Venta directa:* \"Link en bio para pedir.\" / \"DM para enviarte el catálogo.\"",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* *Interacción:* \"¿Eres team Chocolate o team Fruta?\" / \"Guarda este post para tu próxima compra.\"",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "**3\\. Formatos Visuales:**",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* Alterna: Una foto de cerca (textura) \\-\\> Una foto de contexto (lifestyle) \\-\\> Una foto informativa (ingredientes).",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* Esto hace que el perfil (grid) se vea dinámico y no monótono.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "**🛠️ ESTRUCTURA MAESTRA PARA TUS CAPTIONS**",
+          "style": "HEADING_2",
+          "level": 2
+        },
+        {
+          "text": "Usa esta fórmula cuando se te acaben las ideas de la tabla. Garantiza que el post sea efectivo.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "1. **EL GANCHO (Línea 1):** Debe ser corto y despertar curiosidad o tocar un dolor.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* *Ejemplo:* \"Deja de comer cartón.\" / \"El secreto de tu energía.\"",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "2. **EL CONTEXTO (Cuerpo):** Explica el \"por qué\". Aporta valor educativo o sensorial.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* *Ejemplo:* \"Nuestras bolitas tienen dátiles, que son energía pura...\"",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "3. **EL CIERRE (CTA):** Dile a la gente qué hacer.",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* *Ejemplo:* \"Pide por DM.\" / \"Comenta un 🍊 si amas la naranja.\"",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "**✅ CHECKLIST DE CALIDAD (Antes de Publicar)**",
+          "style": "HEADING_2",
+          "level": 2
+        },
+        {
+          "text": "* \\[ \\] **Luz:** ¿La foto tiene luz natural y se ve nítida la textura?",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* \\[ \\] **Formato:** ¿Está vertical (4:5 para posts, 9:16 para Reels/Stories) ocupando toda la pantalla?",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* \\[ \\] **Ortografía:** ¿Revisaste tildes y gramática?",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        },
+        {
+          "text": "* \\[ \\] **Bio:** ¿El link en tu biografía funciona correctamente para recibir pedidos?",
+          "style": "NORMAL_TEXT",
+          "level": 0
+        }
+      ],
+      "tables": [],
+      "links": []
+    }
+  ],
+  "sourceFile": {
+    "id": "17mlUWgOsT4UykYpSj2oj5UT09eFS0HDe-1cAQjKalNk",
+    "name": "iami 2025",
+    "link": "https://docs.google.com/document/d/17mlUWgOsT4UykYpSj2oj5UT09eFS0HDe-1cAQjKalNk/edit"
+  }
+}

@@ -1,6 +1,6 @@
 ---
 name: example-skill
-description: Example skill demonstrating structure and content expected in a skill file. Use when working on example tasks or when you need guidance on example methodology.
+description: "Example skill demonstrating structure and content expected in a skill file. Use when working on example tasks or when you need guidance on example methodology."
 ---
 
 # Skill: Example Skill

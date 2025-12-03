@@ -75,6 +75,10 @@ tsconfig.json
 .env.*.local
 env.local
 
+# Dendrita local configuration files - CRITICAL: Never expose personal settings
+.dendrita/settings.local.json
+.dendrita/*.local.json
+
 # Dendrita users and personal data - CRITICAL: Never expose personal information
 .dendrita/users/
 .dendrita/logs/
@@ -109,10 +113,14 @@ workspaces/personal/
 .dendrita/integrations/scripts/archived/
 .dendrita/integrations/scripts-archived.json
 
+# Herramientas de desarrollo personal (no parte de la infraestructura genérica)
+_temp/dev-tools/
+
 # Archived logs and reports (generated files, may contain personal info)
-.dendrita/archived/logs/
-.dendrita/archived/test-debug-report.md
+.archived/logs/
+.archived/test-debug-report.md
 
 # But keep archived scripts and documentation (useful for reference)
-!.dendrita/archived/scripts/
-!.dendrita/archived/INDEX.md
+!.archived/scripts/
+!.archived/INDEX.md
+_dendrita/

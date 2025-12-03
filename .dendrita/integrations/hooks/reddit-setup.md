@@ -1,3 +1,17 @@
+---
+name: reddit-setup
+description: "Reddit API Setup"
+type: documentation
+created:
+  2025-11-06T00:00:00.000Z
+  
+updated:
+  2025-11-06T00:00:00.000Z
+  
+tags: ["documentation", "integration"]
+category: integration
+---
+
 # 🔴 Reddit API Setup
 
 Guía completa para configurar Reddit API en dendrita.

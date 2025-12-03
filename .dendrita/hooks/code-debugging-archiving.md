@@ -1,6 +1,6 @@
 ---
 name: code-debugging-archiving
-description: Process for debugging, testing, and archiving code and rules in the dendrita system
+description: "Process for debugging, testing, and archiving code and rules in the dendrita system"
 ---
 
 # Code Debugging and Archiving Hook
@@ -62,7 +62,7 @@ When archiving code or rules:
 
 1. **Create archive structure:**
    ```
-   .dendrita/archived/
+   .archived/
    ├── code/
    │   ├── scripts/
    │   │   └── [timestamp]-[description]/
@@ -119,7 +119,7 @@ After archiving:
 
 ### Code Archives
 
-**Location:** `.dendrita/archived/code/`
+**Location:** `.archived/code/`
 
 **Structure:**
 ```
@@ -140,7 +140,7 @@ archived/code/
 
 ### Rules Archives
 
-**Location:** `.dendrita/archived/rules/`
+**Location:** `.archived/rules/`
 
 **Structure:**
 ```

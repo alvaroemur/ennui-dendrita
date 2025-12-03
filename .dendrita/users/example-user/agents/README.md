@@ -1,3 +1,17 @@
+---
+name: readme
+description: "Agents for Example User"
+type: agent
+created:
+  2025-11-06T00:00:00.000Z
+  
+updated:
+  2025-11-06T00:00:00.000Z
+  
+tags: ["agent", "user-specific", "readme", "documentation"]
+category: agent
+---
+
 # Agents for Example User
 
 Specialized agents for complex multi-step tasks.

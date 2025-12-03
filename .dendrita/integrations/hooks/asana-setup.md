@@ -1,3 +1,17 @@
+---
+name: asana-setup
+description: "Asana Setup Guide"
+type: documentation
+created:
+  2025-11-06T00:00:00.000Z
+  
+updated:
+  2025-11-06T00:00:00.000Z
+  
+tags: ["documentation", "integration"]
+category: integration
+---
+
 # Asana Setup Guide
 
 Guía paso a paso para configurar la integración con Asana.
@@ -39,7 +53,7 @@ ASANA_ACCESS_TOKEN=1/tu_token_aqui
 Ejecuta el script de exploración para verificar que todo funciona:
 
 ```bash
-npx ts-node .dendrita/integrations/explore/asana-explore.ts
+npx ts-node _temp/dev-tools/explore/asana-explore.ts
 ```
 
 O desde TypeScript:

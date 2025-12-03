@@ -1,0 +1,32 @@
+{
+  "syncs": [
+    {
+      "name": "experiencia-carrera",
+      "enabled": true,
+      "type": "sheets",
+      "source": {
+        "fileId": "1r-yIuqjZ6FKjDzo4wxakJkoLnpA-lwFYTC6P-P6NwOE",
+        "name": "Experiencia Álvaro Mur",
+        "sheetName": "Proyectos"
+      },
+      "destination": {
+        "path": "workspaces/personal/active-projects/experiencia-carrera",
+        "format": "markdown",
+        "filename": "experiencia-profesional.md"
+      },
+      "options": {
+        "extractContent": true,
+        "extractMetadata": true,
+        "updateExisting": true,
+        "customProcessor": "sync-experience-from-sheets"
+      }
+    }
+  ],
+  "defaults": {
+    "format": "markdown",
+    "extractContent": true,
+    "extractMetadata": true,
+    "updateExisting": true
+  }
+}
+

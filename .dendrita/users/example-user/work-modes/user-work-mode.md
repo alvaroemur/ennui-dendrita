@@ -1,3 +1,17 @@
+---
+name: user-work-mode
+description: "User Work Mode"
+type: documentation
+created:
+  2025-11-06T00:00:00.000Z
+  
+updated:
+  2025-11-06T00:00:00.000Z
+  
+tags: ["documentation", "infrastructure", "user-specific"]
+category: infrastructure
+---
+
 # User Work Mode
 
 **Purpose:** This file defines your general work preferences and behavior guidelines that apply to all sessions. It acts as a "system prompt" base.

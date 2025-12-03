@@ -7,10 +7,10 @@
  * reflexivamente.
  * 
  * Comportamiento esperado:
- * 1. Al recibir un prompt del usuario, revisar .dendrita/skills/skill-rules.json
+ * 1. Al recibir un prompt del usuario, revisar .dendrita/users/[user-id]/skills/skill-rules.json
  * 2. Comparar el prompt contra keywords e intentPatterns
  * 3. Identificar skills relevantes basados en matches
- * 4. Leer el archivo SKILL.md correspondiente en .dendrita/skills/[skill-name]/SKILL.md
+ * 4. Leer el archivo SKILL.md correspondiente en .dendrita/users/[user-id]/skills/[skill-name]/SKILL.md
  * 5. Sugerir al usuario activar el skill si es apropiado
  * 
  * NO ejecutar este script. Leer y aplicar la lógica documentada.
@@ -26,6 +26,7 @@ interface HookInput {
     cwd: string;
     permission_mode: string;
     prompt: string;
+    user_id?: string;
 }
 
 interface PromptTriggers {
@@ -58,9 +59,12 @@ async function main() {
         const data: HookInput = JSON.parse(input);
         const prompt = data.prompt.toLowerCase();
 
-        // Load skill rules
-        const projectDir = process.env.CLAUDE_PROJECT_DIR || '$HOME/project';
-        const rulesPath = join(projectDir, '.dentrita', 'skills', 'skill-rules.json');
+        // Get user ID from input or environment
+        const userId = data.user_id || process.env.DENDRITA_USER_ID || process.env.USER_ID || 'default-user';
+
+        // Load skill rules - CORRECTED PATH
+        const projectDir = process.env.CLAUDE_PROJECT_DIR || process.env.PROJECT_DIR || process.cwd();
+        const rulesPath = join(projectDir, '.dendrita', 'users', userId, 'skills', 'skill-rules.json');
         const rules: SkillRules = JSON.parse(readFileSync(rulesPath, 'utf-8'));
 
         const matchedSkills: MatchedSkill[] = [];

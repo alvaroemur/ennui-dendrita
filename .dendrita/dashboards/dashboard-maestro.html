@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Maestro - Resumen General</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 20px;
+      min-height: 100vh;
+    }
+    
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    
+    .header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 40px;
+      text-align: center;
+    }
+    
+    .header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    
+    .header .subtitle {
+      opacity: 0.9;
+      font-size: 1.1em;
+      margin-top: 10px;
+    }
+    
+    .content {
+      padding: 40px;
+    }
+    
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    
+    .metric-card {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border-radius: 12px;
+      padding: 25px;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    
+    .metric-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+    }
+    
+    .metric-value {
+      font-size: 2.5em;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+    .metric-label {
+      font-size: 0.95em;
+      opacity: 0.9;
+    }
+    
+    .section {
+      margin-bottom: 50px;
+    }
+    
+    .section h2 {
+      color: #333;
+      margin-bottom: 25px;
+      padding-bottom: 15px;
+      border-bottom: 3px solid #667eea;
+      font-size: 1.8em;
+    }
+    
+    .workspaces-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+    
+    .workspace-card {
+      background: #f8f9fa;
+      border-radius: 10px;
+      padding: 25px;
+      border-left: 5px solid #667eea;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    
+    .workspace-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .workspace-card h3 {
+      color: #667eea;
+      margin-bottom: 15px;
+      font-size: 1.3em;
+    }
+    
+    .workspace-stats {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+    
+    .workspace-stat {
+      background: white;
+      padding: 10px;
+      border-radius: 6px;
+      text-align: center;
+    }
+    
+    .workspace-stat-value {
+      font-size: 1.3em;
+      font-weight: bold;
+      color: #667eea;
+    }
+    
+    .workspace-stat-label {
+      font-size: 0.85em;
+      color: #666;
+      margin-top: 5px;
+    }
+    
+    .workspace-links {
+      display: flex;
+      gap: 10px;
+      margin-top: 15px;
+      flex-wrap: wrap;
+    }
+    
+    .workspace-link {
+      background: #667eea;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.9em;
+      transition: background 0.2s;
+    }
+    
+    .workspace-link:hover {
+      background: #764ba2;
+    }
+    
+    .type-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 15px;
+    }
+    
+    .type-item {
+      background: #f8f9fa;
+      padding: 20px;
+      border-radius: 8px;
+      border-left: 4px solid #667eea;
+    }
+    
+    .type-item strong {
+      color: #667eea;
+      display: block;
+      margin-bottom: 10px;
+      font-size: 1.1em;
+    }
+    
+    .chart-container {
+      margin-top: 30px;
+      padding: 30px;
+      background: #f8f9fa;
+      border-radius: 10px;
+    }
+    
+    .bar-chart {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    
+    .bar-item {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    
+    .bar-label {
+      min-width: 200px;
+      font-size: 0.95em;
+      font-weight: 500;
+    }
+    
+    .bar {
+      flex: 1;
+      height: 40px;
+      background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      padding: 0 15px;
+      color: white;
+      font-weight: bold;
+      font-size: 0.9em;
+    }
+    
+    .footer {
+      text-align: center;
+      padding: 30px;
+      color: #666;
+      font-size: 0.95em;
+      border-top: 1px solid #eee;
+      background: #f8f9fa;
+    }
+    
+    .last-updated {
+      font-size: 0.85em;
+      color: #999;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>📊 Dashboard Maestro</h1>
+      <div class="subtitle">Resumen General de Todos los Workspaces</div>
+      <div class="subtitle" style="margin-top: 15px; font-size: 0.9em; opacity: 0.8;">
+        Generado: 2025-11-05
+      </div>
+    </div>
+    
+    <div class="content">
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-value">5</div>
+          <div class="metric-label">Workspaces</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">2,789</div>
+          <div class="metric-label">Archivos Totales</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">298</div>
+          <div class="metric-label">Carpetas Totales</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">9.52 GB</div>
+          <div class="metric-label">Espacio Total</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">0</div>
+          <div class="metric-label">Archivos Compartidos</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">0</div>
+          <div class="metric-label">Archivos Privados</div>
+        </div>
+      </div>
+      
+      <div class="section">
+        <h2>📁 Workspaces</h2>
+        <div class="workspaces-grid">
+          
+              <div class="workspace-card">
+                <h3>🌱 Personal</h3>
+                <div class="workspace-stats">
+                  <div class="workspace-stat">
+                    <div class="workspace-stat-value">1,698</div>
+                    <div class="workspace-stat-label">Archivos</div>
+                  </div>
+                  <div class="workspace-stat">
+                    <div class="workspace-stat-value">134</div>
+                    <div class="workspace-stat-label">Carpetas</div>
+                  </div>
+                  <div class="workspace-stat">
+                    <div class="workspace-stat-value">8.01 GB</div>
+                    <div class="workspace-stat-label">Tamaño</div>
+                  </div>
+                  <div class="workspace-stat">
+                    <div class="workspace-stat-value">0</div>
+                    <div class="workspace-stat-label">Compartidos</div>
+                  </div>
+                </div>
+                <div class="workspace-links">
+                  <a href="../../workspaces/personal/company-management/drive-visualization.html" 
+                     class="workspace-link" target="_blank">
+                    📊 Ver Dashboard
+                  </a>
+                  
+                    <a href="https://drive.google.com/drive/folders/0B5MZCWjdw2uaa21hODJzQTZjeU0?resourcekey=0-vaexltbM2kZSGgi85uapeg" 
+                       class="workspace-link" target="_blank">
+                      📁 Abrir Drive
+                    </a>
+                  
+                  <a href="../../workspaces/personal/company-management/drive-analysis.md" 
+                     class="workspace-link" target="_blank">
+                    📝 Ver Análisis
+                  </a>
+                </div>
+                <div class="last-updated">
+                  Última actualización: 5/11/2025
+                </div>
+              </div>
+            
+              <div class="workspace-card">
+                <h3>🍪 iami</h3>
+                <div class="workspace-stats">
+                  <div class="workspace-stat">
+                    <div class="workspace-stat-value">604</div>
+                    <div class="workspace-stat-label">Archivos</div>
+                  </div>
+                  <div class="workspace-stat">
+                    <div class="workspace-stat-value">3</div>
+                    <div class="workspace-stat-label">Carpetas</div>
+                  </div>
+                  <div class="workspace-stat">
+                    <div class="workspace-stat-value">367.78 MB</div>
+                    <div class="workspace-stat-label">Tamaño</div>
+                  </div>
+                  <div class="workspace-stat">
+                    <div class="workspace-stat-value">0</div>
+                    <div class="workspace-stat-label">Compartidos</div>
+                  </div>
+                </div>
+                <div class="workspace-links">
+                  <a href="../../workspaces/iami/company-management/drive-visualization.html" 
+                     class="workspace-link" target="_blank">
+                    📊 Ver Dashboard
+                  </a>
+                  
+                    <a href="https://drive.google.com/drive/folders/17Hk8X3q4T2vC4zRJjPHMyaD8hR_7kNRB" 
+                       class="workspace-link" target="_blank">
+                      📁 Abrir Drive
+                    </a>
+                  
+                  <a href="../../workspaces/iami/company-management/drive-analysis.md" 
+                     class="workspace-link" target="_blank">
+                    📝 Ver Análisis
+                  </a>
+                </div>
+                <div class="last-updated">
+                  Última actualización: 5/11/2025
+                </div>
+              </div>
+            
+              <div class="workspace-card">
+                <h3>🌱 ennui</h3>
+                <div class="workspace-stats">
+                  <div class="workspace-stat">
+                    <div class="workspace-stat-value">454</div>
+                    <div class="workspace-stat-label">Archivos</div>
+                  </div>
+                  <div class="workspace-stat">
+                    <div class="workspace-stat-value">152</div>
+                    <div class="workspace-stat-label">Carpetas</div>
+                  </div>
+                  <div class="workspace-stat">
+                    <div class="workspace-stat-value">1.06 GB</div>
+                    <div class="workspace-stat-label">Tamaño</div>
+                  </div>
+                  <div class="workspace-stat">
+                    <div class="workspace-stat-value">0</div>
+                    <div class="workspace-stat-label">Compartidos</div>
+                  </div>
+                </div>
+                <div class="workspace-links">
+                  <a href="../../workspaces/ennui/company-management/drive-visualization.html" 
+                     class="workspace-link" target="_blank">
+                    📊 Ver Dashboard
+                  </a>
+                  
+                    <a href="https://drive.google.com/drive/folders/1nkzaHJ8c_X69qG33cZjWYU_MSCHg55sx" 
+                       class="workspace-link" target="_blank">
+                      📁 Abrir Drive
+                    </a>
+                  
+                  <a href="../../workspaces/ennui/company-management/drive-analysis.md" 
+                     class="workspace-link" target="_blank">
+                    📝 Ver Análisis
+                  </a>
+                </div>
+                <div class="last-updated">
+                  Última actualización: 5/11/2025
+                </div>
+              </div>
+            
+              <div class="workspace-card">
+                <h3>🌸 Inspiro</h3>
+                <div class="workspace-stats">
+                  <div class="workspace-stat">
+                    <div class="workspace-stat-value">32</div>
+                    <div class="workspace-stat-label">Archivos</div>
+                  </div>
+                  <div class="workspace-stat">
+                    <div class="workspace-stat-value">8</div>
+                    <div class="workspace-stat-label">Carpetas</div>
+                  </div>
+                  <div class="workspace-stat">
+                    <div class="workspace-stat-value">93.31 MB</div>
+                    <div class="workspace-stat-label">Tamaño</div>
+                  </div>
+                  <div class="workspace-stat">
+                    <div class="workspace-stat-value">0</div>
+                    <div class="workspace-stat-label">Compartidos</div>
+                  </div>
+                </div>
+                <div class="workspace-links">
+                  <a href="../../workspaces/inspiro/company-management/drive-visualization.html" 
+                     class="workspace-link" target="_blank">
+                    📊 Ver Dashboard
+                  </a>
+                  
+                    <a href="https://drive.google.com/drive/folders/1_8rW4YSLfbtUCDH16j-gRvStFOP-NTIw" 
+                       class="workspace-link" target="_blank">
+                      📁 Abrir Drive
+                    </a>
+                  
+                  <a href="../../workspaces/inspiro/company-management/drive-analysis.md" 
+                     class="workspace-link" target="_blank">
+                    📝 Ver Análisis
+                  </a>
+                </div>
+                <div class="last-updated">
+                  Última actualización: 5/11/2025
+                </div>
+              </div>
+            
+              <div class="workspace-card">
+                <h3>🧭 Entre Rutas y Horizontes 🗺️</h3>
+                <div class="workspace-stats">
+                  <div class="workspace-stat">
+                    <div class="workspace-stat-value">1</div>
+                    <div class="workspace-stat-label">Archivos</div>
+                  </div>
+                  <div class="workspace-stat">
+                    <div class="workspace-stat-value">1</div>
+                    <div class="workspace-stat-label">Carpetas</div>
+                  </div>
+                  <div class="workspace-stat">
+                    <div class="workspace-stat-value">0 Bytes</div>
+                    <div class="workspace-stat-label">Tamaño</div>
+                  </div>
+                  <div class="workspace-stat">
+                    <div class="workspace-stat-value">0</div>
+                    <div class="workspace-stat-label">Compartidos</div>
+                  </div>
+                </div>
+                <div class="workspace-links">
+                  <a href="../../workspaces/entre-rutas/company-management/drive-visualization.html" 
+                     class="workspace-link" target="_blank">
+                    📊 Ver Dashboard
+                  </a>
+                  
+                    <a href="https://drive.google.com/drive/folders/1GXgK-ySzLLUqggpyi7LkOpCOSjc0Do6F" 
+                       class="workspace-link" target="_blank">
+                      📁 Abrir Drive
+                    </a>
+                  
+                  <a href="../../workspaces/entre-rutas/company-management/drive-analysis.md" 
+                     class="workspace-link" target="_blank">
+                    📝 Ver Análisis
+                  </a>
+                </div>
+                <div class="last-updated">
+                  Última actualización: 5/11/2025
+                </div>
+              </div>
+            
+        </div>
+      </div>
+      
+      <div class="section">
+        <h2>📊 Distribución por Tipo de Archivo (Global)</h2>
+        <div class="type-list">
+          
+              <div class="type-item">
+                <strong>🖼️ Imagen JPEG</strong>
+                <div>Cantidad: 1,109</div>
+                <div>Tamaño: 2.32 GB</div>
+              </div>
+            
+              <div class="type-item">
+                <strong>📕 PDF</strong>
+                <div>Cantidad: 1,030</div>
+                <div>Tamaño: 824.61 MB</div>
+              </div>
+            
+              <div class="type-item">
+                <strong>application/vnd.google-apps.shortcut</strong>
+                <div>Cantidad: 91</div>
+                <div>Tamaño: 0 Bytes</div>
+              </div>
+            
+              <div class="type-item">
+                <strong>📄 Google Doc</strong>
+                <div>Cantidad: 85</div>
+                <div>Tamaño: 270.35 MB</div>
+              </div>
+            
+              <div class="type-item">
+                <strong>📊 Google Sheet</strong>
+                <div>Cantidad: 60</div>
+                <div>Tamaño: 2.18 MB</div>
+              </div>
+            
+              <div class="type-item">
+                <strong>📝 Texto</strong>
+                <div>Cantidad: 54</div>
+                <div>Tamaño: 451.34 KB</div>
+              </div>
+            
+              <div class="type-item">
+                <strong>text/x-python</strong>
+                <div>Cantidad: 49</div>
+                <div>Tamaño: 166.49 KB</div>
+              </div>
+            
+              <div class="type-item">
+                <strong>application/x-python-code</strong>
+                <div>Cantidad: 47</div>
+                <div>Tamaño: 180.92 KB</div>
+              </div>
+            
+              <div class="type-item">
+                <strong>text/markdown</strong>
+                <div>Cantidad: 36</div>
+                <div>Tamaño: 1.21 MB</div>
+              </div>
+            
+              <div class="type-item">
+                <strong>📽️ Google Slides</strong>
+                <div>Cantidad: 29</div>
+                <div>Tamaño: 115.54 MB</div>
+              </div>
+            
+              <div class="type-item">
+                <strong>video/mp4</strong>
+                <div>Cantidad: 27</div>
+                <div>Tamaño: 1.82 GB</div>
+              </div>
+            
+              <div class="type-item">
+                <strong>application/octet-stream</strong>
+                <div>Cantidad: 21</div>
+                <div>Tamaño: 514.95 KB</div>
+              </div>
+            
+              <div class="type-item">
+                <strong>🖼️ Imagen PNG</strong>
+                <div>Cantidad: 17</div>
+                <div>Tamaño: 10.79 MB</div>
+              </div>
+            
+              <div class="type-item">
+                <strong>application/zip</strong>
+                <div>Cantidad: 16</div>
+                <div>Tamaño: 1.22 MB</div>
+              </div>
+            
+              <div class="type-item">
+                <strong>application/x-flac</strong>
+                <div>Cantidad: 15</div>
+                <div>Tamaño: 265.22 MB</div>
+              </div>
+            
+              <div class="type-item">
+                <strong>audio/mpeg</strong>
+                <div>Cantidad: 14</div>
+                <div>Tamaño: 368.19 MB</div>
+              </div>
+            
+              <div class="type-item">
+                <strong>audio/x-ms-wma</strong>
+                <div>Cantidad: 12</div>
+                <div>Tamaño: 76.13 MB</div>
+              </div>
+            
+              <div class="type-item">
+                <strong>📊 Excel</strong>
+                <div>Cantidad: 11</div>
+                <div>Tamaño: 1.15 MB</div>
+              </div>
+            
+              <div class="type-item">
+                <strong>video/x-matroska</strong>
+                <div>Cantidad: 10</div>
+                <div>Tamaño: 2.5 GB</div>
+              </div>
+            
+              <div class="type-item">
+                <strong>📽️ PowerPoint</strong>
+                <div>Cantidad: 8</div>
+                <div>Tamaño: 134.62 MB</div>
+              </div>
+            
+              <div class="type-item">
+                <strong>📊 CSV</strong>
+                <div>Cantidad: 8</div>
+                <div>Tamaño: 4.38 MB</div>
+              </div>
+            
+              <div class="type-item">
+                <strong>application/x-zip-compressed</strong>
+                <div>Cantidad: 8</div>
+                <div>Tamaño: 1.98 MB</div>
+              </div>
+            
+              <div class="type-item">
+                <strong>📄 Word</strong>
+                <div>Cantidad: 7</div>
+                <div>Tamaño: 970.87 KB</div>
+              </div>
+            
+              <div class="type-item">
+                <strong>image/gif</strong>
+                <div>Cantidad: 5</div>
+                <div>Tamaño: 175.34 KB</div>
+              </div>
+            
+              <div class="type-item">
+                <strong>application/vnd.google-apps.form</strong>
+                <div>Cantidad: 4</div>
+                <div>Tamaño: 974.26 KB</div>
+              </div>
+            
+        </div>
+      </div>
+      
+      <div class="section">
+        <h2>📈 Top Tipos de Archivo por Cantidad</h2>
+        <div class="chart-container">
+          <div class="bar-chart">
+            
+                  <div class="bar-item">
+                    <div class="bar-label">🖼️ Imagen JPEG</div>
+                    <div class="bar" style="width: 100%">
+                      1,109 archivos (2.32 GB)
+                    </div>
+                  </div>
+                
+                  <div class="bar-item">
+                    <div class="bar-label">📕 PDF</div>
+                    <div class="bar" style="width: 92.87646528403968%">
+                      1,030 archivos (824.61 MB)
+                    </div>
+                  </div>
+                
+                  <div class="bar-item">
+                    <div class="bar-label">application/vnd.google-apps.shortcut</div>
+                    <div class="bar" style="width: 8.205590622182147%">
+                      91 archivos (0 Bytes)
+                    </div>
+                  </div>
+                
+                  <div class="bar-item">
+                    <div class="bar-label">📄 Google Doc</div>
+                    <div class="bar" style="width: 7.664562669071236%">
+                      85 archivos (270.35 MB)
+                    </div>
+                  </div>
+                
+                  <div class="bar-item">
+                    <div class="bar-label">📊 Google Sheet</div>
+                    <div class="bar" style="width: 5.410279531109107%">
+                      60 archivos (2.18 MB)
+                    </div>
+                  </div>
+                
+                  <div class="bar-item">
+                    <div class="bar-label">📝 Texto</div>
+                    <div class="bar" style="width: 4.869251577998197%">
+                      54 archivos (451.34 KB)
+                    </div>
+                  </div>
+                
+                  <div class="bar-item">
+                    <div class="bar-label">text/x-python</div>
+                    <div class="bar" style="width: 4.418394950405771%">
+                      49 archivos (166.49 KB)
+                    </div>
+                  </div>
+                
+                  <div class="bar-item">
+                    <div class="bar-label">application/x-python-code</div>
+                    <div class="bar" style="width: 4.2380522993688015%">
+                      47 archivos (180.92 KB)
+                    </div>
+                  </div>
+                
+                  <div class="bar-item">
+                    <div class="bar-label">text/markdown</div>
+                    <div class="bar" style="width: 3.2461677186654643%">
+                      36 archivos (1.21 MB)
+                    </div>
+                  </div>
+                
+                  <div class="bar-item">
+                    <div class="bar-label">📽️ Google Slides</div>
+                    <div class="bar" style="width: 2.6149684400360687%">
+                      29 archivos (115.54 MB)
+                    </div>
+                  </div>
+                
+                  <div class="bar-item">
+                    <div class="bar-label">video/mp4</div>
+                    <div class="bar" style="width: 2.4346257889990985%">
+                      27 archivos (1.82 GB)
+                    </div>
+                  </div>
+                
+                  <div class="bar-item">
+                    <div class="bar-label">application/octet-stream</div>
+                    <div class="bar" style="width: 1.8935978358881875%">
+                      21 archivos (514.95 KB)
+                    </div>
+                  </div>
+                
+                  <div class="bar-item">
+                    <div class="bar-label">🖼️ Imagen PNG</div>
+                    <div class="bar" style="width: 1.532912533814247%">
+                      17 archivos (10.79 MB)
+                    </div>
+                  </div>
+                
+                  <div class="bar-item">
+                    <div class="bar-label">application/zip</div>
+                    <div class="bar" style="width: 1.4427412082957618%">
+                      16 archivos (1.22 MB)
+                    </div>
+                  </div>
+                
+                  <div class="bar-item">
+                    <div class="bar-label">application/x-flac</div>
+                    <div class="bar" style="width: 1.3525698827772767%">
+                      15 archivos (265.22 MB)
+                    </div>
+                  </div>
+                
+          </div>
+        </div>
+      </div>
+      
+      <div class="section">
+        <h2>💾 Top Tipos de Archivo por Tamaño</h2>
+        <div class="chart-container">
+          <div class="bar-chart">
+            
+                  <div class="bar-item">
+                    <div class="bar-label">video/x-matroska</div>
+                    <div class="bar" style="width: 100%">
+                      2.5 GB (10 archivos)
+                    </div>
+                  </div>
+                
+                  <div class="bar-item">
+                    <div class="bar-label">🖼️ Imagen JPEG</div>
+                    <div class="bar" style="width: 93.14627875429635%">
+                      2.32 GB (1,109 archivos)
+                    </div>
+                  </div>
+                
+                  <div class="bar-item">
+                    <div class="bar-label">video/mp4</div>
+                    <div class="bar" style="width: 72.83788281569326%">
+                      1.82 GB (27 archivos)
+                    </div>
+                  </div>
+                
+                  <div class="bar-item">
+                    <div class="bar-label">📕 PDF</div>
+                    <div class="bar" style="width: 32.27581272140702%">
+                      824.61 MB (1,030 archivos)
+                    </div>
+                  </div>
+                
+                  <div class="bar-item">
+                    <div class="bar-label">video/x-msvideo</div>
+                    <div class="bar" style="width: 28.62948243347192%">
+                      731.45 MB (2 archivos)
+                    </div>
+                  </div>
+                
+                  <div class="bar-item">
+                    <div class="bar-label">audio/mpeg</div>
+                    <div class="bar" style="width: 14.411068785062017%">
+                      368.19 MB (14 archivos)
+                    </div>
+                  </div>
+                
+                  <div class="bar-item">
+                    <div class="bar-label">📄 Google Doc</div>
+                    <div class="bar" style="width: 10.581873923165205%">
+                      270.35 MB (85 archivos)
+                    </div>
+                  </div>
+                
+                  <div class="bar-item">
+                    <div class="bar-label">application/x-flac</div>
+                    <div class="bar" style="width: 10.380811768651727%">
+                      265.22 MB (15 archivos)
+                    </div>
+                  </div>
+                
+                  <div class="bar-item">
+                    <div class="bar-label">📽️ PowerPoint</div>
+                    <div class="bar" style="width: 5.269241213071143%">
+                      134.62 MB (8 archivos)
+                    </div>
+                  </div>
+                
+                  <div class="bar-item">
+                    <div class="bar-label">video/quicktime</div>
+                    <div class="bar" style="width: 4.980697591806014%">
+                      127.25 MB (1 archivos)
+                    </div>
+                  </div>
+                
+                  <div class="bar-item">
+                    <div class="bar-label">📽️ Google Slides</div>
+                    <div class="bar" style="width: 4.522256345273281%">
+                      115.54 MB (29 archivos)
+                    </div>
+                  </div>
+                
+                  <div class="bar-item">
+                    <div class="bar-label">audio/x-ms-wma</div>
+                    <div class="bar" style="width: 2.979624689652026%">
+                      76.13 MB (12 archivos)
+                    </div>
+                  </div>
+                
+                  <div class="bar-item">
+                    <div class="bar-label">🖼️ Imagen PNG</div>
+                    <div class="bar" style="width: 0.422177217035422%">
+                      10.79 MB (17 archivos)
+                    </div>
+                  </div>
+                
+                  <div class="bar-item">
+                    <div class="bar-label">video/x-ms-wmv</div>
+                    <div class="bar" style="width: 0.23262373667575406%">
+                      5.94 MB (1 archivos)
+                    </div>
+                  </div>
+                
+                  <div class="bar-item">
+                    <div class="bar-label">audio/aac-adts</div>
+                    <div class="bar" style="width: 0.2159460957407109%">
+                      5.52 MB (2 archivos)
+                    </div>
+                  </div>
+                
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <p><strong>Dashboard Maestro de dendrita</strong></p>
+      <p>Resumen agregado de 5 workspaces</p>
+      <p class="last-updated">Generado automáticamente el 2025-11-05</p>
+    </div>
+  </div>
+</body>
+</html>

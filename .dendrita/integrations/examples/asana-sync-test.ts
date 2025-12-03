@@ -3,8 +3,8 @@
  * Demuestra cómo sincronizar proyectos y tareas desde Asana hacia dendrita
  */
 
-import { sync } from '../sync/bidirectional-sync';
-import { SyncConfig } from '../sync/types';
+import { sync } from '../scripts/pipelines/pm-tools-sync-pipeline/bidirectional-sync';
+import { SyncConfig } from '../scripts/pipelines/pm-tools-sync-pipeline/types';
 import { createLogger } from '../utils/logger';
 
 const logger = createLogger('AsanaSyncTest');

@@ -1,0 +1,35 @@
+# Cursor ignore rules for .dendrita directory
+# These files should not be indexed or analyzed by Cursor
+
+# Note: settings.local.json, *.local.json, logs/, and *.log are now visible to Cursor
+# They may contain personal settings or information, but Cursor needs access for context
+
+# Cache and temporary files
+cache/
+.cache/
+*.tmp
+*.temp
+
+# Node modules (too large, not needed for analysis)
+integrations/node_modules/
+
+# Build artifacts (compiled JavaScript files)
+*.js
+*.map
+
+# Environment files (credentials)
+.env
+.env.local
+.env.*.local
+integrations/.env.local
+integrations/config.local.json
+integrations/credentials.local.json
+
+# Token files
+*.token
+*.refresh_token
+
+# System files
+.DS_Store
+Thumbs.db
+

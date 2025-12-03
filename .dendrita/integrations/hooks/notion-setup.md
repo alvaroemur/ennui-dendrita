@@ -1,3 +1,17 @@
+---
+name: notion-setup
+description: "Notion Setup Guide"
+type: documentation
+created:
+  2025-11-06T00:00:00.000Z
+  
+updated:
+  2025-11-06T00:00:00.000Z
+  
+tags: ["documentation", "integration"]
+category: integration
+---
+
 # Notion Setup Guide
 
 Guía paso a paso para configurar la integración con Notion.
@@ -53,7 +67,7 @@ NOTION_INTEGRATION_TOKEN=secret_tu_token_aqui
 Ejecuta el script de exploración para verificar que todo funciona:
 
 ```bash
-npx ts-node .dendrita/integrations/explore/notion-explore.ts
+npx ts-node _temp/dev-tools/explore/notion-explore.ts
 ```
 
 O desde TypeScript:

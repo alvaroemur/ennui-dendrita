@@ -1,0 +1,26 @@
+{
+  "_comment": "Configuración del Drive Scraper Pipeline",
+  "_description": "Configuración centralizada para el pipeline de scraping de Google Drive. Los valores por defecto se pueden sobrescribir por configuración de workspace.",
+  
+  "default_settings": {
+    "max_results": 1000,
+    "extract_permissions": true,
+    "extract_revisions": false,
+    "extract_content": false,
+    "extract_metadata": true,
+    "extract_thumbnail": false,
+    "include_subfolders": true
+  },
+  
+  "filters": {
+    "mime_type_filter": [],
+    "date_min": null,
+    "date_max": null
+  },
+  
+  "metadata": {
+    "last_updated": "2025-11-06T10:50:00Z",
+    "version": "1.0"
+  }
+}
+

@@ -23,6 +23,7 @@ export class GoogleAuth {
     'https://www.googleapis.com/auth/calendar.events',
     'https://www.googleapis.com/auth/drive.readonly',
     'https://www.googleapis.com/auth/drive.file',
+    'https://www.googleapis.com/auth/documents', // Para actualizar Google Docs
   ];
 
   /**

@@ -1,3 +1,17 @@
+---
+name: readme
+description: "Tools and Templates"
+type: template
+created:
+  2025-11-06T00:00:00.000Z
+  
+updated:
+  2025-11-06T00:00:00.000Z
+  
+tags: ["template", "readme", "documentation"]
+category: template
+---
+
 # Tools and Templates
 
 This folder contains reusable tools and templates.

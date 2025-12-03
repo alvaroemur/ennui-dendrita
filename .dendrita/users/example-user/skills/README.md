@@ -1,3 +1,17 @@
+---
+name: readme
+description: "Skills for Example User"
+type: skill
+created:
+  2025-11-06T00:00:00.000Z
+  
+updated:
+  2025-11-06T00:00:00.000Z
+  
+tags: ["skill", "user-specific", "readme", "documentation"]
+category: skill
+---
+
 # Skills for Example User
 
 Contextual knowledge and inline guidance for development work.

@@ -1,3 +1,17 @@
+---
+name: readme
+description: "Stakeholders"
+type: template
+created:
+  2025-11-06T00:00:00.000Z
+  
+updated:
+  2025-11-06T00:00:00.000Z
+  
+tags: ["template", "stakeholder", "allies", "readme", "documentation"]
+category: template
+---
+
 # Stakeholders
 
 This folder contains allies and stakeholder management documents.

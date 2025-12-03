@@ -35,7 +35,7 @@ This hook documents the expected behavior that Cursor must apply when detecting 
 Cursor must activate work-timeline behavior when:
 
 - ✅ Files in `workspaces/[workspace]/🚀 active-projects/**/*` are created, modified, or deleted
-- ✅ Project files (`master-plan.md`, `project-context.json`, `tasks.md`) are modified
+- ✅ Project files (`master-plan.md`, `project_context.json`, `tasks.md`) are modified
 - ✅ New projects are created in `workspaces/[workspace]/🚀 active-projects/`
 - ✅ Projects are archived (moved to `_archived-projects/`)
 - ✅ Important documents in projects are created or modified
@@ -47,7 +47,7 @@ Cursor must activate work-timeline behavior when:
 ```markdown
 IF (editing workspaces/[workspace]/🚀 active-projects/**/*) OR 
    (editing workspaces/[workspace]/🚀 active-projects/[project]/master-plan.md) OR
-   (editing workspaces/[workspace]/🚀 active-projects/[project]/project-context.json) OR
+   (editing workspaces/[workspace]/🚀 active-projects/[project]/project_context.json) OR
    (editing workspaces/[workspace]/🚀 active-projects/[project]/tasks.md) OR
    (creating new project in workspaces/[workspace]/🚀 active-projects/) OR
    (archiving project to _archived-projects/) OR
@@ -65,13 +65,13 @@ Identify what type of change occurred:
 
 1. **Project changes:**
    - Created: New project folder in `workspaces/[workspace]/🚀 active-projects/`
-   - Modified: Project files updated (master-plan.md, project-context.json, tasks.md)
+   - Modified: Project files updated (master-plan.md, project_context.json, tasks.md)
    - Archived: Project moved to `_archived-projects/`
    - Status changed: Significant status change in project
 
 2. **Document changes:**
    - Created: New important document in project
-   - Modified: Existing document updated (master-plan.md, project-context.json, tasks.md, README.md)
+   - Modified: Existing document updated (master-plan.md, project_context.json, tasks.md, README.md)
    - Deleted: Document removed
 
 3. **Task changes:**
@@ -169,7 +169,7 @@ Completada la primera versión de la funcionalidad. Incluye componentes principa
 
 Completada la fase piloto del proyecto. Resultados positivos: 85% de satisfacción y 70% de implementación de estrategias aprendidas.
 
-📁 `workspaces/[workspace]/🚀 active-projects/[project]/project-context.json`
+📁 `workspaces/[workspace]/🚀 active-projects/[project]/project_context.json`
 ```
 
 **Example 5: Project archived**
@@ -214,8 +214,8 @@ name: work-timeline
 description: "Work Timeline - Evolución del trabajo en [workspace]"
 type: timeline
 status: permanent
-created: YYYY-MM-DD
-updated: YYYY-MM-DD
+created: 2025-11-06
+updated: 2025-01-19
 tags: ["timeline", "work", "projects", "progress"]
 workspace: [workspace-name]
 ---
@@ -234,7 +234,7 @@ Este timeline registra todos los cambios y eventos importantes en los proyectos 
 
 Completada la fase piloto del bootcamp con 3 organizaciones. Resultados positivos: 85% de satisfacción.
 
-📁 `workspaces/[workspace]/🚀 active-projects/[project]/project-context.json`
+📁 `workspaces/[workspace]/🚀 active-projects/[project]/project_context.json`
 
 ---
 
@@ -279,7 +279,7 @@ Cursor must detect changes by:
    - Match paths against patterns:
      - `workspaces/[workspace]/🚀 active-projects/**/*` → Project changes
      - `workspaces/[workspace]/🚀 active-projects/[project]/master-plan.md` → Document changes
-     - `workspaces/[workspace]/🚀 active-projects/[project]/project-context.json` → Context changes
+     - `workspaces/[workspace]/🚀 active-projects/[project]/project_context.json` → Context changes
      - `workspaces/[workspace]/🚀 active-projects/[project]/tasks.md` → Task changes
 
 3. **Content analysis:**
@@ -324,7 +324,7 @@ For different change types:
    - Reference impact or next steps
 
 4. **Milestones:**
-   - Read project-context.json or master-plan.md
+   - Read project_context.json or master-plan.md
    - Extract milestone description
    - Generate tweet celebrating achievement
    - Include results or impact if available
@@ -349,8 +349,8 @@ This hook integrates with:
    - working-context tracks current work
    - work-timeline can include work context in tweets
 
-3. **project-context.json:**
-   - project-context.json maintains project state
+3. **project_context.json:**
+   - project_context.json maintains project state
    - work-timeline can reference project context for better descriptions
 
 ---

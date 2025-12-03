@@ -12,7 +12,7 @@ async function searchCVFiles(workspace?: string) {
   try {
     // Verificar que Google está configurado
     if (!credentials.hasGoogleWorkspace()) {
-      logger.error('Google Workspace no está configurado. Ver: .dendrita/integrations/docs/SETUP.md');
+      logger.error('Google Workspace no está configurado. Ver: .dendrita/docs/integrations/SETUP.md');
       return;
     }
 

@@ -1,0 +1,31 @@
+{
+  "_comment": "Configuración del Calendar Scraper Pipeline",
+  "_description": "Configuración centralizada para el pipeline de scraping de calendarios. Los valores por defecto se pueden sobrescribir por calendario.",
+  
+  "default_settings": {
+    "time_min_offset_days": -30,
+    "time_max_offset_days": 90,
+    "max_results": 2500,
+    "single_events": true,
+    "sync_attendees": true,
+    "sync_metadata": true
+  },
+  
+  "filters": {
+    "exclude_all_day": true,
+    "exclude_declined": true,
+    "exclude_cancelled": true
+  },
+  
+  "auto_config": {
+    "auto_enable_primary": true,
+    "auto_enable_work_calendars": true,
+    "work_keywords": ["work", "trabajo", "office"]
+  },
+  
+  "metadata": {
+    "last_updated": "2025-11-06T10:50:00Z",
+    "version": "1.0"
+  }
+}
+

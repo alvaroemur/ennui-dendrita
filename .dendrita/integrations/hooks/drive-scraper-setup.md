@@ -1,3 +1,17 @@
+---
+name: drive-scraper-setup
+description: "Configuración de Drive Scraper"
+type: documentation
+created:
+  2025-11-06T00:00:00.000Z
+  
+updated:
+  2025-11-06T00:00:00.000Z
+  
+tags: ["documentation", "integration"]
+category: integration
+---
+
 # 📁 Configuración de Drive Scraper
 
 Guía para configurar el scraping de Google Drive por workspace.

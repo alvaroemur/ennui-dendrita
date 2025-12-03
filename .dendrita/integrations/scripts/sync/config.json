@@ -1,0 +1,24 @@
+{
+  "_comment": "Configuración del Sync Pipeline",
+  "_description": "Configuración centralizada para el pipeline de sincronización de documentos y servicios.",
+  
+  "default_settings": {
+    "sync_documents": true,
+    "sync_user_services": true,
+    "sync_google_workspace": false,
+    "update_existing": true,
+    "extract_metadata": true
+  },
+  
+  "sync_options": {
+    "batch_size": 100,
+    "retry_attempts": 3,
+    "retry_delay_ms": 1000
+  },
+  
+  "metadata": {
+    "last_updated": "2025-11-06T10:50:00Z",
+    "version": "1.0"
+  }
+}
+
